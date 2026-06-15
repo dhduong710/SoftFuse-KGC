@@ -145,7 +145,7 @@ To rerun structure-only baselines:
 python scripts/baselines/rerun_structure_baselines.py \
   --models transe distmult complex rotate rgcn hrgat
 
-python scripts/baselines/recompute_reviewer_safe_metrics.py
+python scripts/baselines/recompute_metrics.py
 python scripts/baselines/build_baseline_comparison.py
 ```
 
@@ -294,7 +294,7 @@ python scripts/pharmkg/build_eval_tables.py
 
 python scripts/pharmkg/e2e/prepare_e2e_ready.py
 MODEL_NAME=meta-llama/Llama-3.2-3B bash scripts/pharmkg/e2e/run_train_infer.sh
-python scripts/pharmkg/e2e/reviewer_safe_e2e_metrics.py
+python scripts/pharmkg/e2e/e2e_metrics.py
 ```
 
 </details>
