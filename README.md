@@ -28,8 +28,8 @@ and Fuzzy Retrieval tabs across PrimeKG, PharmKG, Hetionet, DRKG, and repoDB.
 
 ![SoftFuse-KGC web demo overview](demo_overview.png)
 
-<video src="https://github.com/user-attachments/assets/3ee831a0-82a2-44f8-a95c-dbf2771b3321" controls width="100%">
-  Demo video: https://github.com/user-attachments/assets/3ee831a0-82a2-44f8-a95c-dbf2771b3321
+<video src="https://github.com/user-attachments/assets/6e735697-84f3-4846-9e4a-edb0396df7f0" controls width="100%">
+  Demo video: https://github.com/user-attachments/assets/6e735697-84f3-4846-9e4a-edb0396df7f0
 </video>
 
 
