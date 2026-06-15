@@ -17,6 +17,21 @@ The code supports a main PrimeKG indication task and transfer experiments on
 PharmKG, Hetionet, DRKG, and repoDB. This README explains how to obtain raw data, rebuild intermediate artifacts, and
 run candidate-stage and E2E evaluation.
 
+## Web Demo
+
+An interactive CPU-only demo is available on Hugging Face Spaces:
+
+https://inosuke710-softfuse-kgc-demo.hf.space/
+
+The web server uses precomputed artifacts to inspect the Overview, Soft Support,
+and Fuzzy Retrieval tabs across PrimeKG, PharmKG, Hetionet, DRKG, and repoDB.
+
+<video src="demo_video.mp4" controls width="100%">
+  Demo video: demo_video.mp4
+</video>
+
+[Open the demo video](demo_video.mp4)
+
 ## Method Overview
 
 ```mermaid
