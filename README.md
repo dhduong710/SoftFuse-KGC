@@ -26,11 +26,13 @@ https://inosuke710-softfuse-kgc-demo.hf.space/
 The web server uses precomputed artifacts to inspect the Overview, Soft Support,
 and Fuzzy Retrieval tabs across PrimeKG, PharmKG, Hetionet, DRKG, and repoDB.
 
-<video src="demo_video.mp4" controls width="100%">
-  Demo video: demo_video.mp4
+![SoftFuse-KGC web demo overview](demo_overview.png)
+
+<video src="https://github.com/dhduong710/SoftFuse-KGC/raw/main/demo_video.mp4" controls width="100%">
+  Demo video: https://github.com/dhduong710/SoftFuse-KGC/raw/main/demo_video.mp4
 </video>
 
-[Open the demo video](demo_video.mp4)
+[Watch the demo video online](https://github.com/dhduong710/SoftFuse-KGC/raw/main/demo_video.mp4)
 
 ## Method Overview
 
