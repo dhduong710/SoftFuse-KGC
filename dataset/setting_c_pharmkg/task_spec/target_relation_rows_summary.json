@@ -1,0 +1,506 @@
+{
+  "target_relation_raw": "T",
+  "per_split": {
+    "train": {
+      "num_triples": 33411,
+      "num_unique_heads": 1342,
+      "num_unique_tails": 803,
+      "num_head_tail_overlap": 0,
+      "head_tail_overlap_rate_over_heads": 0.0,
+      "sample_rows": [
+        {
+          "head": "colchicine",
+          "relation": "T",
+          "tail": "anemia",
+          "split": "train"
+        },
+        {
+          "head": "neomycin",
+          "relation": "T",
+          "tail": "pain",
+          "split": "train"
+        },
+        {
+          "head": "vinorelbine",
+          "relation": "T",
+          "tail": "esophagitis",
+          "split": "train"
+        },
+        {
+          "head": "methocarbamol",
+          "relation": "T",
+          "tail": "pain",
+          "split": "train"
+        },
+        {
+          "head": "orlistat",
+          "relation": "T",
+          "tail": "body weight changes",
+          "split": "train"
+        },
+        {
+          "head": "goserelin",
+          "relation": "T",
+          "tail": "neoplasm metastasis",
+          "split": "train"
+        },
+        {
+          "head": "carbamazepine",
+          "relation": "T",
+          "tail": "sensation disorders",
+          "split": "train"
+        },
+        {
+          "head": "testosterone",
+          "relation": "T",
+          "tail": "hiv infections",
+          "split": "train"
+        },
+        {
+          "head": "oxcarbazepine",
+          "relation": "T",
+          "tail": "tuberous sclerosis",
+          "split": "train"
+        },
+        {
+          "head": "danazol",
+          "relation": "T",
+          "tail": "neoplasm metastasis",
+          "split": "train"
+        },
+        {
+          "head": "amrinone",
+          "relation": "T",
+          "tail": "intracranial hemorrhages",
+          "split": "train"
+        },
+        {
+          "head": "vitamin a",
+          "relation": "T",
+          "tail": "hyperthyroidism",
+          "split": "train"
+        },
+        {
+          "head": "tacrolimus",
+          "relation": "T",
+          "tail": "carcinoma",
+          "split": "train"
+        },
+        {
+          "head": "isoxsuprine",
+          "relation": "T",
+          "tail": "tachycardia",
+          "split": "train"
+        },
+        {
+          "head": "bortezomib",
+          "relation": "T",
+          "tail": "hemophilia a",
+          "split": "train"
+        }
+      ]
+    },
+    "valid": {
+      "num_triples": 4082,
+      "num_unique_heads": 967,
+      "num_unique_tails": 571,
+      "num_head_tail_overlap": 0,
+      "head_tail_overlap_rate_over_heads": 0.0,
+      "sample_rows": [
+        {
+          "head": "epinephrine",
+          "relation": "T",
+          "tail": "agenesis of corpus callosum",
+          "split": "valid"
+        },
+        {
+          "head": "cabazitaxel",
+          "relation": "T",
+          "tail": "neoplasms squamous cell",
+          "split": "valid"
+        },
+        {
+          "head": "venlafaxine",
+          "relation": "T",
+          "tail": "leukopenia",
+          "split": "valid"
+        },
+        {
+          "head": "sotalol",
+          "relation": "T",
+          "tail": "hypertension",
+          "split": "valid"
+        },
+        {
+          "head": "amisulpride",
+          "relation": "T",
+          "tail": "infarction",
+          "split": "valid"
+        },
+        {
+          "head": "prednisolone",
+          "relation": "T",
+          "tail": "anemia hemolytic",
+          "split": "valid"
+        },
+        {
+          "head": "metformin",
+          "relation": "T",
+          "tail": "vascular diseases",
+          "split": "valid"
+        },
+        {
+          "head": "rimonabant",
+          "relation": "T",
+          "tail": "body weight changes",
+          "split": "valid"
+        },
+        {
+          "head": "dihydroergotamine",
+          "relation": "T",
+          "tail": "neurologic manifestations",
+          "split": "valid"
+        },
+        {
+          "head": "esmolol",
+          "relation": "T",
+          "tail": "hypertension",
+          "split": "valid"
+        },
+        {
+          "head": "cilostazol",
+          "relation": "T",
+          "tail": "arthritis",
+          "split": "valid"
+        },
+        {
+          "head": "propranolol",
+          "relation": "T",
+          "tail": "pulmonary disease chronic obstructive",
+          "split": "valid"
+        },
+        {
+          "head": "imatinib",
+          "relation": "T",
+          "tail": "paraproteinemias",
+          "split": "valid"
+        },
+        {
+          "head": "naloxone",
+          "relation": "T",
+          "tail": "liver cirrhosis biliary",
+          "split": "valid"
+        },
+        {
+          "head": "epirubicin",
+          "relation": "T",
+          "tail": "gastrointestinal neoplasms",
+          "split": "valid"
+        }
+      ]
+    },
+    "test": {
+      "num_triples": 4177,
+      "num_unique_heads": 950,
+      "num_unique_tails": 596,
+      "num_head_tail_overlap": 0,
+      "head_tail_overlap_rate_over_heads": 0.0,
+      "sample_rows": [
+        {
+          "head": "metformin",
+          "relation": "T",
+          "tail": "peripheral vascular diseases",
+          "split": "test"
+        },
+        {
+          "head": "bepridil",
+          "relation": "T",
+          "tail": "schizophrenia",
+          "split": "test"
+        },
+        {
+          "head": "l lysine",
+          "relation": "T",
+          "tail": "respiratory tract infections",
+          "split": "test"
+        },
+        {
+          "head": "ranolazine",
+          "relation": "T",
+          "tail": "atrial fibrillation",
+          "split": "test"
+        },
+        {
+          "head": "indomethacin",
+          "relation": "T",
+          "tail": "hepatitis b",
+          "split": "test"
+        },
+        {
+          "head": "methylprednisolone",
+          "relation": "T",
+          "tail": "buschke ollendorff syndrome",
+          "split": "test"
+        },
+        {
+          "head": "quinine",
+          "relation": "T",
+          "tail": "renal insufficiency",
+          "split": "test"
+        },
+        {
+          "head": "carbamazepine",
+          "relation": "T",
+          "tail": "drug eruptions",
+          "split": "test"
+        },
+        {
+          "head": "amoxicillin",
+          "relation": "T",
+          "tail": "hypersensitivity",
+          "split": "test"
+        },
+        {
+          "head": "arsenic trioxide",
+          "relation": "T",
+          "tail": "cardiotoxicity",
+          "split": "test"
+        },
+        {
+          "head": "ketoconazole",
+          "relation": "T",
+          "tail": "hypotrichosis",
+          "split": "test"
+        },
+        {
+          "head": "ursodeoxycholic acid",
+          "relation": "T",
+          "tail": "purpura thrombocytopenic idiopathic",
+          "split": "test"
+        },
+        {
+          "head": "triamterene",
+          "relation": "T",
+          "tail": "seizures",
+          "split": "test"
+        },
+        {
+          "head": "imipramine",
+          "relation": "T",
+          "tail": "motion sickness",
+          "split": "test"
+        },
+        {
+          "head": "vitamin e",
+          "relation": "T",
+          "tail": "schizophrenia",
+          "split": "test"
+        }
+      ]
+    }
+  },
+  "all": {
+    "num_triples": 41670,
+    "num_unique_heads_as_drug_candidates": 1370,
+    "num_unique_tails_as_disease_queries": 812,
+    "num_head_tail_overlap": 0,
+    "head_tail_overlap_rate_over_heads": 0.0,
+    "head_tail_overlap_rate_over_tails": 0.0,
+    "sample_rows": [
+      {
+        "head": "colchicine",
+        "relation": "T",
+        "tail": "anemia",
+        "split": "train"
+      },
+      {
+        "head": "neomycin",
+        "relation": "T",
+        "tail": "pain",
+        "split": "train"
+      },
+      {
+        "head": "vinorelbine",
+        "relation": "T",
+        "tail": "esophagitis",
+        "split": "train"
+      },
+      {
+        "head": "methocarbamol",
+        "relation": "T",
+        "tail": "pain",
+        "split": "train"
+      },
+      {
+        "head": "orlistat",
+        "relation": "T",
+        "tail": "body weight changes",
+        "split": "train"
+      },
+      {
+        "head": "goserelin",
+        "relation": "T",
+        "tail": "neoplasm metastasis",
+        "split": "train"
+      },
+      {
+        "head": "carbamazepine",
+        "relation": "T",
+        "tail": "sensation disorders",
+        "split": "train"
+      },
+      {
+        "head": "testosterone",
+        "relation": "T",
+        "tail": "hiv infections",
+        "split": "train"
+      },
+      {
+        "head": "oxcarbazepine",
+        "relation": "T",
+        "tail": "tuberous sclerosis",
+        "split": "train"
+      },
+      {
+        "head": "danazol",
+        "relation": "T",
+        "tail": "neoplasm metastasis",
+        "split": "train"
+      },
+      {
+        "head": "amrinone",
+        "relation": "T",
+        "tail": "intracranial hemorrhages",
+        "split": "train"
+      },
+      {
+        "head": "vitamin a",
+        "relation": "T",
+        "tail": "hyperthyroidism",
+        "split": "train"
+      },
+      {
+        "head": "tacrolimus",
+        "relation": "T",
+        "tail": "carcinoma",
+        "split": "train"
+      },
+      {
+        "head": "isoxsuprine",
+        "relation": "T",
+        "tail": "tachycardia",
+        "split": "train"
+      },
+      {
+        "head": "bortezomib",
+        "relation": "T",
+        "tail": "hemophilia a",
+        "split": "train"
+      },
+      {
+        "head": "zidovudine",
+        "relation": "T",
+        "tail": "hepatitis b",
+        "split": "train"
+      },
+      {
+        "head": "prednisone",
+        "relation": "T",
+        "tail": "mood disorder",
+        "split": "train"
+      },
+      {
+        "head": "vitamin e",
+        "relation": "T",
+        "tail": "acquired immunodeficiency syndrome",
+        "split": "train"
+      },
+      {
+        "head": "minocycline",
+        "relation": "T",
+        "tail": "stomatitis",
+        "split": "train"
+      },
+      {
+        "head": "metformin",
+        "relation": "T",
+        "tail": "brain edema",
+        "split": "train"
+      },
+      {
+        "head": "dopamine",
+        "relation": "T",
+        "tail": "leukemia",
+        "split": "train"
+      },
+      {
+        "head": "octreotide",
+        "relation": "T",
+        "tail": "pancreatitis",
+        "split": "train"
+      },
+      {
+        "head": "propylthiouracil",
+        "relation": "T",
+        "tail": "leukopenia",
+        "split": "train"
+      },
+      {
+        "head": "gadodiamide",
+        "relation": "T",
+        "tail": "meningeal neoplasms",
+        "split": "train"
+      },
+      {
+        "head": "remifentanil",
+        "relation": "T",
+        "tail": "pain",
+        "split": "train"
+      },
+      {
+        "head": "paclitaxel",
+        "relation": "T",
+        "tail": "kidney diseases",
+        "split": "train"
+      },
+      {
+        "head": "fluoxetine",
+        "relation": "T",
+        "tail": "myotonic dystrophy",
+        "split": "train"
+      },
+      {
+        "head": "vincristine",
+        "relation": "T",
+        "tail": "uterine diseases",
+        "split": "train"
+      },
+      {
+        "head": "tolvaptan",
+        "relation": "T",
+        "tail": "aortic valve stenosis",
+        "split": "train"
+      },
+      {
+        "head": "cyanocobalamin",
+        "relation": "T",
+        "tail": "deficiency diseases",
+        "split": "train"
+      }
+    ],
+    "coverage_vs_train_T": {
+      "valid": {
+        "drug_head_coverage_in_train_T_heads": 0.9803516028955532,
+        "disease_tail_coverage_in_train_T_tails": 0.9912434325744308,
+        "num_unseen_heads_vs_train_T": 19,
+        "num_unseen_tails_vs_train_T": 5
+      },
+      "test": {
+        "drug_head_coverage_in_train_T_heads": 0.9863157894736843,
+        "disease_tail_coverage_in_train_T_tails": 0.9899328859060402,
+        "num_unseen_heads_vs_train_T": 13,
+        "num_unseen_tails_vs_train_T": 6
+      }
+    }
+  }
+}

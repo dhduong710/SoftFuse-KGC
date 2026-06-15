@@ -1,0 +1,38 @@
+{
+  "stage": "fuzzy_retrieval_v1_build",
+  "variant_name": "soft_support_fuzzy_retrieval_v1",
+  "scoring_level": "triple-first",
+  "notes": [
+    "This v1 scores triples, not full paths yet.",
+    "ontology_consistency_flag is disabled in v1 because schema_known_count was zero during path feature build.",
+    "Selection policy = coverage pass + global fill.",
+    "Candidate order remains frozen from soft_support_raw."
+  ],
+  "weights": {
+    "top_band_weight": 1.0,
+    "mid_band_weight": 0.6,
+    "tail_band_weight": 0.25,
+    "touch_candidate": 0.35,
+    "touch_query": 0.05,
+    "direct_shortcut": -0.8,
+    "contra": -0.1,
+    "density": 0.05
+  },
+  "selection_policy": {
+    "stage_a": "coverage_pass_best_triple_per_candidate",
+    "stage_b": "global_fill_by_triple_score",
+    "retain_ratio": 0.67,
+    "min_keep": 20
+  },
+  "summary": {
+    "num_rows": 500,
+    "avg_original_subgraph_size": 60.45,
+    "avg_selected_subgraph_size": 36.714,
+    "direct_shortcut_rate_before": 0.165492,
+    "direct_shortcut_rate_after": 0.124421,
+    "contra_rate_before": 0.005459,
+    "contra_rate_after": 0.006265,
+    "avg_candidate_coverage_preserved_rate": 1.0,
+    "avg_top_band_coverage_preserved_rate": 1.0
+  }
+}

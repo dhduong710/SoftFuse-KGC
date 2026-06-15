@@ -1,0 +1,49 @@
+{
+  "variant": "N6_subgraph_edge_dropout_5_seed3",
+  "config": {
+    "kind": "subgraph_edge_dropout",
+    "seed": 25056,
+    "support_noise_std": 0.0,
+    "edge_dropout_rate": 0.05
+  },
+  "source_row": "dataset/setting_a/29_n2_e2e_infer_ready/retrieval_main",
+  "splits": {
+    "train": {
+      "split": "train",
+      "num_rows": 8388,
+      "avg_candidate_len": 20.0,
+      "min_candidate_len": 20,
+      "max_candidate_len": 20,
+      "avg_subgraph_size": 55.938603,
+      "min_subgraph_size": 2,
+      "max_subgraph_size": 72,
+      "gold_at20": 1.0,
+      "rank21_count": 0
+    },
+    "valid": {
+      "split": "valid",
+      "num_rows": 500,
+      "avg_candidate_len": 20.0,
+      "min_candidate_len": 20,
+      "max_candidate_len": 20,
+      "avg_subgraph_size": 30.734,
+      "min_subgraph_size": 23,
+      "max_subgraph_size": 48,
+      "gold_at20": 0.202,
+      "rank21_count": 399
+    },
+    "test": {
+      "split": "test",
+      "num_rows": 500,
+      "avg_candidate_len": 20.0,
+      "min_candidate_len": 20,
+      "max_candidate_len": 20,
+      "avg_subgraph_size": 30.49,
+      "min_subgraph_size": 23,
+      "max_subgraph_size": 48,
+      "gold_at20": 0.24,
+      "rank21_count": 380
+    }
+  },
+  "may_replace_week24_main_result": false
+}

@@ -1,0 +1,14 @@
+{
+  "repoDB::approved_indication::Compound:Disease": [
+    [
+      "Compound:Gene",
+      "Gene:Gene"
+    ],
+    [
+      "Compound:Disease"
+    ],
+    [
+      "repoDB_failed_diagnostic"
+    ]
+  ]
+}

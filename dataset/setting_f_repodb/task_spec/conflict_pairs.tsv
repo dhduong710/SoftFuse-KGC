@@ -1,0 +1,22 @@
+compound_entity	drugbank_id	drug_name	relation	disease_entity	umls_cui	disease_name	sem_type	label	num_raw_rows
+Compound::DB00544	DB00544	Fluorouracil		Disease::UMLS:C0007102	C0007102	Malignant tumor of colon			
+Compound::DB00544	DB00544	Fluorouracil		Disease::UMLS:C0024623	C0024623	Malignant neoplasm of stomach			
+Compound::DB00624	DB00624	Testosterone		Disease::UMLS:C0271623	C0271623	Hypogonadotropic hypogonadism			
+Compound::DB00741	DB00741	Hydrocortisone		Disease::UMLS:C0009324	C0009324	Ulcerative Colitis			
+Compound::DB00741	DB00741	Hydrocortisone		Disease::UMLS:C0021390	C0021390	Inflammatory Bowel Diseases			
+Compound::DB00773	DB00773	Etoposide		Disease::UMLS:C0149925	C0149925	Small cell carcinoma of lung			
+Compound::DB00860	DB00860	Prednisolone		Disease::UMLS:C0003873	C0003873	Rheumatoid Arthritis			
+Compound::DB00860	DB00860	Prednisolone		Disease::UMLS:C0024141	C0024141	Lupus Erythematosus, Systemic			
+Compound::DB00860	DB00860	Prednisolone		Disease::UMLS:C0026769	C0026769	Multiple Sclerosis			
+Compound::DB00959	DB00959	Methylprednisolone		Disease::UMLS:C0003873	C0003873	Rheumatoid Arthritis			
+Compound::DB00959	DB00959	Methylprednisolone		Disease::UMLS:C0024141	C0024141	Lupus Erythematosus, Systemic			
+Compound::DB00959	DB00959	Methylprednisolone		Disease::UMLS:C0026769	C0026769	Multiple Sclerosis			
+Compound::DB00997	DB00997	Doxorubicin		Disease::UMLS:C0026764	C0026764	Multiple Myeloma			
+Compound::DB01041	DB01041	Thalidomide		Disease::UMLS:C0026764	C0026764	Multiple Myeloma			
+Compound::DB01042	DB01042	Melphalan		Disease::UMLS:C0026764	C0026764	Multiple Myeloma			
+Compound::DB01101	DB01101	Capecitabine		Disease::UMLS:C0024623	C0024623	Malignant neoplasm of stomach			
+Compound::DB01204	DB01204	Mitoxantrone		Disease::UMLS:C0023467	C0023467	Leukemia, Myelocytic, Acute			
+Compound::DB01234	DB01234	Dexamethasone		Disease::UMLS:C0024305	C0024305	Lymphoma, Non-Hodgkin			
+Compound::DB01234	DB01234	Dexamethasone		Disease::UMLS:C0026764	C0026764	Multiple Myeloma			
+Compound::DB01234	DB01234	Dexamethasone		Disease::UMLS:C0029878	C0029878	Otitis Externa			
+Compound::DB06603	DB06603	Panobinostat		Disease::UMLS:C0026764	C0026764	Multiple Myeloma			

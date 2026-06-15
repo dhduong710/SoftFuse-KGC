@@ -1,0 +1,266 @@
+{
+  "config": {
+    "model_name": "rotate",
+    "task": "(?, T, disease)",
+    "candidate_universe": "drug_only_from_train_T_heads",
+    "top_k": 20,
+    "gold_injection": false,
+    "epochs": 30,
+    "dim": 256,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "seed": 2025
+  },
+  "train_summary": {
+    "model_name": "rotate",
+    "epochs": 30,
+    "dim": 256,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "runtime_sec": 34.436,
+    "train_log": [
+      {
+        "epoch": 1,
+        "loss": 0.39879068261698675
+      },
+      {
+        "epoch": 2,
+        "loss": 0.30181579464360286
+      },
+      {
+        "epoch": 3,
+        "loss": 0.25005854148613776
+      },
+      {
+        "epoch": 4,
+        "loss": 0.20475577759115318
+      },
+      {
+        "epoch": 5,
+        "loss": 0.17080345326348356
+      },
+      {
+        "epoch": 6,
+        "loss": 0.14521176846403824
+      },
+      {
+        "epoch": 7,
+        "loss": 0.12834709372959638
+      },
+      {
+        "epoch": 8,
+        "loss": 0.11428452149817818
+      },
+      {
+        "epoch": 9,
+        "loss": 0.10076828481335388
+      },
+      {
+        "epoch": 10,
+        "loss": 0.09189924487942143
+      },
+      {
+        "epoch": 11,
+        "loss": 0.08341479277924488
+      },
+      {
+        "epoch": 12,
+        "loss": 0.07874903953389117
+      },
+      {
+        "epoch": 13,
+        "loss": 0.07262287696725443
+      },
+      {
+        "epoch": 14,
+        "loss": 0.06848455875327712
+      },
+      {
+        "epoch": 15,
+        "loss": 0.06536198360355276
+      },
+      {
+        "epoch": 16,
+        "loss": 0.06193735689709061
+      },
+      {
+        "epoch": 17,
+        "loss": 0.06030574346843519
+      },
+      {
+        "epoch": 18,
+        "loss": 0.0579839770731173
+      },
+      {
+        "epoch": 19,
+        "loss": 0.054805911175514525
+      },
+      {
+        "epoch": 20,
+        "loss": 0.05408519275094333
+      },
+      {
+        "epoch": 21,
+        "loss": 0.05333928705046052
+      },
+      {
+        "epoch": 22,
+        "loss": 0.05167511168279146
+      },
+      {
+        "epoch": 23,
+        "loss": 0.05118877417162845
+      },
+      {
+        "epoch": 24,
+        "loss": 0.049912108637784655
+      },
+      {
+        "epoch": 25,
+        "loss": 0.047681469980039096
+      },
+      {
+        "epoch": 26,
+        "loss": 0.04814953607948203
+      },
+      {
+        "epoch": 27,
+        "loss": 0.0472797634962358
+      },
+      {
+        "epoch": 28,
+        "loss": 0.046426069422772054
+      },
+      {
+        "epoch": 29,
+        "loss": 0.045899708529836256
+      },
+      {
+        "epoch": 30,
+        "loss": 0.04566486070030614
+      }
+    ]
+  },
+  "valid_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.022,
+    "mrr_at20": 0.0023180983619064113,
+    "hits1_at20": 0.0,
+    "hits3_at20": 0.0,
+    "hits10_at20": 0.006,
+    "hits20_at20": 0.022,
+    "avg_gold_rank_absent_as_21": 20.81,
+    "gold_rank_21_count": 489,
+    "unique_top1_count": 211,
+    "top1_dominance": 0.032,
+    "top1_most_common": [
+      {
+        "entity": "cladribine",
+        "count": 16
+      },
+      {
+        "entity": "pazopanib",
+        "count": 11
+      },
+      {
+        "entity": "indomethacin",
+        "count": 11
+      },
+      {
+        "entity": "pefloxacin",
+        "count": 11
+      },
+      {
+        "entity": "tocainide",
+        "count": 7
+      },
+      {
+        "entity": "mirtazapine",
+        "count": 7
+      },
+      {
+        "entity": "methacholine",
+        "count": 6
+      },
+      {
+        "entity": "tiagabine",
+        "count": 6
+      },
+      {
+        "entity": "iodixanol",
+        "count": 6
+      },
+      {
+        "entity": "paromomycin",
+        "count": 6
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "rotate",
+    "split": "valid"
+  },
+  "test_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.024,
+    "mrr_at20": 0.0018996519820049232,
+    "hits1_at20": 0.0,
+    "hits3_at20": 0.0,
+    "hits10_at20": 0.004,
+    "hits20_at20": 0.024,
+    "avg_gold_rank_absent_as_21": 20.824,
+    "gold_rank_21_count": 488,
+    "unique_top1_count": 199,
+    "top1_dominance": 0.03,
+    "top1_most_common": [
+      {
+        "entity": "tiagabine",
+        "count": 15
+      },
+      {
+        "entity": "pazopanib",
+        "count": 13
+      },
+      {
+        "entity": "cladribine",
+        "count": 13
+      },
+      {
+        "entity": "bezafibrate",
+        "count": 8
+      },
+      {
+        "entity": "pivmecillinam",
+        "count": 8
+      },
+      {
+        "entity": "cyclosporine",
+        "count": 7
+      },
+      {
+        "entity": "felodipine",
+        "count": 7
+      },
+      {
+        "entity": "iron",
+        "count": 7
+      },
+      {
+        "entity": "pentazocine",
+        "count": 7
+      },
+      {
+        "entity": "ezetimibe",
+        "count": 6
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "rotate",
+    "split": "test"
+  }
+}

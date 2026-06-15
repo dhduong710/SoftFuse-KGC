@@ -1,0 +1,212 @@
+[
+  {
+    "compound_entity": "Compound::DB00544",
+    "disease_entity": "Disease::UMLS:C0007102",
+    "drugbank_id": "DB00544",
+    "drug_name": "Fluorouracil",
+    "umls_cui": "C0007102",
+    "disease_name": "Malignant tumor of colon",
+    "approved_raw_count": 1,
+    "failed_raw_count": 3
+  },
+  {
+    "compound_entity": "Compound::DB00544",
+    "disease_entity": "Disease::UMLS:C0024623",
+    "drugbank_id": "DB00544",
+    "drug_name": "Fluorouracil",
+    "umls_cui": "C0024623",
+    "disease_name": "Malignant neoplasm of stomach",
+    "approved_raw_count": 1,
+    "failed_raw_count": 1
+  },
+  {
+    "compound_entity": "Compound::DB00624",
+    "disease_entity": "Disease::UMLS:C0271623",
+    "drugbank_id": "DB00624",
+    "drug_name": "Testosterone",
+    "umls_cui": "C0271623",
+    "disease_name": "Hypogonadotropic hypogonadism",
+    "approved_raw_count": 1,
+    "failed_raw_count": 2
+  },
+  {
+    "compound_entity": "Compound::DB00741",
+    "disease_entity": "Disease::UMLS:C0009324",
+    "drugbank_id": "DB00741",
+    "drug_name": "Hydrocortisone",
+    "umls_cui": "C0009324",
+    "disease_name": "Ulcerative Colitis",
+    "approved_raw_count": 1,
+    "failed_raw_count": 1
+  },
+  {
+    "compound_entity": "Compound::DB00741",
+    "disease_entity": "Disease::UMLS:C0021390",
+    "drugbank_id": "DB00741",
+    "drug_name": "Hydrocortisone",
+    "umls_cui": "C0021390",
+    "disease_name": "Inflammatory Bowel Diseases",
+    "approved_raw_count": 1,
+    "failed_raw_count": 1
+  },
+  {
+    "compound_entity": "Compound::DB00773",
+    "disease_entity": "Disease::UMLS:C0149925",
+    "drugbank_id": "DB00773",
+    "drug_name": "Etoposide",
+    "umls_cui": "C0149925",
+    "disease_name": "Small cell carcinoma of lung",
+    "approved_raw_count": 1,
+    "failed_raw_count": 2
+  },
+  {
+    "compound_entity": "Compound::DB00860",
+    "disease_entity": "Disease::UMLS:C0003873",
+    "drugbank_id": "DB00860",
+    "drug_name": "Prednisolone",
+    "umls_cui": "C0003873",
+    "disease_name": "Rheumatoid Arthritis",
+    "approved_raw_count": 1,
+    "failed_raw_count": 2
+  },
+  {
+    "compound_entity": "Compound::DB00860",
+    "disease_entity": "Disease::UMLS:C0024141",
+    "drugbank_id": "DB00860",
+    "drug_name": "Prednisolone",
+    "umls_cui": "C0024141",
+    "disease_name": "Lupus Erythematosus, Systemic",
+    "approved_raw_count": 1,
+    "failed_raw_count": 1
+  },
+  {
+    "compound_entity": "Compound::DB00860",
+    "disease_entity": "Disease::UMLS:C0026769",
+    "drugbank_id": "DB00860",
+    "drug_name": "Prednisolone",
+    "umls_cui": "C0026769",
+    "disease_name": "Multiple Sclerosis",
+    "approved_raw_count": 1,
+    "failed_raw_count": 3
+  },
+  {
+    "compound_entity": "Compound::DB00959",
+    "disease_entity": "Disease::UMLS:C0003873",
+    "drugbank_id": "DB00959",
+    "drug_name": "Methylprednisolone",
+    "umls_cui": "C0003873",
+    "disease_name": "Rheumatoid Arthritis",
+    "approved_raw_count": 1,
+    "failed_raw_count": 2
+  },
+  {
+    "compound_entity": "Compound::DB00959",
+    "disease_entity": "Disease::UMLS:C0024141",
+    "drugbank_id": "DB00959",
+    "drug_name": "Methylprednisolone",
+    "umls_cui": "C0024141",
+    "disease_name": "Lupus Erythematosus, Systemic",
+    "approved_raw_count": 1,
+    "failed_raw_count": 1
+  },
+  {
+    "compound_entity": "Compound::DB00959",
+    "disease_entity": "Disease::UMLS:C0026769",
+    "drugbank_id": "DB00959",
+    "drug_name": "Methylprednisolone",
+    "umls_cui": "C0026769",
+    "disease_name": "Multiple Sclerosis",
+    "approved_raw_count": 1,
+    "failed_raw_count": 3
+  },
+  {
+    "compound_entity": "Compound::DB00997",
+    "disease_entity": "Disease::UMLS:C0026764",
+    "drugbank_id": "DB00997",
+    "drug_name": "Doxorubicin",
+    "umls_cui": "C0026764",
+    "disease_name": "Multiple Myeloma",
+    "approved_raw_count": 1,
+    "failed_raw_count": 1
+  },
+  {
+    "compound_entity": "Compound::DB01041",
+    "disease_entity": "Disease::UMLS:C0026764",
+    "drugbank_id": "DB01041",
+    "drug_name": "Thalidomide",
+    "umls_cui": "C0026764",
+    "disease_name": "Multiple Myeloma",
+    "approved_raw_count": 1,
+    "failed_raw_count": 1
+  },
+  {
+    "compound_entity": "Compound::DB01042",
+    "disease_entity": "Disease::UMLS:C0026764",
+    "drugbank_id": "DB01042",
+    "drug_name": "Melphalan",
+    "umls_cui": "C0026764",
+    "disease_name": "Multiple Myeloma",
+    "approved_raw_count": 1,
+    "failed_raw_count": 2
+  },
+  {
+    "compound_entity": "Compound::DB01101",
+    "disease_entity": "Disease::UMLS:C0024623",
+    "drugbank_id": "DB01101",
+    "drug_name": "Capecitabine",
+    "umls_cui": "C0024623",
+    "disease_name": "Malignant neoplasm of stomach",
+    "approved_raw_count": 1,
+    "failed_raw_count": 1
+  },
+  {
+    "compound_entity": "Compound::DB01204",
+    "disease_entity": "Disease::UMLS:C0023467",
+    "drugbank_id": "DB01204",
+    "drug_name": "Mitoxantrone",
+    "umls_cui": "C0023467",
+    "disease_name": "Leukemia, Myelocytic, Acute",
+    "approved_raw_count": 1,
+    "failed_raw_count": 1
+  },
+  {
+    "compound_entity": "Compound::DB01234",
+    "disease_entity": "Disease::UMLS:C0024305",
+    "drugbank_id": "DB01234",
+    "drug_name": "Dexamethasone",
+    "umls_cui": "C0024305",
+    "disease_name": "Lymphoma, Non-Hodgkin",
+    "approved_raw_count": 1,
+    "failed_raw_count": 1
+  },
+  {
+    "compound_entity": "Compound::DB01234",
+    "disease_entity": "Disease::UMLS:C0026764",
+    "drugbank_id": "DB01234",
+    "drug_name": "Dexamethasone",
+    "umls_cui": "C0026764",
+    "disease_name": "Multiple Myeloma",
+    "approved_raw_count": 1,
+    "failed_raw_count": 16
+  },
+  {
+    "compound_entity": "Compound::DB01234",
+    "disease_entity": "Disease::UMLS:C0029878",
+    "drugbank_id": "DB01234",
+    "drug_name": "Dexamethasone",
+    "umls_cui": "C0029878",
+    "disease_name": "Otitis Externa",
+    "approved_raw_count": 1,
+    "failed_raw_count": 1
+  },
+  {
+    "compound_entity": "Compound::DB06603",
+    "disease_entity": "Disease::UMLS:C0026764",
+    "drugbank_id": "DB06603",
+    "drug_name": "Panobinostat",
+    "umls_cui": "C0026764",
+    "disease_name": "Multiple Myeloma",
+    "approved_raw_count": 1,
+    "failed_raw_count": 1
+  }
+]

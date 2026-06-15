@@ -1,0 +1,27 @@
+{
+  "stage": "soft_support_feature_build",
+  "decision_split": "valid",
+  "main_truth": "raw_no_injection",
+  "inputs": {
+    "raw": "dataset/setting_a/backbone_candidates/valid_top20_raw.json",
+    "type_filtered_raw": "dataset/setting_a/ontology_control/valid_top20_type_filtered_raw.json",
+    "ontology_raw": "dataset/setting_a/ontology_control/valid_top20_ontology_raw.json",
+    "aligned_evidence": "dataset/setting_a/aligned_evidence/valid_aligned_evidence.json",
+    "type_map": "dataset/setting_b/annotations/type_map.tsv",
+    "schema_rules": "dataset/setting_b/annotations/schema_rules.json",
+    "valid_b_annotations": "dataset/setting_b/contra_checked/valid_b_annotations_contra_checked.json"
+  },
+  "outputs": {
+    "valid_support_features": "dataset/setting_a/support_features/valid_support_features.json"
+  },
+  "summary": {
+    "num_queries": 500,
+    "num_candidates": 10000,
+    "avg_candidates_per_query": 20.0,
+    "type_valid_rate": 1.0,
+    "schema_valid_rate": 1.0,
+    "type_filtered_keep_rate": 1.0,
+    "ontology_keep_rate": 0.4398,
+    "contra_rate": 0.0003
+  }
+}

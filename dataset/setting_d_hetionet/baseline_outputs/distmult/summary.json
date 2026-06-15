@@ -1,0 +1,222 @@
+{
+  "config": {
+    "model_name": "distmult",
+    "task": "(?, CtD, disease)",
+    "candidate_universe": "Compound",
+    "top_k": 20,
+    "gold_injection": false,
+    "epochs": 20,
+    "dim": 128,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "seed": 2026
+  },
+  "train_summary": {
+    "model_name": "distmult",
+    "epochs": 20,
+    "dim": 128,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "runtime_sec": 134.716,
+    "train_log": [
+      {
+        "epoch": 1,
+        "loss": 0.45623944050886417
+      },
+      {
+        "epoch": 2,
+        "loss": 0.10880767582492396
+      },
+      {
+        "epoch": 3,
+        "loss": 0.09381626205010847
+      },
+      {
+        "epoch": 4,
+        "loss": 0.08785263099453666
+      },
+      {
+        "epoch": 5,
+        "loss": 0.08406501419164918
+      },
+      {
+        "epoch": 6,
+        "loss": 0.08084657446904615
+      },
+      {
+        "epoch": 7,
+        "loss": 0.07821251835335384
+      },
+      {
+        "epoch": 8,
+        "loss": 0.07588383829051798
+      },
+      {
+        "epoch": 9,
+        "loss": 0.07350521857088263
+      },
+      {
+        "epoch": 10,
+        "loss": 0.07200391607528384
+      },
+      {
+        "epoch": 11,
+        "loss": 0.0702975519746542
+      },
+      {
+        "epoch": 12,
+        "loss": 0.06882977225563743
+      },
+      {
+        "epoch": 13,
+        "loss": 0.06712228334762833
+      },
+      {
+        "epoch": 14,
+        "loss": 0.06599317427385937
+      },
+      {
+        "epoch": 15,
+        "loss": 0.06480482645332813
+      },
+      {
+        "epoch": 16,
+        "loss": 0.06368256929245862
+      },
+      {
+        "epoch": 17,
+        "loss": 0.06236613005399704
+      },
+      {
+        "epoch": 18,
+        "loss": 0.061649875911799344
+      },
+      {
+        "epoch": 19,
+        "loss": 0.060801407200368966
+      },
+      {
+        "epoch": 20,
+        "loss": 0.05976824325594035
+      }
+    ]
+  },
+  "valid_metrics": {
+    "num_rows": 100,
+    "gold_present_at20": 0.27,
+    "mrr_at20": 0.06791666666666667,
+    "hits1_at20": 0.02,
+    "hits3_at20": 0.06,
+    "hits10_at20": 0.2,
+    "hits20_at20": 0.27,
+    "avg_gold_rank_absent_as_21": 17.44,
+    "gold_rank_21_count": 73,
+    "unique_top1_count": 9,
+    "top1_dominance": 0.56,
+    "top1_most_common": [
+      {
+        "entity": "Dexamethasone",
+        "count": 56
+      },
+      {
+        "entity": "Prednisone",
+        "count": 16
+      },
+      {
+        "entity": "Ramipril",
+        "count": 7
+      },
+      {
+        "entity": "Triamcinolone",
+        "count": 6
+      },
+      {
+        "entity": "Mometasone",
+        "count": 5
+      },
+      {
+        "entity": "Methylprednisolone",
+        "count": 3
+      },
+      {
+        "entity": "Prednisolone",
+        "count": 3
+      },
+      {
+        "entity": "Carboplatin",
+        "count": 3
+      },
+      {
+        "entity": "Echothiophate",
+        "count": 1
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "distmult",
+    "split": "valid"
+  },
+  "test_metrics": {
+    "num_rows": 100,
+    "gold_present_at20": 0.39,
+    "mrr_at20": 0.07193775157590947,
+    "hits1_at20": 0.01,
+    "hits3_at20": 0.05,
+    "hits10_at20": 0.29,
+    "hits20_at20": 0.39,
+    "avg_gold_rank_absent_as_21": 16.22,
+    "gold_rank_21_count": 61,
+    "unique_top1_count": 11,
+    "top1_dominance": 0.55,
+    "top1_most_common": [
+      {
+        "entity": "Dexamethasone",
+        "count": 55
+      },
+      {
+        "entity": "Prednisone",
+        "count": 21
+      },
+      {
+        "entity": "Triamcinolone",
+        "count": 5
+      },
+      {
+        "entity": "Methylprednisolone",
+        "count": 4
+      },
+      {
+        "entity": "Ramipril",
+        "count": 3
+      },
+      {
+        "entity": "Prednisolone",
+        "count": 3
+      },
+      {
+        "entity": "Vinblastine",
+        "count": 3
+      },
+      {
+        "entity": "Glyburide",
+        "count": 2
+      },
+      {
+        "entity": "Mometasone",
+        "count": 2
+      },
+      {
+        "entity": "Echothiophate",
+        "count": 1
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "distmult",
+    "split": "test"
+  }
+}

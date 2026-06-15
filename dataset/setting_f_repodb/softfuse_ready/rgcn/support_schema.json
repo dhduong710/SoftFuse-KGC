@@ -1,0 +1,15 @@
+{
+  "setting": "setting_f_repodb",
+  "target_relation": "repoDB::approved_indication::Compound:Disease",
+  "failed_diagnostic_relation": "repoDB::failed_or_suspended::Compound:Disease",
+  "source_model": "rgcn",
+  "positive_evidence_families": [
+    "target_approved",
+    "compound_gene",
+    "gene_gene"
+  ],
+  "diagnostic_or_negative_evidence_families": [
+    "failed_diagnostic"
+  ],
+  "note": "repoDB SoftFuse-ready package. Diseases are repoDB-local UMLS nodes; drug/gene evidence is reused from DRKG where possible."
+}

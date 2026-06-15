@@ -1,0 +1,773 @@
+{
+  "day": 3,
+  "title": "Schema validity check",
+  "inputs": {
+    "candidate_artifact": "dataset/setting_a/ontology_control/test_top20_type_filtered_raw.json",
+    "evidence_artifact": "dataset/setting_a/aligned_evidence/test_aligned_evidence.json",
+    "type_map_tsv": "dataset/setting_b/annotations/type_map.tsv",
+    "fallback_type_json": "dataset/setting_b/annotations/type_map.tsv",
+    "schema_rules_json": "dataset/setting_b/annotations/schema_rules.json",
+    "path_templates_yaml": "dataset/setting_b/annotations/path_templates.yaml",
+    "id2entity_path": "dataset/setting_a/drkgc_json/id2entity.pkl",
+    "id2relation_path": "dataset/setting_a/drkgc_json/id2relation.pkl"
+  },
+  "candidate_validity": {
+    "total_queries_checked": 500,
+    "total_candidates_checked": 10000,
+    "candidate_type_violations": 0,
+    "unknown_candidate_types": 0
+  },
+  "evidence_validity": {
+    "total_queries_checked": 500,
+    "total_evidence_triples_checked": 29959,
+    "valid_evidence_triples": 19155,
+    "invalid_evidence_triples": 10804,
+    "missing_relation_rules": 0,
+    "incomplete_relation_rules": 0,
+    "top_invalid_evidence_patterns": [
+      [
+        "Disease -[indication]-> Drug",
+        6606
+      ],
+      [
+        "Disease -[associated_with]-> Protein_or_Gene",
+        3461
+      ],
+      [
+        "Protein_or_Gene -[target]-> Drug",
+        737
+      ]
+    ],
+    "sample_invalid_evidence": [
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "streptococcal infection",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "aspiration pneumonia (disease)",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "streptococcal toxic-shock syndrome",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "anthrax infection",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "aspiration pneumonia (disease)",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "streptococcal infection",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "pneumonitis",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "staphylococcus aureus infection",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "aspiration pneumonia (disease)",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "aspiration pneumonia (disease)",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "pharyngitis",
+        "relation_name": "indication",
+        "tail_name": "Phenoxymethylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "infectious otitis media",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "anthrax infection",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "anthrax infection",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "anthrax infection",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "aspiration pneumonia (disease)",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "common cold",
+        "relation_name": "indication",
+        "tail_name": "Phenoxymethylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "infectious otitis media",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "pharyngitis",
+        "relation_name": "indication",
+        "tail_name": "Phenoxymethylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "infectious otitis media",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "aspiration pneumonia (disease)",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "staphylococcus aureus infection",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "head_name": "lung abscess (disease)",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "systemic lupus erythematosus (disease)",
+        "relation_name": "associated_with",
+        "tail_name": "PRL",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "systemic lupus erythematosus (disease)",
+        "relation_name": "associated_with",
+        "tail_name": "PRL",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "systemic lupus erythematosus (disease)",
+        "relation_name": "associated_with",
+        "tail_name": "PRL",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "systemic lupus erythematosus (disease)",
+        "relation_name": "associated_with",
+        "tail_name": "PRL",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "systemic lupus erythematosus (disease)",
+        "relation_name": "associated_with",
+        "tail_name": "PRL",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "pediatric systemic lupus erythematosus",
+        "relation_name": "associated_with",
+        "tail_name": "PRL",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "systemic lupus erythematosus (disease)",
+        "relation_name": "associated_with",
+        "tail_name": "PRL",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "systemic lupus erythematosus (disease)",
+        "relation_name": "associated_with",
+        "tail_name": "PRL",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "systemic lupus erythematosus (disease)",
+        "relation_name": "associated_with",
+        "tail_name": "PRL",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "neuroblastoma",
+        "relation_name": "associated_with",
+        "tail_name": "GNRH1",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "HTR1A",
+        "relation_name": "target",
+        "tail_name": "Bromocriptine",
+        "head_type": "Protein_or_Gene",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "non-Hodgkin lymphoma",
+        "relation_name": "associated_with",
+        "tail_name": "STAT5B",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "non-Hodgkin lymphoma",
+        "relation_name": "associated_with",
+        "tail_name": "STAT5B",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "neuroblastoma",
+        "relation_name": "associated_with",
+        "tail_name": "GNRH1",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "primary cutaneous T-cell lymphoma",
+        "relation_name": "associated_with",
+        "tail_name": "STAT5B",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "non-Hodgkin lymphoma",
+        "relation_name": "associated_with",
+        "tail_name": "STAT5B",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "granulomatous slack skin disease",
+        "relation_name": "associated_with",
+        "tail_name": "STAT5B",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "acute lymphoblastic leukemia (disease)",
+        "relation_name": "associated_with",
+        "tail_name": "ABL1",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "hereditary breast ovarian cancer syndrome",
+        "relation_name": "associated_with",
+        "tail_name": "ABL1",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "acquired hyperprolactinemia",
+        "relation_name": "associated_with",
+        "tail_name": "DRD2",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "acquired hyperprolactinemia",
+        "head_name": "DRD2",
+        "relation_name": "target",
+        "tail_name": "Amphetamine",
+        "head_type": "Protein_or_Gene",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "allergic rhinitis",
+        "head_name": "atopic conjunctivitis",
+        "relation_name": "indication",
+        "tail_name": "Phenyltoloxamine",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "allergic rhinitis",
+        "head_name": "bronchitis",
+        "relation_name": "indication",
+        "tail_name": "Ipratropium",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "allergic rhinitis",
+        "head_name": "vasomotor rhinitis",
+        "relation_name": "indication",
+        "tail_name": "Guaifenesin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "allergic rhinitis",
+        "head_name": "vasomotor rhinitis",
+        "relation_name": "indication",
+        "tail_name": "Guaifenesin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "allergic rhinitis",
+        "head_name": "bronchitis",
+        "relation_name": "indication",
+        "tail_name": "Ipratropium",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "allergic rhinitis",
+        "head_name": "uveitis",
+        "relation_name": "indication",
+        "tail_name": "Prednisolone",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      }
+    ]
+  },
+  "path_validity": {
+    "valid_mechanism_templates_loaded": 2,
+    "invalid_explanation_relations_loaded": 0,
+    "total_path_sequences_checked": 28099,
+    "valid_mechanism_path_sequences": 185,
+    "direct_task_edge_sequences": 2126,
+    "blocked_explanation_sequences": 0,
+    "unsupported_path_sequences": 25788,
+    "queries_with_no_candidate_to_query_path": 14,
+    "top_unsupported_path_patterns": [
+      [
+        "indication -> indication -> indication",
+        14870
+      ],
+      [
+        "indication -> associated_with -> associated_with",
+        10846
+      ],
+      [
+        "target -> target -> indication",
+        72
+      ]
+    ],
+    "sample_unsupported_paths": [
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Fusidic acid",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Betamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Betamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Betamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Betamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Betamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Betamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Betamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Betamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Betamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "lung abscess (disease)",
+        "candidate_name": "Betamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      }
+    ]
+  },
+  "lookup_source_breakdown": {
+    "type_map.tsv": 69918
+  }
+}

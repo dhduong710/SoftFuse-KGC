@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-05-12T01:21:27.347092+00:00",
+  "target_relation": "repoDB::approved_indication::Compound:Disease",
+  "num_unique_target_edges": 6677,
+  "num_unique_compounds": 1519,
+  "num_unique_diseases": 1229,
+  "recommended_split": {
+    "decision": "SPLIT_SIZE_FEASIBLE",
+    "recommended_valid_size": 500,
+    "recommended_test_size": 500,
+    "recommended_train_size": 5677,
+    "attempts": [
+      {
+        "requested_valid_size": 500,
+        "requested_test_size": 500,
+        "requested_holdout": 1000,
+        "feasible": true,
+        "attempt_used": 0,
+        "actual_holdout_possible": 1000,
+        "projected_train_size": 5677,
+        "projected_valid_size": 500,
+        "projected_test_size": 500,
+        "coverage_policy": "valid/test drugs and diseases remain in train approved target relation"
+      }
+    ]
+  }
+}

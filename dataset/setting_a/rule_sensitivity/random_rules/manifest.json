@@ -1,0 +1,45 @@
+{
+  "variant": "random_rules",
+  "created_at": "2026-05-02T03:46:55",
+  "source_main": "dataset/setting_a/29_n2_e2e_infer_ready/retrieval_main",
+  "source_soft": "dataset/setting_a/29_n2_e2e_infer_ready/soft_support_raw",
+  "splits": {
+    "train": {
+      "split": "train",
+      "num_rows": 8388,
+      "avg_candidate_len": 20.0,
+      "min_candidate_len": 20,
+      "max_candidate_len": 20,
+      "avg_subgraph_size": 58.917024,
+      "min_subgraph_size": 2,
+      "max_subgraph_size": 76,
+      "empty_subgraph_rows": 0
+    },
+    "valid": {
+      "split": "valid",
+      "num_rows": 500,
+      "avg_candidate_len": 20.0,
+      "min_candidate_len": 20,
+      "max_candidate_len": 20,
+      "avg_subgraph_size": 32.556,
+      "min_subgraph_size": 24,
+      "max_subgraph_size": 51,
+      "empty_subgraph_rows": 0
+    },
+    "test": {
+      "split": "test",
+      "num_rows": 500,
+      "avg_candidate_len": 20.0,
+      "min_candidate_len": 20,
+      "max_candidate_len": 20,
+      "avg_subgraph_size": 32.34,
+      "min_subgraph_size": 24,
+      "max_subgraph_size": 51,
+      "empty_subgraph_rows": 0
+    }
+  },
+  "gold_injection": false,
+  "reviewer_safe_policy": "RR=1/rank if rank<=20 else 0",
+  "may_replace_week24_main_result": false,
+  "definition": "Negative-control graph package. Candidate order is retrieval_main; subgraph is coverage-preserving random sample from soft_support_raw source subgraph under main budget."
+}

@@ -1,0 +1,353 @@
+{
+  "created_at": "2026-05-11T16:07:06.096351+00:00",
+  "setting": "setting_e_drkg",
+  "dataset": "DRKG",
+  "archive": {
+    "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/drkg.tar.gz",
+    "size_mb": 206.614
+  },
+  "detected_paths": {
+    "drkg_tsv": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/drkg.tsv",
+    "entity2src_tsv": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/entity2src.tsv",
+    "relation_glossary_tsv": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/relation_glossary.tsv"
+  },
+  "raw_files_sample": [
+    {
+      "relative_path": "._drkg.tsv",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/._drkg.tsv",
+      "size_mb": 0.0
+    },
+    {
+      "relative_path": "._embed",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/._embed",
+      "size_mb": 0.0
+    },
+    {
+      "relative_path": "._entity2src.tsv",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/._entity2src.tsv",
+      "size_mb": 0.0
+    },
+    {
+      "relative_path": "._relation_glossary.tsv",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/._relation_glossary.tsv",
+      "size_mb": 0.0
+    },
+    {
+      "relative_path": ".extract_done",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/.extract_done",
+      "size_mb": 0.0
+    },
+    {
+      "relative_path": "drkg.tsv",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/drkg.tsv",
+      "size_mb": 366.147
+    },
+    {
+      "relative_path": "embed/._entities.tsv",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/._entities.tsv",
+      "size_mb": 0.0
+    },
+    {
+      "relative_path": "embed/._relations.tsv",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/._relations.tsv",
+      "size_mb": 0.0
+    },
+    {
+      "relative_path": "embed/DRKG_TransE_l2_entity.npy",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/DRKG_TransE_l2_entity.npy",
+      "size_mb": 148.374
+    },
+    {
+      "relative_path": "embed/DRKG_TransE_l2_relation.npy",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/DRKG_TransE_l2_relation.npy",
+      "size_mb": 0.163
+    },
+    {
+      "relative_path": "embed/Readme.md",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/Readme.md",
+      "size_mb": 0.0
+    },
+    {
+      "relative_path": "embed/entities.tsv",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/entities.tsv",
+      "size_mb": 2.326
+    },
+    {
+      "relative_path": "embed/mol_contextpred.npy",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/mol_contextpred.npy",
+      "size_mb": 10.079
+    },
+    {
+      "relative_path": "embed/mol_edgepred.npy",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/mol_edgepred.npy",
+      "size_mb": 10.079
+    },
+    {
+      "relative_path": "embed/mol_infomax.npy",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/mol_infomax.npy",
+      "size_mb": 10.079
+    },
+    {
+      "relative_path": "embed/mol_masking.npy",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/mol_masking.npy",
+      "size_mb": 10.079
+    },
+    {
+      "relative_path": "embed/relations.tsv",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/relations.tsv",
+      "size_mb": 0.003
+    },
+    {
+      "relative_path": "entity2src.tsv",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/entity2src.tsv",
+      "size_mb": 11.687
+    },
+    {
+      "relative_path": "relation_glossary.tsv",
+      "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/relation_glossary.tsv",
+      "size_mb": 0.013
+    }
+  ],
+  "expected_top_files": [
+    "drkg.tsv",
+    "entity2src.tsv",
+    "relation_glossary.tsv",
+    "embed/DRKG_TransE_l2_entity.npy",
+    "embed/DRKG_TransE_l2_relation.npy",
+    "embed/entities.tsv",
+    "embed/relations.tsv"
+  ],
+  "entity2src_sample": {
+    "found": true,
+    "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/entity2src.tsv",
+    "size_mb": 11.687,
+    "num_rows_including_first": 97238,
+    "first_row_or_header": [
+      "Gene::",
+      "[IntAct] https://www.ebi.ac.uk/intact/"
+    ],
+    "sample_rows": [
+      [
+        "Gene::",
+        "[IntAct] https://www.ebi.ac.uk/intact/"
+      ],
+      [
+        "Gene::1",
+        "[Bibliograpic sources] Collection of datasources from paper: https://www.biorxiv.org/content/10.1101/2020.03.11.986836v1.full.pdf",
+        "[Drugbank] https://www.drugbank.ca/atc",
+        "[STRING] https://string-db.org/",
+        "[Hetionet] Biomedical knowledge graph https://het.io/about/",
+        "[GNBR] Data extracted from biomedical texts see https://www.ncbi.nlm.nih.gov/pubmed/29490008/",
+        "[IntAct] https://www.ebi.ac.uk/intact/"
+      ],
+      [
+        "Gene::10",
+        "[Bibliograpic sources] Collection of datasources from paper: https://www.biorxiv.org/content/10.1101/2020.03.11.986836v1.full.pdf",
+        "[Drugbank] https://www.drugbank.ca/atc",
+        "[STRING] https://string-db.org/",
+        "[DGIdb] http://www.dgidb.org/",
+        "[Hetionet] Biomedical knowledge graph https://het.io/about/",
+        "[GNBR] Data extracted from biomedical texts see https://www.ncbi.nlm.nih.gov/pubmed/29490008/",
+        "[IntAct] https://www.ebi.ac.uk/intact/"
+      ],
+      [
+        "Gene::100",
+        "[Bibliograpic sources] Collection of datasources from paper: https://www.biorxiv.org/content/10.1101/2020.03.11.986836v1.full.pdf",
+        "[Drugbank] https://www.drugbank.ca/atc",
+        "[STRING] https://string-db.org/",
+        "[DGIdb] http://www.dgidb.org/",
+        "[Hetionet] Biomedical knowledge graph https://het.io/about/",
+        "[GNBR] Data extracted from biomedical texts see https://www.ncbi.nlm.nih.gov/pubmed/29490008/",
+        "[IntAct] https://www.ebi.ac.uk/intact/"
+      ],
+      [
+        "Gene::1000",
+        "[Hetionet] Biomedical knowledge graph https://het.io/about/",
+        "[STRING] https://string-db.org/",
+        "[GNBR] Data extracted from biomedical texts see https://www.ncbi.nlm.nih.gov/pubmed/29490008/",
+        "[IntAct] https://www.ebi.ac.uk/intact/"
+      ],
+      [
+        "Gene::10000",
+        "[STRING] https://string-db.org/",
+        "[DGIdb] http://www.dgidb.org/",
+        "[Hetionet] Biomedical knowledge graph https://het.io/about/",
+        "[GNBR] Data extracted from biomedical texts see https://www.ncbi.nlm.nih.gov/pubmed/29490008/",
+        "[IntAct] https://www.ebi.ac.uk/intact/"
+      ],
+      [
+        "Gene::100000711",
+        "[GNBR] Data extracted from biomedical texts see https://www.ncbi.nlm.nih.gov/pubmed/29490008/"
+      ],
+      [
+        "Gene::100000800",
+        "[GNBR] Data extracted from biomedical texts see https://www.ncbi.nlm.nih.gov/pubmed/29490008/"
+      ],
+      [
+        "Gene::100001532",
+        "[GNBR] Data extracted from biomedical texts see https://www.ncbi.nlm.nih.gov/pubmed/29490008/"
+      ],
+      [
+        "Gene::100002946",
+        "[GNBR] Data extracted from biomedical texts see https://www.ncbi.nlm.nih.gov/pubmed/29490008/"
+      ]
+    ]
+  },
+  "relation_glossary_sample": {
+    "found": true,
+    "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/relation_glossary.tsv",
+    "size_mb": 0.013,
+    "num_rows_including_first": 108,
+    "first_row_or_header": [
+      "Relation-name",
+      "Data-source",
+      "Connected entity-types",
+      "Interaction-type",
+      "Description",
+      "Reference for the description"
+    ],
+    "sample_rows": [
+      [
+        "Relation-name",
+        "Data-source",
+        "Connected entity-types",
+        "Interaction-type",
+        "Description",
+        "Reference for the description"
+      ],
+      [
+        "DGIDB::ACTIVATOR::Gene:Compound",
+        "DGIDB",
+        "Compound:Gene",
+        "activation",
+        "An activator interaction is when a drug activates a biological response from a target, although the mechanism by which it does so may not be understood.",
+        "http://www.dgidb.org/getting_started"
+      ],
+      [
+        "DGIDB::AGONIST::Gene:Compound",
+        "DGIDB",
+        "Compound:Gene",
+        "agonism",
+        "An agonist interaction occurs when a drug binds to a target receptor and activates the receptor to produce a biological response.",
+        "http://www.dgidb.org/getting_started"
+      ],
+      [
+        "DGIDB::ALLOSTERIC MODULATOR::Gene:Compound",
+        "DGIDB",
+        "Compound:Gene",
+        "allosteric modulation",
+        "An allosteric modulator interaction occurs when drugs exert their effects on their protein targets via a different binding site than the natural (orthosteric) ligand site.",
+        "http://www.dgidb.org/getting_started"
+      ],
+      [
+        "DGIDB::ANTAGONIST::Gene:Compound",
+        "DGIDB",
+        "Compound:Gene",
+        "antagonism",
+        "An antagonist interaction occurs when a drug blocks or dampens agonist-mediated responses rather than provoking a biological response itself upon binding to a target receptor.",
+        "http://www.dgidb.org/getting_started"
+      ],
+      [
+        "DGIDB::ANTIBODY::Gene:Compound",
+        "DGIDB",
+        "Compound:Gene",
+        "antibody",
+        "An antibody interaction occurs when an antibody drug specifically binds the target molecule.",
+        "http://www.dgidb.org/getting_started"
+      ],
+      [
+        "DGIDB::BINDER::Gene:Compound",
+        "DGIDB",
+        "Compound:Gene",
+        "binding",
+        "A binder interaction has drugs physically binding to their target.",
+        "http://www.dgidb.org/getting_started"
+      ],
+      [
+        "DGIDB::BLOCKER::Gene:Compound",
+        "DGIDB",
+        "Compound:Gene",
+        "blocking",
+        "Antagonist interactions are sometimes referred to as blocker interactions; examples include alpha blockers, beta blockers, and calcium channel blockers.",
+        "http://www.dgidb.org/getting_started"
+      ],
+      [
+        "DGIDB::CHANNEL BLOCKER::Gene:Compound",
+        "DGIDB",
+        "Compound:Gene",
+        "channel blocking",
+        "",
+        "http://www.dgidb.org/getting_started"
+      ],
+      [
+        "DGIDB::INHIBITOR::Gene:Compound",
+        "DGIDB",
+        "Compound:Gene",
+        "inhibition",
+        "In inhibitor interactions, the drug binds to a target and decreases its expression or activity. Most interactions of this class are enzyme inhibitors, which bind an enzyme to reduce enzyme activity.",
+        "http://www.dgidb.org/getting_started"
+      ]
+    ]
+  },
+  "embed_inventory": {
+    "found": true,
+    "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed",
+    "files": [
+      {
+        "relative_path": "._entities.tsv",
+        "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/._entities.tsv",
+        "size_mb": 0.0
+      },
+      {
+        "relative_path": "._relations.tsv",
+        "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/._relations.tsv",
+        "size_mb": 0.0
+      },
+      {
+        "relative_path": "DRKG_TransE_l2_entity.npy",
+        "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/DRKG_TransE_l2_entity.npy",
+        "size_mb": 148.374
+      },
+      {
+        "relative_path": "DRKG_TransE_l2_relation.npy",
+        "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/DRKG_TransE_l2_relation.npy",
+        "size_mb": 0.163
+      },
+      {
+        "relative_path": "Readme.md",
+        "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/Readme.md",
+        "size_mb": 0.0
+      },
+      {
+        "relative_path": "entities.tsv",
+        "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/entities.tsv",
+        "size_mb": 2.326
+      },
+      {
+        "relative_path": "mol_contextpred.npy",
+        "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/mol_contextpred.npy",
+        "size_mb": 10.079
+      },
+      {
+        "relative_path": "mol_edgepred.npy",
+        "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/mol_edgepred.npy",
+        "size_mb": 10.079
+      },
+      {
+        "relative_path": "mol_infomax.npy",
+        "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/mol_infomax.npy",
+        "size_mb": 10.079
+      },
+      {
+        "relative_path": "mol_masking.npy",
+        "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/mol_masking.npy",
+        "size_mb": 10.079
+      },
+      {
+        "relative_path": "relations.tsv",
+        "absolute_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_e_drkg/raw_inventory/extracted/embed/relations.tsv",
+        "size_mb": 0.003
+      }
+    ]
+  }
+}

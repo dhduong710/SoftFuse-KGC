@@ -1,0 +1,19 @@
+{
+  "model_name": "hrgat",
+  "task": "(?, T, disease)",
+  "candidate_universe": "drug_only_from_train_T_heads",
+  "top_k": 20,
+  "gold_injection": false,
+  "dim": 128,
+  "gnn_layers": 2,
+  "gnn_epochs": 40,
+  "gnn_sample_per_epoch": 32768,
+  "lr": 0.001,
+  "weight_decay": 1e-05,
+  "dropout": 0.1,
+  "seed": 2025,
+  "num_entities": 7247,
+  "num_relations": 28,
+  "num_train_enriched_triples": 386768,
+  "runtime_sec": 2.802
+}

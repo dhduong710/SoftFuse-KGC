@@ -1,0 +1,40 @@
+entity	raw_type	raw_coarse	override_type	override_reason
+Acetaminophen			Drug	valid_test_candidate
+Ammonia			Drug	valid_test_candidate
+Amoxicillin			Drug	valid_test_candidate
+Burkitt lymphoma			Disease	split_relation_tail
+Caffeine			Drug	valid_test_candidate
+Calcifediol			Drug	valid_test_candidate
+Ciprofloxacin			Drug	valid_test_candidate
+Clarithromycin			Drug	valid_test_candidate
+Clostridium difficile colitis			Disease	split_relation_tail
+Cryptococcal meningitis			Disease	split_relation_tail
+Cysteine			Drug	valid_test_candidate
+Doxorubicin			Drug	valid_test_candidate
+Doxycycline			Drug	valid_test_candidate
+Estradiol			Drug	valid_test_candidate
+Estrone			Drug	valid_test_candidate
+Ewing sarcoma			Disease	split_relation_tail
+Fluconazole			Drug	valid_test_candidate
+Formaldehyde			Drug	valid_test_candidate
+Graves disease			Disease	split_relation_tail
+Hashimoto thyroiditis			Disease	split_relation_tail
+Ibuprofen			Drug	valid_test_candidate
+Iron			Drug	valid_test_candidate
+Levofloxacin			Drug	valid_test_candidate
+Lincomycin			Drug	valid_test_candidate
+Lutein			Drug	valid_test_candidate
+MCC			Protein_or_Gene	graph_rule:associated_with:head
+Malathion			Drug	valid_test_candidate
+Moxifloxacin			Drug	valid_test_candidate
+Nicotine			Drug	valid_test_candidate
+Nitric Oxide			Drug	valid_test_candidate
+Permethrin			Drug	valid_test_candidate
+Phenol			Drug	valid_test_candidate
+Progesterone			Drug	valid_test_candidate
+Pyrimethamine			Drug	valid_test_candidate
+Testosterone			Drug	valid_test_candidate
+Thiabendazole			Drug	valid_test_candidate
+Vitamin A			Drug	valid_test_candidate
+Vitamin E			Drug	valid_test_candidate
+Warfarin			Drug	valid_test_candidate

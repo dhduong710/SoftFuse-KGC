@@ -1,0 +1,306 @@
+{
+  "config": {
+    "model_name": "complex",
+    "task": "(?, repoDB_approved_indication, disease)",
+    "candidate_universe": "Compound",
+    "top_k": 20,
+    "gold_injection": false,
+    "epochs": 40,
+    "dim": 128,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "seed": 2028
+  },
+  "train_summary": {
+    "model_name": "complex",
+    "epochs": 40,
+    "dim": 128,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "runtime_sec": 12.578,
+    "train_log": [
+      {
+        "epoch": 1,
+        "loss": 0.9999924768572268
+      },
+      {
+        "epoch": 2,
+        "loss": 0.9990438041479691
+      },
+      {
+        "epoch": 3,
+        "loss": 0.9973106747088225
+      },
+      {
+        "epoch": 4,
+        "loss": 0.9924753904342651
+      },
+      {
+        "epoch": 5,
+        "loss": 0.9789914618367734
+      },
+      {
+        "epoch": 6,
+        "loss": 0.9452455639839172
+      },
+      {
+        "epoch": 7,
+        "loss": 0.8727649398471998
+      },
+      {
+        "epoch": 8,
+        "loss": 0.7488047817479009
+      },
+      {
+        "epoch": 9,
+        "loss": 0.6069294240163721
+      },
+      {
+        "epoch": 10,
+        "loss": 0.4561369445012963
+      },
+      {
+        "epoch": 11,
+        "loss": 0.3195365926493769
+      },
+      {
+        "epoch": 12,
+        "loss": 0.22060839183952496
+      },
+      {
+        "epoch": 13,
+        "loss": 0.15509144702683325
+      },
+      {
+        "epoch": 14,
+        "loss": 0.1133884402072948
+      },
+      {
+        "epoch": 15,
+        "loss": 0.08399333675270496
+      },
+      {
+        "epoch": 16,
+        "loss": 0.06729245801334796
+      },
+      {
+        "epoch": 17,
+        "loss": 0.05476961544026499
+      },
+      {
+        "epoch": 18,
+        "loss": 0.04677274142918379
+      },
+      {
+        "epoch": 19,
+        "loss": 0.03997478617922119
+      },
+      {
+        "epoch": 20,
+        "loss": 0.03653632233972135
+      },
+      {
+        "epoch": 21,
+        "loss": 0.032055774298699005
+      },
+      {
+        "epoch": 22,
+        "loss": 0.027628997178829235
+      },
+      {
+        "epoch": 23,
+        "loss": 0.027467976607706234
+      },
+      {
+        "epoch": 24,
+        "loss": 0.024888405738317448
+      },
+      {
+        "epoch": 25,
+        "loss": 0.023328222658323204
+      },
+      {
+        "epoch": 26,
+        "loss": 0.021866797348079475
+      },
+      {
+        "epoch": 27,
+        "loss": 0.02177059002544569
+      },
+      {
+        "epoch": 28,
+        "loss": 0.020465279321955597
+      },
+      {
+        "epoch": 29,
+        "loss": 0.01965048807956602
+      },
+      {
+        "epoch": 30,
+        "loss": 0.020059712555097496
+      },
+      {
+        "epoch": 31,
+        "loss": 0.01876477220946032
+      },
+      {
+        "epoch": 32,
+        "loss": 0.017864910845199356
+      },
+      {
+        "epoch": 33,
+        "loss": 0.016730474591579125
+      },
+      {
+        "epoch": 34,
+        "loss": 0.01679878827670346
+      },
+      {
+        "epoch": 35,
+        "loss": 0.016264163160129734
+      },
+      {
+        "epoch": 36,
+        "loss": 0.016147669566714245
+      },
+      {
+        "epoch": 37,
+        "loss": 0.015973448550895504
+      },
+      {
+        "epoch": 38,
+        "loss": 0.01572488337431265
+      },
+      {
+        "epoch": 39,
+        "loss": 0.014357177419183046
+      },
+      {
+        "epoch": 40,
+        "loss": 0.014511866252059523
+      }
+    ]
+  },
+  "valid_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.54,
+    "mrr_at20": 0.08764368759035943,
+    "hits1_at20": 0.004,
+    "hits3_at20": 0.064,
+    "hits10_at20": 0.35,
+    "hits20_at20": 0.54,
+    "avg_gold_rank_absent_as_21": 14.61,
+    "gold_rank_21_count": 230,
+    "unique_top1_count": 141,
+    "top1_dominance": 0.106,
+    "top1_most_common": [
+      {
+        "entity": "Compound::DB00860",
+        "count": 53
+      },
+      {
+        "entity": "Compound::DB02703",
+        "count": 48
+      },
+      {
+        "entity": "Compound::DB00366",
+        "count": 34
+      },
+      {
+        "entity": "Compound::DB00415",
+        "count": 28
+      },
+      {
+        "entity": "Compound::DB01212",
+        "count": 17
+      },
+      {
+        "entity": "Compound::DB01165",
+        "count": 16
+      },
+      {
+        "entity": "Compound::DB00443",
+        "count": 15
+      },
+      {
+        "entity": "Compound::DB01017",
+        "count": 13
+      },
+      {
+        "entity": "Compound::DB00252",
+        "count": 10
+      },
+      {
+        "entity": "Compound::DB00741",
+        "count": 9
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "complex",
+    "split": "valid"
+  },
+  "test_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.502,
+    "mrr_at20": 0.08364835522234902,
+    "hits1_at20": 0.004,
+    "hits3_at20": 0.076,
+    "hits10_at20": 0.312,
+    "hits20_at20": 0.502,
+    "avg_gold_rank_absent_as_21": 15.092,
+    "gold_rank_21_count": 249,
+    "unique_top1_count": 140,
+    "top1_dominance": 0.124,
+    "top1_most_common": [
+      {
+        "entity": "Compound::DB00860",
+        "count": 62
+      },
+      {
+        "entity": "Compound::DB02703",
+        "count": 53
+      },
+      {
+        "entity": "Compound::DB00366",
+        "count": 35
+      },
+      {
+        "entity": "Compound::DB00415",
+        "count": 23
+      },
+      {
+        "entity": "Compound::DB01017",
+        "count": 21
+      },
+      {
+        "entity": "Compound::DB01212",
+        "count": 21
+      },
+      {
+        "entity": "Compound::DB01165",
+        "count": 12
+      },
+      {
+        "entity": "Compound::DB01197",
+        "count": 10
+      },
+      {
+        "entity": "Compound::DB00620",
+        "count": 9
+      },
+      {
+        "entity": "Compound::DB00741",
+        "count": 9
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "complex",
+    "split": "test"
+  }
+}

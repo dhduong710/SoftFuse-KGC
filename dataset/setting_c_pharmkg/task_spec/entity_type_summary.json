@@ -1,0 +1,15 @@
+{
+  "construction_rule": {
+    "drug_or_chemical": "entities appearing as head in relation T",
+    "disease": "entities appearing as tail in relation T",
+    "ambiguous": "entities appearing as both head and tail in relation T",
+    "unknown_or_other": "all remaining entities in PharmKG-8k splits"
+  },
+  "num_total_entities_seen": 7262,
+  "num_drug_or_chemical_from_T_head": 1370,
+  "num_disease_from_T_tail": 812,
+  "num_ambiguous_drug_and_disease": 0,
+  "num_unknown_or_other": 5080,
+  "ambiguous_examples": [],
+  "warning": "This is a preliminary type map inferred from relation T direction. It should be reported as a task-specific candidate/query type map, not as the original PharmKG full entity ontology."
+}

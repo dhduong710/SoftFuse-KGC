@@ -1,0 +1,373 @@
+{
+  "created_at": "2026-05-11T15:26:05.660225+00:00",
+  "decision": "DAY6_HETIONET_FUZZY_RETRIEVAL_READY",
+  "setting": "setting_d_hetionet",
+  "dataset": "Hetionet v1.0",
+  "variant_name": "fuzzy_retrieval_main_hetionet",
+  "params": {
+    "variant_name": "fuzzy_retrieval_main_hetionet",
+    "retain_ratio": 0.55,
+    "min_keep": 28,
+    "max_keep": 48,
+    "band_top": 1.0,
+    "band_mid": 0.6,
+    "band_tail": 0.25,
+    "touch_candidate": 0.35,
+    "touch_query": 0.1,
+    "top_candidate_bonus": 0.05,
+    "family_compound_gene": 0.3,
+    "family_disease_gene": 0.3,
+    "family_gene_gene": 0.2,
+    "family_direct": 0.05,
+    "family_other": 0.05,
+    "direct_shortcut_penalty": 0.5,
+    "density_weight": 0.05
+  },
+  "soft_metrics": {
+    "train": {
+      "num_rows": 555,
+      "gold_present_at20": 1.0,
+      "mrr_at20": 0.09821773490504142,
+      "hits1_at20": 0.010810810810810811,
+      "hits3_at20": 0.03423423423423423,
+      "hits10_at20": 0.2018018018018018,
+      "hits20_at20": 1.0,
+      "rank21_count": 0,
+      "avg_rank_absent_as_21": 14.142342342342342,
+      "unique_top1_count": 16,
+      "top1_dominance": 0.45045045045045046,
+      "top1_most_common": [
+        {
+          "entity": "Dactinomycin",
+          "count": 250
+        },
+        {
+          "entity": "Chlorambucil",
+          "count": 148
+        },
+        {
+          "entity": "Methotrexate",
+          "count": 75
+        },
+        {
+          "entity": "Triamcinolone",
+          "count": 29
+        },
+        {
+          "entity": "Vincristine",
+          "count": 24
+        },
+        {
+          "entity": "Betamethasone",
+          "count": 12
+        },
+        {
+          "entity": "Doxorubicin",
+          "count": 7
+        },
+        {
+          "entity": "Etoposide",
+          "count": 2
+        },
+        {
+          "entity": "Liothyronine",
+          "count": 1
+        },
+        {
+          "entity": "Levothyroxine",
+          "count": 1
+        }
+      ],
+      "avg_subgraph_size": 80.0,
+      "min_subgraph_size": 80,
+      "max_subgraph_size": 80
+    },
+    "valid": {
+      "num_rows": 100,
+      "gold_present_at20": 0.43,
+      "mrr_at20": 0.10336868115544587,
+      "hits1_at20": 0.05,
+      "hits3_at20": 0.09,
+      "hits10_at20": 0.24,
+      "hits20_at20": 0.43,
+      "rank21_count": 57,
+      "avg_rank_absent_as_21": 15.9,
+      "unique_top1_count": 6,
+      "top1_dominance": 0.43,
+      "top1_most_common": [
+        {
+          "entity": "Chlorambucil",
+          "count": 43
+        },
+        {
+          "entity": "Vincristine",
+          "count": 30
+        },
+        {
+          "entity": "Dactinomycin",
+          "count": 12
+        },
+        {
+          "entity": "Methotrexate",
+          "count": 10
+        },
+        {
+          "entity": "Triamcinolone",
+          "count": 4
+        },
+        {
+          "entity": "Betamethasone",
+          "count": 1
+        }
+      ],
+      "avg_subgraph_size": 80.0,
+      "min_subgraph_size": 80,
+      "max_subgraph_size": 80
+    },
+    "test": {
+      "num_rows": 100,
+      "gold_present_at20": 0.44,
+      "mrr_at20": 0.09543863489451723,
+      "hits1_at20": 0.01,
+      "hits3_at20": 0.11,
+      "hits10_at20": 0.28,
+      "hits20_at20": 0.44,
+      "rank21_count": 56,
+      "avg_rank_absent_as_21": 15.14,
+      "unique_top1_count": 7,
+      "top1_dominance": 0.37,
+      "top1_most_common": [
+        {
+          "entity": "Chlorambucil",
+          "count": 37
+        },
+        {
+          "entity": "Vincristine",
+          "count": 32
+        },
+        {
+          "entity": "Dactinomycin",
+          "count": 13
+        },
+        {
+          "entity": "Methotrexate",
+          "count": 8
+        },
+        {
+          "entity": "Triamcinolone",
+          "count": 4
+        },
+        {
+          "entity": "Betamethasone",
+          "count": 3
+        },
+        {
+          "entity": "Doxorubicin",
+          "count": 3
+        }
+      ],
+      "avg_subgraph_size": 80.0,
+      "min_subgraph_size": 80,
+      "max_subgraph_size": 80
+    }
+  },
+  "fuzzy_metrics": {
+    "train": {
+      "num_rows": 555,
+      "gold_present_at20": 1.0,
+      "mrr_at20": 0.09821773490504142,
+      "hits1_at20": 0.010810810810810811,
+      "hits3_at20": 0.03423423423423423,
+      "hits10_at20": 0.2018018018018018,
+      "hits20_at20": 1.0,
+      "rank21_count": 0,
+      "avg_rank_absent_as_21": 14.142342342342342,
+      "unique_top1_count": 16,
+      "top1_dominance": 0.45045045045045046,
+      "top1_most_common": [
+        {
+          "entity": "Dactinomycin",
+          "count": 250
+        },
+        {
+          "entity": "Chlorambucil",
+          "count": 148
+        },
+        {
+          "entity": "Methotrexate",
+          "count": 75
+        },
+        {
+          "entity": "Triamcinolone",
+          "count": 29
+        },
+        {
+          "entity": "Vincristine",
+          "count": 24
+        },
+        {
+          "entity": "Betamethasone",
+          "count": 12
+        },
+        {
+          "entity": "Doxorubicin",
+          "count": 7
+        },
+        {
+          "entity": "Etoposide",
+          "count": 2
+        },
+        {
+          "entity": "Liothyronine",
+          "count": 1
+        },
+        {
+          "entity": "Levothyroxine",
+          "count": 1
+        }
+      ],
+      "avg_subgraph_size": 44.0,
+      "min_subgraph_size": 44,
+      "max_subgraph_size": 44
+    },
+    "valid": {
+      "num_rows": 100,
+      "gold_present_at20": 0.43,
+      "mrr_at20": 0.10336868115544587,
+      "hits1_at20": 0.05,
+      "hits3_at20": 0.09,
+      "hits10_at20": 0.24,
+      "hits20_at20": 0.43,
+      "rank21_count": 57,
+      "avg_rank_absent_as_21": 15.9,
+      "unique_top1_count": 6,
+      "top1_dominance": 0.43,
+      "top1_most_common": [
+        {
+          "entity": "Chlorambucil",
+          "count": 43
+        },
+        {
+          "entity": "Vincristine",
+          "count": 30
+        },
+        {
+          "entity": "Dactinomycin",
+          "count": 12
+        },
+        {
+          "entity": "Methotrexate",
+          "count": 10
+        },
+        {
+          "entity": "Triamcinolone",
+          "count": 4
+        },
+        {
+          "entity": "Betamethasone",
+          "count": 1
+        }
+      ],
+      "avg_subgraph_size": 44.0,
+      "min_subgraph_size": 44,
+      "max_subgraph_size": 44
+    },
+    "test": {
+      "num_rows": 100,
+      "gold_present_at20": 0.44,
+      "mrr_at20": 0.09543863489451723,
+      "hits1_at20": 0.01,
+      "hits3_at20": 0.11,
+      "hits10_at20": 0.28,
+      "hits20_at20": 0.44,
+      "rank21_count": 56,
+      "avg_rank_absent_as_21": 15.14,
+      "unique_top1_count": 7,
+      "top1_dominance": 0.37,
+      "top1_most_common": [
+        {
+          "entity": "Chlorambucil",
+          "count": 37
+        },
+        {
+          "entity": "Vincristine",
+          "count": 32
+        },
+        {
+          "entity": "Dactinomycin",
+          "count": 13
+        },
+        {
+          "entity": "Methotrexate",
+          "count": 8
+        },
+        {
+          "entity": "Triamcinolone",
+          "count": 4
+        },
+        {
+          "entity": "Betamethasone",
+          "count": 3
+        },
+        {
+          "entity": "Doxorubicin",
+          "count": 3
+        }
+      ],
+      "avg_subgraph_size": 44.0,
+      "min_subgraph_size": 44,
+      "max_subgraph_size": 44
+    }
+  },
+  "metrics_preserved": {
+    "train": true,
+    "valid": true,
+    "test": true
+  },
+  "audit": {
+    "train": {
+      "split": "train",
+      "num_rows": 555,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_source_subgraph_size": 80.0,
+      "avg_selected_subgraph_size": 44.0,
+      "min_selected_subgraph_size": 44,
+      "max_selected_subgraph_size": 44,
+      "avg_candidate_coverage_preserved_rate": 1.0,
+      "schema_pass": true
+    },
+    "valid": {
+      "split": "valid",
+      "num_rows": 100,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_source_subgraph_size": 80.0,
+      "avg_selected_subgraph_size": 44.0,
+      "min_selected_subgraph_size": 44,
+      "max_selected_subgraph_size": 44,
+      "avg_candidate_coverage_preserved_rate": 1.0,
+      "schema_pass": true
+    },
+    "test": {
+      "split": "test",
+      "num_rows": 100,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_source_subgraph_size": 80.0,
+      "avg_selected_subgraph_size": 44.0,
+      "min_selected_subgraph_size": 44,
+      "max_selected_subgraph_size": 44,
+      "avg_candidate_coverage_preserved_rate": 1.0,
+      "schema_pass": true
+    }
+  },
+  "notes": [
+    "Fuzzy retrieval preserves soft-support candidate order and ranking metrics.",
+    "Only the evidence subgraph is reduced.",
+    "E2E folder is ready for DrKGC-style inference/training."
+  ]
+}

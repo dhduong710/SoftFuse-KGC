@@ -1,0 +1,304 @@
+{
+  "created_at": "2026-05-11T15:19:13.559196+00:00",
+  "decision": "DAY5_HETIONET_SOFT_SUPPORT_READY",
+  "setting": "setting_d_hetionet",
+  "dataset": "Hetionet v1.0",
+  "variant_name": "soft_support_b050_hetionet_main",
+  "formula": "support_score = evidence_positive - direct_penalty * direct_shortcut_penalty - contra_penalty * contradiction_penalty",
+  "params": {
+    "variant_name": "soft_support_b050_hetionet_main",
+    "direct_penalty": 0.5,
+    "contra_penalty": 0.1,
+    "direct_degree_weight": 1.0,
+    "candidate_gene_cap": 120,
+    "disease_gene_cap": 300,
+    "bridge_cap": 30,
+    "shared_norm": 2.0,
+    "bridge_norm": 5.0,
+    "w_shared": 0.7,
+    "w_bridge": 0.2,
+    "w_candidate_touch": 0.05,
+    "w_query_touch": 0.05
+  },
+  "feature_meta": {
+    "compound_gene_rel_ids": [
+      3,
+      5,
+      9
+    ],
+    "disease_gene_rel_ids": [
+      10,
+      11,
+      15
+    ],
+    "gene_gene_rel_ids": [
+      16,
+      17,
+      22
+    ],
+    "direct_rel_ids": [
+      6,
+      8
+    ],
+    "direct_degree_p95": 5.0,
+    "direct_degree_max": 12.0
+  },
+  "raw_metrics": {
+    "train": {
+      "num_rows": 555,
+      "gold_present_at20": 1.0,
+      "mrr_at20": 0.09164908506239774,
+      "hits1_at20": 0.021621621621621623,
+      "hits3_at20": 0.04864864864864865,
+      "hits10_at20": 0.13153153153153152,
+      "hits20_at20": 1.0,
+      "rank21_count": 0,
+      "avg_rank_absent_as_21": 17.63243243243243,
+      "unique_top1_count": 1,
+      "top1_dominance": 1.0,
+      "top1_most_common": [
+        {
+          "entity": "Doxorubicin",
+          "count": 555
+        }
+      ]
+    },
+    "valid": {
+      "num_rows": 100,
+      "gold_present_at20": 0.43,
+      "mrr_at20": 0.057457932375502035,
+      "hits1_at20": 0.01,
+      "hits3_at20": 0.04,
+      "hits10_at20": 0.19,
+      "hits20_at20": 0.43,
+      "rank21_count": 57,
+      "avg_rank_absent_as_21": 17.02,
+      "unique_top1_count": 1,
+      "top1_dominance": 1.0,
+      "top1_most_common": [
+        {
+          "entity": "Doxorubicin",
+          "count": 100
+        }
+      ]
+    },
+    "test": {
+      "num_rows": 100,
+      "gold_present_at20": 0.44,
+      "mrr_at20": 0.09944529326882268,
+      "hits1_at20": 0.04,
+      "hits3_at20": 0.11,
+      "hits10_at20": 0.22,
+      "hits20_at20": 0.44,
+      "rank21_count": 56,
+      "avg_rank_absent_as_21": 16.41,
+      "unique_top1_count": 1,
+      "top1_dominance": 1.0,
+      "top1_most_common": [
+        {
+          "entity": "Doxorubicin",
+          "count": 100
+        }
+      ]
+    }
+  },
+  "soft_metrics": {
+    "train": {
+      "num_rows": 555,
+      "gold_present_at20": 1.0,
+      "mrr_at20": 0.09821773490504142,
+      "hits1_at20": 0.010810810810810811,
+      "hits3_at20": 0.03423423423423423,
+      "hits10_at20": 0.2018018018018018,
+      "hits20_at20": 1.0,
+      "rank21_count": 0,
+      "avg_rank_absent_as_21": 14.142342342342342,
+      "unique_top1_count": 16,
+      "top1_dominance": 0.45045045045045046,
+      "top1_most_common": [
+        {
+          "entity": "Dactinomycin",
+          "count": 250
+        },
+        {
+          "entity": "Chlorambucil",
+          "count": 148
+        },
+        {
+          "entity": "Methotrexate",
+          "count": 75
+        },
+        {
+          "entity": "Triamcinolone",
+          "count": 29
+        },
+        {
+          "entity": "Vincristine",
+          "count": 24
+        },
+        {
+          "entity": "Betamethasone",
+          "count": 12
+        },
+        {
+          "entity": "Doxorubicin",
+          "count": 7
+        },
+        {
+          "entity": "Etoposide",
+          "count": 2
+        },
+        {
+          "entity": "Liothyronine",
+          "count": 1
+        },
+        {
+          "entity": "Levothyroxine",
+          "count": 1
+        }
+      ]
+    },
+    "valid": {
+      "num_rows": 100,
+      "gold_present_at20": 0.43,
+      "mrr_at20": 0.10336868115544587,
+      "hits1_at20": 0.05,
+      "hits3_at20": 0.09,
+      "hits10_at20": 0.24,
+      "hits20_at20": 0.43,
+      "rank21_count": 57,
+      "avg_rank_absent_as_21": 15.9,
+      "unique_top1_count": 6,
+      "top1_dominance": 0.43,
+      "top1_most_common": [
+        {
+          "entity": "Chlorambucil",
+          "count": 43
+        },
+        {
+          "entity": "Vincristine",
+          "count": 30
+        },
+        {
+          "entity": "Dactinomycin",
+          "count": 12
+        },
+        {
+          "entity": "Methotrexate",
+          "count": 10
+        },
+        {
+          "entity": "Triamcinolone",
+          "count": 4
+        },
+        {
+          "entity": "Betamethasone",
+          "count": 1
+        }
+      ]
+    },
+    "test": {
+      "num_rows": 100,
+      "gold_present_at20": 0.44,
+      "mrr_at20": 0.09543863489451723,
+      "hits1_at20": 0.01,
+      "hits3_at20": 0.11,
+      "hits10_at20": 0.28,
+      "hits20_at20": 0.44,
+      "rank21_count": 56,
+      "avg_rank_absent_as_21": 15.14,
+      "unique_top1_count": 7,
+      "top1_dominance": 0.37,
+      "top1_most_common": [
+        {
+          "entity": "Chlorambucil",
+          "count": 37
+        },
+        {
+          "entity": "Vincristine",
+          "count": 32
+        },
+        {
+          "entity": "Dactinomycin",
+          "count": 13
+        },
+        {
+          "entity": "Methotrexate",
+          "count": 8
+        },
+        {
+          "entity": "Triamcinolone",
+          "count": 4
+        },
+        {
+          "entity": "Betamethasone",
+          "count": 3
+        },
+        {
+          "entity": "Doxorubicin",
+          "count": 3
+        }
+      ]
+    }
+  },
+  "change_summary": {
+    "train": {
+      "num_rows": 555,
+      "num_improved_vs_backbone": 357,
+      "num_worsened_vs_backbone": 80,
+      "num_unchanged_vs_backbone": 118,
+      "improved_rate": 0.6432432432432432,
+      "worsened_rate": 0.14414414414414414
+    },
+    "valid": {
+      "num_rows": 100,
+      "num_improved_vs_backbone": 22,
+      "num_worsened_vs_backbone": 17,
+      "num_unchanged_vs_backbone": 61,
+      "improved_rate": 0.22,
+      "worsened_rate": 0.17
+    },
+    "test": {
+      "num_rows": 100,
+      "num_improved_vs_backbone": 23,
+      "num_worsened_vs_backbone": 17,
+      "num_unchanged_vs_backbone": 60,
+      "improved_rate": 0.23,
+      "worsened_rate": 0.17
+    }
+  },
+  "e2e_audit": {
+    "train": {
+      "split": "train",
+      "num_rows": 555,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_subgraph_size": 80.0,
+      "schema_pass": true
+    },
+    "valid": {
+      "split": "valid",
+      "num_rows": 100,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_subgraph_size": 80.0,
+      "schema_pass": true
+    },
+    "test": {
+      "split": "test",
+      "num_rows": 100,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_subgraph_size": 80.0,
+      "schema_pass": true
+    }
+  },
+  "notes": [
+    "Soft support re-ranks only the existing top-20 candidates.",
+    "No valid/test gold injection is performed.",
+    "Soft_support_raw E2E package keeps the Day4 backbone source subgraph and changes candidate order/prompt only."
+  ]
+}

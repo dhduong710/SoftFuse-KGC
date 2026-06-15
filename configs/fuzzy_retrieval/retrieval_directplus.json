@@ -1,0 +1,18 @@
+{
+  "variant_name": "soft_support_fuzzy_retrieval_directplus",
+  "retain_ratio": 0.67,
+  "min_keep": 20,
+  "top_band_weight": 1.0,
+  "mid_band_weight": 0.6,
+  "tail_band_weight": 0.25,
+  "touch_candidate": 0.35,
+  "touch_query": 0.05,
+  "direct_shortcut": -1.0,
+  "contra": -0.1,
+  "density": 0.05,
+  "stage_a_policy": "coverage_pass_best_triple_per_candidate",
+  "notes": [
+    "Stronger-direct-penalty fuzzy retrieval variant.",
+    "Purpose: test whether stronger direct-shortcut penalty reduces shortcut-heavy evidence further while preserving ranking-like proxy."
+  ]
+}

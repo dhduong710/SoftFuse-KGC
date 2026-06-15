@@ -1,0 +1,15 @@
+{
+  "Anatomy": 400,
+  "Atc": 4048,
+  "Biological Process": 11381,
+  "Cellular Component": 1391,
+  "Compound": 24313,
+  "Disease": 5103,
+  "Gene": 39220,
+  "Molecular Function": 2884,
+  "Pathway": 1822,
+  "Pharmacologic Class": 345,
+  "Side Effect": 5701,
+  "Symptom": 415,
+  "Tax": 215
+}

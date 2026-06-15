@@ -1,0 +1,320 @@
+{
+  "created_at": "2026-05-11T17:35:55.292878+00:00",
+  "decision": "DAY7_DRKG_FUZZY_RETRIEVAL_READY",
+  "setting": "setting_e_drkg",
+  "dataset": "DRKG",
+  "source": "rgcn_sweep_selected",
+  "variant_name": "fuzzy_retrieval_main_drkg_rgcn",
+  "params": {
+    "variant_name": "fuzzy_retrieval_main_drkg_rgcn",
+    "retain_ratio": 0.55,
+    "min_keep": 45,
+    "max_keep": 60,
+    "family_min_keep": 3,
+    "band_top": 1.0,
+    "band_mid": 0.6,
+    "band_tail": 0.25,
+    "touch_candidate": 0.35,
+    "touch_query": 0.1,
+    "top_candidate_bonus": 0.05,
+    "family_compound_gene": 0.3,
+    "family_disease_gene": 0.3,
+    "family_gene_gene": 0.2,
+    "family_direct": 0.05,
+    "family_aux_cd": 0.05,
+    "family_other": 0.05,
+    "direct_shortcut_penalty": 0.5,
+    "density_weight": 0.05
+  },
+  "soft_metrics": {
+    "train": {
+      "num_rows": 3968,
+      "gold_present_at20": 1.0,
+      "mrr_at20": 0.08154048220882233,
+      "hits1_at20": 0.01310483870967742,
+      "hits3_at20": 0.03805443548387097,
+      "hits10_at20": 0.10055443548387097,
+      "hits20_at20": 1.0,
+      "rank21_count": 0,
+      "avg_rank_absent_as_21": 17.703125,
+      "unique_top1_count": 5,
+      "top1_dominance": 0.8933971774193549,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB00860",
+          "count": 3545
+        },
+        {
+          "entity": "Compound::DB00635",
+          "count": 176
+        },
+        {
+          "entity": "Compound::DB00620",
+          "count": 155
+        },
+        {
+          "entity": "Compound::DB00959",
+          "count": 61
+        },
+        {
+          "entity": "Compound::DB01234",
+          "count": 31
+        }
+      ],
+      "avg_subgraph_size": 100.0,
+      "min_subgraph_size": 100,
+      "max_subgraph_size": 100
+    },
+    "valid": {
+      "num_rows": 500,
+      "gold_present_at20": 0.218,
+      "mrr_at20": 0.06519144033640938,
+      "hits1_at20": 0.03,
+      "hits3_at20": 0.066,
+      "hits10_at20": 0.168,
+      "hits20_at20": 0.218,
+      "rank21_count": 391,
+      "avg_rank_absent_as_21": 17.918,
+      "unique_top1_count": 5,
+      "top1_dominance": 0.886,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB00860",
+          "count": 443
+        },
+        {
+          "entity": "Compound::DB00635",
+          "count": 21
+        },
+        {
+          "entity": "Compound::DB00620",
+          "count": 21
+        },
+        {
+          "entity": "Compound::DB00959",
+          "count": 11
+        },
+        {
+          "entity": "Compound::DB01234",
+          "count": 4
+        }
+      ],
+      "avg_subgraph_size": 100.0,
+      "min_subgraph_size": 100,
+      "max_subgraph_size": 100
+    },
+    "test": {
+      "num_rows": 500,
+      "gold_present_at20": 0.2,
+      "mrr_at20": 0.04655564774063226,
+      "hits1_at20": 0.014,
+      "hits3_at20": 0.044,
+      "hits10_at20": 0.142,
+      "hits20_at20": 0.2,
+      "rank21_count": 400,
+      "avg_rank_absent_as_21": 18.442,
+      "unique_top1_count": 5,
+      "top1_dominance": 0.878,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB00860",
+          "count": 439
+        },
+        {
+          "entity": "Compound::DB00620",
+          "count": 25
+        },
+        {
+          "entity": "Compound::DB00635",
+          "count": 16
+        },
+        {
+          "entity": "Compound::DB00959",
+          "count": 13
+        },
+        {
+          "entity": "Compound::DB01234",
+          "count": 7
+        }
+      ],
+      "avg_subgraph_size": 100.0,
+      "min_subgraph_size": 100,
+      "max_subgraph_size": 100
+    }
+  },
+  "fuzzy_metrics": {
+    "train": {
+      "num_rows": 3968,
+      "gold_present_at20": 1.0,
+      "mrr_at20": 0.08154048220882233,
+      "hits1_at20": 0.01310483870967742,
+      "hits3_at20": 0.03805443548387097,
+      "hits10_at20": 0.10055443548387097,
+      "hits20_at20": 1.0,
+      "rank21_count": 0,
+      "avg_rank_absent_as_21": 17.703125,
+      "unique_top1_count": 5,
+      "top1_dominance": 0.8933971774193549,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB00860",
+          "count": 3545
+        },
+        {
+          "entity": "Compound::DB00635",
+          "count": 176
+        },
+        {
+          "entity": "Compound::DB00620",
+          "count": 155
+        },
+        {
+          "entity": "Compound::DB00959",
+          "count": 61
+        },
+        {
+          "entity": "Compound::DB01234",
+          "count": 31
+        }
+      ],
+      "avg_subgraph_size": 55.0,
+      "min_subgraph_size": 55,
+      "max_subgraph_size": 55
+    },
+    "valid": {
+      "num_rows": 500,
+      "gold_present_at20": 0.218,
+      "mrr_at20": 0.06519144033640938,
+      "hits1_at20": 0.03,
+      "hits3_at20": 0.066,
+      "hits10_at20": 0.168,
+      "hits20_at20": 0.218,
+      "rank21_count": 391,
+      "avg_rank_absent_as_21": 17.918,
+      "unique_top1_count": 5,
+      "top1_dominance": 0.886,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB00860",
+          "count": 443
+        },
+        {
+          "entity": "Compound::DB00635",
+          "count": 21
+        },
+        {
+          "entity": "Compound::DB00620",
+          "count": 21
+        },
+        {
+          "entity": "Compound::DB00959",
+          "count": 11
+        },
+        {
+          "entity": "Compound::DB01234",
+          "count": 4
+        }
+      ],
+      "avg_subgraph_size": 55.0,
+      "min_subgraph_size": 55,
+      "max_subgraph_size": 55
+    },
+    "test": {
+      "num_rows": 500,
+      "gold_present_at20": 0.2,
+      "mrr_at20": 0.04655564774063226,
+      "hits1_at20": 0.014,
+      "hits3_at20": 0.044,
+      "hits10_at20": 0.142,
+      "hits20_at20": 0.2,
+      "rank21_count": 400,
+      "avg_rank_absent_as_21": 18.442,
+      "unique_top1_count": 5,
+      "top1_dominance": 0.878,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB00860",
+          "count": 439
+        },
+        {
+          "entity": "Compound::DB00620",
+          "count": 25
+        },
+        {
+          "entity": "Compound::DB00635",
+          "count": 16
+        },
+        {
+          "entity": "Compound::DB00959",
+          "count": 13
+        },
+        {
+          "entity": "Compound::DB01234",
+          "count": 7
+        }
+      ],
+      "avg_subgraph_size": 55.0,
+      "min_subgraph_size": 55,
+      "max_subgraph_size": 55
+    }
+  },
+  "metrics_preserved": {
+    "train": true,
+    "valid": true,
+    "test": true
+  },
+  "audit": {
+    "train": {
+      "split": "train",
+      "num_rows": 3968,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_source_subgraph_size": 100.0,
+      "avg_selected_subgraph_size": 55.0,
+      "min_selected_subgraph_size": 55,
+      "max_selected_subgraph_size": 55,
+      "avg_candidate_coverage_preserved_rate": 1.0,
+      "avg_direct_edges_source": 3.5579637096774195,
+      "avg_direct_edges_selected": 2.778225806451613,
+      "schema_pass": true
+    },
+    "valid": {
+      "split": "valid",
+      "num_rows": 500,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_source_subgraph_size": 100.0,
+      "avg_selected_subgraph_size": 55.0,
+      "min_selected_subgraph_size": 55,
+      "max_selected_subgraph_size": 55,
+      "avg_candidate_coverage_preserved_rate": 1.0,
+      "avg_direct_edges_source": 2.954,
+      "avg_direct_edges_selected": 2.13,
+      "schema_pass": true
+    },
+    "test": {
+      "split": "test",
+      "num_rows": 500,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_source_subgraph_size": 100.0,
+      "avg_selected_subgraph_size": 55.0,
+      "min_selected_subgraph_size": 55,
+      "max_selected_subgraph_size": 55,
+      "avg_candidate_coverage_preserved_rate": 1.0,
+      "avg_direct_edges_source": 2.514,
+      "avg_direct_edges_selected": 1.824,
+      "schema_pass": true
+    }
+  },
+  "input_soft_package": "dataset/setting_e_drkg/e2e_soft_support_ready/rgcn_sweep_selected",
+  "output_fuzzy_package": "dataset/setting_e_drkg/e2e_fuzzy_retrieval_ready/rgcn",
+  "notes": [
+    "Fuzzy retrieval preserves Day 6b soft-support candidate order and ranking metrics.",
+    "Only the evidence subgraph is reduced.",
+    "E2E folder is ready for Day 8 training/inference."
+  ]
+}

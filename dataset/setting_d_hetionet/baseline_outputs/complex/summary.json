@@ -1,0 +1,226 @@
+{
+  "config": {
+    "model_name": "complex",
+    "task": "(?, CtD, disease)",
+    "candidate_universe": "Compound",
+    "top_k": 20,
+    "gold_injection": false,
+    "epochs": 20,
+    "dim": 128,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "seed": 2026
+  },
+  "train_summary": {
+    "model_name": "complex",
+    "epochs": 20,
+    "dim": 128,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "runtime_sec": 152.177,
+    "train_log": [
+      {
+        "epoch": 1,
+        "loss": 0.4104715576632456
+      },
+      {
+        "epoch": 2,
+        "loss": 0.09942249963229353
+      },
+      {
+        "epoch": 3,
+        "loss": 0.08790317729115486
+      },
+      {
+        "epoch": 4,
+        "loss": 0.08317432818087664
+      },
+      {
+        "epoch": 5,
+        "loss": 0.07893929703669114
+      },
+      {
+        "epoch": 6,
+        "loss": 0.07600156292319298
+      },
+      {
+        "epoch": 7,
+        "loss": 0.07278270008211786
+      },
+      {
+        "epoch": 8,
+        "loss": 0.07029423190111464
+      },
+      {
+        "epoch": 9,
+        "loss": 0.06760324654254046
+      },
+      {
+        "epoch": 10,
+        "loss": 0.06570184501057322
+      },
+      {
+        "epoch": 11,
+        "loss": 0.0638365806097334
+      },
+      {
+        "epoch": 12,
+        "loss": 0.06216148772700266
+      },
+      {
+        "epoch": 13,
+        "loss": 0.060825886394489895
+      },
+      {
+        "epoch": 14,
+        "loss": 0.05924107904461297
+      },
+      {
+        "epoch": 15,
+        "loss": 0.05801532047038729
+      },
+      {
+        "epoch": 16,
+        "loss": 0.05714189912107858
+      },
+      {
+        "epoch": 17,
+        "loss": 0.055917464088309894
+      },
+      {
+        "epoch": 18,
+        "loss": 0.0549291041019288
+      },
+      {
+        "epoch": 19,
+        "loss": 0.054162649363279344
+      },
+      {
+        "epoch": 20,
+        "loss": 0.053148257759484376
+      }
+    ]
+  },
+  "valid_metrics": {
+    "num_rows": 100,
+    "gold_present_at20": 0.4,
+    "mrr_at20": 0.07536615955424004,
+    "hits1_at20": 0.02,
+    "hits3_at20": 0.07,
+    "hits10_at20": 0.21,
+    "hits20_at20": 0.4,
+    "avg_gold_rank_absent_as_21": 16.66,
+    "gold_rank_21_count": 60,
+    "unique_top1_count": 20,
+    "top1_dominance": 0.22,
+    "top1_most_common": [
+      {
+        "entity": "Doxorubicin",
+        "count": 22
+      },
+      {
+        "entity": "Triamcinolone",
+        "count": 12
+      },
+      {
+        "entity": "Prednisolone",
+        "count": 10
+      },
+      {
+        "entity": "Vincristine",
+        "count": 9
+      },
+      {
+        "entity": "Olmesartan",
+        "count": 8
+      },
+      {
+        "entity": "Dacarbazine",
+        "count": 7
+      },
+      {
+        "entity": "Hydrochlorothiazide",
+        "count": 5
+      },
+      {
+        "entity": "Carboplatin",
+        "count": 4
+      },
+      {
+        "entity": "Exemestane",
+        "count": 4
+      },
+      {
+        "entity": "Dimenhydrinate",
+        "count": 4
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "complex",
+    "split": "valid"
+  },
+  "test_metrics": {
+    "num_rows": 100,
+    "gold_present_at20": 0.44,
+    "mrr_at20": 0.0903031166030392,
+    "hits1_at20": 0.02,
+    "hits3_at20": 0.1,
+    "hits10_at20": 0.25,
+    "hits20_at20": 0.44,
+    "avg_gold_rank_absent_as_21": 15.85,
+    "gold_rank_21_count": 56,
+    "unique_top1_count": 24,
+    "top1_dominance": 0.13,
+    "top1_most_common": [
+      {
+        "entity": "Doxorubicin",
+        "count": 13
+      },
+      {
+        "entity": "Triamcinolone",
+        "count": 11
+      },
+      {
+        "entity": "Vincristine",
+        "count": 11
+      },
+      {
+        "entity": "Prednisone",
+        "count": 10
+      },
+      {
+        "entity": "Prednisolone",
+        "count": 9
+      },
+      {
+        "entity": "Exemestane",
+        "count": 6
+      },
+      {
+        "entity": "Olmesartan",
+        "count": 5
+      },
+      {
+        "entity": "Dacarbazine",
+        "count": 5
+      },
+      {
+        "entity": "Methotrexate",
+        "count": 3
+      },
+      {
+        "entity": "Cisplatin",
+        "count": 3
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "complex",
+    "split": "test"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "row_name": "soft_support_raw",
+  "train_rows": 8388,
+  "valid_rows": 500,
+  "test_rows": 500,
+  "contract_fields_required": [
+    "input",
+    "output",
+    "query_entity_id",
+    "rank_entities_id",
+    "subgraph"
+  ],
+  "sample_test_top_keys": [
+    "triple",
+    "triple_id",
+    "type",
+    "query_entity",
+    "query_entity_id",
+    "rank_entities",
+    "rank_entities_id",
+    "rank",
+    "gold_entity",
+    "gold_entity_id",
+    "gold_in_topk_raw",
+    "gold_rank_in_full_universe",
+    "split",
+    "subgraph",
+    "input",
+    "output",
+    "infer_row_name",
+    "candidate_entities",
+    "candidate_entity_ids",
+    "question_text",
+    "variant_name",
+    "support_scores",
+    "support_rank_order",
+    "candidate_debug_rows"
+  ]
+}

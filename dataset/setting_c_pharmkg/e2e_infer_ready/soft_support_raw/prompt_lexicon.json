@@ -1,0 +1,16 @@
+{
+  "dataset": "PharmKG-8k",
+  "setting": "setting_c_pharmkg",
+  "target_relation_raw": "T",
+  "target_relation_id": 23,
+  "target_relation_normalized": "therapeutic_association_proxy",
+  "relation_questions_B_to_A": {
+    "T": "What drug is therapeutically associated with {}?",
+    "23": "What drug is therapeutically associated with {}?"
+  },
+  "relation_questions_A_to_B": {
+    "T": "What disease is therapeutically associated with {}?",
+    "23": "What disease is therapeutically associated with {}?"
+  },
+  "paper_warning": "Relation T is treated as a therapeutic association proxy, not a confirmed clinical indication label."
+}

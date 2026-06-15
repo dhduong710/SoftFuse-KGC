@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-05-11T16:34:41.029413+00:00",
+  "setting": "setting_e_drkg",
+  "dataset": "DRKG",
+  "status": "FROZEN_DAY2",
+  "task_name": "drkg_drugbank_treats_disease_head_prediction",
+  "task_form": "(?, DRUGBANK::treats, disease)",
+  "prediction_type": "predicted_head",
+  "target_relation": "DRUGBANK::treats::Compound:Disease",
+  "target_relation_normalized": "drugbank_treats",
+  "target_relation_direction": "Compound->Disease",
+  "target_source": "DRUGBANK",
+  "query_entity_type": "Disease",
+  "missing_entity_type": "Compound",
+  "candidate_universe_policy": "train_target_relation_compound_heads",
+  "candidate_universe_description": "Candidate compounds are compounds that appear as heads of the frozen target relation in the training split. Coverage-safe split ensures valid/test gold compounds remain in this universe.",
+  "top_k": 20,
+  "gold_injection": false,
+  "absent_gold_rank_sentinel": 21,
+  "claim_scope": "DrugBank treatment-relation prediction within DRKG; not clinical validation.",
+  "recommended_wording": "treatment-like drugdisease prediction / DrugBank treats relation",
+  "target_edges_path": "dataset/setting_e_drkg/task_spec/target_edges_unique.tsv",
+  "target_relation_glossary": {
+    "Relation-name": "DRUGBANK::treats::Compound:Disease",
+    "Data-source": "DRUGBANK",
+    "Connected entity-types": "Compound:Disease",
+    "Interaction-type": "Compound treats the disease",
+    "Description": "We extract  the  associated  conditions  related  to  compound entities in the drugbank.",
+    "Reference for the description": ""
+  }
+}

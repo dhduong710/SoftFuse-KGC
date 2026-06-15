@@ -1,0 +1,775 @@
+{
+  "created_at": "2026-05-11T13:03:25.611508+00:00",
+  "setting": "setting_d_hetionet",
+  "download": {
+    "zip_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/hetionet-v1.0.0.zip",
+    "zip_size_mb": 147.75,
+    "md5": "acce866650fc8bc27ac274b7dddf003e",
+    "expected_md5": "acce866650fc8bc27ac274b7dddf003e",
+    "md5_match": true
+  },
+  "detected_paths": {
+    "nodes_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/tsv/hetionet-v1.0-nodes.tsv",
+    "edges_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/tsv/hetionet-v1.0-edges.sif.gz",
+    "metaedges_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/describe/edges/metaedges.tsv",
+    "metanodes_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/describe/nodes/metanodes.tsv",
+    "json_path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/json/hetionet-v1.0.json.bz2"
+  },
+  "raw_files_sample": [
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/.extract_done",
+      "size_mb": 0.0,
+      "suffixes": ""
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/.gitignore",
+      "size_mb": 0.001,
+      "suffixes": ""
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/README.md",
+      "size_mb": 0.003,
+      "suffixes": ".md"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/describe/degree/degrees.pdf",
+      "size_mb": 0.078,
+      "suffixes": ".pdf"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/describe/degree/degrees.xlsx",
+      "size_mb": 2.155,
+      "suffixes": ".xlsx"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/describe/edges/metaedge-styles.tsv",
+      "size_mb": 0.005,
+      "suffixes": ".tsv"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/describe/edges/metaedges.tsv",
+      "size_mb": 0.001,
+      "suffixes": ".tsv"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/describe/nodes/metanodes.tsv",
+      "size_mb": 0.0,
+      "suffixes": ".tsv"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/json/README.md",
+      "size_mb": 0.003,
+      "suffixes": ".md"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/json/hetionet-v1.0-metagraph.json",
+      "size_mb": 0.003,
+      "suffixes": ".0-metagraph.json"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/json/hetionet-v1.0.json.bz2",
+      "size_mb": 15.366,
+      "suffixes": ".0.json.bz2"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/README.md",
+      "size_mb": 0.002,
+      "suffixes": ".md"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/.dockerignore",
+      "size_mb": 0.0,
+      "suffixes": ""
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/Dockerfile",
+      "size_mb": 0.001,
+      "suffixes": ""
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/README.md",
+      "size_mb": 0.002,
+      "suffixes": ".md"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/files/neo4j-guide-extension-3.0.1.jar",
+      "size_mb": 0.005,
+      "suffixes": ".0.1.jar"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/files/neo4j.conf",
+      "size_mb": 0.002,
+      "suffixes": ".conf"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/files/piwik.html",
+      "size_mb": 0.001,
+      "suffixes": ".html"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/guides/convert.sh",
+      "size_mb": 0.0,
+      "suffixes": ".sh"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/guides/graphstyle.grass",
+      "size_mb": 0.002,
+      "suffixes": ".grass"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/guides/hetionet.adoc",
+      "size_mb": 0.007,
+      "suffixes": ".adoc"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/guides/hetionet.html",
+      "size_mb": 0.014,
+      "suffixes": ".html"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/host/README.md",
+      "size_mb": 0.001,
+      "suffixes": ".md"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/host/run-docker.sh",
+      "size_mb": 0.0,
+      "suffixes": ".sh"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/host/ssl/install.sh",
+      "size_mb": 0.001,
+      "suffixes": ".sh"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/host/ssl/renew.sh",
+      "size_mb": 0.0,
+      "suffixes": ".sh"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/host/stop-docker.sh",
+      "size_mb": 0.0,
+      "suffixes": ".sh"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/host/update-docker.sh",
+      "size_mb": 0.0,
+      "suffixes": ".sh"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/scripts/get_data.sh",
+      "size_mb": 0.001,
+      "suffixes": ".sh"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/docker/scripts/get_data_run_neo4j.sh",
+      "size_mb": 0.0,
+      "suffixes": ".sh"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/hetionet-v1.0.db.tar.bz2",
+      "size_mb": 54.961,
+      "suffixes": ".0.db.tar.bz2"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/labels.tsv",
+      "size_mb": 0.0,
+      "suffixes": ".tsv"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/neo4j/types.tsv",
+      "size_mb": 0.001,
+      "suffixes": ".tsv"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/permuted/json/hetionet-v1.0-perm-1.json.bz2",
+      "size_mb": 12.689,
+      "suffixes": ".0-perm-1.json.bz2"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/permuted/json/hetionet-v1.0-perm-2.json.bz2",
+      "size_mb": 12.692,
+      "suffixes": ".0-perm-2.json.bz2"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/permuted/json/hetionet-v1.0-perm-3.json.bz2",
+      "size_mb": 12.691,
+      "suffixes": ".0-perm-3.json.bz2"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/permuted/json/hetionet-v1.0-perm-4.json.bz2",
+      "size_mb": 12.691,
+      "suffixes": ".0-perm-4.json.bz2"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/permuted/json/hetionet-v1.0-perm-5.json.bz2",
+      "size_mb": 12.69,
+      "suffixes": ".0-perm-5.json.bz2"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/permuted/neo4j/README.md",
+      "size_mb": 0.0,
+      "suffixes": ".md"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/tsv/README.md",
+      "size_mb": 0.002,
+      "suffixes": ".md"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/tsv/hetionet-v1.0-edges.sif.gz",
+      "size_mb": 11.827,
+      "suffixes": ".0-edges.sif.gz"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/tsv/hetionet-v1.0-nodes.tsv",
+      "size_mb": 2.394,
+      "suffixes": ".0-nodes.tsv"
+    },
+    {
+      "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/import.ipynb",
+      "size_mb": 0.005,
+      "suffixes": ".ipynb"
+    }
+  ],
+  "nodes": {
+    "found": true,
+    "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/tsv/hetionet-v1.0-nodes.tsv",
+    "size_mb": 2.394,
+    "num_rows": 47031,
+    "fieldnames": [
+      "id",
+      "name",
+      "kind"
+    ],
+    "kind_counts": {
+      "Gene": 20945,
+      "Biological Process": 11381,
+      "Side Effect": 5734,
+      "Molecular Function": 2884,
+      "Pathway": 1822,
+      "Compound": 1552,
+      "Cellular Component": 1391,
+      "Symptom": 438,
+      "Anatomy": 402,
+      "Pharmacologic Class": 345,
+      "Disease": 137
+    },
+    "sample_rows": [
+      {
+        "id": "Anatomy::UBERON:0000002",
+        "name": "uterine cervix",
+        "kind": "Anatomy"
+      },
+      {
+        "id": "Anatomy::UBERON:0000004",
+        "name": "nose",
+        "kind": "Anatomy"
+      },
+      {
+        "id": "Anatomy::UBERON:0000006",
+        "name": "islet of Langerhans",
+        "kind": "Anatomy"
+      },
+      {
+        "id": "Anatomy::UBERON:0000007",
+        "name": "pituitary gland",
+        "kind": "Anatomy"
+      },
+      {
+        "id": "Anatomy::UBERON:0000010",
+        "name": "peripheral nervous system",
+        "kind": "Anatomy"
+      }
+    ]
+  },
+  "edges": {
+    "found": true,
+    "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/hetnet/tsv/hetionet-v1.0-edges.sif.gz",
+    "size_mb": 11.827,
+    "num_rows": 2250197,
+    "metaedge_counts": {
+      "GpBP": 559504,
+      "AeG": 526407,
+      "Gr>G": 265672,
+      "GiG": 147164,
+      "CcSE": 138944,
+      "AdG": 102240,
+      "AuG": 97848,
+      "GpMF": 97222,
+      "GpPW": 84372,
+      "GpCC": 73566,
+      "GcG": 61690,
+      "CdG": 21102,
+      "CuG": 18756,
+      "DaG": 12623,
+      "CbG": 11571,
+      "DuG": 7731,
+      "DdG": 7623,
+      "CrC": 6486,
+      "DlA": 3602,
+      "DpS": 3357,
+      "PCiC": 1029,
+      "CtD": 755,
+      "DrD": 543,
+      "CpD": 390
+    },
+    "source_kind_counts": {
+      "Gene": 1289190,
+      "Anatomy": 726495,
+      "Compound": 198004,
+      "Disease": 35479,
+      "Pharmacologic Class": 1029
+    },
+    "target_kind_counts": {
+      "Gene": 1280427,
+      "Biological Process": 559504,
+      "Side Effect": 138944,
+      "Molecular Function": 97222,
+      "Pathway": 84372,
+      "Cellular Component": 73566,
+      "Compound": 7515,
+      "Anatomy": 3602,
+      "Symptom": 3357,
+      "Disease": 1688
+    },
+    "sample_edges": [
+      {
+        "source": "Gene::9021",
+        "metaedge": "GpBP",
+        "target": "Biological Process::GO:0071357"
+      },
+      {
+        "source": "Gene::51676",
+        "metaedge": "GpBP",
+        "target": "Biological Process::GO:0098780"
+      },
+      {
+        "source": "Gene::19",
+        "metaedge": "GpBP",
+        "target": "Biological Process::GO:0055088"
+      },
+      {
+        "source": "Gene::3176",
+        "metaedge": "GpBP",
+        "target": "Biological Process::GO:0010243"
+      },
+      {
+        "source": "Gene::3039",
+        "metaedge": "GpBP",
+        "target": "Biological Process::GO:0006898"
+      },
+      {
+        "source": "Gene::5962",
+        "metaedge": "GpBP",
+        "target": "Biological Process::GO:0051346"
+      },
+      {
+        "source": "Gene::841",
+        "metaedge": "GpBP",
+        "target": "Biological Process::GO:0043207"
+      },
+      {
+        "source": "Gene::6924",
+        "metaedge": "GpBP",
+        "target": "Biological Process::GO:0006354"
+      },
+      {
+        "source": "Gene::7407",
+        "metaedge": "GpBP",
+        "target": "Biological Process::GO:0006417"
+      },
+      {
+        "source": "Gene::9370",
+        "metaedge": "GpBP",
+        "target": "Biological Process::GO:0030852"
+      }
+    ],
+    "task_candidate_summary": {
+      "CtD": {
+        "name": "Compound-treats-Disease",
+        "num_edges": 755,
+        "num_unique_compounds": 387,
+        "num_unique_diseases": 77,
+        "sample_edges": [
+          {
+            "source": "Compound::DB00997",
+            "metaedge": "CtD",
+            "target": "Disease::DOID:363"
+          },
+          {
+            "source": "Compound::DB00206",
+            "metaedge": "CtD",
+            "target": "Disease::DOID:10763"
+          },
+          {
+            "source": "Compound::DB00960",
+            "metaedge": "CtD",
+            "target": "Disease::DOID:10763"
+          },
+          {
+            "source": "Compound::DB00665",
+            "metaedge": "CtD",
+            "target": "Disease::DOID:10283"
+          },
+          {
+            "source": "Compound::DB00290",
+            "metaedge": "CtD",
+            "target": "Disease::DOID:2998"
+          },
+          {
+            "source": "Compound::DB01232",
+            "metaedge": "CtD",
+            "target": "Disease::DOID:635"
+          },
+          {
+            "source": "Compound::DB00555",
+            "metaedge": "CtD",
+            "target": "Disease::DOID:1826"
+          },
+          {
+            "source": "Compound::DB00444",
+            "metaedge": "CtD",
+            "target": "Disease::DOID:2531"
+          },
+          {
+            "source": "Compound::DB00860",
+            "metaedge": "CtD",
+            "target": "Disease::DOID:4481"
+          },
+          {
+            "source": "Compound::DB00635",
+            "metaedge": "CtD",
+            "target": "Disease::DOID:2531"
+          }
+        ]
+      },
+      "CpD": {
+        "name": "Compound-palliates-Disease",
+        "num_edges": 390,
+        "num_unique_compounds": 221,
+        "num_unique_diseases": 50,
+        "sample_edges": [
+          {
+            "source": "Compound::DB01175",
+            "metaedge": "CpD",
+            "target": "Disease::DOID:3312"
+          },
+          {
+            "source": "Compound::DB00321",
+            "metaedge": "CpD",
+            "target": "Disease::DOID:7148"
+          },
+          {
+            "source": "Compound::DB00176",
+            "metaedge": "CpD",
+            "target": "Disease::DOID:594"
+          },
+          {
+            "source": "Compound::DB01037",
+            "metaedge": "CpD",
+            "target": "Disease::DOID:10652"
+          },
+          {
+            "source": "Compound::DB00945",
+            "metaedge": "CpD",
+            "target": "Disease::DOID:9074"
+          },
+          {
+            "source": "Compound::DB01100",
+            "metaedge": "CpD",
+            "target": "Disease::DOID:11119"
+          },
+          {
+            "source": "Compound::DB00328",
+            "metaedge": "CpD",
+            "target": "Disease::DOID:7147"
+          },
+          {
+            "source": "Compound::DB00218",
+            "metaedge": "CpD",
+            "target": "Disease::DOID:3083"
+          },
+          {
+            "source": "Compound::DB00989",
+            "metaedge": "CpD",
+            "target": "Disease::DOID:14330"
+          },
+          {
+            "source": "Compound::DB00203",
+            "metaedge": "CpD",
+            "target": "Disease::DOID:418"
+          }
+        ]
+      }
+    }
+  },
+  "metaedges": {
+    "found": true,
+    "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/describe/edges/metaedges.tsv",
+    "size_mb": 0.001,
+    "num_rows": 24,
+    "fieldnames": [
+      "metaedge",
+      "abbreviation",
+      "edges",
+      "source_nodes",
+      "target_nodes",
+      "unbiased"
+    ],
+    "sample_rows": [
+      {
+        "metaedge": "Anatomy - downregulates - Gene",
+        "abbreviation": "AdG",
+        "edges": "102240",
+        "source_nodes": "36",
+        "target_nodes": "15097",
+        "unbiased": "102240"
+      },
+      {
+        "metaedge": "Anatomy - expresses - Gene",
+        "abbreviation": "AeG",
+        "edges": "526407",
+        "source_nodes": "241",
+        "target_nodes": "18094",
+        "unbiased": "453477"
+      },
+      {
+        "metaedge": "Anatomy - upregulates - Gene",
+        "abbreviation": "AuG",
+        "edges": "97848",
+        "source_nodes": "36",
+        "target_nodes": "15929",
+        "unbiased": "97848"
+      },
+      {
+        "metaedge": "Compound - binds - Gene",
+        "abbreviation": "CbG",
+        "edges": "11571",
+        "source_nodes": "1389",
+        "target_nodes": "1689",
+        "unbiased": "0"
+      },
+      {
+        "metaedge": "Compound - causes - Side Effect",
+        "abbreviation": "CcSE",
+        "edges": "138944",
+        "source_nodes": "1071",
+        "target_nodes": "5701",
+        "unbiased": "0"
+      },
+      {
+        "metaedge": "Compound - downregulates - Gene",
+        "abbreviation": "CdG",
+        "edges": "21102",
+        "source_nodes": "734",
+        "target_nodes": "2880",
+        "unbiased": "21102"
+      },
+      {
+        "metaedge": "Compound - palliates - Disease",
+        "abbreviation": "CpD",
+        "edges": "390",
+        "source_nodes": "221",
+        "target_nodes": "50",
+        "unbiased": "0"
+      },
+      {
+        "metaedge": "Compound - resembles - Compound",
+        "abbreviation": "CrC",
+        "edges": "6486",
+        "source_nodes": "1042",
+        "target_nodes": "1054",
+        "unbiased": "6486"
+      },
+      {
+        "metaedge": "Compound - treats - Disease",
+        "abbreviation": "CtD",
+        "edges": "755",
+        "source_nodes": "387",
+        "target_nodes": "77",
+        "unbiased": "0"
+      },
+      {
+        "metaedge": "Compound - upregulates - Gene",
+        "abbreviation": "CuG",
+        "edges": "18756",
+        "source_nodes": "703",
+        "target_nodes": "3247",
+        "unbiased": "18756"
+      },
+      {
+        "metaedge": "Disease - associates - Gene",
+        "abbreviation": "DaG",
+        "edges": "12623",
+        "source_nodes": "134",
+        "target_nodes": "5392",
+        "unbiased": "1284"
+      },
+      {
+        "metaedge": "Disease - downregulates - Gene",
+        "abbreviation": "DdG",
+        "edges": "7623",
+        "source_nodes": "44",
+        "target_nodes": "5745",
+        "unbiased": "7623"
+      },
+      {
+        "metaedge": "Disease - localizes - Anatomy",
+        "abbreviation": "DlA",
+        "edges": "3602",
+        "source_nodes": "133",
+        "target_nodes": "398",
+        "unbiased": "0"
+      },
+      {
+        "metaedge": "Disease - presents - Symptom",
+        "abbreviation": "DpS",
+        "edges": "3357",
+        "source_nodes": "133",
+        "target_nodes": "415",
+        "unbiased": "0"
+      },
+      {
+        "metaedge": "Disease - resembles - Disease",
+        "abbreviation": "DrD",
+        "edges": "543",
+        "source_nodes": "112",
+        "target_nodes": "106",
+        "unbiased": "0"
+      },
+      {
+        "metaedge": "Disease - upregulates - Gene",
+        "abbreviation": "DuG",
+        "edges": "7731",
+        "source_nodes": "44",
+        "target_nodes": "5630",
+        "unbiased": "7731"
+      },
+      {
+        "metaedge": "Gene - covaries - Gene",
+        "abbreviation": "GcG",
+        "edges": "61690",
+        "source_nodes": "9043",
+        "target_nodes": "9532",
+        "unbiased": "61690"
+      },
+      {
+        "metaedge": "Gene - interacts - Gene",
+        "abbreviation": "GiG",
+        "edges": "147164",
+        "source_nodes": "9526",
+        "target_nodes": "14084",
+        "unbiased": "15517"
+      },
+      {
+        "metaedge": "Gene - participates - Biological Process",
+        "abbreviation": "GpBP",
+        "edges": "559504",
+        "source_nodes": "14772",
+        "target_nodes": "11381",
+        "unbiased": "0"
+      },
+      {
+        "metaedge": "Gene - participates - Cellular Component",
+        "abbreviation": "GpCC",
+        "edges": "73566",
+        "source_nodes": "10580",
+        "target_nodes": "1391",
+        "unbiased": "0"
+      }
+    ]
+  },
+  "metanodes": {
+    "found": true,
+    "path": "/home/duong/code/SoftFuse-KGC/dataset/setting_d_hetionet/raw_inventory/extracted/dhimmel-hetionet-4933ca1/describe/nodes/metanodes.tsv",
+    "size_mb": 0.0,
+    "num_rows": 11,
+    "fieldnames": [
+      "metanode",
+      "abbreviation",
+      "metaedges",
+      "nodes",
+      "unconnected_nodes"
+    ],
+    "sample_rows": [
+      {
+        "metanode": "Anatomy",
+        "abbreviation": "A",
+        "metaedges": "4",
+        "nodes": "402",
+        "unconnected_nodes": "2"
+      },
+      {
+        "metanode": "Biological Process",
+        "abbreviation": "BP",
+        "metaedges": "1",
+        "nodes": "11381",
+        "unconnected_nodes": "0"
+      },
+      {
+        "metanode": "Cellular Component",
+        "abbreviation": "CC",
+        "metaedges": "1",
+        "nodes": "1391",
+        "unconnected_nodes": "0"
+      },
+      {
+        "metanode": "Compound",
+        "abbreviation": "C",
+        "metaedges": "8",
+        "nodes": "1552",
+        "unconnected_nodes": "14"
+      },
+      {
+        "metanode": "Disease",
+        "abbreviation": "D",
+        "metaedges": "8",
+        "nodes": "137",
+        "unconnected_nodes": "1"
+      },
+      {
+        "metanode": "Gene",
+        "abbreviation": "G",
+        "metaedges": "16",
+        "nodes": "20945",
+        "unconnected_nodes": "1800"
+      },
+      {
+        "metanode": "Molecular Function",
+        "abbreviation": "MF",
+        "metaedges": "1",
+        "nodes": "2884",
+        "unconnected_nodes": "0"
+      },
+      {
+        "metanode": "Pathway",
+        "abbreviation": "PW",
+        "metaedges": "1",
+        "nodes": "1822",
+        "unconnected_nodes": "0"
+      },
+      {
+        "metanode": "Pharmacologic Class",
+        "abbreviation": "PC",
+        "metaedges": "1",
+        "nodes": "345",
+        "unconnected_nodes": "0"
+      },
+      {
+        "metanode": "Side Effect",
+        "abbreviation": "SE",
+        "metaedges": "1",
+        "nodes": "5734",
+        "unconnected_nodes": "33"
+      },
+      {
+        "metanode": "Symptom",
+        "abbreviation": "S",
+        "metaedges": "1",
+        "nodes": "438",
+        "unconnected_nodes": "23"
+      }
+    ]
+  }
+}

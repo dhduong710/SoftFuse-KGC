@@ -1,0 +1,132 @@
+{
+  "config": {
+    "model_name": "hrgat",
+    "script": "03b_run_hetionet_gnn_baselines_v2.py",
+    "task": "(?, DRUGBANK::treats, disease)",
+    "candidate_universe": "Compound",
+    "top_k": 20,
+    "gold_injection": false,
+    "dim": 128,
+    "gnn_layers": 2,
+    "gnn_epochs": 60,
+    "target_sample_per_epoch": 8192,
+    "support_sample_per_epoch": 8192,
+    "support_loss_weight": 0.25,
+    "message_chunk_size": 65536,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "dropout": 0.1,
+    "seed": 2027,
+    "num_entities": 13918,
+    "num_relations": 85,
+    "num_train_enriched_triples": 187962,
+    "num_train_target_triples": 3968,
+    "runtime_sec": 2.41
+  },
+  "valid_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.228,
+    "mrr_at20": 0.06630815263168205,
+    "hits1_at20": 0.026,
+    "hits3_at20": 0.066,
+    "hits10_at20": 0.182,
+    "hits20_at20": 0.228,
+    "avg_gold_rank_absent_as_21": 17.81,
+    "gold_rank_21_count": 386,
+    "unique_top1_count": 8,
+    "top1_dominance": 0.844,
+    "top1_most_common": [
+      {
+        "entity": "Compound::DB00860",
+        "count": 422
+      },
+      {
+        "entity": "Compound::DB00635",
+        "count": 25
+      },
+      {
+        "entity": "Compound::DB00855",
+        "count": 18
+      },
+      {
+        "entity": "Compound::DB01216",
+        "count": 11
+      },
+      {
+        "entity": "Compound::DB00380",
+        "count": 7
+      },
+      {
+        "entity": "Compound::DB11644",
+        "count": 7
+      },
+      {
+        "entity": "Compound::DB00566",
+        "count": 6
+      },
+      {
+        "entity": "Compound::DB09321",
+        "count": 4
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "hrgat",
+    "split": "valid"
+  },
+  "test_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.204,
+    "mrr_at20": 0.042222945355298296,
+    "hits1_at20": 0.01,
+    "hits3_at20": 0.046,
+    "hits10_at20": 0.134,
+    "hits20_at20": 0.204,
+    "avg_gold_rank_absent_as_21": 18.484,
+    "gold_rank_21_count": 398,
+    "unique_top1_count": 9,
+    "top1_dominance": 0.872,
+    "top1_most_common": [
+      {
+        "entity": "Compound::DB00860",
+        "count": 436
+      },
+      {
+        "entity": "Compound::DB00635",
+        "count": 20
+      },
+      {
+        "entity": "Compound::DB01216",
+        "count": 14
+      },
+      {
+        "entity": "Compound::DB00380",
+        "count": 9
+      },
+      {
+        "entity": "Compound::DB11644",
+        "count": 8
+      },
+      {
+        "entity": "Compound::DB00855",
+        "count": 5
+      },
+      {
+        "entity": "Compound::DB00566",
+        "count": 4
+      },
+      {
+        "entity": "Compound::DB09321",
+        "count": 3
+      },
+      {
+        "entity": "Compound::DB01400",
+        "count": 1
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "hrgat",
+    "split": "test"
+  }
+}

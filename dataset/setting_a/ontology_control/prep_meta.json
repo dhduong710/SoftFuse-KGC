@@ -1,0 +1,19 @@
+{
+  "timestamp_start": "2026-04-16T11:44:00.424005",
+  "raw_input_dir": "dataset/setting_a/backbone_candidates",
+  "output_dir": "dataset/setting_a/ontology_control",
+  "notes": [
+    "Build ontology-control variants from the raw no-injection source.",
+    "Gold injection must not be reintroduced in this branch.",
+    "Reuse the existing ontology-control logic whenever possible."
+  ],
+  "timestamp_end": "2026-04-16T11:44:01.718721",
+  "produced_files": [
+    "dataset/setting_a/ontology_control/valid_top20_type_filtered_raw.json",
+    "dataset/setting_a/ontology_control/test_top20_type_filtered_raw.json",
+    "dataset/setting_a/ontology_control/valid_top20_ontology_raw.json",
+    "dataset/setting_a/ontology_control/test_top20_ontology_raw.json",
+    "dataset/setting_a/ontology_control/ontology_filter_report.json",
+    "dataset/setting_a/ontology_control/schema_validity_report.json"
+  ]
+}

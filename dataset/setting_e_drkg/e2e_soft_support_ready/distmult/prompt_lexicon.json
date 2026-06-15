@@ -1,0 +1,6 @@
+{
+  "head_prediction": {
+    "DRUGBANK::treats::Compound:Disease": "What compound treats {}?"
+  },
+  "tail_prediction": {}
+}

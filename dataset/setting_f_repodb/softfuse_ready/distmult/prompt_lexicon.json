@@ -1,0 +1,6 @@
+{
+  "head_prediction": {
+    "repoDB::approved_indication::Compound:Disease": "What drug is approved for {}?"
+  },
+  "tail_prediction": {}
+}

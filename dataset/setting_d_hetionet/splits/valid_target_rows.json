@@ -1,0 +1,3002 @@
+[
+  {
+    "split": "valid",
+    "row_index": 0,
+    "triple": [
+      "Cyclosporine",
+      "CtD",
+      "psoriasis"
+    ],
+    "triple_id": [
+      13177,
+      8,
+      14850
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "psoriasis",
+    "query_entity_id": 14850,
+    "query_entity_node_id": "Disease::DOID:8893",
+    "gold_entity": "Cyclosporine",
+    "gold_entity_id": 13177,
+    "gold_entity_node_id": "Compound::DB00091",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 1,
+    "triple": [
+      "Valsartan",
+      "CtD",
+      "hypertension"
+    ],
+    "triple_id": [
+      13238,
+      8,
+      14739
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hypertension",
+    "query_entity_id": 14739,
+    "query_entity_node_id": "Disease::DOID:10763",
+    "gold_entity": "Valsartan",
+    "gold_entity_id": 13238,
+    "gold_entity_node_id": "Compound::DB00177",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 2,
+    "triple": [
+      "Flunisolide",
+      "CtD",
+      "asthma"
+    ],
+    "triple_id": [
+      13241,
+      8,
+      14807
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "asthma",
+    "query_entity_id": 14807,
+    "query_entity_node_id": "Disease::DOID:2841",
+    "gold_entity": "Flunisolide",
+    "gold_entity_id": 13241,
+    "gold_entity_node_id": "Compound::DB00180",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 3,
+    "triple": [
+      "Lovastatin",
+      "CtD",
+      "coronary artery disease"
+    ],
+    "triple_id": [
+      13287,
+      8,
+      14818
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "coronary artery disease",
+    "query_entity_id": 14818,
+    "query_entity_node_id": "Disease::DOID:3393",
+    "gold_entity": "Lovastatin",
+    "gold_entity_id": 13287,
+    "gold_entity_node_id": "Compound::DB00227",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 4,
+    "triple": [
+      "Carmustine",
+      "CtD",
+      "melanoma"
+    ],
+    "triple_id": [
+      13322,
+      8,
+      14793
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "melanoma",
+    "query_entity_id": 14793,
+    "query_entity_node_id": "Disease::DOID:1909",
+    "gold_entity": "Carmustine",
+    "gold_entity_id": 13322,
+    "gold_entity_node_id": "Compound::DB00262",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 5,
+    "triple": [
+      "Olmesartan",
+      "CtD",
+      "hypertension"
+    ],
+    "triple_id": [
+      13334,
+      8,
+      14739
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hypertension",
+    "query_entity_id": 14739,
+    "query_entity_node_id": "Disease::DOID:10763",
+    "gold_entity": "Olmesartan",
+    "gold_entity_id": 13334,
+    "gold_entity_node_id": "Compound::DB00275",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 6,
+    "triple": [
+      "Conjugated Estrogens",
+      "CtD",
+      "osteoporosis"
+    ],
+    "triple_id": [
+      13345,
+      8,
+      14749
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "osteoporosis",
+    "query_entity_id": 14749,
+    "query_entity_node_id": "Disease::DOID:11476",
+    "gold_entity": "Conjugated Estrogens",
+    "gold_entity_id": 13345,
+    "gold_entity_node_id": "Compound::DB00286",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 7,
+    "triple": [
+      "Bleomycin",
+      "CtD",
+      "lymphatic system cancer"
+    ],
+    "triple_id": [
+      13349,
+      8,
+      14730
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "lymphatic system cancer",
+    "query_entity_id": 14730,
+    "query_entity_node_id": "Disease::DOID:0060073",
+    "gold_entity": "Bleomycin",
+    "gold_entity_id": 13349,
+    "gold_entity_node_id": "Compound::DB00290",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 8,
+    "triple": [
+      "Bleomycin",
+      "CtD",
+      "melanoma"
+    ],
+    "triple_id": [
+      13349,
+      8,
+      14793
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "melanoma",
+    "query_entity_id": 14793,
+    "query_entity_node_id": "Disease::DOID:1909",
+    "gold_entity": "Bleomycin",
+    "gold_entity_id": 13349,
+    "gold_entity_node_id": "Compound::DB00290",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 9,
+    "triple": [
+      "Bleomycin",
+      "CtD",
+      "skin cancer"
+    ],
+    "triple_id": [
+      13349,
+      8,
+      14824
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "skin cancer",
+    "query_entity_id": 14824,
+    "query_entity_node_id": "Disease::DOID:4159",
+    "gold_entity": "Bleomycin",
+    "gold_entity_id": 13349,
+    "gold_entity_node_id": "Compound::DB00290",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 10,
+    "triple": [
+      "Chlorambucil",
+      "CtD",
+      "hematologic cancer"
+    ],
+    "triple_id": [
+      13350,
+      8,
+      14804
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hematologic cancer",
+    "query_entity_id": 14804,
+    "query_entity_node_id": "Disease::DOID:2531",
+    "gold_entity": "Chlorambucil",
+    "gold_entity_id": 13350,
+    "gold_entity_node_id": "Compound::DB00291",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 11,
+    "triple": [
+      "Vinorelbine",
+      "CtD",
+      "ovarian cancer"
+    ],
+    "triple_id": [
+      13417,
+      8,
+      14803
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "ovarian cancer",
+    "query_entity_id": 14803,
+    "query_entity_node_id": "Disease::DOID:2394",
+    "gold_entity": "Vinorelbine",
+    "gold_entity_id": 13417,
+    "gold_entity_node_id": "Compound::DB00361",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 12,
+    "triple": [
+      "Timolol",
+      "CtD",
+      "glaucoma"
+    ],
+    "triple_id": [
+      13427,
+      8,
+      14785
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "glaucoma",
+    "query_entity_id": 14785,
+    "query_entity_node_id": "Disease::DOID:1686",
+    "gold_entity": "Timolol",
+    "gold_entity_id": 13427,
+    "gold_entity_node_id": "Compound::DB00373",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 13,
+    "triple": [
+      "Timolol",
+      "CtD",
+      "coronary artery disease"
+    ],
+    "triple_id": [
+      13427,
+      8,
+      14818
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "coronary artery disease",
+    "query_entity_id": 14818,
+    "query_entity_node_id": "Disease::DOID:3393",
+    "gold_entity": "Timolol",
+    "gold_entity_id": 13427,
+    "gold_entity_node_id": "Compound::DB00373",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 14,
+    "triple": [
+      "Zoledronate",
+      "CtD",
+      "osteoporosis"
+    ],
+    "triple_id": [
+      13451,
+      8,
+      14749
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "osteoporosis",
+    "query_entity_id": 14749,
+    "query_entity_node_id": "Disease::DOID:11476",
+    "gold_entity": "Zoledronate",
+    "gold_entity_id": 13451,
+    "gold_entity_node_id": "Compound::DB00399",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 15,
+    "triple": [
+      "Gemcitabine",
+      "CtD",
+      "breast cancer"
+    ],
+    "triple_id": [
+      13490,
+      8,
+      14784
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "breast cancer",
+    "query_entity_id": 14784,
+    "query_entity_node_id": "Disease::DOID:1612",
+    "gold_entity": "Gemcitabine",
+    "gold_entity_id": 13490,
+    "gold_entity_node_id": "Compound::DB00441",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 16,
+    "triple": [
+      "Gemcitabine",
+      "CtD",
+      "hematologic cancer"
+    ],
+    "triple_id": [
+      13490,
+      8,
+      14804
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hematologic cancer",
+    "query_entity_id": 14804,
+    "query_entity_node_id": "Disease::DOID:2531",
+    "gold_entity": "Gemcitabine",
+    "gold_entity_id": 13490,
+    "gold_entity_node_id": "Compound::DB00441",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 17,
+    "triple": [
+      "Betamethasone",
+      "CtD",
+      "hematologic cancer"
+    ],
+    "triple_id": [
+      13492,
+      8,
+      14804
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hematologic cancer",
+    "query_entity_id": 14804,
+    "query_entity_node_id": "Disease::DOID:2531",
+    "gold_entity": "Betamethasone",
+    "gold_entity_id": 13492,
+    "gold_entity_node_id": "Compound::DB00443",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 18,
+    "triple": [
+      "Betamethasone",
+      "CtD",
+      "asthma"
+    ],
+    "triple_id": [
+      13492,
+      8,
+      14807
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "asthma",
+    "query_entity_id": 14807,
+    "query_entity_node_id": "Disease::DOID:2841",
+    "gold_entity": "Betamethasone",
+    "gold_entity_id": 13492,
+    "gold_entity_node_id": "Compound::DB00443",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 19,
+    "triple": [
+      "Betamethasone",
+      "CtD",
+      "rheumatoid arthritis"
+    ],
+    "triple_id": [
+      13492,
+      8,
+      14842
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "rheumatoid arthritis",
+    "query_entity_id": 14842,
+    "query_entity_node_id": "Disease::DOID:7148",
+    "gold_entity": "Betamethasone",
+    "gold_entity_id": 13492,
+    "gold_entity_node_id": "Compound::DB00443",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 20,
+    "triple": [
+      "Epirubicin",
+      "CtD",
+      "sarcoma"
+    ],
+    "triple_id": [
+      13494,
+      8,
+      14747
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "sarcoma",
+    "query_entity_id": 14747,
+    "query_entity_node_id": "Disease::DOID:1115",
+    "gold_entity": "Epirubicin",
+    "gold_entity_id": 13494,
+    "gold_entity_node_id": "Compound::DB00445",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 21,
+    "triple": [
+      "Epirubicin",
+      "CtD",
+      "pancreatic cancer"
+    ],
+    "triple_id": [
+      13494,
+      8,
+      14790
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "pancreatic cancer",
+    "query_entity_id": 14790,
+    "query_entity_node_id": "Disease::DOID:1793",
+    "gold_entity": "Epirubicin",
+    "gold_entity_id": 13494,
+    "gold_entity_node_id": "Compound::DB00445",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 22,
+    "triple": [
+      "Epirubicin",
+      "CtD",
+      "bone cancer"
+    ],
+    "triple_id": [
+      13494,
+      8,
+      14792
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "bone cancer",
+    "query_entity_id": 14792,
+    "query_entity_node_id": "Disease::DOID:184",
+    "gold_entity": "Epirubicin",
+    "gold_entity_id": 13494,
+    "gold_entity_node_id": "Compound::DB00445",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 23,
+    "triple": [
+      "Epirubicin",
+      "CtD",
+      "ovarian cancer"
+    ],
+    "triple_id": [
+      13494,
+      8,
+      14803
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "ovarian cancer",
+    "query_entity_id": 14803,
+    "query_entity_node_id": "Disease::DOID:2394",
+    "gold_entity": "Epirubicin",
+    "gold_entity_id": 13494,
+    "gold_entity_node_id": "Compound::DB00445",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 24,
+    "triple": [
+      "Epirubicin",
+      "CtD",
+      "testicular cancer"
+    ],
+    "triple_id": [
+      13494,
+      8,
+      14810
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "testicular cancer",
+    "query_entity_id": 14810,
+    "query_entity_node_id": "Disease::DOID:2998",
+    "gold_entity": "Epirubicin",
+    "gold_entity_id": 13494,
+    "gold_entity_node_id": "Compound::DB00445",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 25,
+    "triple": [
+      "Loratadine",
+      "CtD",
+      "atopic dermatitis"
+    ],
+    "triple_id": [
+      13503,
+      8,
+      14815
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "atopic dermatitis",
+    "query_entity_id": 14815,
+    "query_entity_node_id": "Disease::DOID:3310",
+    "gold_entity": "Loratadine",
+    "gold_entity_id": 13503,
+    "gold_entity_node_id": "Compound::DB00455",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 26,
+    "triple": [
+      "Montelukast",
+      "CtD",
+      "allergic rhinitis"
+    ],
+    "triple_id": [
+      13517,
+      8,
+      14827
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "allergic rhinitis",
+    "query_entity_id": 14827,
+    "query_entity_node_id": "Disease::DOID:4481",
+    "gold_entity": "Montelukast",
+    "gold_entity_id": 13517,
+    "gold_entity_node_id": "Compound::DB00471",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 27,
+    "triple": [
+      "Cisplatin",
+      "CtD",
+      "lung cancer"
+    ],
+    "triple_id": [
+      13558,
+      8,
+      14773
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "lung cancer",
+    "query_entity_id": 14773,
+    "query_entity_node_id": "Disease::DOID:1324",
+    "gold_entity": "Cisplatin",
+    "gold_entity_id": 13558,
+    "gold_entity_node_id": "Compound::DB00515",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 28,
+    "triple": [
+      "Trandolapril",
+      "CtD",
+      "coronary artery disease"
+    ],
+    "triple_id": [
+      13562,
+      8,
+      14818
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "coronary artery disease",
+    "query_entity_id": 14818,
+    "query_entity_node_id": "Disease::DOID:3393",
+    "gold_entity": "Trandolapril",
+    "gold_entity_id": 13562,
+    "gold_entity_node_id": "Compound::DB00519",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 29,
+    "triple": [
+      "Vincristine",
+      "CtD",
+      "kidney cancer"
+    ],
+    "triple_id": [
+      13581,
+      8,
+      14806
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "kidney cancer",
+    "query_entity_id": 14806,
+    "query_entity_node_id": "Disease::DOID:263",
+    "gold_entity": "Vincristine",
+    "gold_entity_id": 13581,
+    "gold_entity_node_id": "Compound::DB00541",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 30,
+    "triple": [
+      "Fluorouracil",
+      "CtD",
+      "stomach cancer"
+    ],
+    "triple_id": [
+      13584,
+      8,
+      14736
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "stomach cancer",
+    "query_entity_id": 14736,
+    "query_entity_node_id": "Disease::DOID:10534",
+    "gold_entity": "Fluorouracil",
+    "gold_entity_id": 13584,
+    "gold_entity_node_id": "Compound::DB00544",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 31,
+    "triple": [
+      "Fluorouracil",
+      "CtD",
+      "head and neck cancer"
+    ],
+    "triple_id": [
+      13584,
+      8,
+      14758
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "head and neck cancer",
+    "query_entity_id": 14758,
+    "query_entity_node_id": "Disease::DOID:11934",
+    "gold_entity": "Fluorouracil",
+    "gold_entity_id": 13584,
+    "gold_entity_node_id": "Compound::DB00544",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 32,
+    "triple": [
+      "Methotrexate",
+      "CtD",
+      "stomach cancer"
+    ],
+    "triple_id": [
+      13603,
+      8,
+      14736
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "stomach cancer",
+    "query_entity_id": 14736,
+    "query_entity_node_id": "Disease::DOID:10534",
+    "gold_entity": "Methotrexate",
+    "gold_entity_id": 13603,
+    "gold_entity_node_id": "Compound::DB00563",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 33,
+    "triple": [
+      "Methotrexate",
+      "CtD",
+      "lung cancer"
+    ],
+    "triple_id": [
+      13603,
+      8,
+      14773
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "lung cancer",
+    "query_entity_id": 14773,
+    "query_entity_node_id": "Disease::DOID:1324",
+    "gold_entity": "Methotrexate",
+    "gold_entity_id": 13603,
+    "gold_entity_node_id": "Compound::DB00563",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 34,
+    "triple": [
+      "Methotrexate",
+      "CtD",
+      "breast cancer"
+    ],
+    "triple_id": [
+      13603,
+      8,
+      14784
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "breast cancer",
+    "query_entity_id": 14784,
+    "query_entity_node_id": "Disease::DOID:1612",
+    "gold_entity": "Methotrexate",
+    "gold_entity_id": 13603,
+    "gold_entity_node_id": "Compound::DB00563",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 35,
+    "triple": [
+      "Methotrexate",
+      "CtD",
+      "bone cancer"
+    ],
+    "triple_id": [
+      13603,
+      8,
+      14792
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "bone cancer",
+    "query_entity_id": 14792,
+    "query_entity_node_id": "Disease::DOID:184",
+    "gold_entity": "Methotrexate",
+    "gold_entity_id": 13603,
+    "gold_entity_node_id": "Compound::DB00563",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 36,
+    "triple": [
+      "Methotrexate",
+      "CtD",
+      "systemic scleroderma"
+    ],
+    "triple_id": [
+      13603,
+      8,
+      14825
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "systemic scleroderma",
+    "query_entity_id": 14825,
+    "query_entity_node_id": "Disease::DOID:418",
+    "gold_entity": "Methotrexate",
+    "gold_entity_id": 13603,
+    "gold_entity_node_id": "Compound::DB00563",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 37,
+    "triple": [
+      "Methotrexate",
+      "CtD",
+      "rheumatoid arthritis"
+    ],
+    "triple_id": [
+      13603,
+      8,
+      14842
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "rheumatoid arthritis",
+    "query_entity_id": 14842,
+    "query_entity_node_id": "Disease::DOID:7148",
+    "gold_entity": "Methotrexate",
+    "gold_entity_id": 13603,
+    "gold_entity_node_id": "Compound::DB00563",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 38,
+    "triple": [
+      "Vinblastine",
+      "CtD",
+      "breast cancer"
+    ],
+    "triple_id": [
+      13610,
+      8,
+      14784
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "breast cancer",
+    "query_entity_id": 14784,
+    "query_entity_node_id": "Disease::DOID:1612",
+    "gold_entity": "Vinblastine",
+    "gold_entity_id": 13610,
+    "gold_entity_node_id": "Compound::DB00570",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 39,
+    "triple": [
+      "Enalapril",
+      "CtD",
+      "coronary artery disease"
+    ],
+    "triple_id": [
+      13622,
+      8,
+      14818
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "coronary artery disease",
+    "query_entity_id": 14818,
+    "query_entity_node_id": "Disease::DOID:3393",
+    "gold_entity": "Enalapril",
+    "gold_entity_id": 13622,
+    "gold_entity_node_id": "Compound::DB00584",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 40,
+    "triple": [
+      "Fluocinolone Acetonide",
+      "CtD",
+      "atopic dermatitis"
+    ],
+    "triple_id": [
+      13629,
+      8,
+      14815
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "atopic dermatitis",
+    "query_entity_id": 14815,
+    "query_entity_node_id": "Disease::DOID:3310",
+    "gold_entity": "Fluocinolone Acetonide",
+    "gold_entity_id": 13629,
+    "gold_entity_node_id": "Compound::DB00591",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 41,
+    "triple": [
+      "Triamcinolone",
+      "CtD",
+      "allergic rhinitis"
+    ],
+    "triple_id": [
+      13658,
+      8,
+      14827
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "allergic rhinitis",
+    "query_entity_id": 14827,
+    "query_entity_node_id": "Disease::DOID:4481",
+    "gold_entity": "Triamcinolone",
+    "gold_entity_id": 13658,
+    "gold_entity_node_id": "Compound::DB00620",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 42,
+    "triple": [
+      "Triamcinolone",
+      "CtD",
+      "ankylosing spondylitis"
+    ],
+    "triple_id": [
+      13658,
+      8,
+      14841
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "ankylosing spondylitis",
+    "query_entity_id": 14841,
+    "query_entity_node_id": "Disease::DOID:7147",
+    "gold_entity": "Triamcinolone",
+    "gold_entity_id": 13658,
+    "gold_entity_node_id": "Compound::DB00620",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 43,
+    "triple": [
+      "Triamcinolone",
+      "CtD",
+      "psoriasis"
+    ],
+    "triple_id": [
+      13658,
+      8,
+      14850
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "psoriasis",
+    "query_entity_id": 14850,
+    "query_entity_node_id": "Disease::DOID:8893",
+    "gold_entity": "Triamcinolone",
+    "gold_entity_id": 13658,
+    "gold_entity_node_id": "Compound::DB00620",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 44,
+    "triple": [
+      "Prednisone",
+      "CtD",
+      "gout"
+    ],
+    "triple_id": [
+      13673,
+      8,
+      14770
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "gout",
+    "query_entity_id": 14770,
+    "query_entity_node_id": "Disease::DOID:13189",
+    "gold_entity": "Prednisone",
+    "gold_entity_id": 13673,
+    "gold_entity_node_id": "Compound::DB00635",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 45,
+    "triple": [
+      "Prednisone",
+      "CtD",
+      "hematologic cancer"
+    ],
+    "triple_id": [
+      13673,
+      8,
+      14804
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hematologic cancer",
+    "query_entity_id": 14804,
+    "query_entity_node_id": "Disease::DOID:2531",
+    "gold_entity": "Prednisone",
+    "gold_entity_id": 13673,
+    "gold_entity_node_id": "Compound::DB00635",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 46,
+    "triple": [
+      "Prednisone",
+      "CtD",
+      "chronic obstructive pulmonary disease"
+    ],
+    "triple_id": [
+      13673,
+      8,
+      14812
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "chronic obstructive pulmonary disease",
+    "query_entity_id": 14812,
+    "query_entity_node_id": "Disease::DOID:3083",
+    "gold_entity": "Prednisone",
+    "gold_entity_id": 13673,
+    "gold_entity_node_id": "Compound::DB00635",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 47,
+    "triple": [
+      "Mycophenolate mofetil",
+      "CtD",
+      "systemic scleroderma"
+    ],
+    "triple_id": [
+      13726,
+      8,
+      14825
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "systemic scleroderma",
+    "query_entity_id": 14825,
+    "query_entity_node_id": "Disease::DOID:418",
+    "gold_entity": "Mycophenolate mofetil",
+    "gold_entity_id": 13726,
+    "gold_entity_node_id": "Compound::DB00688",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 48,
+    "triple": [
+      "Mycophenolate mofetil",
+      "CtD",
+      "systemic lupus erythematosus"
+    ],
+    "triple_id": [
+      13726,
+      8,
+      14854
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "systemic lupus erythematosus",
+    "query_entity_id": 14854,
+    "query_entity_node_id": "Disease::DOID:9074",
+    "gold_entity": "Mycophenolate mofetil",
+    "gold_entity_id": 13726,
+    "gold_entity_node_id": "Compound::DB00688",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 49,
+    "triple": [
+      "Furosemide",
+      "CtD",
+      "hypertension"
+    ],
+    "triple_id": [
+      13733,
+      8,
+      14739
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hypertension",
+    "query_entity_id": 14739,
+    "query_entity_node_id": "Disease::DOID:10763",
+    "gold_entity": "Furosemide",
+    "gold_entity_id": 13733,
+    "gold_entity_node_id": "Compound::DB00695",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 50,
+    "triple": [
+      "Eplerenone",
+      "CtD",
+      "coronary artery disease"
+    ],
+    "triple_id": [
+      13738,
+      8,
+      14818
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "coronary artery disease",
+    "query_entity_id": 14818,
+    "query_entity_node_id": "Disease::DOID:3393",
+    "gold_entity": "Eplerenone",
+    "gold_entity_id": 13738,
+    "gold_entity_node_id": "Compound::DB00700",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 51,
+    "triple": [
+      "Lisinopril",
+      "CtD",
+      "coronary artery disease"
+    ],
+    "triple_id": [
+      13759,
+      8,
+      14818
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "coronary artery disease",
+    "query_entity_id": 14818,
+    "query_entity_node_id": "Disease::DOID:3393",
+    "gold_entity": "Lisinopril",
+    "gold_entity_id": 13759,
+    "gold_entity_node_id": "Compound::DB00722",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 52,
+    "triple": [
+      "Hydrocortisone",
+      "CtD",
+      "gout"
+    ],
+    "triple_id": [
+      13778,
+      8,
+      14770
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "gout",
+    "query_entity_id": 14770,
+    "query_entity_node_id": "Disease::DOID:13189",
+    "gold_entity": "Hydrocortisone",
+    "gold_entity_id": 13778,
+    "gold_entity_node_id": "Compound::DB00741",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 53,
+    "triple": [
+      "Hydrocortisone",
+      "CtD",
+      "asthma"
+    ],
+    "triple_id": [
+      13778,
+      8,
+      14807
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "asthma",
+    "query_entity_id": 14807,
+    "query_entity_node_id": "Disease::DOID:2841",
+    "gold_entity": "Hydrocortisone",
+    "gold_entity_id": 13778,
+    "gold_entity_node_id": "Compound::DB00741",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 54,
+    "triple": [
+      "Hydrocortisone",
+      "CtD",
+      "allergic rhinitis"
+    ],
+    "triple_id": [
+      13778,
+      8,
+      14827
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "allergic rhinitis",
+    "query_entity_id": 14827,
+    "query_entity_node_id": "Disease::DOID:4481",
+    "gold_entity": "Hydrocortisone",
+    "gold_entity_id": 13778,
+    "gold_entity_node_id": "Compound::DB00741",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 55,
+    "triple": [
+      "Irinotecan",
+      "CtD",
+      "stomach cancer"
+    ],
+    "triple_id": [
+      13799,
+      8,
+      14736
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "stomach cancer",
+    "query_entity_id": 14736,
+    "query_entity_node_id": "Disease::DOID:10534",
+    "gold_entity": "Irinotecan",
+    "gold_entity_id": 13799,
+    "gold_entity_node_id": "Compound::DB00762",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 56,
+    "triple": [
+      "Irinotecan",
+      "CtD",
+      "lung cancer"
+    ],
+    "triple_id": [
+      13799,
+      8,
+      14773
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "lung cancer",
+    "query_entity_id": 14773,
+    "query_entity_node_id": "Disease::DOID:1324",
+    "gold_entity": "Irinotecan",
+    "gold_entity_id": 13799,
+    "gold_entity_node_id": "Compound::DB00762",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 57,
+    "triple": [
+      "Irinotecan",
+      "CtD",
+      "pancreatic cancer"
+    ],
+    "triple_id": [
+      13799,
+      8,
+      14790
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "pancreatic cancer",
+    "query_entity_id": 14790,
+    "query_entity_node_id": "Disease::DOID:1793",
+    "gold_entity": "Irinotecan",
+    "gold_entity_id": 13799,
+    "gold_entity_node_id": "Compound::DB00762",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 58,
+    "triple": [
+      "Irinotecan",
+      "CtD",
+      "hematologic cancer"
+    ],
+    "triple_id": [
+      13799,
+      8,
+      14804
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hematologic cancer",
+    "query_entity_id": 14804,
+    "query_entity_node_id": "Disease::DOID:2531",
+    "gold_entity": "Irinotecan",
+    "gold_entity_id": 13799,
+    "gold_entity_node_id": "Compound::DB00762",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 59,
+    "triple": [
+      "Etoposide",
+      "CtD",
+      "sarcoma"
+    ],
+    "triple_id": [
+      13809,
+      8,
+      14747
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "sarcoma",
+    "query_entity_id": 14747,
+    "query_entity_node_id": "Disease::DOID:1115",
+    "gold_entity": "Etoposide",
+    "gold_entity_id": 13809,
+    "gold_entity_node_id": "Compound::DB00773",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 60,
+    "triple": [
+      "Etoposide",
+      "CtD",
+      "lung cancer"
+    ],
+    "triple_id": [
+      13809,
+      8,
+      14773
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "lung cancer",
+    "query_entity_id": 14773,
+    "query_entity_node_id": "Disease::DOID:1324",
+    "gold_entity": "Etoposide",
+    "gold_entity_id": 13809,
+    "gold_entity_node_id": "Compound::DB00773",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 61,
+    "triple": [
+      "Etoposide",
+      "CtD",
+      "hematologic cancer"
+    ],
+    "triple_id": [
+      13809,
+      8,
+      14804
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hematologic cancer",
+    "query_entity_id": 14804,
+    "query_entity_node_id": "Disease::DOID:2531",
+    "gold_entity": "Etoposide",
+    "gold_entity_id": 13809,
+    "gold_entity_node_id": "Compound::DB00773",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 62,
+    "triple": [
+      "Sulfasalazine",
+      "CtD",
+      "ankylosing spondylitis"
+    ],
+    "triple_id": [
+      13830,
+      8,
+      14841
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "ankylosing spondylitis",
+    "query_entity_id": 14841,
+    "query_entity_node_id": "Disease::DOID:7147",
+    "gold_entity": "Sulfasalazine",
+    "gold_entity_id": 13830,
+    "gold_entity_node_id": "Compound::DB00795",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 63,
+    "triple": [
+      "Sulfasalazine",
+      "CtD",
+      "ulcerative colitis"
+    ],
+    "triple_id": [
+      13830,
+      8,
+      14847
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "ulcerative colitis",
+    "query_entity_id": 14847,
+    "query_entity_node_id": "Disease::DOID:8577",
+    "gold_entity": "Sulfasalazine",
+    "gold_entity_id": 13830,
+    "gold_entity_node_id": "Compound::DB00795",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 64,
+    "triple": [
+      "Pentoxifylline",
+      "CtD",
+      "malaria"
+    ],
+    "triple_id": [
+      13841,
+      8,
+      14764
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "malaria",
+    "query_entity_id": 14764,
+    "query_entity_node_id": "Disease::DOID:12365",
+    "gold_entity": "Pentoxifylline",
+    "gold_entity_id": 13841,
+    "gold_entity_node_id": "Compound::DB00806",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 65,
+    "triple": [
+      "Acetazolamide",
+      "CtD",
+      "epilepsy syndrome"
+    ],
+    "triple_id": [
+      13854,
+      8,
+      14791
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "epilepsy syndrome",
+    "query_entity_id": 14791,
+    "query_entity_node_id": "Disease::DOID:1826",
+    "gold_entity": "Acetazolamide",
+    "gold_entity_id": 13854,
+    "gold_entity_node_id": "Compound::DB00819",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 66,
+    "triple": [
+      "Dacarbazine",
+      "CtD",
+      "melanoma"
+    ],
+    "triple_id": [
+      13884,
+      8,
+      14793
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "melanoma",
+    "query_entity_id": 14793,
+    "query_entity_node_id": "Disease::DOID:1909",
+    "gold_entity": "Dacarbazine",
+    "gold_entity_id": 13884,
+    "gold_entity_node_id": "Compound::DB00851",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 67,
+    "triple": [
+      "Mechlorethamine",
+      "CtD",
+      "hematologic cancer"
+    ],
+    "triple_id": [
+      13920,
+      8,
+      14804
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hematologic cancer",
+    "query_entity_id": 14804,
+    "query_entity_node_id": "Disease::DOID:2531",
+    "gold_entity": "Mechlorethamine",
+    "gold_entity_id": 13920,
+    "gold_entity_node_id": "Compound::DB00888",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 68,
+    "triple": [
+      "Carboplatin",
+      "CtD",
+      "bone cancer"
+    ],
+    "triple_id": [
+      13986,
+      8,
+      14792
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "bone cancer",
+    "query_entity_id": 14792,
+    "query_entity_node_id": "Disease::DOID:184",
+    "gold_entity": "Carboplatin",
+    "gold_entity_id": 13986,
+    "gold_entity_node_id": "Compound::DB00958",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 69,
+    "triple": [
+      "Dactinomycin",
+      "CtD",
+      "sarcoma"
+    ],
+    "triple_id": [
+      13997,
+      8,
+      14747
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "sarcoma",
+    "query_entity_id": 14747,
+    "query_entity_node_id": "Disease::DOID:1115",
+    "gold_entity": "Dactinomycin",
+    "gold_entity_id": 13997,
+    "gold_entity_node_id": "Compound::DB00970",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 70,
+    "triple": [
+      "Dactinomycin",
+      "CtD",
+      "ocular cancer"
+    ],
+    "triple_id": [
+      13997,
+      8,
+      14799
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "ocular cancer",
+    "query_entity_id": 14799,
+    "query_entity_node_id": "Disease::DOID:2174",
+    "gold_entity": "Dactinomycin",
+    "gold_entity_id": 13997,
+    "gold_entity_node_id": "Compound::DB00970",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 71,
+    "triple": [
+      "Dactinomycin",
+      "CtD",
+      "kidney cancer"
+    ],
+    "triple_id": [
+      13997,
+      8,
+      14806
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "kidney cancer",
+    "query_entity_id": 14806,
+    "query_entity_node_id": "Disease::DOID:263",
+    "gold_entity": "Dactinomycin",
+    "gold_entity_id": 13997,
+    "gold_entity_node_id": "Compound::DB00970",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 72,
+    "triple": [
+      "Dactinomycin",
+      "CtD",
+      "muscle cancer"
+    ],
+    "triple_id": [
+      13997,
+      8,
+      14823
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "muscle cancer",
+    "query_entity_id": 14823,
+    "query_entity_node_id": "Disease::DOID:4045",
+    "gold_entity": "Dactinomycin",
+    "gold_entity_id": 13997,
+    "gold_entity_node_id": "Compound::DB00970",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 73,
+    "triple": [
+      "Dactinomycin",
+      "CtD",
+      "skin cancer"
+    ],
+    "triple_id": [
+      13997,
+      8,
+      14824
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "skin cancer",
+    "query_entity_id": 14824,
+    "query_entity_node_id": "Disease::DOID:4159",
+    "gold_entity": "Dactinomycin",
+    "gold_entity_id": 13997,
+    "gold_entity_node_id": "Compound::DB00970",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 74,
+    "triple": [
+      "Ethinyl Estradiol",
+      "CtD",
+      "prostate cancer"
+    ],
+    "triple_id": [
+      14004,
+      8,
+      14735
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "prostate cancer",
+    "query_entity_id": 14735,
+    "query_entity_node_id": "Disease::DOID:10283",
+    "gold_entity": "Ethinyl Estradiol",
+    "gold_entity_id": 14004,
+    "gold_entity_node_id": "Compound::DB00977",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 75,
+    "triple": [
+      "Azathioprine",
+      "CtD",
+      "multiple sclerosis"
+    ],
+    "triple_id": [
+      14020,
+      8,
+      14802
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "multiple sclerosis",
+    "query_entity_id": 14802,
+    "query_entity_node_id": "Disease::DOID:2377",
+    "gold_entity": "Azathioprine",
+    "gold_entity_id": 14020,
+    "gold_entity_node_id": "Compound::DB00993",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 76,
+    "triple": [
+      "Gabapentin",
+      "CtD",
+      "epilepsy syndrome"
+    ],
+    "triple_id": [
+      14023,
+      8,
+      14791
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "epilepsy syndrome",
+    "query_entity_id": 14791,
+    "query_entity_node_id": "Disease::DOID:1826",
+    "gold_entity": "Gabapentin",
+    "gold_entity_id": 14023,
+    "gold_entity_node_id": "Compound::DB00996",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 77,
+    "triple": [
+      "Doxorubicin",
+      "CtD",
+      "muscle cancer"
+    ],
+    "triple_id": [
+      14024,
+      8,
+      14823
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "muscle cancer",
+    "query_entity_id": 14823,
+    "query_entity_node_id": "Disease::DOID:4045",
+    "gold_entity": "Doxorubicin",
+    "gold_entity_id": 14024,
+    "gold_entity_node_id": "Compound::DB00997",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 78,
+    "triple": [
+      "Hydrochlorothiazide",
+      "CtD",
+      "hypertension"
+    ],
+    "triple_id": [
+      14026,
+      8,
+      14739
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hypertension",
+    "query_entity_id": 14739,
+    "query_entity_node_id": "Disease::DOID:10763",
+    "gold_entity": "Hydrochlorothiazide",
+    "gold_entity_id": 14026,
+    "gold_entity_node_id": "Compound::DB00999",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 79,
+    "triple": [
+      "Hydroxyurea",
+      "CtD",
+      "hematologic cancer"
+    ],
+    "triple_id": [
+      14032,
+      8,
+      14804
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hematologic cancer",
+    "query_entity_id": 14804,
+    "query_entity_node_id": "Disease::DOID:2531",
+    "gold_entity": "Hydroxyurea",
+    "gold_entity_id": 14032,
+    "gold_entity_node_id": "Compound::DB01005",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 80,
+    "triple": [
+      "Mercaptopurine",
+      "CtD",
+      "ulcerative colitis"
+    ],
+    "triple_id": [
+      14059,
+      8,
+      14847
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "ulcerative colitis",
+    "query_entity_id": 14847,
+    "query_entity_node_id": "Disease::DOID:8577",
+    "gold_entity": "Mercaptopurine",
+    "gold_entity_id": 14059,
+    "gold_entity_node_id": "Compound::DB01033",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 81,
+    "triple": [
+      "Thalidomide",
+      "CtD",
+      "leprosy"
+    ],
+    "triple_id": [
+      14066,
+      8,
+      14734
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "leprosy",
+    "query_entity_id": 14734,
+    "query_entity_node_id": "Disease::DOID:1024",
+    "gold_entity": "Thalidomide",
+    "gold_entity_id": 14066,
+    "gold_entity_node_id": "Compound::DB01041",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 82,
+    "triple": [
+      "Atorvastatin",
+      "CtD",
+      "coronary artery disease"
+    ],
+    "triple_id": [
+      14100,
+      8,
+      14818
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "coronary artery disease",
+    "query_entity_id": 14818,
+    "query_entity_node_id": "Disease::DOID:3393",
+    "gold_entity": "Atorvastatin",
+    "gold_entity_id": 14100,
+    "gold_entity_node_id": "Compound::DB01076",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 83,
+    "triple": [
+      "Leflunomide",
+      "CtD",
+      "systemic lupus erythematosus"
+    ],
+    "triple_id": [
+      14120,
+      8,
+      14854
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "systemic lupus erythematosus",
+    "query_entity_id": 14854,
+    "query_entity_node_id": "Disease::DOID:9074",
+    "gold_entity": "Leflunomide",
+    "gold_entity_id": 14120,
+    "gold_entity_node_id": "Compound::DB01097",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 84,
+    "triple": [
+      "Rosuvastatin",
+      "CtD",
+      "coronary artery disease"
+    ],
+    "triple_id": [
+      14121,
+      8,
+      14818
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "coronary artery disease",
+    "query_entity_id": 14818,
+    "query_entity_node_id": "Disease::DOID:3393",
+    "gold_entity": "Rosuvastatin",
+    "gold_entity_id": 14121,
+    "gold_entity_node_id": "Compound::DB01098",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 85,
+    "triple": [
+      "Capecitabine",
+      "CtD",
+      "colon cancer"
+    ],
+    "triple_id": [
+      14124,
+      8,
+      14800
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "colon cancer",
+    "query_entity_id": 14800,
+    "query_entity_node_id": "Disease::DOID:219",
+    "gold_entity": "Capecitabine",
+    "gold_entity_id": 14124,
+    "gold_entity_node_id": "Compound::DB01101",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 86,
+    "triple": [
+      "Procarbazine",
+      "CtD",
+      "hematologic cancer"
+    ],
+    "triple_id": [
+      14187,
+      8,
+      14804
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hematologic cancer",
+    "query_entity_id": 14804,
+    "query_entity_node_id": "Disease::DOID:2531",
+    "gold_entity": "Procarbazine",
+    "gold_entity_id": 14187,
+    "gold_entity_node_id": "Compound::DB01168",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 87,
+    "triple": [
+      "Idarubicin",
+      "CtD",
+      "breast cancer"
+    ],
+    "triple_id": [
+      14196,
+      8,
+      14784
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "breast cancer",
+    "query_entity_id": 14784,
+    "query_entity_node_id": "Disease::DOID:1612",
+    "gold_entity": "Idarubicin",
+    "gold_entity_id": 14196,
+    "gold_entity_node_id": "Compound::DB01177",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 88,
+    "triple": [
+      "Ifosfamide",
+      "CtD",
+      "hematologic cancer"
+    ],
+    "triple_id": [
+      14200,
+      8,
+      14804
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hematologic cancer",
+    "query_entity_id": 14804,
+    "query_entity_node_id": "Disease::DOID:2531",
+    "gold_entity": "Ifosfamide",
+    "gold_entity_id": 14200,
+    "gold_entity_node_id": "Compound::DB01181",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 89,
+    "triple": [
+      "Mitoxantrone",
+      "CtD",
+      "sarcoma"
+    ],
+    "triple_id": [
+      14223,
+      8,
+      14747
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "sarcoma",
+    "query_entity_id": 14747,
+    "query_entity_node_id": "Disease::DOID:1115",
+    "gold_entity": "Mitoxantrone",
+    "gold_entity_id": 14223,
+    "gold_entity_node_id": "Compound::DB01204",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 90,
+    "triple": [
+      "Aminophylline",
+      "CtD",
+      "asthma"
+    ],
+    "triple_id": [
+      14242,
+      8,
+      14807
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "asthma",
+    "query_entity_id": 14807,
+    "query_entity_node_id": "Disease::DOID:2841",
+    "gold_entity": "Aminophylline",
+    "gold_entity_id": 14242,
+    "gold_entity_node_id": "Compound::DB01223",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 91,
+    "triple": [
+      "Dexamethasone",
+      "CtD",
+      "asthma"
+    ],
+    "triple_id": [
+      14252,
+      8,
+      14807
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "asthma",
+    "query_entity_id": 14807,
+    "query_entity_node_id": "Disease::DOID:2841",
+    "gold_entity": "Dexamethasone",
+    "gold_entity_id": 14252,
+    "gold_entity_node_id": "Compound::DB01234",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 92,
+    "triple": [
+      "Dexamethasone",
+      "CtD",
+      "allergic rhinitis"
+    ],
+    "triple_id": [
+      14252,
+      8,
+      14827
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "allergic rhinitis",
+    "query_entity_id": 14827,
+    "query_entity_node_id": "Disease::DOID:4481",
+    "gold_entity": "Dexamethasone",
+    "gold_entity_id": 14252,
+    "gold_entity_node_id": "Compound::DB01234",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 93,
+    "triple": [
+      "Dexamethasone",
+      "CtD",
+      "rheumatoid arthritis"
+    ],
+    "triple_id": [
+      14252,
+      8,
+      14842
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "rheumatoid arthritis",
+    "query_entity_id": 14842,
+    "query_entity_node_id": "Disease::DOID:7148",
+    "gold_entity": "Dexamethasone",
+    "gold_entity_id": 14252,
+    "gold_entity_node_id": "Compound::DB01234",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 94,
+    "triple": [
+      "Dexamethasone",
+      "CtD",
+      "systemic lupus erythematosus"
+    ],
+    "triple_id": [
+      14252,
+      8,
+      14854
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "systemic lupus erythematosus",
+    "query_entity_id": 14854,
+    "query_entity_node_id": "Disease::DOID:9074",
+    "gold_entity": "Dexamethasone",
+    "gold_entity_id": 14252,
+    "gold_entity_node_id": "Compound::DB01234",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 95,
+    "triple": [
+      "Docetaxel",
+      "CtD",
+      "stomach cancer"
+    ],
+    "triple_id": [
+      14266,
+      8,
+      14736
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "stomach cancer",
+    "query_entity_id": 14736,
+    "query_entity_node_id": "Disease::DOID:10534",
+    "gold_entity": "Docetaxel",
+    "gold_entity_id": 14266,
+    "gold_entity_node_id": "Compound::DB01248",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 96,
+    "triple": [
+      "Docetaxel",
+      "CtD",
+      "pancreatic cancer"
+    ],
+    "triple_id": [
+      14266,
+      8,
+      14790
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "pancreatic cancer",
+    "query_entity_id": 14790,
+    "query_entity_node_id": "Disease::DOID:1793",
+    "gold_entity": "Docetaxel",
+    "gold_entity_id": 14266,
+    "gold_entity_node_id": "Compound::DB01248",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 97,
+    "triple": [
+      "Sunitinib",
+      "CtD",
+      "kidney cancer"
+    ],
+    "triple_id": [
+      14283,
+      8,
+      14806
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "kidney cancer",
+    "query_entity_id": 14806,
+    "query_entity_node_id": "Disease::DOID:263",
+    "gold_entity": "Sunitinib",
+    "gold_entity_id": 14283,
+    "gold_entity_node_id": "Compound::DB01268",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 98,
+    "triple": [
+      "Penbutolol",
+      "CtD",
+      "hypertension"
+    ],
+    "triple_id": [
+      14331,
+      8,
+      14739
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "hypertension",
+    "query_entity_id": 14739,
+    "query_entity_node_id": "Disease::DOID:10763",
+    "gold_entity": "Penbutolol",
+    "gold_entity_id": 14331,
+    "gold_entity_node_id": "Compound::DB01359",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  },
+  {
+    "split": "valid",
+    "row_index": 99,
+    "triple": [
+      "Vemurafenib",
+      "CtD",
+      "melanoma"
+    ],
+    "triple_id": [
+      14654,
+      8,
+      14793
+    ],
+    "type": "predicted_head",
+    "relation": "CtD",
+    "relation_normalized": "compound_treats_disease",
+    "query_entity": "melanoma",
+    "query_entity_id": 14793,
+    "query_entity_node_id": "Disease::DOID:1909",
+    "gold_entity": "Vemurafenib",
+    "gold_entity_id": 14654,
+    "gold_entity_node_id": "Compound::DB08881",
+    "candidate_universe": "Compound",
+    "candidate_universe_size": 1552,
+    "query_universe": "Disease",
+    "query_universe_size": 137,
+    "gold_injection": false,
+    "source_dataset": "Hetionet v1.0",
+    "setting": "setting_d_hetionet"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "variant_name": "soft_support_raw_b025",
+  "main_truth": "raw_no_injection",
+  "decision_split": "valid",
+  "input_feature_path": "dataset/setting_a/support_features/valid_support_features.json",
+  "output_path": "dataset/setting_a/soft_support_ranked_candidates/valid_top20_soft_support_b025.json",
+  "score_family": "B_evidence_minus_direct",
+  "formula": {
+    "evidence_positive_weight": 1.0,
+    "direct_link_penalty": 0.25,
+    "contra_penalty_weight": 0.05,
+    "use_capped_evidence": false,
+    "evidence_cap": null
+  },
+  "notes": [
+    "Conservative direct-link penalty.",
+    "Candidate-stage reorder only.",
+    "No pruning allowed."
+  ]
+}

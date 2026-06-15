@@ -1,0 +1,67 @@
+{
+  "created_at": "2026-05-11T16:40:18.381812+00:00",
+  "setting": "setting_e_drkg",
+  "dataset": "DRKG",
+  "target_relation": "DRUGBANK::treats::Compound:Disease",
+  "train_enriched_path": "dataset/setting_e_drkg/graph/train_enriched.tsv",
+  "train_enriched_ids_path": "dataset/setting_e_drkg/graph/train_enriched_ids.tsv",
+  "train_enriched_num_edges": 187962,
+  "num_entities": 13918,
+  "num_relations": 85,
+  "graph_num_rels_for_future_training": 85,
+  "target_relation_id": 16,
+  "kept_by_family": {
+    "compound_gene": 44197,
+    "target_treats": 3968,
+    "aux_compound_disease": 14333,
+    "disease_gene": 23235,
+    "gene_gene": 102229
+  },
+  "num_candidate_compounds": 1542,
+  "num_target_diseases": 1182,
+  "num_touched_genes": 11194,
+  "graph_build_stats": {
+    "num_kept_edges": 187962,
+    "kept_by_family": {
+      "compound_gene": 44197,
+      "target_treats": 3968,
+      "aux_compound_disease": 14333,
+      "disease_gene": 23235,
+      "gene_gene": 102229
+    },
+    "num_graph_entities": 13918,
+    "num_graph_relations": 85,
+    "num_candidate_compounds": 1542,
+    "num_target_diseases": 1182,
+    "num_touched_genes": 11194,
+    "skipped_heldout_target": 1000,
+    "exact_leak_seen": 0,
+    "caps": {
+      "max_compound_gene_per_compound": 80,
+      "max_disease_gene_per_disease": 120,
+      "max_aux_cd_per_compound": 80,
+      "max_aux_cd_per_disease": 80,
+      "max_aux_cd_total": 120000,
+      "max_gene_gene_per_gene": 40,
+      "max_gene_gene_total": 500000,
+      "max_total_graph_edges": 1500000
+    }
+  },
+  "id_range_check": {
+    "entity_id_min": 0,
+    "entity_id_max": 13917,
+    "relation_id_min": 0,
+    "relation_id_max": 84,
+    "entity_id_range_pass": true,
+    "relation_id_range_pass": true
+  },
+  "aux_cd_relations_used": [
+    "GNBR::T::Compound:Disease",
+    "GNBR::Sa::Compound:Disease",
+    "GNBR::Pa::Compound:Disease",
+    "GNBR::C::Compound:Disease",
+    "GNBR::J::Compound:Disease",
+    "GNBR::Pr::Compound:Disease",
+    "GNBR::Mp::Compound:Disease"
+  ]
+}

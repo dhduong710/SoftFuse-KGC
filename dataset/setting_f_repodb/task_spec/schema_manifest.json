@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-05-12T01:21:27.348020+00:00",
+  "setting": "setting_f_repodb",
+  "dataset": "repoDB",
+  "reviewer_safe_policy": {
+    "top_k": 20,
+    "gold_injection": false,
+    "absent_gold_rank_sentinel": 21,
+    "rr_definition": "RR = 1/rank if rank <= 20 else 0"
+  },
+  "split_policy": {
+    "coverage_safe": true,
+    "valid_test_gold_drugs_in_train_candidate_universe": true,
+    "valid_test_query_diseases_seen_in_train_target": true,
+    "recommended_split": {
+      "decision": "SPLIT_SIZE_FEASIBLE",
+      "recommended_valid_size": 500,
+      "recommended_test_size": 500,
+      "recommended_train_size": 5677,
+      "attempts": [
+        {
+          "requested_valid_size": 500,
+          "requested_test_size": 500,
+          "requested_holdout": 1000,
+          "feasible": true,
+          "attempt_used": 0,
+          "actual_holdout_possible": 1000,
+          "projected_train_size": 5677,
+          "projected_valid_size": 500,
+          "projected_test_size": 500,
+          "coverage_policy": "valid/test drugs and diseases remain in train approved target relation"
+        }
+      ]
+    }
+  },
+  "label_policy": {
+    "positive_target": "Approved repoDB pairs only",
+    "failed_like_pairs": "Reserved for diagnostic/negative evidence; not used as positive labels",
+    "conflict_policy": "If a pair is both approved and failed-like, keep as approved positive and remove from failed-like diagnostic set."
+  },
+  "mapping_policy": {
+    "compound_mapping_to_drkg": "Exact Compound::DBxxxxx mapping where possible",
+    "disease_mapping_to_drkg": "Probe exact CUI forms; if weak, use repoDB-local UMLS disease nodes",
+    "day3_graph_policy": "Build repoDB target graph and optionally attach DRKG evidence for mapped compounds/diseases."
+  }
+}

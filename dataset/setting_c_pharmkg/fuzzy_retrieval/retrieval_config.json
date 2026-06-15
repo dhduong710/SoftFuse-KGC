@@ -1,0 +1,33 @@
+{
+  "variant_name": "fuzzy_retrieval_main",
+  "source_variant_name": "soft_support_pharmkg_b050",
+  "retain_ratio": 0.55,
+  "min_keep": 18,
+  "top_band_weight": 1.0,
+  "mid_band_weight": 0.6,
+  "tail_band_weight": 0.25,
+  "touch_candidate_weight": 0.35,
+  "touch_query_weight": 0.05,
+  "direct_shortcut_penalty": -0.8,
+  "contra_penalty": 0.0,
+  "density_weight": 0.05,
+  "selection_policy": "coverage_pass_best_triple_per_candidate_then_global_fill",
+  "candidate_bands": {
+    "top_band": [
+      1,
+      5
+    ],
+    "mid_band": [
+      6,
+      10
+    ],
+    "tail_band": [
+      11,
+      20
+    ]
+  },
+  "ranking_policy": "do_not_reorder_candidates; preserve soft_support ranking",
+  "gold_injection": false,
+  "target_relation": "T",
+  "target_relation_normalized": "therapeutic_association_proxy"
+}

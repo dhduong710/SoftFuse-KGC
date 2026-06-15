@@ -1,0 +1,80 @@
+{
+  "config": {
+    "model_name": "rgcn",
+    "script": "03b_run_hetionet_gnn_baselines_v2.py",
+    "task": "(?, repoDB_approved_indication, disease)",
+    "candidate_universe": "Compound",
+    "top_k": 20,
+    "gold_injection": false,
+    "dim": 128,
+    "gnn_layers": 2,
+    "gnn_epochs": 80,
+    "target_sample_per_epoch": 8192,
+    "support_sample_per_epoch": 8192,
+    "support_loss_weight": 0.25,
+    "message_chunk_size": 131072,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "dropout": 0.1,
+    "seed": 2028,
+    "num_entities": 8818,
+    "num_relations": 63,
+    "num_train_enriched_triples": 90804,
+    "num_train_target_triples": 5677,
+    "runtime_sec": 1.224
+  },
+  "valid_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.236,
+    "mrr_at20": 0.05702382453288026,
+    "hits1_at20": 0.026,
+    "hits3_at20": 0.048,
+    "hits10_at20": 0.144,
+    "hits20_at20": 0.236,
+    "avg_gold_rank_absent_as_21": 18.184,
+    "gold_rank_21_count": 382,
+    "unique_top1_count": 2,
+    "top1_dominance": 0.528,
+    "top1_most_common": [
+      {
+        "entity": "Compound::DB02703",
+        "count": 264
+      },
+      {
+        "entity": "Compound::DB01234",
+        "count": 236
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "rgcn",
+    "split": "valid"
+  },
+  "test_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.214,
+    "mrr_at20": 0.04813962250339959,
+    "hits1_at20": 0.018,
+    "hits3_at20": 0.04,
+    "hits10_at20": 0.128,
+    "hits20_at20": 0.214,
+    "avg_gold_rank_absent_as_21": 18.378,
+    "gold_rank_21_count": 393,
+    "unique_top1_count": 2,
+    "top1_dominance": 0.512,
+    "top1_most_common": [
+      {
+        "entity": "Compound::DB02703",
+        "count": 256
+      },
+      {
+        "entity": "Compound::DB01234",
+        "count": 244
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "rgcn",
+    "split": "test"
+  }
+}

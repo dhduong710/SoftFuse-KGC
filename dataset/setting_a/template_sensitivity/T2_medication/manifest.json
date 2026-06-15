@@ -1,0 +1,45 @@
+{
+  "variant": "T2_medication",
+  "template": "Which medication is indicated for {query_entity}?",
+  "definition": "Question-template sensitivity variant",
+  "source_row": "dataset/setting_a/29_n2_e2e_infer_ready/retrieval_main",
+  "splits": {
+    "train": {
+      "split": "train",
+      "num_rows": 8388,
+      "avg_candidate_len": 20.0,
+      "min_candidate_len": 20,
+      "max_candidate_len": 20,
+      "avg_subgraph_size": 73.633405,
+      "min_subgraph_size": 2,
+      "max_subgraph_size": 149,
+      "sample_question": "Which medication is indicated for hypertensive disorder?",
+      "sample_output": "Fosinopril"
+    },
+    "valid": {
+      "split": "valid",
+      "num_rows": 500,
+      "avg_candidate_len": 20.0,
+      "min_candidate_len": 20,
+      "max_candidate_len": 20,
+      "avg_subgraph_size": 32.556,
+      "min_subgraph_size": 24,
+      "max_subgraph_size": 51,
+      "sample_question": "Which medication is indicated for leukemia, lymphocytic, susceptibility to?",
+      "sample_output": "Cortisone acetate"
+    },
+    "test": {
+      "split": "test",
+      "num_rows": 500,
+      "avg_candidate_len": 20.0,
+      "min_candidate_len": 20,
+      "max_candidate_len": 20,
+      "avg_subgraph_size": 32.34,
+      "min_subgraph_size": 24,
+      "max_subgraph_size": 51,
+      "sample_question": "Which medication is indicated for lung abscess (disease)?",
+      "sample_output": "Ticarcillin"
+    }
+  },
+  "may_replace_main_prompt": false
+}

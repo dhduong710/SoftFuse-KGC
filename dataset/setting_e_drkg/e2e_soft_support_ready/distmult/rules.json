@@ -1,0 +1,14 @@
+{
+  "DRUGBANK::treats::Compound:Disease": [
+    [
+      "Compound:Gene",
+      "Gene:Disease"
+    ],
+    [
+      "Compound:Disease"
+    ],
+    [
+      "Gene:Gene"
+    ]
+  ]
+}

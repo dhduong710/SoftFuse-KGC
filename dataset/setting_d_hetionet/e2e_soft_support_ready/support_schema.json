@@ -1,0 +1,17 @@
+{
+  "setting": "setting_d_hetionet",
+  "target_relation": "CtD",
+  "positive_evidence_families": [
+    "direct_train_CtD_or_CpD",
+    "compound_gene_and_disease_gene_shared_support",
+    "compound_gene_context",
+    "disease_gene_context",
+    "gene_gene_bridge"
+  ],
+  "shortcut_relations": [
+    "CtD",
+    "CpD"
+  ],
+  "contradiction_relations": [],
+  "note": "Hetionet Day4 package creates compact source evidence subgraphs. Day5 will compute candidate support features."
+}

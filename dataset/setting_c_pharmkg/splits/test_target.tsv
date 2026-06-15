@@ -1,0 +1,500 @@
+famotidine	T	abdominal pain
+mesalazine	T	abdominal pain
+phenformin	T	acidosis
+prednisone	T	acquired immunodeficiency syndrome
+gemfibrozil	T	acute coronary syndrome
+dexamethasone	T	adrenogenital syndrome
+metformin	T	adrenogenital syndrome
+alprazolam	T	agoraphobia
+omeprazole	T	alcoholism
+chlorothiazide	T	alkalosis
+aripiprazole	T	alternating hemiplegia of childhood
+hydrocortisone	T	alzheimer disease
+probenecid	T	alzheimer disease
+tamoxifen	T	amenorrhea
+disulfiram	T	anxiety related personality traits
+quazepam	T	anxiety related personality traits
+varenicline	T	anxiety related personality traits
+creatine	T	aortic valve stenosis
+aprindine	T	arrhythmias cardiac
+simvastatin	T	arterial occlusive diseases
+dimethyl sulfoxide	T	arteriosclerosis
+glycopyrrolate	T	arteriosclerosis
+spirapril	T	arteriosclerosis
+methotrexate	T	arteritis
+caspofungin	T	arthritis
+duloxetine	T	arthritis
+imatinib	T	arthritis
+pentostatin	T	arthritis
+leflunomide	T	arthritis psoriatic
+calcitriol	T	arthritis rheumatoid
+flurbiprofen	T	arthritis rheumatoid
+gemcitabine	T	arthritis rheumatoid
+acetazolamide	T	ascites
+chlorothiazide	T	ascites
+docetaxel	T	ascites
+paclitaxel	T	asthenia
+rocuronium	T	asthenia
+bepridil	T	atrial fibrillation
+rosuvastatin	T	atrial fibrillation
+telmisartan	T	atrial fibrillation
+glutathione	T	autism spectrum disorder
+cyproheptadine	T	autism susceptibility 16
+felbamate	T	body weight changes
+olmesartan	T	body weight changes
+dexamethasone	T	brain damage chronic
+methocarbamol	T	brain damage chronic
+pentoxifylline	T	brain diseases
+folic acid	T	brain diseases metabolic
+melatonin	T	brain diseases metabolic
+venlafaxine	T	brain diseases metabolic
+candesartan	T	brain edema
+furosemide	T	brain edema
+abiraterone	T	breast neoplasms
+mebendazole	T	breast neoplasms
+risedronate	T	breast neoplasms
+venlafaxine	T	breast neoplasms
+nicotine	T	calcinosis
+nystatin	T	candidiasis
+choline	T	carcinoma
+lidocaine	T	carcinoma
+tolvaptan	T	carcinoma
+metoprolol	T	cardiomyopathy dilated
+moricizine	T	cardiomyopathy dilated
+dobutamine	T	cardiomyopathy hypertrophic
+losartan	T	cardiotoxicity
+dipyridamole	T	cardiovascular diseases
+prilocaine	T	cardiovascular diseases
+lisinopril	T	carotid stenosis
+dexmedetomidine	T	cataract
+estradiol	T	cataract
+flurbiprofen	T	cataract
+caffeine	T	central nervous system neoplasms
+clonidine	T	cerebrovascular disorders
+dabigatran etexilate	T	cerebrovascular disorders
+nitrendipine	T	cerebrovascular disorders
+sunitinib	T	cerebrovascular disorders
+risperidone	T	chemical and drug induced liver injury
+azithromycin	T	chlamydia infections
+l arginine	T	cholestasis
+dopamine	T	chorea
+methotrexate	T	chorea
+topiramate	T	chorea
+magnesium sulfate	T	chorioamnionitis
+mitoxantrone	T	chronic disease
+nicotine	T	cocaine related disorders
+methacholine	T	colonic diseases
+nizatidine	T	colonic diseases
+baclofen	T	confusion
+chloramphenicol	T	conjunctivitis
+colchicine	T	constipation
+glutathione	T	coronary disease
+nadolol	T	coronary disease
+sotalol	T	coronary disease
+leucovorin	T	cystic fibrosis
+terbutaline	T	cystic fibrosis
+nebivolol	T	death
+tranexamic acid	T	death
+amoxicillin	T	dental caries
+allopurinol	T	depression
+imipramine	T	depression
+levomilnacipran	T	depression
+nicotine	T	depression
+pramipexole	T	depression
+ribavirin	T	depression
+lorazepam	T	depressive disorder major
+nortriptyline	T	depressive disorder major
+paroxetine	T	depressive disorder major
+amiodarone	T	dermatitis exfoliative
+terbinafine	T	dermatomycoses
+iron	T	diarrhea
+phenoxybenzamine	T	diarrhea
+cyproheptadine	T	disorders of sex development
+dexamethasone	T	drug eruptions
+acetohydroxamic acid	T	drug toxicity
+pentostatin	T	drug toxicity
+butorphanol	T	dyskinesias
+celecoxib	T	dyskinesias
+cyclosporine	T	dyskinesias
+sertindole	T	dyskinesias
+bromocriptine	T	edema
+salbutamol	T	emphysema
+enoxacin	T	endocarditis
+testosterone	T	endometriosis
+tranexamic acid	T	eosinophilia
+vincristine	T	eosinophilia
+phenytoin	T	epidermolysis bullosa
+anastrozole	T	epilepsy
+colchicine	T	epilepsy
+l dopa	T	epilepsy
+metformin	T	epilepsy
+sertindole	T	epilepsy
+testosterone	T	epilepsy
+selegiline	T	erectile dysfunction
+delavirdine	T	exanthema
+ethanol	T	facial neuralgia
+thiamine	T	fatigue
+phenobarbital	T	fatty liver
+ursodeoxycholic acid	T	fatty liver
+doxorubicin	T	fever
+glutathione	T	fever
+penicillin v	T	fever
+salbutamol	T	fever
+betaxolol	T	fibrosis
+chlorothiazide	T	fibrosis
+clonidine	T	fibrosis
+irbesartan	T	fibrosis
+phenylbutazone	T	fibrosis
+propranolol	T	fibrosis
+vitamin c	T	fibrosis
+ranitidine	T	gastrointestinal hemorrhage
+metronidazole	T	gastrointestinal neoplasms
+ondansetron	T	gastrointestinal neoplasms
+pioglitazone	T	gastrointestinal neoplasms
+trabectedin	T	gastrointestinal neoplasms
+caffeine	T	genital neoplasms male
+desipramine	T	genital neoplasms male
+enzalutamide	T	genital neoplasms male
+dipivefrin	T	glaucoma
+mifepristone	T	glaucoma
+niclosamide	T	graft vs host disease
+adenosine	T	gram positive bacterial infections
+ethionamide	T	gram positive bacterial infections
+fludarabine	T	gram positive bacterial infections
+folic acid	T	gram positive bacterial infections
+tacrolimus	T	gram positive bacterial infections
+testosterone	T	gram positive bacterial infections
+metyrapone	T	hamartoma syndrome multiple
+mitotane	T	hamartoma syndrome multiple
+gabapentin	T	hearing disorders
+rasagiline	T	hearing disorders
+vitamin c	T	hearing loss
+levofloxacin	T	heart defects congenital
+theophylline	T	heart defects congenital
+acetazolamide	T	heart diseases
+losartan	T	heart diseases
+chlorpromazine	T	heart failure
+demeclocycline	T	heart failure
+disopyramide	T	heart failure
+pravastatin	T	heart failure
+morphine	T	heart valve diseases
+etoposide	T	hemangiosarcoma
+micafungin	T	hematologic diseases
+pefloxacin	T	hematologic diseases
+cefotaxime	T	hematoma
+diltiazem	T	hemorrhage
+sevoflurane	T	hemorrhage
+entecavir	T	hepatitis chronic
+aripiprazole	T	huntington disease
+dextromethorphan	T	huntington disease
+sertraline	T	huntington disease
+albendazole	T	hydrocephalus
+clofibrate	T	hyperbilirubinemia
+iron	T	hyperbilirubinemia hereditary
+l arginine	T	hyperglycemia
+procaine	T	hyperglycemia
+allopurinol	T	hyperinsulinism
+candesartan	T	hyperinsulinism
+verapamil	T	hyperkalemia
+irinotecan	T	hyperpigmentation
+tacrolimus	T	hyperpigmentation
+aztreonam	T	hypersensitivity
+cyproheptadine	T	hypersensitivity
+dapsone	T	hypersensitivity
+macitentan	T	hypertension
+nilvadipine	T	hypertension
+nitroprusside	T	hypertension
+prednisone	T	hypertension
+simvastatin	T	hypertension
+vincristine	T	hypertension
+halothane	T	hypertension pulmonary
+midodrine	T	hypertension pulmonary
+atenolol	T	hyperthyroidism
+chlorpropamide	T	hyperthyroidism
+hydrochlorothiazide	T	hyperthyroidism
+metformin	T	hyperthyroidism
+indomethacin	T	hypoglycemia
+enoxaparin	T	hypokalemia
+mifepristone	T	hypokalemia
+mexiletine	T	hypotension
+minocycline	T	hypotension
+l carnitine	T	hypothalamic diseases
+cisplatin	T	hypotrichosis
+paclitaxel	T	incontinentia pigmenti
+cyproheptadine	T	infarction
+desflurane	T	infarction
+doxorubicin	T	infarction
+melatonin	T	infarction
+meprobamate	T	infarction
+sotalol	T	infarction
+allopurinol	T	infections
+ampicillin	T	infections
+benzylpenicillin	T	infections
+caspofungin	T	infections
+cefepime	T	infections
+cefotiam	T	infections
+sulfadiazine	T	infections
+tacrolimus	T	infections
+folic acid	T	inflammation
+phentolamine	T	inflammation
+phenylephrine	T	inflammation
+propofol	T	inflammation
+pyrimethamine	T	inflammation
+naltrexone	T	inflammatory bowel diseases
+aminophylline	T	intellectual disability
+ibandronate	T	intestinal neoplasms
+mezlocillin	T	intestinal neoplasms
+ranitidine	T	intestinal neoplasms
+mannitol	T	intracranial hemorrhage traumatic
+aminolevulinic acid	T	iron metabolism disorders
+amlodipine	T	ischemia
+gabapentin	T	ischemia
+isoprenaline	T	ischemia
+meclizine	T	ischemia
+nisoldipine	T	ischemia
+risperidone	T	ischemia
+tadalafil	T	ischemia
+choline	T	jaundice neonatal
+acitretin	T	keratoconus
+atracurium	T	kidney diseases
+lercanidipine	T	kidney diseases
+cabergoline	T	lactation disorders
+cefpiramide	T	leukemia
+colchicine	T	leukemia
+mercaptopurine	T	leukemia
+propranolol	T	leukemia
+auranofin	T	leukemia lymphoid
+iron	T	leukemia lymphoid
+metformin	T	leukemia myeloid
+pravastatin	T	leukemia myeloid
+guanidine	T	leukopenia
+sulfamethoxazole	T	leukopenia
+sulfapyridine	T	leukopenia
+ticarcillin	T	leukopenia
+chloramphenicol	T	liver cirrhosis
+metoclopramide	T	liver cirrhosis
+sorafenib	T	liver cirrhosis
+tenoxicam	T	liver cirrhosis
+modafinil	T	liver cirrhosis biliary
+dobutamine	T	liver diseases
+metformin	T	liver diseases
+trimethoprim	T	liver diseases
+verapamil	T	liver diseases
+ifosfamide	T	liver neoplasms
+estriol	T	lower urinary tract symptoms
+l citrulline	T	lung injury
+thalidomide	T	lung injury
+creatine	T	lupus erythematosus systemic
+mycophenolate mofetil	T	lupus erythematosus systemic
+voriconazole	T	lupus erythematosus systemic
+tamoxifen	T	lymphangiomyoma
+ketoprofen	T	lymphedema
+prednisone	T	lymphedema
+alprostadil	T	macular degeneration
+aprepitant	T	major depressive disorder and accelerated response to antidepressant drug treatment
+aripiprazole	T	major depressive disorder and accelerated response to antidepressant drug treatment
+clomipramine	T	major depressive disorder and accelerated response to antidepressant drug treatment
+isotretinoin	T	major depressive disorder and accelerated response to antidepressant drug treatment
+reboxetine	T	major depressive disorder and accelerated response to antidepressant drug treatment
+venlafaxine	T	malabsorption syndromes
+melatonin	T	malaria
+testosterone	T	malaria
+docetaxel	T	malignant mesothelioma
+vitamin a	T	malnutrition
+amphotericin b	T	meningitis
+flurbiprofen	T	menorrhagia
+metoprolol	T	mental disease
+riluzole	T	mood disorder
+imipramine	T	motion sickness
+captopril	T	mouth diseases
+creatine	T	multiple system atrophy
+piperazine	T	muscle hypertonia
+diltiazem	T	muscular disorders atrophic
+allopurinol	T	muscular dystrophies
+cyclizine	T	myasthenia gravis
+ephedrine	T	myasthenia gravis
+phenytoin	T	mydriasis
+plicamycin	T	myeloproliferative disorders
+vindesine	T	myeloproliferative disorders
+papaverine	T	myocardial ischemia
+procainamide	T	myotonic dystrophy
+gabapentin	T	nail patella syndrome
+cabergoline	T	nausea
+amifostine	T	neoplasm metastasis
+vorinostat	T	neoplasm metastasis
+amprenavir	T	neoplasms
+anagrelide	T	neoplasms
+antipyrine	T	neoplasms
+arsenic trioxide	T	neoplasms
+buspirone	T	neoplasms
+flutamide	T	neoplasms
+telithromycin	T	neoplasms
+thiotepa	T	neoplasms
+tretinoin	T	neoplasms
+fluorouracil	T	neoplasms basal cell
+chlorpromazine	T	neoplasms neuroepithelial
+ketorolac	T	neovascularization pathologic
+doxorubicin	T	nephritis
+digitoxin	T	nephrosis
+hydroxyurea	T	nephrosis
+anastrozole	T	nerve compression syndromes
+prednisone	T	nervous system autoimmune disease experimental
+prednisone	T	netherton syndrome
+choline	T	neural tube defects
+thalidomide	T	neural tube defects
+mivacurium	T	neurobehavioral manifestations
+valproic acid	T	neurobehavioral manifestations
+streptozocin	T	neuroectodermal tumors
+glycine	T	neuromuscular manifestations
+procainamide	T	neuromuscular manifestations
+bortezomib	T	neurotoxicity syndromes
+phenobarbital	T	neurotoxicity syndromes
+prednisone	T	neurotoxicity syndromes
+irbesartan	T	non alcoholic fatty liver disease
+norepinephrine	T	non alcoholic fatty liver disease
+dexamethasone	T	obesity
+dextroamphetamine	T	obsessive compulsive disorder
+glycine	T	obsessive compulsive disorder
+caffeine	T	obstetric labor premature
+escitalopram	T	opioid related disorders
+cefepime	T	osteomyelitis
+ibandronate	T	osteonecrosis
+testosterone	T	osteoporosis
+medroxyprogesterone acetate	T	ovarian cysts
+gefitinib	T	ovarian epithelial cancer
+isotretinoin	T	overdose
+leucovorin	T	overdose
+nortriptyline	T	overdose
+nitric oxide	T	overweight
+norethindrone	T	overweight
+propofol	T	overweight
+vildagliptin	T	overweight
+amoxapine	T	pain
+bepridil	T	pain
+budesonide	T	pain
+fosinopril	T	pain
+tacrolimus	T	pain
+trazodone	T	pain postoperative
+atorvastatin	T	pancreatic neoplasms
+doxorubicin	T	pancreatic neoplasms
+gabapentin	T	pancreatitis
+paroxetine	T	panic attacks
+clarithromycin	T	panuveitis
+modafinil	T	panuveitis
+phenylbutazone	T	paralysis
+topotecan	T	paraproteinemias
+bromocriptine	T	parkinsonian disorders
+indomethacin	T	parkinsonian disorders
+telmisartan	T	peptic ulcer
+naloxone	T	perceptual disorders
+voriconazole	T	perceptual disorders
+dipyridamole	T	peripheral arterial disease
+carvedilol	T	peripheral nervous system diseases
+nimodipine	T	peripheral nervous system diseases
+paclitaxel	T	peripheral nervous system diseases
+neomycin	T	pharyngitis
+nifedipine	T	pneumonia
+dexamethasone	T	polyradiculoneuropathy chronic inflammatory demyelinating
+estriol	T	postoperative hemorrhage
+granisetron	T	postoperative nausea and vomiting
+labetalol	T	pre eclampsia
+gabapentin	T	premature ejaculation
+paroxetine	T	premenstrual syndrome
+epinephrine	T	pruritus
+meprobamate	T	pruritus
+tioconazole	T	pruritus
+tolnaftate	T	pruritus
+bromocriptine	T	psychomotor agitation
+maprotiline	T	psychomotor agitation
+amiodarone	T	pulmonary disease chronic obstructive
+atorvastatin	T	pulmonary disease chronic obstructive
+troleandomycin	T	pulmonary disease chronic obstructive
+dexamethasone	T	pulmonary fibrosis
+nitrofurantoin	T	pulmonary fibrosis
+azathioprine	T	purine pyrimidine metabolism inborn errors
+isoniazid	T	purpura
+omeprazole	T	purpura
+ursodeoxycholic acid	T	purpura
+captopril	T	purpura thrombocytopenic idiopathic
+paromomycin	T	renal insufficiency
+warfarin	T	renal insufficiency
+arformoterol	T	respiratory hypersensitivity
+isoprenaline	T	respiratory hypersensitivity
+methysergide	T	respiratory hypersensitivity
+phenobarbital	T	respiratory insufficiency
+norfloxacin	T	respiratory tract infections
+amifostine	T	respiratory tract neoplasms
+gallium nitrate	T	respiratory tract neoplasms
+vorinostat	T	respiratory tract neoplasms
+fluocinolone acetonide	T	retinal degeneration
+procainamide	T	rhabdomyolysis
+pentoxifylline	T	rheumatic diseases
+isotretinoin	T	rosacea
+fluorescein	T	sarcoidosis
+ribavirin	T	sarcoidosis
+crizotinib	T	sarcoma
+ethosuximide	T	schizoaffective disorder
+propranolol	T	schizoaffective disorder
+thioproperazine	T	schizoaffective disorder
+trazodone	T	schizoaffective disorder
+vancomycin	T	schizoaffective disorder
+bepridil	T	schizophrenia
+esmolol	T	seizures
+lovastatin	T	seizures
+methamphetamine	T	seizures
+oxazepam	T	seizures
+sufentanil	T	seizures
+verapamil	T	severe combined immunodeficiency
+captopril	T	shock
+gatifloxacin	T	sinusitis
+roxithromycin	T	sinusitis
+telithromycin	T	sinusitis
+chlorhexidine	T	skin diseases
+cyclosporine	T	skin diseases
+fusidic acid	T	skin diseases bacterial
+temozolomide	T	skin neoplasms
+budesonide	T	sleep disorders intrinsic
+tamoxifen	T	smith magenis syndrome
+bleomycin	T	spinocerebellar degenerations
+thalidomide	T	spinocerebellar degenerations
+nicergoline	T	stroke
+propranolol	T	substance related disorders
+oxacillin	T	suppuration
+esmolol	T	systemic inflammatory response syndrome
+morphine	T	systemic inflammatory response syndrome
+cyclosporine	T	tdp 43 proteinopathies
+vitamin e	T	thrombocytosis
+thalidomide	T	thromboembolism
+dronedarone	T	thrombosis
+phenprocoumon	T	thrombosis
+piperacillin	T	thrombosis
+vitamin c	T	thyroid neoplasms
+ondansetron	T	tourette syndrome
+risperidone	T	tourette syndrome
+mefloquine	T	trematode infections
+gadopentetate dimeglumine	T	tuberous sclerosis
+calcitriol	T	tumor lysis syndrome
+aciclovir	T	ulcer
+alprostadil	T	ulcer
+progesterone	T	ulcer
+scopolamine	T	ulcer
+vancomycin	T	ulcer
+atorvastatin	T	urination disorders
+mitoxantrone	T	urologic neoplasms
+bleomycin	T	urticaria
+mitoxantrone	T	uterine diseases
+propofol	T	uterine diseases
+colistin	T	uveitis
+ketoconazole	T	uveitis
+cyclosporine	T	vascular diseases
+nicergoline	T	vascular diseases
+ketotifen	T	ventilator induced lung injury
+quinidine	T	ventricular dysfunction left
+norepinephrine	T	ventricular fibrillation
+succinylcholine	T	ventricular fibrillation
+glycopyrrolate	T	vomiting
+nabilone	T	vomiting
+prednisone	T	vomiting
+theophylline	T	vomiting
+cladribine	T	waldenstrom macroglobulinemia
+etoposide	T	wilms tumor

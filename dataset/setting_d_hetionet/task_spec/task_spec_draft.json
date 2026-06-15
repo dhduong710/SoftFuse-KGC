@@ -1,0 +1,151 @@
+{
+  "created_at": "2026-05-11T13:03:27.838494+00:00",
+  "setting": "setting_d_hetionet",
+  "dataset": "Hetionet v1.0",
+  "status": "DRAFT_DAY1",
+  "recommended_task": {
+    "task_name": "hetionet_compound_treats_disease_head_prediction",
+    "task_form": "(?, CtD, disease)",
+    "prediction_type": "predicted_head",
+    "target_relation_code": "CtD",
+    "target_relation_name": "Compound-treats-Disease",
+    "query_entity_type": "Disease",
+    "missing_entity_type": "Compound",
+    "candidate_universe": "Compound nodes; final universe to be frozen on Day 2 after coverage checks.",
+    "top_k": 20,
+    "gold_injection": false,
+    "absent_gold_rank_sentinel": 21,
+    "claim_scope": "Classic drug-repurposing / compound-disease treatment external validation, not clinical validation."
+  },
+  "optional_auxiliary_relation": {
+    "relation_code": "CpD",
+    "relation_name": "Compound-palliates-Disease",
+    "use": "Optional auxiliary/support relation, not primary target unless CtD is too small after split coverage."
+  },
+  "day2_required_checks": [
+    "Confirm CtD edge count and unique compounds/diseases.",
+    "Build coverage-safe train/valid/test splits.",
+    "Ensure valid/test compounds and diseases appear in train graph.",
+    "Build entity2id/id2entity/relation2id/id2relation.",
+    "Build train_enriched.tsv from train-only evidence graph.",
+    "Run exact leakage check: valid/test target triples must not appear in retrieved subgraphs."
+  ],
+  "task_candidate_summary_from_day1": {
+    "CtD": {
+      "name": "Compound-treats-Disease",
+      "num_edges": 755,
+      "num_unique_compounds": 387,
+      "num_unique_diseases": 77,
+      "sample_edges": [
+        {
+          "source": "Compound::DB00997",
+          "metaedge": "CtD",
+          "target": "Disease::DOID:363"
+        },
+        {
+          "source": "Compound::DB00206",
+          "metaedge": "CtD",
+          "target": "Disease::DOID:10763"
+        },
+        {
+          "source": "Compound::DB00960",
+          "metaedge": "CtD",
+          "target": "Disease::DOID:10763"
+        },
+        {
+          "source": "Compound::DB00665",
+          "metaedge": "CtD",
+          "target": "Disease::DOID:10283"
+        },
+        {
+          "source": "Compound::DB00290",
+          "metaedge": "CtD",
+          "target": "Disease::DOID:2998"
+        },
+        {
+          "source": "Compound::DB01232",
+          "metaedge": "CtD",
+          "target": "Disease::DOID:635"
+        },
+        {
+          "source": "Compound::DB00555",
+          "metaedge": "CtD",
+          "target": "Disease::DOID:1826"
+        },
+        {
+          "source": "Compound::DB00444",
+          "metaedge": "CtD",
+          "target": "Disease::DOID:2531"
+        },
+        {
+          "source": "Compound::DB00860",
+          "metaedge": "CtD",
+          "target": "Disease::DOID:4481"
+        },
+        {
+          "source": "Compound::DB00635",
+          "metaedge": "CtD",
+          "target": "Disease::DOID:2531"
+        }
+      ]
+    },
+    "CpD": {
+      "name": "Compound-palliates-Disease",
+      "num_edges": 390,
+      "num_unique_compounds": 221,
+      "num_unique_diseases": 50,
+      "sample_edges": [
+        {
+          "source": "Compound::DB01175",
+          "metaedge": "CpD",
+          "target": "Disease::DOID:3312"
+        },
+        {
+          "source": "Compound::DB00321",
+          "metaedge": "CpD",
+          "target": "Disease::DOID:7148"
+        },
+        {
+          "source": "Compound::DB00176",
+          "metaedge": "CpD",
+          "target": "Disease::DOID:594"
+        },
+        {
+          "source": "Compound::DB01037",
+          "metaedge": "CpD",
+          "target": "Disease::DOID:10652"
+        },
+        {
+          "source": "Compound::DB00945",
+          "metaedge": "CpD",
+          "target": "Disease::DOID:9074"
+        },
+        {
+          "source": "Compound::DB01100",
+          "metaedge": "CpD",
+          "target": "Disease::DOID:11119"
+        },
+        {
+          "source": "Compound::DB00328",
+          "metaedge": "CpD",
+          "target": "Disease::DOID:7147"
+        },
+        {
+          "source": "Compound::DB00218",
+          "metaedge": "CpD",
+          "target": "Disease::DOID:3083"
+        },
+        {
+          "source": "Compound::DB00989",
+          "metaedge": "CpD",
+          "target": "Disease::DOID:14330"
+        },
+        {
+          "source": "Compound::DB00203",
+          "metaedge": "CpD",
+          "target": "Disease::DOID:418"
+        }
+      ]
+    }
+  }
+}

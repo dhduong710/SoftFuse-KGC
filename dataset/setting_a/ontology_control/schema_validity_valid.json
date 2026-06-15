@@ -1,0 +1,773 @@
+{
+  "day": 3,
+  "title": "Schema validity check",
+  "inputs": {
+    "candidate_artifact": "dataset/setting_a/ontology_control/valid_top20_type_filtered_raw.json",
+    "evidence_artifact": "dataset/setting_a/aligned_evidence/valid_aligned_evidence.json",
+    "type_map_tsv": "dataset/setting_b/annotations/type_map.tsv",
+    "fallback_type_json": "dataset/setting_b/annotations/type_map.tsv",
+    "schema_rules_json": "dataset/setting_b/annotations/schema_rules.json",
+    "path_templates_yaml": "dataset/setting_b/annotations/path_templates.yaml",
+    "id2entity_path": "dataset/setting_a/drkgc_json/id2entity.pkl",
+    "id2relation_path": "dataset/setting_a/drkgc_json/id2relation.pkl"
+  },
+  "candidate_validity": {
+    "total_queries_checked": 500,
+    "total_candidates_checked": 10000,
+    "candidate_type_violations": 0,
+    "unknown_candidate_types": 0
+  },
+  "evidence_validity": {
+    "total_queries_checked": 500,
+    "total_evidence_triples_checked": 30230,
+    "valid_evidence_triples": 19372,
+    "invalid_evidence_triples": 10858,
+    "missing_relation_rules": 0,
+    "incomplete_relation_rules": 0,
+    "top_invalid_evidence_patterns": [
+      [
+        "Disease -[indication]-> Drug",
+        6365
+      ],
+      [
+        "Disease -[associated_with]-> Protein_or_Gene",
+        3703
+      ],
+      [
+        "Protein_or_Gene -[target]-> Drug",
+        790
+      ]
+    ],
+    "sample_invalid_evidence": [
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "acute lymphoblastic leukemia (disease)",
+        "relation_name": "indication",
+        "tail_name": "Asparaginase Escherichia coli",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "atrial fibrillation (disease)",
+        "relation_name": "associated_with",
+        "tail_name": "CDK6",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "obsolete Hodgkin's granuloma",
+        "relation_name": "indication",
+        "tail_name": "Methylprednisolone",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "obsolete Hodgkin's granuloma",
+        "relation_name": "indication",
+        "tail_name": "Methylprednisolone",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "obsolete Hodgkin's granuloma",
+        "relation_name": "indication",
+        "tail_name": "Methylprednisolone",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "folliculotropic mycosis fungoides",
+        "relation_name": "indication",
+        "tail_name": "Methylprednisolone",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "mycosis fungoides and variants",
+        "relation_name": "indication",
+        "tail_name": "Methylprednisolone",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "ovarian cancer",
+        "relation_name": "associated_with",
+        "tail_name": "CYP1B1",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "melanoma",
+        "relation_name": "indication",
+        "tail_name": "Vindesine",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "leukemia, lymphocytic, susceptibility to",
+        "relation_name": "indication",
+        "tail_name": "Doxorubicin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "leukemia, lymphocytic, susceptibility to",
+        "relation_name": "indication",
+        "tail_name": "Triamcinolone",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "leukemia, lymphocytic, susceptibility to",
+        "relation_name": "indication",
+        "tail_name": "Methotrexate",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "leukemia, lymphocytic, susceptibility to",
+        "relation_name": "indication",
+        "tail_name": "Prednisolone",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "leukemia, lymphocytic, susceptibility to",
+        "relation_name": "indication",
+        "tail_name": "Prednisone",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "leukemia, lymphocytic, susceptibility to",
+        "relation_name": "indication",
+        "tail_name": "Methylprednisolone",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "leukemia, lymphocytic, susceptibility to",
+        "relation_name": "indication",
+        "tail_name": "Betamethasone",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "leukemia, lymphocytic, susceptibility to",
+        "relation_name": "indication",
+        "tail_name": "Dexamethasone",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "leukemia, lymphocytic, susceptibility to",
+        "relation_name": "indication",
+        "tail_name": "Hydrocortisone",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "leukemia, lymphocytic, susceptibility to",
+        "relation_name": "indication",
+        "tail_name": "Hydrocortisone acetate",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "head_name": "leukemia, lymphocytic, susceptibility to",
+        "relation_name": "indication",
+        "tail_name": "Vincristine",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "bronchitis",
+        "relation_name": "indication",
+        "tail_name": "Cefprozil",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "malignant otitis externa caused by Pseudomonas aeruginosa",
+        "relation_name": "indication",
+        "tail_name": "Ciprofloxacin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "aspiration pneumonia (disease)",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "conjunctivitis",
+        "relation_name": "indication",
+        "tail_name": "Ciprofloxacin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "malignant otitis externa caused by Pseudomonas aeruginosa",
+        "relation_name": "indication",
+        "tail_name": "Ciprofloxacin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "pharyngitis",
+        "relation_name": "indication",
+        "tail_name": "Phenoxymethylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "bacterial meningitis",
+        "relation_name": "indication",
+        "tail_name": "Ceftriaxone",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "malignant otitis externa caused by Pseudomonas aeruginosa",
+        "relation_name": "indication",
+        "tail_name": "Ciprofloxacin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "aspiration pneumonia (disease)",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "urinary tract infection (disease)",
+        "relation_name": "indication",
+        "tail_name": "Ofloxacin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "bronchitis",
+        "relation_name": "indication",
+        "tail_name": "Cefprozil",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "uveitis",
+        "relation_name": "indication",
+        "tail_name": "Fusidic acid",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "urinary tract infection (disease)",
+        "relation_name": "indication",
+        "tail_name": "Ofloxacin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "aspiration pneumonia (disease)",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "pharyngitis",
+        "relation_name": "indication",
+        "tail_name": "Phenoxymethylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "bacterial pneumonia",
+        "relation_name": "indication",
+        "tail_name": "Ciprofloxacin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "streptococcal infection",
+        "relation_name": "indication",
+        "tail_name": "Fusidic acid",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "streptococcal infection",
+        "relation_name": "indication",
+        "tail_name": "Benzylpenicillin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "streptococcal infection",
+        "relation_name": "indication",
+        "tail_name": "Ofloxacin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "head_name": "streptococcal infection",
+        "relation_name": "indication",
+        "tail_name": "Ciprofloxacin",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "dyspepsia",
+        "head_name": "pharyngitis",
+        "relation_name": "indication",
+        "tail_name": "Sodium citrate",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "dyspepsia",
+        "head_name": "pharyngitis",
+        "relation_name": "indication",
+        "tail_name": "Sodium citrate",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "dyspepsia",
+        "head_name": "asthma",
+        "relation_name": "associated_with",
+        "tail_name": "RNASE3",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "dyspepsia",
+        "head_name": "RNASE3",
+        "relation_name": "target",
+        "tail_name": "Citric acid",
+        "head_type": "Protein_or_Gene",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "dyspepsia",
+        "head_name": "intrinsic asthma",
+        "relation_name": "associated_with",
+        "tail_name": "RNASE3",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "dyspepsia",
+        "head_name": "RNASE3",
+        "relation_name": "target",
+        "tail_name": "Citric acid",
+        "head_type": "Protein_or_Gene",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "dyspepsia",
+        "head_name": "pharyngitis",
+        "relation_name": "indication",
+        "tail_name": "Sodium citrate",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "dyspepsia",
+        "head_name": "asthma",
+        "relation_name": "associated_with",
+        "tail_name": "RNASE3",
+        "head_type": "Disease",
+        "tail_type": "Protein_or_Gene",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "dyspepsia",
+        "head_name": "RNASE3",
+        "relation_name": "target",
+        "tail_name": "Citric acid",
+        "head_type": "Protein_or_Gene",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      },
+      {
+        "query_entity": "dyspepsia",
+        "head_name": "diarrheal disease",
+        "relation_name": "indication",
+        "tail_name": "Bismuth subsalicylate",
+        "head_type": "Disease",
+        "tail_type": "Drug",
+        "reason": "invalid_head_type"
+      }
+    ]
+  },
+  "path_validity": {
+    "valid_mechanism_templates_loaded": 2,
+    "invalid_explanation_relations_loaded": 0,
+    "total_path_sequences_checked": 28484,
+    "valid_mechanism_path_sequences": 139,
+    "direct_task_edge_sequences": 1870,
+    "blocked_explanation_sequences": 0,
+    "unsupported_path_sequences": 26475,
+    "queries_with_no_candidate_to_query_path": 23,
+    "top_unsupported_path_patterns": [
+      [
+        "indication -> indication -> indication",
+        15106
+      ],
+      [
+        "indication -> associated_with -> associated_with",
+        11311
+      ],
+      [
+        "target -> target -> indication",
+        58
+      ]
+    ],
+    "sample_unsupported_paths": [
+      {
+        "query_entity": "leukemia, lymphocytic, susceptibility to",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Cortisone acetate",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Hydrocortisone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Dexamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Dexamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Dexamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Dexamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Dexamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Dexamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Dexamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Dexamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      },
+      {
+        "query_entity": "streptococcal infection",
+        "candidate_name": "Dexamethasone",
+        "relation_sequence": "indication -> indication -> indication"
+      }
+    ]
+  },
+  "lookup_source_breakdown": {
+    "type_map.tsv": 70460
+  }
+}

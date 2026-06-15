@@ -1,0 +1,925 @@
+{
+  "day": 2,
+  "title": "Type filtering",
+  "target_type": "Drug",
+  "input_candidates": "dataset/setting_a/backbone_candidates/valid_top20_raw.json",
+  "type_map_tsv": "dataset/setting_b/annotations/type_map.tsv",
+  "fallback_type_json": "dataset/setting_b/annotations/type_map.tsv",
+  "output_filtered_candidates": "dataset/setting_a/ontology_control/valid_top20_type_filtered_raw.json",
+  "output_filter_report": "dataset/setting_a/ontology_control/type_filter_report_valid.json",
+  "total_queries": 500,
+  "total_candidates_before": 10000,
+  "total_candidates_after": 10000,
+  "total_removed": 0,
+  "empty_queries_after_filter": 0,
+  "remaining_non_drug_candidates": 0,
+  "top1_changed_queries": 0,
+  "top5_changed_queries": 0,
+  "removed_type_breakdown": {},
+  "type_lookup_source_breakdown": {
+    "type_map.tsv": 10000
+  },
+  "empty_query_examples": [],
+  "sample_before_after": [
+    {
+      "query_entity": "leukemia, lymphocytic, susceptibility to",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "streptococcal infection",
+      "before_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Norfloxacin",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Norfloxacin",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "dyspepsia",
+      "before_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "basal cell carcinoma",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Betamethasone",
+        "Hydrocortisone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Betamethasone",
+        "Hydrocortisone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "obsessive-compulsive disorder",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Hydrocortisone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Hydrocortisone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "Norwegian scabies",
+      "before_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "hypertension",
+      "before_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Norfloxacin",
+        "Dexamethasone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Norfloxacin",
+        "Dexamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "pneumococcal meningitis",
+      "before_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Norfloxacin"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Norfloxacin"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "obsessive-compulsive disorder",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Hydrocortisone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Hydrocortisone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "arthropathy",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "diffuse large B-cell lymphoma",
+      "before_top5": [
+        "Dexamethasone",
+        "Cortisone acetate",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Triamcinolone"
+      ],
+      "after_top5": [
+        "Dexamethasone",
+        "Cortisone acetate",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Triamcinolone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "obsolete Hodgkin's granuloma",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Triamcinolone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Triamcinolone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "migraine with or without aura, susceptibility to",
+      "before_top5": [
+        "Cortisone acetate",
+        "Fusidic acid",
+        "Hydrocortisone",
+        "Dexamethasone",
+        "Norfloxacin"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Fusidic acid",
+        "Hydrocortisone",
+        "Dexamethasone",
+        "Norfloxacin"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "infectious anterior uveitis",
+      "before_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Norfloxacin",
+        "Dexamethasone",
+        "Hydrocortisone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Norfloxacin",
+        "Dexamethasone",
+        "Hydrocortisone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "chromomycosis",
+      "before_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "proctitis",
+      "before_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Norfloxacin",
+        "Dexamethasone",
+        "Hydrocortisone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Norfloxacin",
+        "Dexamethasone",
+        "Hydrocortisone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "nasopharyngitis",
+      "before_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "acquired thrombocytopenia",
+      "before_top5": [
+        "Cortisone acetate",
+        "Fusidic acid",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Fusidic acid",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "hemoglobinopathy",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Hydrocortisone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Hydrocortisone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "prostate cancer",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "chronic cutaneous lupus erythematosus",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Betamethasone",
+        "Triamcinolone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Betamethasone",
+        "Triamcinolone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "pulmonary emphysema",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Triamcinolone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Triamcinolone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "common cold",
+      "before_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "classic Hodgkin lymphoma",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Triamcinolone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Triamcinolone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "mental disorder",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Hydrocortisone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Hydrocortisone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "aspiration pneumonia (disease)",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Fusidic acid",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Fusidic acid",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "autoimmune thrombocytopenic",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Fusidic acid",
+        "Triamcinolone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Fusidic acid",
+        "Triamcinolone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "respiratory tract infectious disease",
+      "before_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "arteriosclerosis disorder",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "gonococcal epididymo-orchitis",
+      "before_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Norfloxacin",
+        "Hydrocortisone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Norfloxacin",
+        "Hydrocortisone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "ovarian mucinous adenocarcinoma",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "visual epilepsy",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Prednisone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Prednisone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "scleroderma (disease)",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Triamcinolone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Triamcinolone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "common cold",
+      "before_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "hemiparkinsonism-hemiatrophy syndrome",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Hydrocortisone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Hydrocortisone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "allergic asthma",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "actinic keratosis (disease)",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Betamethasone",
+        "Triamcinolone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Betamethasone",
+        "Triamcinolone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "mental disorder",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Hydrocortisone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Hydrocortisone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "dysentery",
+      "before_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Norfloxacin",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Norfloxacin",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "acute myeloid leukemia with minimal differentiation",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "pharyngitis",
+      "before_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "adenocarcinoma of liver and intrahepatic biliary tract",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Triamcinolone",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "angioedema",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Triamcinolone",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Triamcinolone",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "cerebral infarction",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Triamcinolone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Triamcinolone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "granulomatous slack skin disease",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Triamcinolone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Triamcinolone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "nasopharyngitis",
+      "before_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Norfloxacin",
+        "Cortisone acetate",
+        "Hydrocortisone",
+        "Dexamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "urethritis (disease)",
+      "before_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Norfloxacin",
+        "Dexamethasone",
+        "Hydrocortisone"
+      ],
+      "after_top5": [
+        "Fusidic acid",
+        "Cortisone acetate",
+        "Norfloxacin",
+        "Dexamethasone",
+        "Hydrocortisone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "hereditary angioedema with C1Inh deficiency",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Methylprednisolone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "brain edema",
+      "before_top5": [
+        "Cortisone acetate",
+        "Fusidic acid",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Fusidic acid",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    },
+    {
+      "query_entity": "gastroesophageal reflux disease",
+      "before_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Fusidic acid",
+        "Betamethasone"
+      ],
+      "after_top5": [
+        "Cortisone acetate",
+        "Dexamethasone",
+        "Hydrocortisone",
+        "Fusidic acid",
+        "Betamethasone"
+      ],
+      "removed_types": {}
+    }
+  ]
+}

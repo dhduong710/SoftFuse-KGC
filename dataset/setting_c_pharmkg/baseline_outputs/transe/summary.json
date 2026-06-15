@@ -1,0 +1,266 @@
+{
+  "config": {
+    "model_name": "transe",
+    "task": "(?, T, disease)",
+    "candidate_universe": "drug_only_from_train_T_heads",
+    "top_k": 20,
+    "gold_injection": false,
+    "epochs": 30,
+    "dim": 256,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "seed": 2025
+  },
+  "train_summary": {
+    "model_name": "transe",
+    "epochs": 30,
+    "dim": 256,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "runtime_sec": 31.708,
+    "train_log": [
+      {
+        "epoch": 1,
+        "loss": 0.45218689865187595
+      },
+      {
+        "epoch": 2,
+        "loss": 0.19605639216146972
+      },
+      {
+        "epoch": 3,
+        "loss": 0.16978544357575867
+      },
+      {
+        "epoch": 4,
+        "loss": 0.15536179966048191
+      },
+      {
+        "epoch": 5,
+        "loss": 0.14410586498285594
+      },
+      {
+        "epoch": 6,
+        "loss": 0.1329017261141225
+      },
+      {
+        "epoch": 7,
+        "loss": 0.12445120231101388
+      },
+      {
+        "epoch": 8,
+        "loss": 0.1148447299474164
+      },
+      {
+        "epoch": 9,
+        "loss": 0.10709375386175356
+      },
+      {
+        "epoch": 10,
+        "loss": 0.10021028259867117
+      },
+      {
+        "epoch": 11,
+        "loss": 0.09492691527856023
+      },
+      {
+        "epoch": 12,
+        "loss": 0.08979816530880175
+      },
+      {
+        "epoch": 13,
+        "loss": 0.0857914537191391
+      },
+      {
+        "epoch": 14,
+        "loss": 0.08243870005795831
+      },
+      {
+        "epoch": 15,
+        "loss": 0.07984715049204073
+      },
+      {
+        "epoch": 16,
+        "loss": 0.07645919040629738
+      },
+      {
+        "epoch": 17,
+        "loss": 0.07352284569489329
+      },
+      {
+        "epoch": 18,
+        "loss": 0.07177345807615079
+      },
+      {
+        "epoch": 19,
+        "loss": 0.069449561677481
+      },
+      {
+        "epoch": 20,
+        "loss": 0.06715896015888766
+      },
+      {
+        "epoch": 21,
+        "loss": 0.06594481593684147
+      },
+      {
+        "epoch": 22,
+        "loss": 0.06430071733499829
+      },
+      {
+        "epoch": 23,
+        "loss": 0.0625656971805974
+      },
+      {
+        "epoch": 24,
+        "loss": 0.06153326191400227
+      },
+      {
+        "epoch": 25,
+        "loss": 0.06060333734280185
+      },
+      {
+        "epoch": 26,
+        "loss": 0.05987982765624398
+      },
+      {
+        "epoch": 27,
+        "loss": 0.05790259010697666
+      },
+      {
+        "epoch": 28,
+        "loss": 0.057078160894544504
+      },
+      {
+        "epoch": 29,
+        "loss": 0.05583184169311273
+      },
+      {
+        "epoch": 30,
+        "loss": 0.05586667664741215
+      }
+    ]
+  },
+  "valid_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.042,
+    "mrr_at20": 0.005302345607608766,
+    "hits1_at20": 0.0,
+    "hits3_at20": 0.0,
+    "hits10_at20": 0.022,
+    "hits20_at20": 0.042,
+    "avg_gold_rank_absent_as_21": 20.556,
+    "gold_rank_21_count": 479,
+    "unique_top1_count": 144,
+    "top1_dominance": 0.104,
+    "top1_most_common": [
+      {
+        "entity": "dexamethasone",
+        "count": 52
+      },
+      {
+        "entity": "dopamine",
+        "count": 29
+      },
+      {
+        "entity": "estramustine",
+        "count": 16
+      },
+      {
+        "entity": "naloxone",
+        "count": 15
+      },
+      {
+        "entity": "morphine",
+        "count": 13
+      },
+      {
+        "entity": "atropine",
+        "count": 12
+      },
+      {
+        "entity": "sertraline",
+        "count": 12
+      },
+      {
+        "entity": "sirolimus",
+        "count": 11
+      },
+      {
+        "entity": "propranolol",
+        "count": 10
+      },
+      {
+        "entity": "l arginine",
+        "count": 10
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "transe",
+    "split": "valid"
+  },
+  "test_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.06,
+    "mrr_at20": 0.009318543908791586,
+    "hits1_at20": 0.002,
+    "hits3_at20": 0.008,
+    "hits10_at20": 0.028,
+    "hits20_at20": 0.06,
+    "avg_gold_rank_absent_as_21": 20.466,
+    "gold_rank_21_count": 470,
+    "unique_top1_count": 148,
+    "top1_dominance": 0.082,
+    "top1_most_common": [
+      {
+        "entity": "dexamethasone",
+        "count": 41
+      },
+      {
+        "entity": "dopamine",
+        "count": 28
+      },
+      {
+        "entity": "naloxone",
+        "count": 16
+      },
+      {
+        "entity": "sertraline",
+        "count": 14
+      },
+      {
+        "entity": "sirolimus",
+        "count": 13
+      },
+      {
+        "entity": "estramustine",
+        "count": 12
+      },
+      {
+        "entity": "pravastatin",
+        "count": 11
+      },
+      {
+        "entity": "propranolol",
+        "count": 10
+      },
+      {
+        "entity": "morphine",
+        "count": 9
+      },
+      {
+        "entity": "atropine",
+        "count": 9
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "transe",
+    "split": "test"
+  }
+}

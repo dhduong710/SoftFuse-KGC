@@ -1,0 +1,1209 @@
+{
+  "created_at": "2026-05-11T16:07:17.515359+00:00",
+  "setting": "setting_e_drkg",
+  "dataset": "DRKG",
+  "status": "DAY1_CANDIDATES_ONLY_NOT_FROZEN",
+  "candidate_task_family": "Compound-Disease head prediction",
+  "preferred_task_form": "(?, relation, disease)",
+  "prediction_type": "predicted_head",
+  "candidate_universe": "Compound",
+  "query_entity_type": "Disease",
+  "target_relation_to_select_on_day2": null,
+  "wording_policy": [
+    "Use treatment-like relation only if relation semantics explicitly indicate treatment.",
+    "Otherwise use therapeutic-association proxy or drug-disease association proxy.",
+    "Do not call the task clinical indication unless relation semantics justify it."
+  ],
+  "compound_disease_relation_candidates": [
+    {
+      "relation": "GNBR::T::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 54020,
+      "source_hint": "GNBR",
+      "num_unique_compounds": 6628,
+      "num_unique_diseases": 3300,
+      "semantic_hint": {
+        "contains_treat": false,
+        "contains_palliate": false,
+        "contains_indication": false,
+        "contains_association": false,
+        "contains_therapeutic": false,
+        "contains_contra": false,
+        "contains_side_effect": false
+      },
+      "sample_rows": [
+        {
+          "head": "Compound::MESH:C004656",
+          "relation": "GNBR::T::Compound:Disease",
+          "tail": "Disease::MESH:C537014",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C004656",
+          "normalized_disease": "Disease::MESH:C537014",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C007145",
+          "relation": "GNBR::T::Compound:Disease",
+          "tail": "Disease::MESH:D009369",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C007145",
+          "normalized_disease": "Disease::MESH:D009369",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C007145",
+          "relation": "GNBR::T::Compound:Disease",
+          "tail": "Disease::MESH:D015470",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C007145",
+          "normalized_disease": "Disease::MESH:D015470",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C008514",
+          "relation": "GNBR::T::Compound:Disease",
+          "tail": "Disease::MESH:D001049",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C008514",
+          "normalized_disease": "Disease::MESH:D001049",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C008514",
+          "relation": "GNBR::T::Compound:Disease",
+          "tail": "Disease::MESH:D004630",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C008514",
+          "normalized_disease": "Disease::MESH:D004630",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C009265",
+          "relation": "GNBR::T::Compound:Disease",
+          "tail": "Disease::MESH:C567730",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C009265",
+          "normalized_disease": "Disease::MESH:C567730",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C009265",
+          "relation": "GNBR::T::Compound:Disease",
+          "tail": "Disease::MESH:D004409",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C009265",
+          "normalized_disease": "Disease::MESH:D004409",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C009265",
+          "relation": "GNBR::T::Compound:Disease",
+          "tail": "Disease::MESH:D010300",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C009265",
+          "normalized_disease": "Disease::MESH:D010300",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB14066",
+          "relation": "GNBR::T::Compound:Disease",
+          "tail": "Disease::MESH:D003876",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB14066",
+          "normalized_disease": "Disease::MESH:D003876",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB14066",
+          "relation": "GNBR::T::Compound:Disease",
+          "tail": "Disease::MESH:D011778",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB14066",
+          "normalized_disease": "Disease::MESH:D011778",
+          "direction": "Compound->Disease"
+        }
+      ]
+    },
+    {
+      "relation": "GNBR::Sa::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 16923,
+      "source_hint": "GNBR",
+      "num_unique_compounds": 3833,
+      "num_unique_diseases": 1666,
+      "semantic_hint": {
+        "contains_treat": false,
+        "contains_palliate": false,
+        "contains_indication": false,
+        "contains_association": false,
+        "contains_therapeutic": false,
+        "contains_contra": false,
+        "contains_side_effect": false
+      },
+      "sample_rows": [
+        {
+          "head": "Compound::MESH:C020972",
+          "relation": "GNBR::Sa::Compound:Disease",
+          "tail": "Disease::MESH:D003643",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C020972",
+          "normalized_disease": "Disease::MESH:D003643",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB04104",
+          "relation": "GNBR::Sa::Compound:Disease",
+          "tail": "Disease::MESH:D000860",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB04104",
+          "normalized_disease": "Disease::MESH:D000860",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C026098",
+          "relation": "GNBR::Sa::Compound:Disease",
+          "tail": "Disease::MESH:D005076",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C026098",
+          "normalized_disease": "Disease::MESH:D005076",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C048599",
+          "relation": "GNBR::Sa::Compound:Disease",
+          "tail": "Disease::MESH:D006930",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C048599",
+          "normalized_disease": "Disease::MESH:D006930",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C048599",
+          "relation": "GNBR::Sa::Compound:Disease",
+          "tail": "Disease::MESH:D007035",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C048599",
+          "normalized_disease": "Disease::MESH:D007035",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C048599",
+          "relation": "GNBR::Sa::Compound:Disease",
+          "tail": "Disease::MESH:D064420",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C048599",
+          "normalized_disease": "Disease::MESH:D064420",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C050232",
+          "relation": "GNBR::Sa::Compound:Disease",
+          "tail": "Disease::MESH:D064420",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C050232",
+          "normalized_disease": "Disease::MESH:D064420",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C052075",
+          "relation": "GNBR::Sa::Compound:Disease",
+          "tail": "Disease::MESH:D064420",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C052075",
+          "normalized_disease": "Disease::MESH:D064420",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00441",
+          "relation": "GNBR::Sa::Compound:Disease",
+          "tail": "Disease::MESH:C535533",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00441",
+          "normalized_disease": "Disease::MESH:C535533",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C065179",
+          "relation": "GNBR::Sa::Compound:Disease",
+          "tail": "Disease::MESH:D003643",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C065179",
+          "normalized_disease": "Disease::MESH:D003643",
+          "direction": "Compound->Disease"
+        }
+      ]
+    },
+    {
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 4968,
+      "source_hint": "DRUGBANK",
+      "num_unique_compounds": 1542,
+      "num_unique_diseases": 1182,
+      "semantic_hint": {
+        "contains_treat": true,
+        "contains_palliate": false,
+        "contains_indication": false,
+        "contains_association": false,
+        "contains_therapeutic": false,
+        "contains_contra": false,
+        "contains_side_effect": false
+      },
+      "sample_rows": [
+        {
+          "head": "Compound::DB00003",
+          "relation": "DRUGBANK::treats::Compound:Disease",
+          "tail": "Disease::MESH:D003550",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00003",
+          "normalized_disease": "Disease::MESH:D003550",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00004",
+          "relation": "DRUGBANK::treats::Compound:Disease",
+          "tail": "Disease::MESH:C063419",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00004",
+          "normalized_disease": "Disease::MESH:C063419",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00005",
+          "relation": "DRUGBANK::treats::Compound:Disease",
+          "tail": "Disease::MESH:D013167",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00005",
+          "normalized_disease": "Disease::MESH:D013167",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00005",
+          "relation": "DRUGBANK::treats::Compound:Disease",
+          "tail": "Disease::MESH:D006086",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00005",
+          "normalized_disease": "Disease::MESH:D006086",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00005",
+          "relation": "DRUGBANK::treats::Compound:Disease",
+          "tail": "Disease::MESH:D017497",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00005",
+          "normalized_disease": "Disease::MESH:D017497",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00005",
+          "relation": "DRUGBANK::treats::Compound:Disease",
+          "tail": "Disease::MESH:D001171",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00005",
+          "normalized_disease": "Disease::MESH:D001171",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00005",
+          "relation": "DRUGBANK::treats::Compound:Disease",
+          "tail": "Disease::MESH:D011565",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00005",
+          "normalized_disease": "Disease::MESH:D011565",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00005",
+          "relation": "DRUGBANK::treats::Compound:Disease",
+          "tail": "Disease::MESH:D015535",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00005",
+          "normalized_disease": "Disease::MESH:D015535",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00005",
+          "relation": "DRUGBANK::treats::Compound:Disease",
+          "tail": "Disease::MESH:D017511",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00005",
+          "normalized_disease": "Disease::MESH:D017511",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00005",
+          "relation": "DRUGBANK::treats::Compound:Disease",
+          "tail": "Disease::MESH:D001172",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00005",
+          "normalized_disease": "Disease::MESH:D001172",
+          "direction": "Compound->Disease"
+        }
+      ]
+    },
+    {
+      "relation": "GNBR::Pa::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 2619,
+      "source_hint": "GNBR",
+      "num_unique_compounds": 1498,
+      "num_unique_diseases": 513,
+      "semantic_hint": {
+        "contains_treat": false,
+        "contains_palliate": false,
+        "contains_indication": false,
+        "contains_association": false,
+        "contains_therapeutic": false,
+        "contains_contra": false,
+        "contains_side_effect": false
+      },
+      "sample_rows": [
+        {
+          "head": "Compound::MESH:C020972",
+          "relation": "GNBR::Pa::Compound:Disease",
+          "tail": "Disease::MESH:D011658",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C020972",
+          "normalized_disease": "Disease::MESH:D011658",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C020972",
+          "relation": "GNBR::Pa::Compound:Disease",
+          "tail": "Disease::MESH:D055370",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C020972",
+          "normalized_disease": "Disease::MESH:D055370",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C020972",
+          "relation": "GNBR::Pa::Compound:Disease",
+          "tail": "Disease::MESH:D055371",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C020972",
+          "normalized_disease": "Disease::MESH:D055371",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C020972",
+          "relation": "GNBR::Pa::Compound:Disease",
+          "tail": "Disease::MESH:D064420",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C020972",
+          "normalized_disease": "Disease::MESH:D064420",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00441",
+          "relation": "GNBR::Pa::Compound:Disease",
+          "tail": "Disease::MESH:C567932",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00441",
+          "normalized_disease": "Disease::MESH:C567932",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00943",
+          "relation": "GNBR::Pa::Compound:Disease",
+          "tail": "Disease::MESH:D015658",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00943",
+          "normalized_disease": "Disease::MESH:D015658",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00945",
+          "relation": "GNBR::Pa::Compound:Disease",
+          "tail": "Disease::MESH:D006940",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00945",
+          "normalized_disease": "Disease::MESH:D006940",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::CHEBI:15372",
+          "relation": "GNBR::Pa::Compound:Disease",
+          "tail": "Disease::MESH:D006332",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::CHEBI:15372",
+          "normalized_disease": "Disease::MESH:D006332",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::CHEBI:15414",
+          "relation": "GNBR::Pa::Compound:Disease",
+          "tail": "Disease::MESH:D028361",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::CHEBI:15414",
+          "normalized_disease": "Disease::MESH:D028361",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00117",
+          "relation": "GNBR::Pa::Compound:Disease",
+          "tail": "Disease::MESH:D004194",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00117",
+          "normalized_disease": "Disease::MESH:D004194",
+          "direction": "Compound->Disease"
+        }
+      ]
+    },
+    {
+      "relation": "GNBR::C::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 1739,
+      "source_hint": "GNBR",
+      "num_unique_compounds": 1225,
+      "num_unique_diseases": 213,
+      "semantic_hint": {
+        "contains_treat": false,
+        "contains_palliate": false,
+        "contains_indication": false,
+        "contains_association": false,
+        "contains_therapeutic": false,
+        "contains_contra": false,
+        "contains_side_effect": false
+      },
+      "sample_rows": [
+        {
+          "head": "Compound::MESH:C004656",
+          "relation": "GNBR::C::Compound:Disease",
+          "tail": "Disease::MESH:D013274",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C004656",
+          "normalized_disease": "Disease::MESH:D013274",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB14066",
+          "relation": "GNBR::C::Compound:Disease",
+          "tail": "Disease::MESH:D005910",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB14066",
+          "normalized_disease": "Disease::MESH:D005910",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB06750",
+          "relation": "GNBR::C::Compound:Disease",
+          "tail": "Disease::MESH:D018197",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB06750",
+          "normalized_disease": "Disease::MESH:D018197",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C036150",
+          "relation": "GNBR::C::Compound:Disease",
+          "tail": "Disease::MESH:D009369",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C036150",
+          "normalized_disease": "Disease::MESH:D009369",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C052075",
+          "relation": "GNBR::C::Compound:Disease",
+          "tail": "Disease::MESH:D001749",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C052075",
+          "normalized_disease": "Disease::MESH:D001749",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C060802",
+          "relation": "GNBR::C::Compound:Disease",
+          "tail": "Disease::MESH:D008175",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C060802",
+          "normalized_disease": "Disease::MESH:D008175",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C065179",
+          "relation": "GNBR::C::Compound:Disease",
+          "tail": "Disease::MESH:C538231",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C065179",
+          "normalized_disease": "Disease::MESH:C538231",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C065179",
+          "relation": "GNBR::C::Compound:Disease",
+          "tail": "Disease::MESH:D002813",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C065179",
+          "normalized_disease": "Disease::MESH:D002813",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C065179",
+          "relation": "GNBR::C::Compound:Disease",
+          "tail": "Disease::MESH:D008223",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C065179",
+          "normalized_disease": "Disease::MESH:D008223",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C065179",
+          "relation": "GNBR::C::Compound:Disease",
+          "tail": "Disease::MESH:D012516",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C065179",
+          "normalized_disease": "Disease::MESH:D012516",
+          "direction": "Compound->Disease"
+        }
+      ]
+    },
+    {
+      "relation": "GNBR::J::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 1020,
+      "source_hint": "GNBR",
+      "num_unique_compounds": 388,
+      "num_unique_diseases": 642,
+      "semantic_hint": {
+        "contains_treat": false,
+        "contains_palliate": false,
+        "contains_indication": false,
+        "contains_association": false,
+        "contains_therapeutic": false,
+        "contains_contra": false,
+        "contains_side_effect": false
+      },
+      "sample_rows": [
+        {
+          "head": "Compound::MESH:C102006",
+          "relation": "GNBR::J::Compound:Disease",
+          "tail": "Disease::MESH:D004827",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C102006",
+          "normalized_disease": "Disease::MESH:D004827",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00945",
+          "relation": "GNBR::J::Compound:Disease",
+          "tail": "Disease::MESH:D054092",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00945",
+          "normalized_disease": "Disease::MESH:D054092",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB02285",
+          "relation": "GNBR::J::Compound:Disease",
+          "tail": "Disease::MESH:D030342",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB02285",
+          "normalized_disease": "Disease::MESH:D030342",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::CHEBI:15889",
+          "relation": "GNBR::J::Compound:Disease",
+          "tail": "Disease::MESH:C536030",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::CHEBI:15889",
+          "normalized_disease": "Disease::MESH:C536030",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB01775",
+          "relation": "GNBR::J::Compound:Disease",
+          "tail": "Disease::MESH:D005315",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB01775",
+          "normalized_disease": "Disease::MESH:D005315",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB01775",
+          "relation": "GNBR::J::Compound:Disease",
+          "tail": "Disease::MESH:D018805",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB01775",
+          "normalized_disease": "Disease::MESH:D018805",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB14546",
+          "relation": "GNBR::J::Compound:Disease",
+          "tail": "Disease::MESH:C538394",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB14546",
+          "normalized_disease": "Disease::MESH:C538394",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB14546",
+          "relation": "GNBR::J::Compound:Disease",
+          "tail": "Disease::MESH:D002658",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB14546",
+          "normalized_disease": "Disease::MESH:D002658",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00898",
+          "relation": "GNBR::J::Compound:Disease",
+          "tail": "Disease::MESH:D001260",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00898",
+          "normalized_disease": "Disease::MESH:D001260",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00898",
+          "relation": "GNBR::J::Compound:Disease",
+          "tail": "Disease::MESH:D016135",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00898",
+          "normalized_disease": "Disease::MESH:D016135",
+          "direction": "Compound->Disease"
+        }
+      ]
+    },
+    {
+      "relation": "GNBR::Pr::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 966,
+      "source_hint": "GNBR",
+      "num_unique_compounds": 760,
+      "num_unique_diseases": 274,
+      "semantic_hint": {
+        "contains_treat": false,
+        "contains_palliate": false,
+        "contains_indication": false,
+        "contains_association": false,
+        "contains_therapeutic": false,
+        "contains_contra": false,
+        "contains_side_effect": false
+      },
+      "sample_rows": [
+        {
+          "head": "Compound::MESH:C052075",
+          "relation": "GNBR::Pr::Compound:Disease",
+          "tail": "Disease::MESH:D066126",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C052075",
+          "normalized_disease": "Disease::MESH:D066126",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00945",
+          "relation": "GNBR::Pr::Compound:Disease",
+          "tail": "Disease::MESH:D008545",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00945",
+          "normalized_disease": "Disease::MESH:D008545",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB01775",
+          "relation": "GNBR::Pr::Compound:Disease",
+          "tail": "Disease::MESH:C537880",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB01775",
+          "normalized_disease": "Disease::MESH:C537880",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB01775",
+          "relation": "GNBR::Pr::Compound:Disease",
+          "tail": "Disease::MESH:C566236",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB01775",
+          "normalized_disease": "Disease::MESH:C566236",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB14546",
+          "relation": "GNBR::Pr::Compound:Disease",
+          "tail": "Disease::MESH:D007153",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB14546",
+          "normalized_disease": "Disease::MESH:D007153",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00898",
+          "relation": "GNBR::Pr::Compound:Disease",
+          "tail": "Disease::MESH:C536391",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00898",
+          "normalized_disease": "Disease::MESH:C536391",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00898",
+          "relation": "GNBR::Pr::Compound:Disease",
+          "tail": "Disease::MESH:C566031",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00898",
+          "normalized_disease": "Disease::MESH:C566031",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00898",
+          "relation": "GNBR::Pr::Compound:Disease",
+          "tail": "Disease::MESH:C567159",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00898",
+          "normalized_disease": "Disease::MESH:C567159",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00898",
+          "relation": "GNBR::Pr::Compound:Disease",
+          "tail": "Disease::MESH:D001528",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00898",
+          "normalized_disease": "Disease::MESH:D001528",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00898",
+          "relation": "GNBR::Pr::Compound:Disease",
+          "tail": "Disease::MESH:D008101",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00898",
+          "normalized_disease": "Disease::MESH:D008101",
+          "direction": "Compound->Disease"
+        }
+      ]
+    },
+    {
+      "relation": "Hetionet::CtD::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 755,
+      "source_hint": "Hetionet",
+      "num_unique_compounds": 387,
+      "num_unique_diseases": 77,
+      "semantic_hint": {
+        "contains_treat": false,
+        "contains_palliate": false,
+        "contains_indication": false,
+        "contains_association": false,
+        "contains_therapeutic": false,
+        "contains_contra": false,
+        "contains_side_effect": false
+      },
+      "sample_rows": [
+        {
+          "head": "Compound::DB00997",
+          "relation": "Hetionet::CtD::Compound:Disease",
+          "tail": "Disease::DOID:363",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00997",
+          "normalized_disease": "Disease::DOID:363",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00206",
+          "relation": "Hetionet::CtD::Compound:Disease",
+          "tail": "Disease::DOID:10763",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00206",
+          "normalized_disease": "Disease::DOID:10763",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00960",
+          "relation": "Hetionet::CtD::Compound:Disease",
+          "tail": "Disease::DOID:10763",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00960",
+          "normalized_disease": "Disease::DOID:10763",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00665",
+          "relation": "Hetionet::CtD::Compound:Disease",
+          "tail": "Disease::DOID:10283",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00665",
+          "normalized_disease": "Disease::DOID:10283",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00290",
+          "relation": "Hetionet::CtD::Compound:Disease",
+          "tail": "Disease::DOID:2998",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00290",
+          "normalized_disease": "Disease::DOID:2998",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB01232",
+          "relation": "Hetionet::CtD::Compound:Disease",
+          "tail": "Disease::DOID:635",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB01232",
+          "normalized_disease": "Disease::DOID:635",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00555",
+          "relation": "Hetionet::CtD::Compound:Disease",
+          "tail": "Disease::DOID:1826",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00555",
+          "normalized_disease": "Disease::DOID:1826",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00444",
+          "relation": "Hetionet::CtD::Compound:Disease",
+          "tail": "Disease::DOID:2531",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00444",
+          "normalized_disease": "Disease::DOID:2531",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00860",
+          "relation": "Hetionet::CtD::Compound:Disease",
+          "tail": "Disease::DOID:4481",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00860",
+          "normalized_disease": "Disease::DOID:4481",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00635",
+          "relation": "Hetionet::CtD::Compound:Disease",
+          "tail": "Disease::DOID:2531",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00635",
+          "normalized_disease": "Disease::DOID:2531",
+          "direction": "Compound->Disease"
+        }
+      ]
+    },
+    {
+      "relation": "GNBR::Mp::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 495,
+      "source_hint": "GNBR",
+      "num_unique_compounds": 425,
+      "num_unique_diseases": 154,
+      "semantic_hint": {
+        "contains_treat": false,
+        "contains_palliate": false,
+        "contains_indication": false,
+        "contains_association": false,
+        "contains_therapeutic": false,
+        "contains_contra": false,
+        "contains_side_effect": false
+      },
+      "sample_rows": [
+        {
+          "head": "Compound::MESH:C026098",
+          "relation": "GNBR::Mp::Compound:Disease",
+          "tail": "Disease::MESH:D003920",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C026098",
+          "normalized_disease": "Disease::MESH:D003920",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB06750",
+          "relation": "GNBR::Mp::Compound:Disease",
+          "tail": "Disease::MESH:D001169",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB06750",
+          "normalized_disease": "Disease::MESH:D001169",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::MESH:C102006",
+          "relation": "GNBR::Mp::Compound:Disease",
+          "tail": "Disease::MESH:D018805",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::MESH:C102006",
+          "normalized_disease": "Disease::MESH:D018805",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::CHEBI:15414",
+          "relation": "GNBR::Mp::Compound:Disease",
+          "tail": "Disease::MESH:D006973",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::CHEBI:15414",
+          "normalized_disease": "Disease::MESH:D006973",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::CHEBI:15705",
+          "relation": "GNBR::Mp::Compound:Disease",
+          "tail": "Disease::MESH:D000592",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::CHEBI:15705",
+          "normalized_disease": "Disease::MESH:D000592",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::CHEBI:15767",
+          "relation": "GNBR::Mp::Compound:Disease",
+          "tail": "Disease::MESH:D003920",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::CHEBI:15767",
+          "normalized_disease": "Disease::MESH:D003920",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00131",
+          "relation": "GNBR::Mp::Compound:Disease",
+          "tail": "Disease::MESH:D006973",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00131",
+          "normalized_disease": "Disease::MESH:D006973",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00898",
+          "relation": "GNBR::Mp::Compound:Disease",
+          "tail": "Disease::MESH:C535887",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00898",
+          "normalized_disease": "Disease::MESH:C535887",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB02901",
+          "relation": "GNBR::Mp::Compound:Disease",
+          "tail": "Disease::MESH:D003920",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB02901",
+          "normalized_disease": "Disease::MESH:D003920",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::CHEBI:16449",
+          "relation": "GNBR::Mp::Compound:Disease",
+          "tail": "Disease::MESH:D009765",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::CHEBI:16449",
+          "normalized_disease": "Disease::MESH:D009765",
+          "direction": "Compound->Disease"
+        }
+      ]
+    },
+    {
+      "relation": "Hetionet::CpD::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 390,
+      "source_hint": "Hetionet",
+      "num_unique_compounds": 221,
+      "num_unique_diseases": 50,
+      "semantic_hint": {
+        "contains_treat": false,
+        "contains_palliate": false,
+        "contains_indication": false,
+        "contains_association": false,
+        "contains_therapeutic": false,
+        "contains_contra": false,
+        "contains_side_effect": false
+      },
+      "sample_rows": [
+        {
+          "head": "Compound::DB01175",
+          "relation": "Hetionet::CpD::Compound:Disease",
+          "tail": "Disease::DOID:3312",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB01175",
+          "normalized_disease": "Disease::DOID:3312",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00321",
+          "relation": "Hetionet::CpD::Compound:Disease",
+          "tail": "Disease::DOID:7148",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00321",
+          "normalized_disease": "Disease::DOID:7148",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00176",
+          "relation": "Hetionet::CpD::Compound:Disease",
+          "tail": "Disease::DOID:594",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00176",
+          "normalized_disease": "Disease::DOID:594",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB01037",
+          "relation": "Hetionet::CpD::Compound:Disease",
+          "tail": "Disease::DOID:10652",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB01037",
+          "normalized_disease": "Disease::DOID:10652",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00945",
+          "relation": "Hetionet::CpD::Compound:Disease",
+          "tail": "Disease::DOID:9074",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00945",
+          "normalized_disease": "Disease::DOID:9074",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB01100",
+          "relation": "Hetionet::CpD::Compound:Disease",
+          "tail": "Disease::DOID:11119",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB01100",
+          "normalized_disease": "Disease::DOID:11119",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00328",
+          "relation": "Hetionet::CpD::Compound:Disease",
+          "tail": "Disease::DOID:7147",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00328",
+          "normalized_disease": "Disease::DOID:7147",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00218",
+          "relation": "Hetionet::CpD::Compound:Disease",
+          "tail": "Disease::DOID:3083",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00218",
+          "normalized_disease": "Disease::DOID:3083",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00989",
+          "relation": "Hetionet::CpD::Compound:Disease",
+          "tail": "Disease::DOID:14330",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00989",
+          "normalized_disease": "Disease::DOID:14330",
+          "direction": "Compound->Disease"
+        },
+        {
+          "head": "Compound::DB00203",
+          "relation": "Hetionet::CpD::Compound:Disease",
+          "tail": "Disease::DOID:418",
+          "head_type": "Compound",
+          "tail_type": "Disease",
+          "normalized_compound": "Compound::DB00203",
+          "normalized_disease": "Disease::DOID:418",
+          "direction": "Compound->Disease"
+        }
+      ]
+    }
+  ]
+}

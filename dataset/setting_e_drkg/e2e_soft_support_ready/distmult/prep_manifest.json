@@ -1,0 +1,480 @@
+{
+  "created_at": "2026-05-11T17:12:57.703804+00:00",
+  "decision": "DAY6_DRKG_SOFT_SUPPORT_READY",
+  "setting": "setting_e_drkg",
+  "dataset": "DRKG",
+  "source": "distmult",
+  "variant_name": "soft_support_b050_drkg_distmult_diag",
+  "formula": "support_score = evidence_positive - direct_penalty * direct_shortcut_penalty - contra_penalty * contradiction_penalty",
+  "params": {
+    "source": "distmult",
+    "variant_name": "soft_support_b050_drkg_distmult_diag",
+    "direct_penalty": 0.5,
+    "contra_penalty": 0.1,
+    "direct_degree_weight": 1.0,
+    "candidate_gene_cap": 120,
+    "disease_gene_cap": 240,
+    "bridge_cap": 40,
+    "shared_norm": 2.0,
+    "bridge_norm": 6.0,
+    "w_shared": 0.7,
+    "w_bridge": 0.2,
+    "w_candidate_touch": 0.05,
+    "w_query_touch": 0.05
+  },
+  "feature_meta": {
+    "compound_gene_rel_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      23,
+      25,
+      26,
+      33,
+      37,
+      38,
+      52,
+      53,
+      54,
+      55,
+      66,
+      69,
+      81,
+      82
+    ],
+    "disease_gene_rel_ids": [
+      22,
+      28,
+      32,
+      34,
+      35,
+      45,
+      46,
+      47,
+      50,
+      51,
+      56,
+      57,
+      58
+    ],
+    "gene_gene_rel_ids": [
+      20,
+      24,
+      27,
+      29,
+      30,
+      41,
+      42,
+      48,
+      49,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      67,
+      68,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      83,
+      84
+    ],
+    "direct_rel_ids": [
+      16,
+      21,
+      31,
+      36,
+      39,
+      40,
+      43,
+      44
+    ],
+    "direct_degree_p95": 52.94999999999982,
+    "direct_degree_max": 120.0
+  },
+  "raw_metrics": {
+    "train": {
+      "num_rows": 3968,
+      "gold_present_at20": 1.0,
+      "mrr_at20": 0.08034111736248177,
+      "hits1_at20": 0.013608870967741936,
+      "hits3_at20": 0.039566532258064516,
+      "hits10_at20": 0.09954637096774194,
+      "hits20_at20": 1.0,
+      "rank21_count": 0,
+      "avg_rank_absent_as_21": 18.287298387096776,
+      "unique_top1_count": 1,
+      "top1_dominance": 1.0,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB00635",
+          "count": 3968
+        }
+      ]
+    },
+    "valid": {
+      "num_rows": 500,
+      "gold_present_at20": 0.444,
+      "mrr_at20": 0.10271677325082898,
+      "hits1_at20": 0.02,
+      "hits3_at20": 0.108,
+      "hits10_at20": 0.324,
+      "hits20_at20": 0.444,
+      "rank21_count": 278,
+      "avg_rank_absent_as_21": 15.038,
+      "unique_top1_count": 149,
+      "top1_dominance": 0.07,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB00635",
+          "count": 35
+        },
+        {
+          "entity": "Compound::DB00860",
+          "count": 33
+        },
+        {
+          "entity": "Compound::DB00959",
+          "count": 29
+        },
+        {
+          "entity": "Compound::DB00759",
+          "count": 21
+        },
+        {
+          "entity": "Compound::DB01331",
+          "count": 15
+        },
+        {
+          "entity": "Compound::DB00620",
+          "count": 14
+        },
+        {
+          "entity": "Compound::DB00715",
+          "count": 12
+        },
+        {
+          "entity": "Compound::DB00999",
+          "count": 12
+        },
+        {
+          "entity": "Compound::DB00321",
+          "count": 11
+        },
+        {
+          "entity": "Compound::DB00424",
+          "count": 8
+        }
+      ]
+    },
+    "test": {
+      "num_rows": 500,
+      "gold_present_at20": 0.432,
+      "mrr_at20": 0.0996747976138069,
+      "hits1_at20": 0.034,
+      "hits3_at20": 0.092,
+      "hits10_at20": 0.276,
+      "hits20_at20": 0.432,
+      "rank21_count": 284,
+      "avg_rank_absent_as_21": 15.652,
+      "unique_top1_count": 147,
+      "top1_dominance": 0.074,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB00759",
+          "count": 37
+        },
+        {
+          "entity": "Compound::DB00959",
+          "count": 31
+        },
+        {
+          "entity": "Compound::DB00860",
+          "count": 25
+        },
+        {
+          "entity": "Compound::DB00635",
+          "count": 23
+        },
+        {
+          "entity": "Compound::DB00620",
+          "count": 16
+        },
+        {
+          "entity": "Compound::DB00999",
+          "count": 15
+        },
+        {
+          "entity": "Compound::DB00715",
+          "count": 12
+        },
+        {
+          "entity": "Compound::DB00541",
+          "count": 10
+        },
+        {
+          "entity": "Compound::DB00945",
+          "count": 10
+        },
+        {
+          "entity": "Compound::DB01331",
+          "count": 10
+        }
+      ]
+    }
+  },
+  "soft_metrics": {
+    "train": {
+      "num_rows": 3968,
+      "gold_present_at20": 1.0,
+      "mrr_at20": 0.10772297825705544,
+      "hits1_at20": 0.02066532258064516,
+      "hits3_at20": 0.06426411290322581,
+      "hits10_at20": 0.2469758064516129,
+      "hits20_at20": 1.0,
+      "rank21_count": 0,
+      "avg_rank_absent_as_21": 15.31804435483871,
+      "unique_top1_count": 67,
+      "top1_dominance": 0.2777217741935484,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB01284",
+          "count": 1102
+        },
+        {
+          "entity": "Compound::DB00635",
+          "count": 863
+        },
+        {
+          "entity": "Compound::DB00715",
+          "count": 510
+        },
+        {
+          "entity": "Compound::DB00959",
+          "count": 425
+        },
+        {
+          "entity": "Compound::DB00860",
+          "count": 400
+        },
+        {
+          "entity": "Compound::DB14631",
+          "count": 208
+        },
+        {
+          "entity": "Compound::DB00620",
+          "count": 140
+        },
+        {
+          "entity": "Compound::DB00493",
+          "count": 70
+        },
+        {
+          "entity": "Compound::DB00458",
+          "count": 53
+        },
+        {
+          "entity": "Compound::DB01234",
+          "count": 36
+        }
+      ]
+    },
+    "valid": {
+      "num_rows": 500,
+      "gold_present_at20": 0.444,
+      "mrr_at20": 0.0797338408237789,
+      "hits1_at20": 0.02,
+      "hits3_at20": 0.07,
+      "hits10_at20": 0.232,
+      "hits20_at20": 0.444,
+      "rank21_count": 278,
+      "avg_rank_absent_as_21": 16.134,
+      "unique_top1_count": 181,
+      "top1_dominance": 0.05,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB00860",
+          "count": 25
+        },
+        {
+          "entity": "Compound::DB00438",
+          "count": 15
+        },
+        {
+          "entity": "Compound::DB00873",
+          "count": 14
+        },
+        {
+          "entity": "Compound::DB01109",
+          "count": 13
+        },
+        {
+          "entity": "Compound::DB00762",
+          "count": 12
+        },
+        {
+          "entity": "Compound::DB09324",
+          "count": 11
+        },
+        {
+          "entity": "Compound::DB00959",
+          "count": 10
+        },
+        {
+          "entity": "Compound::DB00864",
+          "count": 10
+        },
+        {
+          "entity": "Compound::DB14631",
+          "count": 10
+        },
+        {
+          "entity": "Compound::DB01222",
+          "count": 8
+        }
+      ]
+    },
+    "test": {
+      "num_rows": 500,
+      "gold_present_at20": 0.432,
+      "mrr_at20": 0.08318433606297385,
+      "hits1_at20": 0.026,
+      "hits3_at20": 0.07,
+      "hits10_at20": 0.236,
+      "hits20_at20": 0.432,
+      "rank21_count": 284,
+      "avg_rank_absent_as_21": 16.226,
+      "unique_top1_count": 190,
+      "top1_dominance": 0.042,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB00860",
+          "count": 21
+        },
+        {
+          "entity": "Compound::DB00438",
+          "count": 15
+        },
+        {
+          "entity": "Compound::DB00762",
+          "count": 14
+        },
+        {
+          "entity": "Compound::DB09324",
+          "count": 12
+        },
+        {
+          "entity": "Compound::DB00959",
+          "count": 12
+        },
+        {
+          "entity": "Compound::DB00873",
+          "count": 10
+        },
+        {
+          "entity": "Compound::DB00493",
+          "count": 10
+        },
+        {
+          "entity": "Compound::DB00343",
+          "count": 8
+        },
+        {
+          "entity": "Compound::DB00620",
+          "count": 7
+        },
+        {
+          "entity": "Compound::DB00394",
+          "count": 7
+        }
+      ]
+    }
+  },
+  "change_summary": {
+    "train": {
+      "num_rows": 3968,
+      "num_improved_vs_backbone": 1616,
+      "num_worsened_vs_backbone": 403,
+      "num_unchanged_vs_backbone": 1949,
+      "improved_rate": 0.40725806451612906,
+      "worsened_rate": 0.1015625
+    },
+    "valid": {
+      "num_rows": 500,
+      "num_improved_vs_backbone": 68,
+      "num_worsened_vs_backbone": 139,
+      "num_unchanged_vs_backbone": 293,
+      "improved_rate": 0.136,
+      "worsened_rate": 0.278
+    },
+    "test": {
+      "num_rows": 500,
+      "num_improved_vs_backbone": 74,
+      "num_worsened_vs_backbone": 132,
+      "num_unchanged_vs_backbone": 294,
+      "improved_rate": 0.148,
+      "worsened_rate": 0.264
+    }
+  },
+  "e2e_audit": {
+    "train": {
+      "split": "train",
+      "num_rows": 3968,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_subgraph_size": 100.0,
+      "schema_pass": true
+    },
+    "valid": {
+      "split": "valid",
+      "num_rows": 500,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_subgraph_size": 100.0,
+      "schema_pass": true
+    },
+    "test": {
+      "split": "test",
+      "num_rows": 500,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_subgraph_size": 100.0,
+      "schema_pass": true
+    }
+  },
+  "notes": [
+    "Soft support re-ranks only existing top-20 candidates.",
+    "No valid/test gold injection.",
+    "E2E soft-support package preserves source subgraph and changes candidate order/prompt."
+  ]
+}

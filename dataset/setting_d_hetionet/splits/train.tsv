@@ -1,0 +1,555 @@
+Goserelin	CtD	prostate cancer
+Cyclosporine	CtD	focal segmental glomerulosclerosis
+Cyclosporine	CtD	systemic lupus erythematosus
+Octreotide	CtD	thymus cancer
+Vitamin C	CtD	prostate cancer
+Calcitriol	CtD	osteoporosis
+Calcitriol	CtD	psoriasis
+Ergocalciferol	CtD	osteoporosis
+Ergocalciferol	CtD	rheumatoid arthritis
+Cholecalciferol [Compound::DB00169]	CtD	osteoporosis
+Cholecalciferol [Compound::DB00169]	CtD	ulcerative colitis
+Cholecalciferol [Compound::DB00169]	CtD	psoriasis
+Pravastatin	CtD	coronary artery disease
+Valsartan	CtD	type 2 diabetes mellitus
+Ramipril	CtD	hypertension
+Ramipril	CtD	type 1 diabetes mellitus
+Flunisolide	CtD	allergic rhinitis
+Nicotine [Compound::DB00184]	CtD	ulcerative colitis
+Esmolol	CtD	hypertension
+Bortezomib	CtD	hematologic cancer
+Phentermine	CtD	obesity
+Betaxolol	CtD	hypertension
+Pyrimethamine	CtD	malaria
+Reserpine	CtD	hypertension
+Torasemide	CtD	hypertension
+Citalopram	CtD	alcohol dependence
+Nelfinavir	CtD	acquired immunodeficiency syndrome
+Isoetarine	CtD	asthma
+Glimepiride	CtD	type 2 diabetes mellitus
+Indinavir	CtD	acquired immunodeficiency syndrome
+Guanadrel	CtD	hypertension
+Lovastatin	CtD	atherosclerosis
+Pregabalin	CtD	epilepsy syndrome
+Nevirapine	CtD	acquired immunodeficiency syndrome
+Cladribine	CtD	multiple sclerosis
+Cladribine	CtD	hematologic cancer
+Mesalazine	CtD	ulcerative colitis
+Mesalazine	CtD	Crohn's disease [Disease::DOID:8778]
+Dapsone	CtD	leprosy
+Dapsone	CtD	malaria
+Dapsone	CtD	systemic lupus erythematosus
+Phenytoin	CtD	epilepsy syndrome
+Doxycycline	CtD	malaria
+Calcium Acetate	CtD	osteoporosis
+Anagrelide	CtD	hematologic cancer
+Carmustine	CtD	lymphatic system cancer
+Carmustine	CtD	brain cancer
+Carmustine	CtD	malignant glioma
+Metoprolol	CtD	hypertension
+Isradipine	CtD	hypertension
+Topiramate	CtD	migraine
+Topiramate	CtD	obesity
+Olmesartan	CtD	coronary artery disease
+Theophylline	CtD	asthma
+Liothyronine	CtD	hypothyroidism
+Pamidronate	CtD	osteoporosis
+Pamidronate	CtD	Paget's disease of bone
+Acarbose	CtD	type 2 diabetes mellitus
+Conjugated Estrogens	CtD	prostate cancer
+Travoprost	CtD	glaucoma
+Bleomycin	CtD	hematologic cancer
+Bleomycin	CtD	testicular cancer
+Chlorambucil	CtD	breast cancer
+Chlorambucil	CtD	ovarian cancer
+Chlorambucil	CtD	testicular cancer
+Mitomycin	CtD	stomach cancer
+Mitomycin	CtD	urinary bladder cancer
+Bexarotene	CtD	hematologic cancer
+Chlorthalidone	CtD	hypertension
+Valproic Acid	CtD	migraine
+Gefitinib	CtD	lung cancer
+Amitriptyline	CtD	migraine
+Floxuridine	CtD	stomach cancer
+Indomethacin	CtD	gout
+Metformin	CtD	polycystic ovary syndrome
+Metformin	CtD	metabolic syndrome X
+Metformin	CtD	type 2 diabetes mellitus
+Ipratropium bromide	CtD	asthma
+Pimecrolimus	CtD	atopic dermatitis
+Omeprazole	CtD	Barrett's esophagus
+Cetirizine	CtD	allergic rhinitis
+Diltiazem	CtD	hypertension
+Trimethadione	CtD	epilepsy syndrome
+Clobazam	CtD	epilepsy syndrome
+Minoxidil	CtD	hypertension
+Tioguanine	CtD	hematologic cancer
+Sulfadiazine	CtD	malaria
+Vinorelbine	CtD	lung cancer
+Vinorelbine	CtD	breast cancer
+Vinorelbine	CtD	hematologic cancer
+Timolol	CtD	hypertension
+Timolol	CtD	migraine
+Amlodipine	CtD	hypertension
+Triamterene	CtD	hypertension
+Valrubicin	CtD	urinary bladder cancer
+Beclomethasone	CtD	asthma
+Beclomethasone	CtD	psoriasis
+Progesterone [Compound::DB00396]	CtD	uterine cancer
+Phenylpropanolamine	CtD	obesity
+Sorafenib	CtD	thyroid cancer
+Zoledronate	CtD	Paget's disease of bone
+Nisoldipine	CtD	hypertension
+Carbachol	CtD	glaucoma
+Rosiglitazone	CtD	type 2 diabetes mellitus
+Spironolactone	CtD	hypertension
+Spironolactone	CtD	dilated cardiomyopathy
+Hyoscyamine	CtD	pancreatitis
+Cyproheptadine	CtD	allergic rhinitis
+Bendroflumethiazide	CtD	hypertension
+Allopurinol	CtD	gout
+Gemcitabine	CtD	urinary bladder cancer
+Gemcitabine	CtD	pancreatic cancer
+Gemcitabine	CtD	kidney cancer
+Entecavir	CtD	hepatitis B
+Betamethasone	CtD	multiple sclerosis
+Betamethasone	CtD	atopic dermatitis
+Betamethasone	CtD	allergic rhinitis
+Betamethasone	CtD	ankylosing spondylitis
+Betamethasone	CtD	ulcerative colitis
+Betamethasone	CtD	psoriasis
+Betamethasone	CtD	psoriatic arthritis
+Teniposide	CtD	lung cancer
+Teniposide	CtD	hematologic cancer
+Epirubicin	CtD	stomach cancer
+Epirubicin	CtD	urinary bladder cancer
+Epirubicin	CtD	peripheral nervous system neoplasm
+Epirubicin	CtD	breast cancer
+Epirubicin	CtD	hematologic cancer
+Dipivefrin	CtD	glaucoma
+Levothyroxine	CtD	hypothyroidism
+Loratadine	CtD	asthma
+Loratadine	CtD	allergic rhinitis
+Prazosin	CtD	hypertension
+Acitretin	CtD	psoriasis
+Quinine	CtD	malaria
+Montelukast	CtD	asthma
+Montelukast	CtD	chronic obstructive pulmonary disease
+Lenalidomide	CtD	hematologic cancer
+Raloxifene	CtD	breast cancer
+Brimonidine	CtD	glaucoma
+Altretamine	CtD	ovarian cancer
+Miglitol	CtD	type 2 diabetes mellitus
+Fosinopril	CtD	hypertension
+Zidovudine	CtD	acquired immunodeficiency syndrome
+Flutamide	CtD	prostate cancer
+Cimetidine	CtD	obesity
+Ritonavir	CtD	acquired immunodeficiency syndrome
+Dextrothyroxine	CtD	hypothyroidism
+Cisplatin	CtD	urinary bladder cancer
+Cisplatin	CtD	bone cancer
+Cisplatin	CtD	hematologic cancer
+Cisplatin	CtD	germ cell cancer
+Cisplatin	CtD	esophageal cancer
+Trandolapril	CtD	hypertension
+Carteolol	CtD	glaucoma
+Alitretinoin	CtD	peripheral nervous system neoplasm
+Alitretinoin	CtD	hematologic cancer
+Metolazone	CtD	hypertension
+Erlotinib	CtD	lung cancer
+Erlotinib	CtD	pancreatic cancer
+Erlotinib	CtD	kidney cancer
+Toremifene	CtD	breast cancer
+Vincristine	CtD	sarcoma
+Vincristine	CtD	colon cancer
+Vincristine	CtD	hematologic cancer
+Benazepril	CtD	hypertension
+Fluorouracil	CtD	urinary bladder cancer
+Fluorouracil	CtD	skin cancer
+Zafirlukast	CtD	asthma
+Propylthiouracil	CtD	Graves' disease
+Pentostatin	CtD	hematologic cancer
+Methoxsalen	CtD	vitiligo
+Methoxsalen	CtD	hematologic cancer
+Methoxsalen	CtD	psoriasis
+Lamotrigine	CtD	epilepsy syndrome
+Methotrexate	CtD	lymphatic system cancer
+Methotrexate	CtD	urinary bladder cancer
+Methotrexate	CtD	germ cell cancer
+Methotrexate	CtD	psoriatic arthritis
+Carbamazepine	CtD	epilepsy syndrome
+Vinblastine	CtD	head and neck cancer
+Vinblastine	CtD	lung cancer
+Vinblastine	CtD	hematologic cancer
+Propranolol	CtD	hypertension
+Propranolol	CtD	migraine
+Clonidine	CtD	hypertension
+Clonidine	CtD	glaucoma
+Enalapril	CtD	hypertension
+Fluticasone Propionate	CtD	asthma
+Doxazosin	CtD	hypertension
+Fluocinolone Acetonide	CtD	psoriasis
+Amiloride	CtD	hypertension
+Labetalol	CtD	hypertension
+Medroxyprogesterone Acetate	CtD	uterine cancer
+Imatinib	CtD	hematologic cancer
+Triamcinolone	CtD	multiple sclerosis
+Triamcinolone	CtD	asthma
+Triamcinolone	CtD	atopic dermatitis
+Triamcinolone	CtD	rheumatoid arthritis
+Triamcinolone	CtD	ulcerative colitis
+Triamcinolone	CtD	systemic lupus erythematosus
+Triamcinolone	CtD	alopecia areata
+Nicardipine	CtD	hypertension
+Efavirenz	CtD	acquired immunodeficiency syndrome
+Niacin	CtD	atherosclerosis
+Guanabenz	CtD	hypertension
+Alendronate	CtD	osteoporosis
+Alendronate	CtD	Paget's disease of bone
+Clofarabine	CtD	hematologic cancer
+Prednisone	CtD	prostate cancer
+Prednisone	CtD	multiple sclerosis
+Prednisone	CtD	asthma
+Prednisone	CtD	atopic dermatitis
+Prednisone	CtD	systemic scleroderma
+Prednisone	CtD	ankylosing spondylitis
+Prednisone	CtD	psoriatic arthritis
+Prednisone	CtD	systemic lupus erythematosus
+Simvastatin	CtD	atherosclerosis
+Simvastatin	CtD	coronary artery disease
+Pemetrexed	CtD	lung cancer
+Stavudine	CtD	acquired immunodeficiency syndrome
+Dyphylline	CtD	asthma
+Latanoprost	CtD	glaucoma
+Estrone	CtD	prostate cancer
+Mecamylamine	CtD	hypertension
+Acamprosate	CtD	alcohol dependence
+Verapamil	CtD	hypertension
+Verapamil	CtD	migraine
+Nilutamide	CtD	prostate cancer
+Chlorpropamide	CtD	type 2 diabetes mellitus
+Galantamine	CtD	Alzheimer's disease
+Tamoxifen	CtD	pancreatic cancer
+Losartan	CtD	hypertension
+Losartan	CtD	type 2 diabetes mellitus
+Midazolam	CtD	epilepsy syndrome
+Mycophenolate mofetil	CtD	psoriasis
+Moexipril	CtD	hypertension
+Daunorubicin	CtD	hematologic cancer
+Furosemide	CtD	dilated cardiomyopathy
+Furosemide	CtD	coronary artery disease
+Eplerenone	CtD	hypertension
+Amprenavir	CtD	acquired immunodeficiency syndrome
+Methazolamide	CtD	glaucoma
+Naltrexone	CtD	alcohol dependence
+Delavirdine	CtD	acquired immunodeficiency syndrome
+Lamivudine	CtD	hepatitis B
+Ibandronate	CtD	osteoporosis
+Nedocromil	CtD	asthma
+Adefovir Dipivoxil	CtD	hepatitis B
+Lisinopril	CtD	hypertension
+Lisinopril	CtD	dilated cardiomyopathy
+Lisinopril	CtD	systemic scleroderma
+Imiquimod	CtD	skin cancer
+Nateglinide	CtD	type 2 diabetes mellitus
+Esomeprazole	CtD	Barrett's esophagus
+Riluzole	CtD	amyotrophic lateral sclerosis
+Hydrocortisone	CtD	atopic dermatitis
+Hydrocortisone	CtD	ulcerative colitis
+Hydrocortisone	CtD	psoriasis
+Hydrocortisone	CtD	systemic lupus erythematosus
+Zileuton	CtD	asthma
+Tretinoin	CtD	peripheral nervous system neoplasm
+Clopidogrel	CtD	coronary artery disease
+Irinotecan	CtD	breast cancer
+Irinotecan	CtD	colon cancer
+Methimazole	CtD	Graves' disease
+Mometasone	CtD	asthma
+Mometasone	CtD	systemic scleroderma
+Olopatadine	CtD	allergic rhinitis
+Etoposide	CtD	urinary bladder cancer
+Etoposide	CtD	peripheral nervous system neoplasm
+Etoposide	CtD	brain cancer
+Etoposide	CtD	germ cell cancer
+Etoposide	CtD	muscle cancer
+Hydroflumethiazide	CtD	hypertension
+Tirofiban	CtD	coronary artery disease
+Oxcarbazepine	CtD	epilepsy syndrome
+Propantheline	CtD	pancreatitis
+Estradiol [Compound::DB00783]	CtD	osteoporosis
+Naproxen	CtD	gout
+Perindopril	CtD	hypertension
+Perindopril	CtD	coronary artery disease
+Primidone	CtD	epilepsy syndrome
+Sulfasalazine	CtD	Crohn's disease [Disease::DOID:8778]
+Candesartan	CtD	hypertension
+Tazarotene	CtD	psoriasis
+Fenoldopam	CtD	hypertension
+Pentoxifylline	CtD	systemic scleroderma
+Indapamide	CtD	hypertension
+Orciprenaline	CtD	asthma
+Propofol	CtD	epilepsy syndrome
+Acetazolamide	CtD	glaucoma
+Disulfiram	CtD	alcohol dependence
+Diazepam	CtD	epilepsy syndrome
+Tolazamide	CtD	type 2 diabetes mellitus
+Donepezil	CtD	Alzheimer's disease
+Dacarbazine	CtD	peripheral nervous system neoplasm
+Dacarbazine	CtD	pancreatic cancer
+Dacarbazine	CtD	hematologic cancer
+Dacarbazine	CtD	muscle cancer
+Dacarbazine	CtD	skin cancer
+Temozolomide	CtD	brain cancer
+Temozolomide	CtD	melanoma
+Temozolomide	CtD	malignant glioma
+Temozolomide	CtD	skin cancer
+Penicillamine	CtD	rheumatoid arthritis
+Prednisolone	CtD	gout
+Prednisolone	CtD	multiple sclerosis
+Prednisolone	CtD	hematologic cancer
+Prednisolone	CtD	asthma
+Prednisolone	CtD	atopic dermatitis
+Prednisolone	CtD	ankylosing spondylitis
+Prednisolone	CtD	rheumatoid arthritis
+Prednisolone	CtD	ulcerative colitis
+Prednisolone	CtD	psoriasis
+Prednisolone	CtD	psoriatic arthritis
+Prednisolone	CtD	systemic lupus erythematosus
+Tacrolimus	CtD	atopic dermatitis
+Benzphetamine	CtD	obesity
+Dorzolamide	CtD	glaucoma
+Terbutaline	CtD	asthma
+Eprosartan	CtD	hypertension
+Chlorothiazide	CtD	hypertension
+Quinapril	CtD	hypertension
+Clomifene	CtD	azoospermia
+Risedronate	CtD	osteoporosis
+Risedronate	CtD	Paget's disease of bone
+Bumetanide	CtD	hypertension
+Mechlorethamine	CtD	lymphatic system cancer
+Didanosine	CtD	acquired immunodeficiency syndrome
+Ethacrynic acid	CtD	hypertension
+Bimatoprost	CtD	glaucoma
+Quinidine	CtD	malaria
+Zonisamide	CtD	epilepsy syndrome
+Repaglinide	CtD	type 2 diabetes mellitus
+Ketotifen	CtD	asthma
+Diethylpropion	CtD	obesity
+Salmeterol	CtD	asthma
+Acetylsalicylic acid	CtD	Kawasaki disease
+Acetylsalicylic acid	CtD	coronary artery disease
+Fulvestrant	CtD	breast cancer
+Felbamate	CtD	epilepsy syndrome
+Carboplatin	CtD	brain cancer
+Carboplatin	CtD	ocular cancer
+Carboplatin	CtD	ovarian cancer
+Carboplatin	CtD	testicular cancer
+Carboplatin	CtD	uterine cancer
+Methylprednisolone	CtD	gout
+Methylprednisolone	CtD	multiple sclerosis
+Methylprednisolone	CtD	allergic rhinitis
+Methylprednisolone	CtD	ankylosing spondylitis
+Methylprednisolone	CtD	rheumatoid arthritis
+Methylprednisolone	CtD	ulcerative colitis
+Methylprednisolone	CtD	psoriatic arthritis
+Pindolol	CtD	hypertension
+Apraclonidine	CtD	glaucoma
+Telmisartan	CtD	hypertension
+Telmisartan	CtD	coronary artery disease
+Desloratadine	CtD	allergic rhinitis
+Methyldopa	CtD	hypertension
+Dactinomycin	CtD	peripheral nervous system neoplasm
+Dactinomycin	CtD	germ cell cancer
+Dactinomycin	CtD	testicular cancer
+Dactinomycin	CtD	uterine cancer
+Ezetimibe	CtD	coronary artery disease
+Ethinyl Estradiol	CtD	osteoporosis
+Physostigmine	CtD	glaucoma
+Isotretinoin	CtD	peripheral nervous system neoplasm
+Formoterol	CtD	chronic obstructive pulmonary disease
+Dimenhydrinate	CtD	atopic dermatitis
+Dimenhydrinate	CtD	allergic rhinitis
+Cytarabine	CtD	lymphatic system cancer
+Cytarabine	CtD	hematologic cancer
+Rivastigmine	CtD	Alzheimer's disease
+Exemestane	CtD	breast cancer
+Azathioprine	CtD	systemic scleroderma
+Azathioprine	CtD	rheumatoid arthritis
+Azathioprine	CtD	ulcerative colitis
+Azathioprine	CtD	Crohn's disease [Disease::DOID:8778]
+Azathioprine	CtD	systemic lupus erythematosus
+Auranofin	CtD	rheumatoid arthritis
+Auranofin	CtD	psoriatic arthritis
+Gabapentin	CtD	migraine
+Doxorubicin	CtD	prostate cancer
+Doxorubicin	CtD	stomach cancer
+Doxorubicin	CtD	urinary bladder cancer
+Doxorubicin	CtD	sarcoma
+Doxorubicin	CtD	lung cancer
+Doxorubicin	CtD	breast cancer
+Doxorubicin	CtD	thyroid cancer
+Doxorubicin	CtD	pancreatic cancer
+Doxorubicin	CtD	hematologic cancer
+Doxorubicin	CtD	kidney cancer
+Doxorubicin	CtD	testicular cancer
+Doxorubicin	CtD	liver cancer
+Hydrochlorothiazide	CtD	nephrolithiasis
+Salbutamol	CtD	asthma
+Salbutamol	CtD	chronic obstructive pulmonary disease
+Cromoglicic acid	CtD	asthma
+Hydroxyurea	CtD	psoriasis
+Letrozole	CtD	breast cancer
+Busulfan	CtD	hematologic cancer
+Clobetasol propionate	CtD	psoriasis
+Balsalazide	CtD	ulcerative colitis
+Balsalazide	CtD	Crohn's disease [Disease::DOID:8778]
+Glyburide	CtD	gestational diabetes
+Glyburide	CtD	type 2 diabetes mellitus
+Guanfacine	CtD	hypertension
+Felodipine	CtD	hypertension
+Mycophenolic acid	CtD	systemic scleroderma
+Irbesartan	CtD	hypertension
+Topotecan	CtD	peripheral nervous system neoplasm
+Topotecan	CtD	lung cancer
+Topotecan	CtD	ovarian cancer
+Topotecan	CtD	cervical cancer
+Probenecid	CtD	gout
+Mercaptopurine	CtD	Crohn's disease [Disease::DOID:8778]
+Fenofibrate	CtD	coronary artery disease
+Thalidomide	CtD	hematologic cancer
+Melphalan	CtD	peripheral nervous system neoplasm
+Melphalan	CtD	breast cancer
+Melphalan	CtD	ovarian cancer
+Memantine	CtD	Alzheimer's disease
+Rifampicin	CtD	leprosy
+Fluocinonide	CtD	atopic dermatitis
+Abacavir	CtD	acquired immunodeficiency syndrome
+Echothiophate	CtD	glaucoma
+Isoprenaline	CtD	asthma
+Glipizide	CtD	type 2 diabetes mellitus
+Clonazepam	CtD	epilepsy syndrome
+Fludarabine	CtD	hematologic cancer
+Diphenhydramine	CtD	atopic dermatitis
+Atorvastatin	CtD	hypertension
+Etidronic acid	CtD	osteoporosis
+Etidronic acid	CtD	Paget's disease of bone
+Vigabatrin	CtD	epilepsy syndrome
+Orlistat	CtD	type 2 diabetes mellitus
+Pilocarpine	CtD	glaucoma
+Leflunomide	CtD	systemic scleroderma
+Rosuvastatin	CtD	atherosclerosis
+Capecitabine	CtD	prostate cancer
+Capecitabine	CtD	stomach cancer
+Capecitabine	CtD	breast cancer
+Capecitabine	CtD	kidney cancer
+Capecitabine	CtD	esophageal cancer
+Sibutramine	CtD	obesity
+Nifedipine	CtD	hypertension
+Gliclazide	CtD	type 2 diabetes mellitus
+Tolbutamide	CtD	type 2 diabetes mellitus
+Bicalutamide	CtD	prostate cancer
+Proguanil	CtD	malaria
+Pioglitazone	CtD	type 2 diabetes mellitus
+Tiludronate	CtD	Paget's disease of bone
+Carvedilol	CtD	hypertension
+Diclofenamide	CtD	glaucoma
+Bupropion	CtD	obesity
+Terazosin	CtD	hypertension
+Procarbazine	CtD	brain cancer
+Guanethidine	CtD	hypertension
+Phenobarbital	CtD	epilepsy syndrome
+Idarubicin	CtD	hematologic cancer
+Ifosfamide	CtD	germ cell cancer
+Ifosfamide	CtD	testicular cancer
+Fluoxymesterone	CtD	breast cancer
+Clindamycin	CtD	malaria
+Acebutolol	CtD	hypertension
+Brinzolamide	CtD	glaucoma
+Estramustine	CtD	prostate cancer
+Captopril	CtD	hypertension
+Bromocriptine	CtD	type 2 diabetes mellitus
+Levetiracetam	CtD	epilepsy syndrome
+Nadolol	CtD	hypertension
+Mitoxantrone	CtD	lymphatic system cancer
+Mitoxantrone	CtD	prostate cancer
+Mitoxantrone	CtD	hematologic cancer
+Lomustine	CtD	brain cancer
+Levobunolol	CtD	glaucoma
+Metipranolol	CtD	glaucoma
+Anastrozole	CtD	breast cancer
+Budesonide	CtD	asthma
+Budesonide	CtD	ulcerative colitis
+Aminophylline	CtD	chronic obstructive pulmonary disease
+Paclitaxel	CtD	lung cancer
+Paclitaxel	CtD	ovarian cancer
+Saquinavir	CtD	acquired immunodeficiency syndrome
+Dexamethasone	CtD	multiple sclerosis
+Dexamethasone	CtD	hematologic cancer
+Dexamethasone	CtD	atopic dermatitis
+Dexamethasone	CtD	ankylosing spondylitis
+Dexamethasone	CtD	ulcerative colitis
+Dexamethasone	CtD	psoriatic arthritis
+Gemfibrozil	CtD	coronary artery disease
+Bepridil	CtD	hypertension
+Docetaxel	CtD	head and neck cancer
+Docetaxel	CtD	breast cancer
+Docetaxel	CtD	skin cancer
+Olsalazine	CtD	ulcerative colitis
+Dasatinib	CtD	hematologic cancer
+Lapatinib	CtD	breast cancer
+Desonide	CtD	atopic dermatitis
+Sitagliptin	CtD	type 2 diabetes mellitus
+Telbivudine	CtD	hepatitis B
+Sunitinib	CtD	pancreatic cancer
+Varenicline	CtD	nicotine dependence
+Arformoterol	CtD	asthma
+Hydralazine	CtD	hypertension
+Nelarabine	CtD	hematologic cancer
+Pirbuterol	CtD	asthma
+Fosphenytoin	CtD	epilepsy syndrome
+Quinidine barbiturate	CtD	malaria
+Amobarbital	CtD	epilepsy syndrome
+Penbutolol	CtD	coronary artery disease
+Colchicine	CtD	primary biliary cirrhosis
+Colchicine	CtD	gout
+Tiotropium	CtD	asthma
+Tiotropium	CtD	chronic obstructive pulmonary disease
+Ciclesonide	CtD	asthma
+Methamphetamine	CtD	obesity
+Phendimetrazine	CtD	obesity
+Liotrix	CtD	hypothyroidism
+Ursodeoxycholic acid	CtD	primary biliary cirrhosis
+Everolimus	CtD	kidney cancer
+Lopinavir	CtD	acquired immunodeficiency syndrome
+Roflumilast	CtD	chronic obstructive pulmonary disease
+Calcipotriol	CtD	psoriasis
+Vorinostat	CtD	hematologic cancer
+Thiotepa	CtD	urinary bladder cancer
+Thiotepa	CtD	breast cancer
+Estropipate	CtD	osteoporosis
+Ixabepilone	CtD	breast cancer
+Nebivolol	CtD	hypertension
+Nilotinib	CtD	hematologic cancer
+Indacaterol	CtD	asthma
+Vandetanib	CtD	thyroid cancer
+WF10	CtD	asthma
+Abiraterone	CtD	prostate cancer
+Rufinamide	CtD	epilepsy syndrome
+Lacosamide	CtD	epilepsy syndrome
+Temsirolimus	CtD	kidney cancer
+Pazopanib	CtD	kidney cancer
+Artemether	CtD	malaria
+Degarelix	CtD	prostate cancer
+Cabazitaxel	CtD	prostate cancer
+Chenodeoxycholic acid	CtD	primary biliary cirrhosis
+Ticagrelor	CtD	coronary artery disease
+Vismodegib	CtD	skin cancer
+Pitavastatin	CtD	coronary artery disease
+Crizotinib	CtD	lung cancer
+Estradiol valerate/Dienogest	CtD	prostate cancer
+Fingolimod	CtD	multiple sclerosis
+Eribulin	CtD	breast cancer
+Ruxolitinib	CtD	hematologic cancer
+Vemurafenib	CtD	skin cancer
+Linagliptin	CtD	type 2 diabetes mellitus
+Fluticasone furoate	CtD	asthma

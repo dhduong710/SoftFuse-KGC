@@ -1,0 +1,21 @@
+{
+  "Gene->Gene": 2350931,
+  "Compound->Compound": 1385757,
+  "Anatomy->Gene": 726495,
+  "Gene->Biological Process": 559504,
+  "Compound->Gene": 184504,
+  "Compound->Side Effect": 138944,
+  "Gene->Molecular Function": 97222,
+  "Gene->Disease": 95399,
+  "Gene->Pathway": 84372,
+  "Compound->Disease": 83895,
+  "Gene->Cellular Component": 73566,
+  "Disease->Gene": 28438,
+  "Gene->Compound": 26290,
+  "Compound->Atc": 15750,
+  "Gene->Tax": 14663,
+  "Disease->Anatomy": 3602,
+  "Disease->Symptom": 3357,
+  "Pharmacologic Class->Compound": 1029,
+  "Disease->Disease": 543
+}

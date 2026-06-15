@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-05-12T01:13:53.593997+00:00",
+  "setting": "setting_f_repodb",
+  "dataset": "repoDB",
+  "download_status": {
+    "status": "downloaded",
+    "path": "dataset/setting_f_repodb/raw_inventory/downloads/shiny.RData",
+    "size_mb": 0.2919,
+    "url_used": "https://raw.githubusercontent.com/adam-sam-brown/repoDB/master/Shiny_Application/data/shiny.RData"
+  },
+  "export_status": {
+    "pyreadr": {
+      "method": "pyreadr",
+      "status": "success",
+      "exported_files": [
+        {
+          "object_name": "drug.fr",
+          "path": "dataset/setting_f_repodb/raw_inventory/exported_tables/pyreadr_drug.fr.tsv",
+          "rows": 10800,
+          "cols": 11
+        }
+      ]
+    },
+    "Rscript": {
+      "method": "Rscript",
+      "status": "skipped_pyreadr_success",
+      "exported_files": []
+    }
+  },
+  "manual_dir": "dataset/setting_f_repodb/raw_inventory/manual",
+  "export_dir": "dataset/setting_f_repodb/raw_inventory/exported_tables",
+  "files": [
+    {
+      "path": "dataset/setting_f_repodb/raw_inventory/downloads/shiny.RData",
+      "size_mb": 0.2919
+    },
+    {
+      "path": "dataset/setting_f_repodb/raw_inventory/exported_tables/pyreadr_drug.fr.tsv",
+      "size_mb": 2.9765
+    },
+    {
+      "path": "dataset/setting_f_repodb/raw_inventory/repodb_best_table_raw.tsv",
+      "size_mb": 2.9765
+    }
+  ]
+}

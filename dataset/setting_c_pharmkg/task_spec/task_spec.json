@@ -1,0 +1,98 @@
+{
+  "week": 22,
+  "day": 3,
+  "decision": "GO_TASK_SELECTED_PROXY_SCHEMA",
+  "decision_notes": [
+    "No explicit relation-label map was available in PharmKG-8k files; relation T is selected as a therapeutic association proxy, not clinical indication.",
+    "Preliminary type map is task-specific: T heads are Drug/Chemical candidates and T tails are Disease queries."
+  ],
+  "dataset": {
+    "name": "PharmKG-8k",
+    "setting_name": "setting_c_pharmkg",
+    "source_split": "official PharmKG-8k train/valid/test TSV files",
+    "raw_dir": "data/raw/pharmkg/PharmKG-8k"
+  },
+  "task": {
+    "task_template": "(?, T, disease)",
+    "prediction_type": "predicted_head",
+    "missing_entity_type": "Drug_or_Chemical",
+    "query_entity_type": "Disease",
+    "candidate_universe": "drug_only_from_T_heads",
+    "target_relation_raw": "T",
+    "target_relation_normalized": "therapeutic_association_proxy",
+    "target_relation_paper_label": "therapeutic association proxy",
+    "direction": "drug_or_chemical -> disease",
+    "do_not_call_it": [
+      "clinical indication",
+      "PrimeKG indication",
+      "confirmed treatment label without explicit relation-label map"
+    ]
+  },
+  "counts": {
+    "target_relation_per_split": {
+      "train": 33411,
+      "valid": 4082,
+      "test": 4177
+    },
+    "target_relation_all": 41670,
+    "num_candidate_drugs_from_T_heads": 1370,
+    "num_query_diseases_from_T_tails": 812,
+    "num_ambiguous_T_head_tail_entities": 0
+  },
+  "day4_split_policy_recommendation": {
+    "preferred": "Use official PharmKG-8k split as base, select relation T triples, then apply Setting-A-style coverage filtering/subsampling with seed 2025.",
+    "valid_test_size": "500/500 if coverage permits; otherwise 10%/10%",
+    "coverage_rule": [
+      "valid/test T-head drug must appear in train T heads",
+      "valid/test T-tail disease must appear in train T tails",
+      "no valid/test target triples included in train_enriched.tsv"
+    ]
+  },
+  "relations": {
+    "target_relation": "T",
+    "support_relation_candidates": [
+      "ML",
+      "E",
+      "P",
+      "CC",
+      "I",
+      "U",
+      "Sa",
+      "Te",
+      "Pr",
+      "Iw",
+      "N",
+      "X",
+      "J",
+      "K",
+      "D",
+      "C",
+      "O",
+      "An",
+      "Z",
+      "Mp",
+      "A",
+      "As"
+    ],
+    "unknown_or_other_support_candidates": [
+      "GG",
+      "Rg",
+      "Ra",
+      "Q",
+      "B"
+    ],
+    "excluded_relations_day3": [],
+    "support_relation_policy": "For Day 4, retain target train triples plus support relation candidates in train_enriched.tsv. Do not include valid/test T target triples."
+  },
+  "prompt_template_recommendation": {
+    "head_prediction_question": "What drug is therapeutically associated with {disease}?",
+    "biomedical_instruction": "You are a biomedical scientist. The task is to predict the answer based on the given question, and you only need to answer one entity. The answer must be in (candidate list)."
+  },
+  "reviewer_safe_protocol": {
+    "top_k": 20,
+    "gold_injection": false,
+    "main_metric": "reviewer_safe_mrr_at20",
+    "rr_policy": "RR = 1/rank if rank <= 20 else 0",
+    "absent_rank_sentinel": 21
+  }
+}

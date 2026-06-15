@@ -1,0 +1,18 @@
+{
+  "variant_name": "soft_support_pharmkg_b050",
+  "formula": "support_score = 1.0*evidence_positive - 0.50*direct_T_candidate_query_flag - 0.10*contra_flag",
+  "evidence_positive_weight": 1.0,
+  "direct_T_candidate_query_penalty": 0.5,
+  "contra_penalty_weight": 0.1,
+  "contra_flag_policy": "fixed_zero_for_pharmkg",
+  "sort_policy": [
+    "support_score descending",
+    "base_rank ascending"
+  ],
+  "pruning": false,
+  "top_k": 20,
+  "gold_injection": false,
+  "target_relation": "T",
+  "target_relation_normalized": "therapeutic_association_proxy",
+  "paper_label": "soft support transfer on PharmKG therapeutic-association proxy task"
+}

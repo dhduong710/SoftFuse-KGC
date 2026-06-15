@@ -1,0 +1,62 @@
+{
+  "week": 22,
+  "day": 1,
+  "purpose": "Prepare PharmKG acquisition for Day 2 raw inventory.",
+  "preferred_dataset": "PharmKG-8k",
+  "sources_to_try": [
+    {
+      "name": "biomed-AI PharmKG GitHub PharmKG-8k",
+      "priority": 1,
+      "reason": "Contains pre-partitioned PharmKG-8k train/valid/test TSV files. This is the most convenient source for Day 2 inventory.",
+      "files": [
+        {
+          "filename": "train.tsv",
+          "url": "https://raw.githubusercontent.com/biomed-AI/PharmKG/master/data/PharmKG-8k/train.tsv"
+        },
+        {
+          "filename": "valid.tsv",
+          "url": "https://raw.githubusercontent.com/biomed-AI/PharmKG/master/data/PharmKG-8k/valid.tsv"
+        },
+        {
+          "filename": "test.tsv",
+          "url": "https://raw.githubusercontent.com/biomed-AI/PharmKG/master/data/PharmKG-8k/test.tsv"
+        },
+        {
+          "filename": "entity2vec.txt",
+          "url": "https://raw.githubusercontent.com/biomed-AI/PharmKG/master/data/PharmKG-8k/entity2vec.txt"
+        },
+        {
+          "filename": "relation2vec.txt",
+          "url": "https://raw.githubusercontent.com/biomed-AI/PharmKG/master/data/PharmKG-8k/relation2vec.txt"
+        }
+      ]
+    },
+    {
+      "name": "Official PharmKG Zenodo raw archive",
+      "priority": 2,
+      "reason": "Official raw archive. Larger file. Use if GitHub split files are insufficient for entity/relation/type mapping.",
+      "files": [
+        {
+          "filename": "raw_PharmKG-180k.zip",
+          "url": "https://zenodo.org/records/4077338/files/raw_PharmKG-180k.zip?download=1"
+        }
+      ]
+    },
+    {
+      "name": "MindRank-Biotech PharmKG repository",
+      "priority": 3,
+      "reason": "Original PharmKG code repository; useful for README statistics, preprocessing notes, and Google Drive references if needed.",
+      "repo": "https://github.com/MindRank-Biotech/PharmKG"
+    }
+  ],
+  "day2_inventory_questions": [
+    "Which file contains triples?",
+    "Do train/valid/test TSV files have three columns: head, relation, tail?",
+    "Are entities named or ID-coded?",
+    "Is there an explicit entity type map?",
+    "Can Drug/Chemical and Disease entities be separated cleanly?",
+    "Which relation can serve as treatment/indication/therapeutic association target?",
+    "Do we need the larger Zenodo raw archive to recover entity names/types?"
+  ],
+  "local_raw_data_dir": "data/raw/pharmkg"
+}

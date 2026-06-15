@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-05-11T15:10:50.383410+00:00",
+  "decision": "DAY4_HETIONET_SOFTFUSE_READY",
+  "setting": "setting_d_hetionet",
+  "dataset": "Hetionet v1.0",
+  "source_model": "rgcn",
+  "source_model_status": "usable_with_top1_collapse_caution",
+  "task": "(?, CtD, disease)",
+  "prediction_type": "predicted_head",
+  "target_relation": "CtD",
+  "target_relation_id": 8,
+  "candidate_universe": "Compound",
+  "top_k": 20,
+  "graph_size": 80,
+  "graph_num_rels": 24,
+  "rgcn_embedding_path": "entity_embeddings_rgcn.pt",
+  "rgcn_embedding_shape": [
+    47031,
+    128
+  ],
+  "valid_test_gold_injection": false,
+  "train_ensure_gold": true,
+  "required_fields": [
+    "input",
+    "output",
+    "query_entity_id",
+    "rank_entities_id",
+    "subgraph",
+    "rank",
+    "rank_entities"
+  ],
+  "candidate_metrics": {
+    "train": {
+      "num_rows": 555,
+      "gold_present_at20": 1.0,
+      "mrr_at20": 0.09164908506239774,
+      "hits1_at20": 0.021621621621621623,
+      "hits3_at20": 0.04864864864864865,
+      "hits10_at20": 0.13153153153153152,
+      "hits20_at20": 1.0,
+      "rank21_count": 0,
+      "avg_rank_absent_as_21": 17.63243243243243,
+      "unique_top1_count": 1,
+      "top1_dominance": 1.0,
+      "top1_most_common": [
+        {
+          "entity": "Doxorubicin",
+          "count": 555
+        }
+      ]
+    },
+    "valid": {
+      "num_rows": 100,
+      "gold_present_at20": 0.43,
+      "mrr_at20": 0.057457932375502035,
+      "hits1_at20": 0.01,
+      "hits3_at20": 0.04,
+      "hits10_at20": 0.19,
+      "hits20_at20": 0.43,
+      "rank21_count": 57,
+      "avg_rank_absent_as_21": 17.02,
+      "unique_top1_count": 1,
+      "top1_dominance": 1.0,
+      "top1_most_common": [
+        {
+          "entity": "Doxorubicin",
+          "count": 100
+        }
+      ]
+    },
+    "test": {
+      "num_rows": 100,
+      "gold_present_at20": 0.44,
+      "mrr_at20": 0.09944529326882268,
+      "hits1_at20": 0.04,
+      "hits3_at20": 0.11,
+      "hits10_at20": 0.22,
+      "hits20_at20": 0.44,
+      "rank21_count": 56,
+      "avg_rank_absent_as_21": 16.41,
+      "unique_top1_count": 1,
+      "top1_dominance": 1.0,
+      "top1_most_common": [
+        {
+          "entity": "Doxorubicin",
+          "count": 100
+        }
+      ]
+    }
+  },
+  "ready_audit": {
+    "train": {
+      "split": "train",
+      "num_rows": 555,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph_type": 0,
+      "avg_subgraph_size": 80.0,
+      "min_subgraph_size": 80,
+      "max_subgraph_size": 80,
+      "rank21_count": 0,
+      "train_gold_forced_count": 440,
+      "valid_test_exact_leak_count": 0,
+      "schema_pass": true
+    },
+    "valid": {
+      "split": "valid",
+      "num_rows": 100,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph_type": 0,
+      "avg_subgraph_size": 80.0,
+      "min_subgraph_size": 80,
+      "max_subgraph_size": 80,
+      "rank21_count": 57,
+      "train_gold_forced_count": 0,
+      "valid_test_exact_leak_count": 0,
+      "schema_pass": true
+    },
+    "test": {
+      "split": "test",
+      "num_rows": 100,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph_type": 0,
+      "avg_subgraph_size": 80.0,
+      "min_subgraph_size": 80,
+      "max_subgraph_size": 80,
+      "rank21_count": 56,
+      "train_gold_forced_count": 0,
+      "valid_test_exact_leak_count": 0,
+      "schema_pass": true
+    }
+  },
+  "source_manifest_path": "dataset/setting_d_hetionet/backbone_raw_source/source_manifest.json"
+}

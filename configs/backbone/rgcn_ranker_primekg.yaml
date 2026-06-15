@@ -1,0 +1,47 @@
+seed: 3407
+
+# Rebuild note:
+# The checked-in reviewer path uses valid/test raw candidate files under
+# dataset/setting_a/backbone_candidates. If a legacy training script needs the
+# optional train_top20_raw.json artifact, export it from the included aligned
+# evidence with:
+#   python3 scripts/backbone/export_primekg_train_candidates.py
+graph_path: dataset/setting_a/graph/train_enriched_deg1000_final.tsv
+train_queries_path: dataset/setting_a/splits/train.tsv
+valid_queries_path: dataset/setting_a/splits/valid.tsv
+test_queries_path: dataset/setting_a/splits/test.tsv
+
+entity2id_path: dataset/setting_a/drkgc_json/entity2id.pkl
+id2entity_path: dataset/setting_a/drkgc_json/id2entity.pkl
+relation2id_path: dataset/setting_a/drkgc_json/relation2id.pkl
+id2relation_path: dataset/setting_a/drkgc_json/id2relation.pkl
+
+output_dir: dataset/setting_a/backbone_ranker
+report_dir: outputs/backbone/reports
+
+target_relation: indication
+candidate_universe: drug_only
+
+# optimization
+learning_rate: 5.0e-5
+weight_decay: 1.0e-4
+num_epochs: 40
+early_stop_patience: 8
+
+batch_size: 512
+num_negatives: 32
+grad_clip_norm: 1.0
+
+# model
+embedding_dim: 128
+hidden_dim: 128
+num_rgcn_layers: 2
+dropout: 0.1
+
+# logging / probing
+log_every_epochs: 1
+valid_probe_size: 100
+save_every_epochs: 1
+
+# scoring
+margin: 1.0

@@ -1,0 +1,20 @@
+{
+  "variant_name": "soft_support_raw_bcap",
+  "main_truth": "raw_no_injection",
+  "decision_split": "valid",
+  "input_feature_path": "dataset/setting_a/support_features/valid_support_features.json",
+  "output_path": "dataset/setting_a/soft_support_ranked_candidates/valid_top20_soft_support_bcap.json",
+  "score_family": "capped_evidence_minus_direct",
+  "formula": {
+    "evidence_positive_weight": 1.0,
+    "direct_link_penalty": 0.50,
+    "contra_penalty_weight": 0.10,
+    "use_capped_evidence": true,
+    "evidence_cap": 2
+  },
+  "notes": [
+    "Tests whether capped evidence is better than raw positive evidence.",
+    "Candidate-stage reorder only.",
+    "No pruning allowed."
+  ]
+}

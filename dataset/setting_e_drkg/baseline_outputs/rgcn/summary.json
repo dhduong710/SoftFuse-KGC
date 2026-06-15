@@ -1,0 +1,72 @@
+{
+  "config": {
+    "model_name": "rgcn",
+    "script": "03b_run_hetionet_gnn_baselines_v2.py",
+    "task": "(?, DRUGBANK::treats, disease)",
+    "candidate_universe": "Compound",
+    "top_k": 20,
+    "gold_injection": false,
+    "dim": 128,
+    "gnn_layers": 2,
+    "gnn_epochs": 80,
+    "target_sample_per_epoch": 8192,
+    "support_sample_per_epoch": 8192,
+    "support_loss_weight": 0.25,
+    "message_chunk_size": 131072,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "dropout": 0.1,
+    "seed": 2027,
+    "num_entities": 13918,
+    "num_relations": 85,
+    "num_train_enriched_triples": 187962,
+    "num_train_target_triples": 3968,
+    "runtime_sec": 1.605
+  },
+  "valid_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.218,
+    "mrr_at20": 0.06140422852001799,
+    "hits1_at20": 0.026,
+    "hits3_at20": 0.054,
+    "hits10_at20": 0.164,
+    "hits20_at20": 0.218,
+    "avg_gold_rank_absent_as_21": 17.938,
+    "gold_rank_21_count": 391,
+    "unique_top1_count": 1,
+    "top1_dominance": 1.0,
+    "top1_most_common": [
+      {
+        "entity": "Compound::DB00860",
+        "count": 500
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "rgcn",
+    "split": "valid"
+  },
+  "test_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.2,
+    "mrr_at20": 0.0432420445911158,
+    "hits1_at20": 0.01,
+    "hits3_at20": 0.042,
+    "hits10_at20": 0.12,
+    "hits20_at20": 0.2,
+    "avg_gold_rank_absent_as_21": 18.51,
+    "gold_rank_21_count": 400,
+    "unique_top1_count": 1,
+    "top1_dominance": 1.0,
+    "top1_most_common": [
+      {
+        "entity": "Compound::DB00860",
+        "count": 500
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "rgcn",
+    "split": "test"
+  }
+}

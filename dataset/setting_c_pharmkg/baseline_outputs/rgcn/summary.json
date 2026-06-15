@@ -1,0 +1,75 @@
+{
+  "config": {
+    "model_name": "rgcn",
+    "task": "(?, T, disease)",
+    "candidate_universe": "drug_only_from_train_T_heads",
+    "top_k": 20,
+    "gold_injection": false,
+    "dim": 128,
+    "gnn_layers": 2,
+    "gnn_epochs": 40,
+    "gnn_sample_per_epoch": 32768,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "dropout": 0.1,
+    "seed": 2025,
+    "num_entities": 7247,
+    "num_relations": 28,
+    "num_train_enriched_triples": 386768,
+    "runtime_sec": 1.534
+  },
+  "valid_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.07,
+    "mrr_at20": 0.01784647174291137,
+    "hits1_at20": 0.01,
+    "hits3_at20": 0.014,
+    "hits10_at20": 0.034,
+    "hits20_at20": 0.07,
+    "avg_gold_rank_absent_as_21": 20.232,
+    "gold_rank_21_count": 465,
+    "unique_top1_count": 2,
+    "top1_dominance": 0.892,
+    "top1_most_common": [
+      {
+        "entity": "nitric oxide",
+        "count": 446
+      },
+      {
+        "entity": "dexamethasone",
+        "count": 54
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "rgcn",
+    "split": "valid"
+  },
+  "test_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.092,
+    "mrr_at20": 0.02048076984075436,
+    "hits1_at20": 0.008,
+    "hits3_at20": 0.02,
+    "hits10_at20": 0.046,
+    "hits20_at20": 0.092,
+    "avg_gold_rank_absent_as_21": 19.958,
+    "gold_rank_21_count": 454,
+    "unique_top1_count": 2,
+    "top1_dominance": 0.862,
+    "top1_most_common": [
+      {
+        "entity": "nitric oxide",
+        "count": 431
+      },
+      {
+        "entity": "dexamethasone",
+        "count": 69
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "rgcn",
+    "split": "test"
+  }
+}

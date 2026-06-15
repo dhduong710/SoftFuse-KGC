@@ -1,0 +1,1941 @@
+[
+  {
+    "relation": "T",
+    "num_triples_all_splits": 41670,
+    "num_unique_heads": 1370,
+    "num_unique_tails": 812,
+    "head_type_counts": {
+      "Drug_or_Chemical_from_T_head": 41670
+    },
+    "tail_type_counts": {
+      "Disease_from_T_tail": 41670
+    },
+    "head_drug_like_rate": 1.0,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 1.0,
+    "proposed_role": "target_relation",
+    "notes": "Candidate therapeutic/treatment proxy relation; used for drug-only head prediction.",
+    "sample_rows": [
+      {
+        "head": "colchicine",
+        "relation": "T",
+        "tail": "anemia",
+        "split": "train"
+      },
+      {
+        "head": "neomycin",
+        "relation": "T",
+        "tail": "pain",
+        "split": "train"
+      },
+      {
+        "head": "vinorelbine",
+        "relation": "T",
+        "tail": "esophagitis",
+        "split": "train"
+      },
+      {
+        "head": "methocarbamol",
+        "relation": "T",
+        "tail": "pain",
+        "split": "train"
+      },
+      {
+        "head": "orlistat",
+        "relation": "T",
+        "tail": "body weight changes",
+        "split": "train"
+      },
+      {
+        "head": "goserelin",
+        "relation": "T",
+        "tail": "neoplasm metastasis",
+        "split": "train"
+      },
+      {
+        "head": "carbamazepine",
+        "relation": "T",
+        "tail": "sensation disorders",
+        "split": "train"
+      },
+      {
+        "head": "testosterone",
+        "relation": "T",
+        "tail": "hiv infections",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "GG",
+    "num_triples_all_splits": 83402,
+    "num_unique_heads": 3988,
+    "num_unique_tails": 3997,
+    "head_type_counts": {
+      "Unknown_or_Other": 83402
+    },
+    "tail_type_counts": {
+      "Unknown_or_Other": 83402
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "unknown_or_other_support_candidate",
+    "notes": "Does not strongly touch inferred T-based drug/disease sets; keep as optional support only if needed.",
+    "sample_rows": [
+      {
+        "head": "foxo1",
+        "relation": "GG",
+        "tail": "hnf4a",
+        "split": "train"
+      },
+      {
+        "head": "cyp2a13",
+        "relation": "GG",
+        "tail": "cyp2e1",
+        "split": "train"
+      },
+      {
+        "head": "pin1",
+        "relation": "GG",
+        "tail": "wee1",
+        "split": "train"
+      },
+      {
+        "head": "slc9a6",
+        "relation": "GG",
+        "tail": "slc7a4",
+        "split": "train"
+      },
+      {
+        "head": "pmm2",
+        "relation": "GG",
+        "tail": "mpdu1",
+        "split": "train"
+      },
+      {
+        "head": "tpm3",
+        "relation": "GG",
+        "tail": "ncoa4",
+        "split": "train"
+      },
+      {
+        "head": "adcyap1",
+        "relation": "GG",
+        "tail": "bmp5",
+        "split": "train"
+      },
+      {
+        "head": "snta1",
+        "relation": "GG",
+        "tail": "map3k7",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "ML",
+    "num_triples_all_splits": 45402,
+    "num_unique_heads": 740,
+    "num_unique_tails": 3572,
+    "head_type_counts": {
+      "Disease_from_T_tail": 45274,
+      "Unknown_or_Other": 128
+    },
+    "tail_type_counts": {
+      "Unknown_or_Other": 45402
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.9971807409365226,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "uveitis",
+        "relation": "ML",
+        "tail": "lyz",
+        "split": "train"
+      },
+      {
+        "head": "central nervous system neoplasms",
+        "relation": "ML",
+        "tail": "hip1",
+        "split": "train"
+      },
+      {
+        "head": "gastrointestinal neoplasms",
+        "relation": "ML",
+        "tail": "gstt1",
+        "split": "train"
+      },
+      {
+        "head": "intestinal neoplasms",
+        "relation": "ML",
+        "tail": "cflar",
+        "split": "train"
+      },
+      {
+        "head": "neoplasms squamous cell",
+        "relation": "ML",
+        "tail": "tf",
+        "split": "train"
+      },
+      {
+        "head": "smith mccort dysplasia",
+        "relation": "ML",
+        "tail": "ptgs2",
+        "split": "train"
+      },
+      {
+        "head": "arthritis rheumatoid",
+        "relation": "ML",
+        "tail": "rbpj",
+        "split": "train"
+      },
+      {
+        "head": "lymphoma",
+        "relation": "ML",
+        "tail": "hmox1",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "Rg",
+    "num_triples_all_splits": 43857,
+    "num_unique_heads": 3874,
+    "num_unique_tails": 3872,
+    "head_type_counts": {
+      "Unknown_or_Other": 43857
+    },
+    "tail_type_counts": {
+      "Unknown_or_Other": 43857
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "unknown_or_other_support_candidate",
+    "notes": "Does not strongly touch inferred T-based drug/disease sets; keep as optional support only if needed.",
+    "sample_rows": [
+      {
+        "head": "cyp27b1",
+        "relation": "Rg",
+        "tail": "aldh1a3",
+        "split": "train"
+      },
+      {
+        "head": "pmp22",
+        "relation": "Rg",
+        "tail": "perp",
+        "split": "train"
+      },
+      {
+        "head": "junb",
+        "relation": "Rg",
+        "tail": "mapk8",
+        "split": "train"
+      },
+      {
+        "head": "cdkn2a",
+        "relation": "Rg",
+        "tail": "il6",
+        "split": "train"
+      },
+      {
+        "head": "lpl",
+        "relation": "Rg",
+        "tail": "sort1",
+        "split": "train"
+      },
+      {
+        "head": "dpm2",
+        "relation": "Rg",
+        "tail": "dpm1",
+        "split": "train"
+      },
+      {
+        "head": "g6pd",
+        "relation": "Rg",
+        "tail": "pck2",
+        "split": "train"
+      },
+      {
+        "head": "tnfrsf1b",
+        "relation": "Rg",
+        "tail": "htr2a",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "E",
+    "num_triples_all_splits": 39743,
+    "num_unique_heads": 3700,
+    "num_unique_tails": 3085,
+    "head_type_counts": {
+      "Unknown_or_Other": 28473,
+      "Drug_or_Chemical_from_T_head": 11270
+    },
+    "tail_type_counts": {
+      "Unknown_or_Other": 39743
+    },
+    "head_drug_like_rate": 0.28357194977731925,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "hif1a",
+        "relation": "E",
+        "tail": "aqp9",
+        "split": "train"
+      },
+      {
+        "head": "mdm2",
+        "relation": "E",
+        "tail": "xrcc5",
+        "split": "train"
+      },
+      {
+        "head": "pcna",
+        "relation": "E",
+        "tail": "insr",
+        "split": "train"
+      },
+      {
+        "head": "cocaine",
+        "relation": "E",
+        "tail": "dagla",
+        "split": "train"
+      },
+      {
+        "head": "formoterol",
+        "relation": "E",
+        "tail": "pde4d",
+        "split": "train"
+      },
+      {
+        "head": "tnfrsf1a",
+        "relation": "E",
+        "tail": "ccl3",
+        "split": "train"
+      },
+      {
+        "head": "ctgf",
+        "relation": "E",
+        "tail": "cd44",
+        "split": "train"
+      },
+      {
+        "head": "ctnnb1",
+        "relation": "E",
+        "tail": "edn1",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "Ra",
+    "num_triples_all_splits": 38089,
+    "num_unique_heads": 3289,
+    "num_unique_tails": 3272,
+    "head_type_counts": {
+      "Unknown_or_Other": 38089
+    },
+    "tail_type_counts": {
+      "Unknown_or_Other": 38089
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "unknown_or_other_support_candidate",
+    "notes": "Does not strongly touch inferred T-based drug/disease sets; keep as optional support only if needed.",
+    "sample_rows": [
+      {
+        "head": "il11ra",
+        "relation": "Ra",
+        "tail": "mylk",
+        "split": "train"
+      },
+      {
+        "head": "paep",
+        "relation": "Ra",
+        "tail": "plk2",
+        "split": "train"
+      },
+      {
+        "head": "casp8",
+        "relation": "Ra",
+        "tail": "brca2",
+        "split": "train"
+      },
+      {
+        "head": "slco4c1",
+        "relation": "Ra",
+        "tail": "slc22a5",
+        "split": "train"
+      },
+      {
+        "head": "ldha",
+        "relation": "Ra",
+        "tail": "fos",
+        "split": "train"
+      },
+      {
+        "head": "cyp2c8",
+        "relation": "Ra",
+        "tail": "ercc1",
+        "split": "train"
+      },
+      {
+        "head": "tsc2",
+        "relation": "Ra",
+        "tail": "dapk1",
+        "split": "train"
+      },
+      {
+        "head": "hmox1",
+        "relation": "Ra",
+        "tail": "il1b",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "P",
+    "num_triples_all_splits": 35878,
+    "num_unique_heads": 3184,
+    "num_unique_tails": 757,
+    "head_type_counts": {
+      "Unknown_or_Other": 35878
+    },
+    "tail_type_counts": {
+      "Disease_from_T_tail": 35785,
+      "Unknown_or_Other": 93
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.997407882267685,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "hpse",
+        "relation": "P",
+        "tail": "paraproteinemias",
+        "split": "train"
+      },
+      {
+        "head": "serpine1",
+        "relation": "P",
+        "tail": "drug toxicity",
+        "split": "train"
+      },
+      {
+        "head": "ca1",
+        "relation": "P",
+        "tail": "panuveitis",
+        "split": "train"
+      },
+      {
+        "head": "xylt1",
+        "relation": "P",
+        "tail": "hemostatic disorders",
+        "split": "train"
+      },
+      {
+        "head": "adamts13",
+        "relation": "P",
+        "tail": "cerebrovascular disorders",
+        "split": "train"
+      },
+      {
+        "head": "gstm1",
+        "relation": "P",
+        "tail": "diabetes mellitus",
+        "split": "train"
+      },
+      {
+        "head": "adipoq",
+        "relation": "P",
+        "tail": "hepatitis chronic",
+        "split": "train"
+      },
+      {
+        "head": "csf2",
+        "relation": "P",
+        "tail": "leukemia myeloid",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "Q",
+    "num_triples_all_splits": 32589,
+    "num_unique_heads": 3089,
+    "num_unique_tails": 3072,
+    "head_type_counts": {
+      "Unknown_or_Other": 32589
+    },
+    "tail_type_counts": {
+      "Unknown_or_Other": 32589
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "unknown_or_other_support_candidate",
+    "notes": "Does not strongly touch inferred T-based drug/disease sets; keep as optional support only if needed.",
+    "sample_rows": [
+      {
+        "head": "cdkn1c",
+        "relation": "Q",
+        "tail": "prg4",
+        "split": "train"
+      },
+      {
+        "head": "ngf",
+        "relation": "Q",
+        "tail": "cd40",
+        "split": "train"
+      },
+      {
+        "head": "icam1",
+        "relation": "Q",
+        "tail": "muc1",
+        "split": "train"
+      },
+      {
+        "head": "fcgr3a",
+        "relation": "Q",
+        "tail": "ccr2",
+        "split": "train"
+      },
+      {
+        "head": "cd38",
+        "relation": "Q",
+        "tail": "lepr",
+        "split": "train"
+      },
+      {
+        "head": "ush1c",
+        "relation": "Q",
+        "tail": "ush1c",
+        "split": "train"
+      },
+      {
+        "head": "syk",
+        "relation": "Q",
+        "tail": "cd74",
+        "split": "train"
+      },
+      {
+        "head": "fcgr1a",
+        "relation": "Q",
+        "tail": "cd14",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "CC",
+    "num_triples_all_splits": 32032,
+    "num_unique_heads": 976,
+    "num_unique_tails": 983,
+    "head_type_counts": {
+      "Drug_or_Chemical_from_T_head": 31347,
+      "Unknown_or_Other": 685
+    },
+    "tail_type_counts": {
+      "Drug_or_Chemical_from_T_head": 31053,
+      "Unknown_or_Other": 979
+    },
+    "head_drug_like_rate": 0.9786151348651349,
+    "tail_drug_like_rate": 0.9694368131868132,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "delavirdine",
+        "relation": "CC",
+        "tail": "fentanyl",
+        "split": "train"
+      },
+      {
+        "head": "aminosalicylic acid",
+        "relation": "CC",
+        "tail": "salicylate sodium",
+        "split": "train"
+      },
+      {
+        "head": "metolazone",
+        "relation": "CC",
+        "tail": "hydrocodone",
+        "split": "train"
+      },
+      {
+        "head": "pramipexole",
+        "relation": "CC",
+        "tail": "dantrolene",
+        "split": "train"
+      },
+      {
+        "head": "bendroflumethiazide",
+        "relation": "CC",
+        "tail": "tapentadol",
+        "split": "train"
+      },
+      {
+        "head": "promazine",
+        "relation": "CC",
+        "tail": "nebivolol",
+        "split": "train"
+      },
+      {
+        "head": "desmopressin",
+        "relation": "CC",
+        "tail": "flurbiprofen",
+        "split": "train"
+      },
+      {
+        "head": "biotin",
+        "relation": "CC",
+        "tail": "azlocillin",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "B",
+    "num_triples_all_splits": 18984,
+    "num_unique_heads": 3191,
+    "num_unique_tails": 2889,
+    "head_type_counts": {
+      "Unknown_or_Other": 18118,
+      "Drug_or_Chemical_from_T_head": 866
+    },
+    "tail_type_counts": {
+      "Unknown_or_Other": 18984
+    },
+    "head_drug_like_rate": 0.045617361989043405,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "unknown_or_other_support_candidate",
+    "notes": "Does not strongly touch inferred T-based drug/disease sets; keep as optional support only if needed.",
+    "sample_rows": [
+      {
+        "head": "mag",
+        "relation": "B",
+        "tail": "gfap",
+        "split": "train"
+      },
+      {
+        "head": "nfkb1",
+        "relation": "B",
+        "tail": "ikbkg",
+        "split": "train"
+      },
+      {
+        "head": "b2m",
+        "relation": "B",
+        "tail": "hla b",
+        "split": "train"
+      },
+      {
+        "head": "slco1b1",
+        "relation": "B",
+        "tail": "itgb3",
+        "split": "train"
+      },
+      {
+        "head": "cflar",
+        "relation": "B",
+        "tail": "wwp1",
+        "split": "train"
+      },
+      {
+        "head": "mapk8",
+        "relation": "B",
+        "tail": "grb2",
+        "split": "train"
+      },
+      {
+        "head": "grm1",
+        "relation": "B",
+        "tail": "fmr1",
+        "split": "train"
+      },
+      {
+        "head": "fancc",
+        "relation": "B",
+        "tail": "stat1",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "I",
+    "num_triples_all_splits": 18040,
+    "num_unique_heads": 3833,
+    "num_unique_tails": 2724,
+    "head_type_counts": {
+      "Drug_or_Chemical_from_T_head": 7286,
+      "Unknown_or_Other": 10754
+    },
+    "tail_type_counts": {
+      "Unknown_or_Other": 9324,
+      "Drug_or_Chemical_from_T_head": 2856,
+      "Disease_from_T_tail": 5860
+    },
+    "head_drug_like_rate": 0.403880266075388,
+    "tail_drug_like_rate": 0.1583148558758315,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.32483370288248337,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "pentamidine",
+        "relation": "I",
+        "tail": "cyp2c8",
+        "split": "train"
+      },
+      {
+        "head": "methyltestosterone",
+        "relation": "I",
+        "tail": "cyp3a4",
+        "split": "train"
+      },
+      {
+        "head": "kcnq1",
+        "relation": "I",
+        "tail": "repaglinide",
+        "split": "train"
+      },
+      {
+        "head": "ctsd",
+        "relation": "I",
+        "tail": "neuronal ceroid lipofuscinoses",
+        "split": "train"
+      },
+      {
+        "head": "gna12",
+        "relation": "I",
+        "tail": "f2r",
+        "split": "train"
+      },
+      {
+        "head": "ptgs1",
+        "relation": "I",
+        "tail": "bromfenac",
+        "split": "train"
+      },
+      {
+        "head": "adra2c",
+        "relation": "I",
+        "tail": "norepinephrine",
+        "split": "train"
+      },
+      {
+        "head": "famotidine",
+        "relation": "I",
+        "tail": "slc22a2",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "U",
+    "num_triples_all_splits": 16143,
+    "num_unique_heads": 3201,
+    "num_unique_tails": 772,
+    "head_type_counts": {
+      "Unknown_or_Other": 16143
+    },
+    "tail_type_counts": {
+      "Disease_from_T_tail": 15894,
+      "Unknown_or_Other": 249
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.984575357740197,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "stat3",
+        "relation": "U",
+        "tail": "hypotrichosis",
+        "split": "train"
+      },
+      {
+        "head": "il4",
+        "relation": "U",
+        "tail": "iron metabolism disorders",
+        "split": "train"
+      },
+      {
+        "head": "nme1",
+        "relation": "U",
+        "tail": "neoplasm metastasis",
+        "split": "train"
+      },
+      {
+        "head": "ar",
+        "relation": "U",
+        "tail": "ectodermal dysplasia",
+        "split": "train"
+      },
+      {
+        "head": "bdkrb2",
+        "relation": "U",
+        "tail": "obsessive compulsive disorder",
+        "split": "train"
+      },
+      {
+        "head": "il21",
+        "relation": "U",
+        "tail": "lupus erythematosus systemic",
+        "split": "train"
+      },
+      {
+        "head": "gad1",
+        "relation": "U",
+        "tail": "aarskog scott syndrome",
+        "split": "train"
+      },
+      {
+        "head": "tp53",
+        "relation": "U",
+        "tail": "urologic neoplasms",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "Sa",
+    "num_triples_all_splits": 14263,
+    "num_unique_heads": 1186,
+    "num_unique_tails": 615,
+    "head_type_counts": {
+      "Drug_or_Chemical_from_T_head": 14223,
+      "Unknown_or_Other": 40
+    },
+    "tail_type_counts": {
+      "Disease_from_T_tail": 14234,
+      "Unknown_or_Other": 29
+    },
+    "head_drug_like_rate": 0.997195540910047,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.997966767159784,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "clenbuterol",
+        "relation": "Sa",
+        "tail": "infarction",
+        "split": "train"
+      },
+      {
+        "head": "cisplatin",
+        "relation": "Sa",
+        "tail": "tachycardia",
+        "split": "train"
+      },
+      {
+        "head": "cinnarizine",
+        "relation": "Sa",
+        "tail": "lupus erythematosus cutaneous",
+        "split": "train"
+      },
+      {
+        "head": "phenytoin",
+        "relation": "Sa",
+        "tail": "dermatitis exfoliative",
+        "split": "train"
+      },
+      {
+        "head": "pyridostigmine",
+        "relation": "Sa",
+        "tail": "parkinsonian disorders",
+        "split": "train"
+      },
+      {
+        "head": "atropine",
+        "relation": "Sa",
+        "tail": "myocardial ischemia",
+        "split": "train"
+      },
+      {
+        "head": "modafinil",
+        "relation": "Sa",
+        "tail": "chorea",
+        "split": "train"
+      },
+      {
+        "head": "deferasirox",
+        "relation": "Sa",
+        "tail": "renal insufficiency",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "Te",
+    "num_triples_all_splits": 6424,
+    "num_unique_heads": 1392,
+    "num_unique_tails": 589,
+    "head_type_counts": {
+      "Unknown_or_Other": 6424
+    },
+    "tail_type_counts": {
+      "Disease_from_T_tail": 6390,
+      "Unknown_or_Other": 34
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.9947073474470735,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "crp",
+        "relation": "Te",
+        "tail": "hamartoma syndrome multiple",
+        "split": "train"
+      },
+      {
+        "head": "pparg",
+        "relation": "Te",
+        "tail": "renal insufficiency",
+        "split": "train"
+      },
+      {
+        "head": "vegfa",
+        "relation": "Te",
+        "tail": "pain",
+        "split": "train"
+      },
+      {
+        "head": "pomc",
+        "relation": "Te",
+        "tail": "ectodermal dysplasia",
+        "split": "train"
+      },
+      {
+        "head": "rps6ka3",
+        "relation": "Te",
+        "tail": "mental retardation x linked",
+        "split": "train"
+      },
+      {
+        "head": "xrcc1",
+        "relation": "Te",
+        "tail": "pulmonary disease chronic obstructive",
+        "split": "train"
+      },
+      {
+        "head": "lyz",
+        "relation": "Te",
+        "tail": "leukemia myeloid",
+        "split": "train"
+      },
+      {
+        "head": "tnfsf12",
+        "relation": "Te",
+        "tail": "kidney diseases",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "Pr",
+    "num_triples_all_splits": 6345,
+    "num_unique_heads": 975,
+    "num_unique_tails": 524,
+    "head_type_counts": {
+      "Drug_or_Chemical_from_T_head": 6335,
+      "Unknown_or_Other": 10
+    },
+    "tail_type_counts": {
+      "Disease_from_T_tail": 6340,
+      "Unknown_or_Other": 5
+    },
+    "head_drug_like_rate": 0.9984239558707644,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.9992119779353822,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "dexmedetomidine",
+        "relation": "Pr",
+        "tail": "consciousness disorders",
+        "split": "train"
+      },
+      {
+        "head": "trimethadione",
+        "relation": "Pr",
+        "tail": "congenital abnormalities",
+        "split": "train"
+      },
+      {
+        "head": "ketamine",
+        "relation": "Pr",
+        "tail": "poisoning",
+        "split": "train"
+      },
+      {
+        "head": "pioglitazone",
+        "relation": "Pr",
+        "tail": "arthritis rheumatoid",
+        "split": "train"
+      },
+      {
+        "head": "trihexyphenidyl",
+        "relation": "Pr",
+        "tail": "dyskinesias",
+        "split": "train"
+      },
+      {
+        "head": "oxaliplatin",
+        "relation": "Pr",
+        "tail": "neoplasm metastasis",
+        "split": "train"
+      },
+      {
+        "head": "vitamin e",
+        "relation": "Pr",
+        "tail": "drug toxicity",
+        "split": "train"
+      },
+      {
+        "head": "caffeine",
+        "relation": "Pr",
+        "tail": "urination disorders",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "Iw",
+    "num_triples_all_splits": 6153,
+    "num_unique_heads": 1644,
+    "num_unique_tails": 1112,
+    "head_type_counts": {
+      "Unknown_or_Other": 4415,
+      "Drug_or_Chemical_from_T_head": 799,
+      "Disease_from_T_tail": 939
+    },
+    "tail_type_counts": {
+      "Disease_from_T_tail": 2474,
+      "Unknown_or_Other": 3674,
+      "Drug_or_Chemical_from_T_head": 5
+    },
+    "head_drug_like_rate": 0.1298553551113278,
+    "tail_drug_like_rate": 0.0008126117341134406,
+    "head_disease_like_rate": 0.15260848366650415,
+    "tail_disease_like_rate": 0.4020802860393304,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "immunologic deficiency syndromes",
+        "relation": "Iw",
+        "tail": "lupus erythematosus systemic",
+        "split": "train"
+      },
+      {
+        "head": "dactinomycin",
+        "relation": "Iw",
+        "tail": "fh",
+        "split": "train"
+      },
+      {
+        "head": "nfkb1",
+        "relation": "Iw",
+        "tail": "hccs",
+        "split": "train"
+      },
+      {
+        "head": "desipramine",
+        "relation": "Iw",
+        "tail": "ar",
+        "split": "train"
+      },
+      {
+        "head": "sp1",
+        "relation": "Iw",
+        "tail": "pc",
+        "split": "train"
+      },
+      {
+        "head": "actn4",
+        "relation": "Iw",
+        "tail": "gc",
+        "split": "train"
+      },
+      {
+        "head": "cp",
+        "relation": "Iw",
+        "tail": "brain damage chronic",
+        "split": "train"
+      },
+      {
+        "head": "neurofibromatoses",
+        "relation": "Iw",
+        "tail": "meningioma",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "N",
+    "num_triples_all_splits": 4089,
+    "num_unique_heads": 812,
+    "num_unique_tails": 1059,
+    "head_type_counts": {
+      "Drug_or_Chemical_from_T_head": 4078,
+      "Unknown_or_Other": 11
+    },
+    "tail_type_counts": {
+      "Unknown_or_Other": 4089
+    },
+    "head_drug_like_rate": 0.9973098557104426,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "imatinib",
+        "relation": "N",
+        "tail": "casp3",
+        "split": "train"
+      },
+      {
+        "head": "acetylsalicylic acid",
+        "relation": "N",
+        "tail": "pepd",
+        "split": "train"
+      },
+      {
+        "head": "dexamethasone",
+        "relation": "N",
+        "tail": "clec7a",
+        "split": "train"
+      },
+      {
+        "head": "dopamine",
+        "relation": "N",
+        "tail": "akt1",
+        "split": "train"
+      },
+      {
+        "head": "nifedipine",
+        "relation": "N",
+        "tail": "pomc",
+        "split": "train"
+      },
+      {
+        "head": "tamoxifen",
+        "relation": "N",
+        "tail": "aldh1a1",
+        "split": "train"
+      },
+      {
+        "head": "zuclopenthixol",
+        "relation": "N",
+        "tail": "cyp2d6",
+        "split": "train"
+      },
+      {
+        "head": "pioglitazone",
+        "relation": "N",
+        "tail": "jun",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "X",
+    "num_triples_all_splits": 3558,
+    "num_unique_heads": 400,
+    "num_unique_tails": 1193,
+    "head_type_counts": {
+      "Disease_from_T_tail": 3554,
+      "Unknown_or_Other": 4
+    },
+    "tail_type_counts": {
+      "Unknown_or_Other": 3558
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.9988757729061271,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "anorexia nervosa",
+        "relation": "X",
+        "tail": "bdnf",
+        "split": "train"
+      },
+      {
+        "head": "melanoma",
+        "relation": "X",
+        "tail": "mme",
+        "split": "train"
+      },
+      {
+        "head": "intracranial hemorrhages",
+        "relation": "X",
+        "tail": "lep",
+        "split": "train"
+      },
+      {
+        "head": "osteoarthritis",
+        "relation": "X",
+        "tail": "il6",
+        "split": "train"
+      },
+      {
+        "head": "renal tubular transport inborn errors",
+        "relation": "X",
+        "tail": "adm",
+        "split": "train"
+      },
+      {
+        "head": "fibromyalgia",
+        "relation": "X",
+        "tail": "crh",
+        "split": "train"
+      },
+      {
+        "head": "respiratory tract neoplasms",
+        "relation": "X",
+        "tail": "adam28",
+        "split": "train"
+      },
+      {
+        "head": "intestinal neoplasms",
+        "relation": "X",
+        "tail": "npc2",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "J",
+    "num_triples_all_splits": 3368,
+    "num_unique_heads": 658,
+    "num_unique_tails": 522,
+    "head_type_counts": {
+      "Drug_or_Chemical_from_T_head": 3361,
+      "Unknown_or_Other": 7
+    },
+    "tail_type_counts": {
+      "Disease_from_T_tail": 3357,
+      "Unknown_or_Other": 11
+    },
+    "head_drug_like_rate": 0.9979216152019003,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.9967339667458432,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "methamphetamine",
+        "relation": "J",
+        "tail": "virus diseases",
+        "split": "train"
+      },
+      {
+        "head": "aminophylline",
+        "relation": "J",
+        "tail": "anemia",
+        "split": "train"
+      },
+      {
+        "head": "dopamine",
+        "relation": "J",
+        "tail": "purine pyrimidine metabolism inborn errors",
+        "split": "train"
+      },
+      {
+        "head": "testosterone",
+        "relation": "J",
+        "tail": "hepatitis c",
+        "split": "train"
+      },
+      {
+        "head": "clozapine",
+        "relation": "J",
+        "tail": "liver failure",
+        "split": "train"
+      },
+      {
+        "head": "oxycodone",
+        "relation": "J",
+        "tail": "anxiety related personality traits",
+        "split": "train"
+      },
+      {
+        "head": "isoniazid",
+        "relation": "J",
+        "tail": "death",
+        "split": "train"
+      },
+      {
+        "head": "hydroxyproline",
+        "relation": "J",
+        "tail": "aortic aneurysm",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "K",
+    "num_triples_all_splits": 2700,
+    "num_unique_heads": 853,
+    "num_unique_tails": 601,
+    "head_type_counts": {
+      "Unknown_or_Other": 2700
+    },
+    "tail_type_counts": {
+      "Drug_or_Chemical_from_T_head": 2698,
+      "Unknown_or_Other": 2
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.9992592592592593,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "gast",
+        "relation": "K",
+        "tail": "propantheline",
+        "split": "train"
+      },
+      {
+        "head": "vcam1",
+        "relation": "K",
+        "tail": "atorvastatin",
+        "split": "train"
+      },
+      {
+        "head": "trpm8",
+        "relation": "K",
+        "tail": "ethanol",
+        "split": "train"
+      },
+      {
+        "head": "stat3",
+        "relation": "K",
+        "tail": "sunitinib",
+        "split": "train"
+      },
+      {
+        "head": "ccl2",
+        "relation": "K",
+        "tail": "enoxaparin",
+        "split": "train"
+      },
+      {
+        "head": "prl",
+        "relation": "K",
+        "tail": "buspirone",
+        "split": "train"
+      },
+      {
+        "head": "picalm",
+        "relation": "K",
+        "tail": "iron",
+        "split": "train"
+      },
+      {
+        "head": "pomc",
+        "relation": "K",
+        "tail": "prednisone",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "D",
+    "num_triples_all_splits": 2501,
+    "num_unique_heads": 968,
+    "num_unique_tails": 408,
+    "head_type_counts": {
+      "Unknown_or_Other": 2501
+    },
+    "tail_type_counts": {
+      "Disease_from_T_tail": 2485,
+      "Unknown_or_Other": 16
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.9936025589764095,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "xiap",
+        "relation": "D",
+        "tail": "inflammation",
+        "split": "train"
+      },
+      {
+        "head": "rnpep",
+        "relation": "D",
+        "tail": "thyroid neoplasms",
+        "split": "train"
+      },
+      {
+        "head": "stat4",
+        "relation": "D",
+        "tail": "liver cirrhosis biliary",
+        "split": "train"
+      },
+      {
+        "head": "abcc1",
+        "relation": "D",
+        "tail": "pulmonary disease chronic obstructive",
+        "split": "train"
+      },
+      {
+        "head": "hla e",
+        "relation": "D",
+        "tail": "hepatitis b",
+        "split": "train"
+      },
+      {
+        "head": "vegfa",
+        "relation": "D",
+        "tail": "neuroectodermal tumors",
+        "split": "train"
+      },
+      {
+        "head": "hmgcr",
+        "relation": "D",
+        "tail": "cardiomegaly",
+        "split": "train"
+      },
+      {
+        "head": "egfr",
+        "relation": "D",
+        "tail": "hearing disorders",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "C",
+    "num_triples_all_splits": 2232,
+    "num_unique_heads": 624,
+    "num_unique_tails": 258,
+    "head_type_counts": {
+      "Drug_or_Chemical_from_T_head": 2229,
+      "Unknown_or_Other": 3
+    },
+    "tail_type_counts": {
+      "Disease_from_T_tail": 2230,
+      "Unknown_or_Other": 2
+    },
+    "head_drug_like_rate": 0.9986559139784946,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.9991039426523297,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "artemether",
+        "relation": "C",
+        "tail": "gastrointestinal neoplasms",
+        "split": "train"
+      },
+      {
+        "head": "midazolam",
+        "relation": "C",
+        "tail": "neoplasms neuroepithelial",
+        "split": "train"
+      },
+      {
+        "head": "creatine",
+        "relation": "C",
+        "tail": "mental retardation x linked",
+        "split": "train"
+      },
+      {
+        "head": "ouabain",
+        "relation": "C",
+        "tail": "carcinoma bronchogenic",
+        "split": "train"
+      },
+      {
+        "head": "tranexamic acid",
+        "relation": "C",
+        "tail": "hemophilia a",
+        "split": "train"
+      },
+      {
+        "head": "bupivacaine",
+        "relation": "C",
+        "tail": "neoplasms neuroepithelial",
+        "split": "train"
+      },
+      {
+        "head": "thioridazine",
+        "relation": "C",
+        "tail": "gastrointestinal neoplasms",
+        "split": "train"
+      },
+      {
+        "head": "cefoxitin",
+        "relation": "C",
+        "tail": "kidney diseases",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "O",
+    "num_triples_all_splits": 854,
+    "num_unique_heads": 501,
+    "num_unique_tails": 297,
+    "head_type_counts": {
+      "Unknown_or_Other": 854
+    },
+    "tail_type_counts": {
+      "Drug_or_Chemical_from_T_head": 852,
+      "Unknown_or_Other": 2
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.9976580796252927,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "slc19a3",
+        "relation": "O",
+        "tail": "thiamine",
+        "split": "train"
+      },
+      {
+        "head": "slc4a10",
+        "relation": "O",
+        "tail": "sodium bicarbonate",
+        "split": "train"
+      },
+      {
+        "head": "slc7a4",
+        "relation": "O",
+        "tail": "l arginine",
+        "split": "train"
+      },
+      {
+        "head": "fos",
+        "relation": "O",
+        "tail": "rotigotine",
+        "split": "train"
+      },
+      {
+        "head": "ryr2",
+        "relation": "O",
+        "tail": "adenosine",
+        "split": "train"
+      },
+      {
+        "head": "fech",
+        "relation": "O",
+        "tail": "iron",
+        "split": "train"
+      },
+      {
+        "head": "gli3",
+        "relation": "O",
+        "tail": "iron",
+        "split": "train"
+      },
+      {
+        "head": "slc1a2",
+        "relation": "O",
+        "tail": "ampicillin",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "An",
+    "num_triples_all_splits": 676,
+    "num_unique_heads": 195,
+    "num_unique_tails": 355,
+    "head_type_counts": {
+      "Disease_from_T_tail": 674,
+      "Unknown_or_Other": 2
+    },
+    "tail_type_counts": {
+      "Disease_from_T_tail": 649,
+      "Unknown_or_Other": 27
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.9970414201183432,
+    "tail_disease_like_rate": 0.9600591715976331,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "craniofacial abnormalities",
+        "relation": "An",
+        "tail": "craniofacial abnormalities",
+        "split": "train"
+      },
+      {
+        "head": "thalassemia",
+        "relation": "An",
+        "tail": "thalassemia",
+        "split": "train"
+      },
+      {
+        "head": "syndactyly",
+        "relation": "An",
+        "tail": "syndactyly",
+        "split": "train"
+      },
+      {
+        "head": "liver cirrhosis",
+        "relation": "An",
+        "tail": "liver cirrhosis biliary",
+        "split": "train"
+      },
+      {
+        "head": "pain",
+        "relation": "An",
+        "tail": "pain",
+        "split": "train"
+      },
+      {
+        "head": "skin diseases",
+        "relation": "An",
+        "tail": "prurigo",
+        "split": "train"
+      },
+      {
+        "head": "heart defects congenital",
+        "relation": "An",
+        "tail": "heart defects congenital",
+        "split": "train"
+      },
+      {
+        "head": "neurobehavioral manifestations",
+        "relation": "An",
+        "tail": "neurobehavioral manifestations",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "Z",
+    "num_triples_all_splits": 482,
+    "num_unique_heads": 345,
+    "num_unique_tails": 160,
+    "head_type_counts": {
+      "Unknown_or_Other": 482
+    },
+    "tail_type_counts": {
+      "Drug_or_Chemical_from_T_head": 481,
+      "Unknown_or_Other": 1
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.9979253112033195,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "apoe",
+        "relation": "Z",
+        "tail": "bexarotene",
+        "split": "train"
+      },
+      {
+        "head": "mmp2",
+        "relation": "Z",
+        "tail": "estradiol",
+        "split": "train"
+      },
+      {
+        "head": "sult1a1",
+        "relation": "Z",
+        "tail": "phenol",
+        "split": "train"
+      },
+      {
+        "head": "cyp19a1",
+        "relation": "Z",
+        "tail": "estrone",
+        "split": "train"
+      },
+      {
+        "head": "atp7b",
+        "relation": "Z",
+        "tail": "adenosine",
+        "split": "train"
+      },
+      {
+        "head": "esr2",
+        "relation": "Z",
+        "tail": "choline",
+        "split": "train"
+      },
+      {
+        "head": "gfap",
+        "relation": "Z",
+        "tail": "glutathione",
+        "split": "train"
+      },
+      {
+        "head": "cyp3a4",
+        "relation": "Z",
+        "tail": "tolbutamide",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "Mp",
+    "num_triples_all_splits": 447,
+    "num_unique_heads": 150,
+    "num_unique_tails": 255,
+    "head_type_counts": {
+      "Disease_from_T_tail": 446,
+      "Unknown_or_Other": 1
+    },
+    "tail_type_counts": {
+      "Drug_or_Chemical_from_T_head": 445,
+      "Unknown_or_Other": 2
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.9955257270693513,
+    "head_disease_like_rate": 0.9977628635346756,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "pain",
+        "relation": "Mp",
+        "tail": "duloxetine",
+        "split": "train"
+      },
+      {
+        "head": "incontinentia pigmenti",
+        "relation": "Mp",
+        "tail": "dextromethorphan",
+        "split": "train"
+      },
+      {
+        "head": "respiratory hypersensitivity",
+        "relation": "Mp",
+        "tail": "clemastine",
+        "split": "train"
+      },
+      {
+        "head": "psychomotor agitation",
+        "relation": "Mp",
+        "tail": "ziprasidone",
+        "split": "train"
+      },
+      {
+        "head": "hypothyroidism",
+        "relation": "Mp",
+        "tail": "nitric oxide",
+        "split": "train"
+      },
+      {
+        "head": "hemophilia a",
+        "relation": "Mp",
+        "tail": "bortezomib",
+        "split": "train"
+      },
+      {
+        "head": "intestinal polyposis",
+        "relation": "Mp",
+        "tail": "vinblastine",
+        "split": "train"
+      },
+      {
+        "head": "hypothyroidism",
+        "relation": "Mp",
+        "tail": "phenobarbital",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "A",
+    "num_triples_all_splits": 403,
+    "num_unique_heads": 253,
+    "num_unique_tails": 229,
+    "head_type_counts": {
+      "Drug_or_Chemical_from_T_head": 403
+    },
+    "tail_type_counts": {
+      "Unknown_or_Other": 403
+    },
+    "head_drug_like_rate": 1.0,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.0,
+    "tail_disease_like_rate": 0.0,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "bosentan",
+        "relation": "A",
+        "tail": "edn1",
+        "split": "train"
+      },
+      {
+        "head": "rosiglitazone",
+        "relation": "A",
+        "tail": "pparg",
+        "split": "train"
+      },
+      {
+        "head": "phenobarbital",
+        "relation": "A",
+        "tail": "egf",
+        "split": "train"
+      },
+      {
+        "head": "leflunomide",
+        "relation": "A",
+        "tail": "ahr",
+        "split": "train"
+      },
+      {
+        "head": "lovastatin",
+        "relation": "A",
+        "tail": "egf",
+        "split": "train"
+      },
+      {
+        "head": "naltrexone",
+        "relation": "A",
+        "tail": "pomc",
+        "split": "train"
+      },
+      {
+        "head": "fenofibrate",
+        "relation": "A",
+        "tail": "pparg",
+        "split": "train"
+      },
+      {
+        "head": "alfacalcidol",
+        "relation": "A",
+        "tail": "vdr",
+        "split": "train"
+      }
+    ]
+  },
+  {
+    "relation": "As",
+    "num_triples_all_splits": 36,
+    "num_unique_heads": 26,
+    "num_unique_tails": 26,
+    "head_type_counts": {
+      "Disease_from_T_tail": 34,
+      "Unknown_or_Other": 2
+    },
+    "tail_type_counts": {
+      "Disease_from_T_tail": 34,
+      "Unknown_or_Other": 2
+    },
+    "head_drug_like_rate": 0.0,
+    "tail_drug_like_rate": 0.0,
+    "head_disease_like_rate": 0.9444444444444444,
+    "tail_disease_like_rate": 0.9444444444444444,
+    "proposed_role": "support_relation_candidate",
+    "notes": "Touches inferred Drug/Disease task entities; can be retained in enriched graph pending Day 4 graph build.",
+    "sample_rows": [
+      {
+        "head": "brugada syndrome",
+        "relation": "As",
+        "tail": "heart defects congenital",
+        "split": "train"
+      },
+      {
+        "head": "heart defects congenital",
+        "relation": "As",
+        "tail": "brugada syndrome",
+        "split": "train"
+      },
+      {
+        "head": "neuroectodermal tumors",
+        "relation": "As",
+        "tail": "neuroectodermal tumors",
+        "split": "train"
+      },
+      {
+        "head": "cerebrovascular disorders",
+        "relation": "As",
+        "tail": "atrial fibrillation",
+        "split": "train"
+      },
+      {
+        "head": "marfan syndrome",
+        "relation": "As",
+        "tail": "suppuration",
+        "split": "train"
+      },
+      {
+        "head": "leukemia myeloid",
+        "relation": "As",
+        "tail": "philadelphia chromosome",
+        "split": "train"
+      },
+      {
+        "head": "brugada syndrome",
+        "relation": "As",
+        "tail": "long qt syndrome",
+        "split": "train"
+      },
+      {
+        "head": "deficiency diseases",
+        "relation": "As",
+        "tail": "genital neoplasms male",
+        "split": "train"
+      }
+    ]
+  }
+]

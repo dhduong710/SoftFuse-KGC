@@ -1,0 +1,72 @@
+{
+  "config": {
+    "model_name": "hrgat",
+    "script": "03b_run_hetionet_gnn_baselines_v2.py",
+    "task": "(?, CtD, disease)",
+    "candidate_universe": "Compound",
+    "top_k": 20,
+    "gold_injection": false,
+    "dim": 64,
+    "gnn_layers": 2,
+    "gnn_epochs": 60,
+    "target_sample_per_epoch": 8192,
+    "support_sample_per_epoch": 8192,
+    "support_loss_weight": 0.25,
+    "message_chunk_size": 32768,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "dropout": 0.1,
+    "seed": 2026,
+    "num_entities": 47031,
+    "num_relations": 24,
+    "num_train_enriched_triples": 2249997,
+    "num_train_target_triples": 555,
+    "runtime_sec": 17.919
+  },
+  "valid_metrics": {
+    "num_rows": 100,
+    "gold_present_at20": 0.4,
+    "mrr_at20": 0.0604581076388352,
+    "hits1_at20": 0.01,
+    "hits3_at20": 0.04,
+    "hits10_at20": 0.22,
+    "hits20_at20": 0.4,
+    "avg_gold_rank_absent_as_21": 16.6,
+    "gold_rank_21_count": 60,
+    "unique_top1_count": 1,
+    "top1_dominance": 1.0,
+    "top1_most_common": [
+      {
+        "entity": "Doxorubicin",
+        "count": 100
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "hrgat",
+    "split": "valid"
+  },
+  "test_metrics": {
+    "num_rows": 100,
+    "gold_present_at20": 0.41,
+    "mrr_at20": 0.10130366752270778,
+    "hits1_at20": 0.04,
+    "hits3_at20": 0.08,
+    "hits10_at20": 0.29,
+    "hits20_at20": 0.41,
+    "avg_gold_rank_absent_as_21": 15.46,
+    "gold_rank_21_count": 59,
+    "unique_top1_count": 1,
+    "top1_dominance": 1.0,
+    "top1_most_common": [
+      {
+        "entity": "Doxorubicin",
+        "count": 100
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "hrgat",
+    "split": "test"
+  }
+}

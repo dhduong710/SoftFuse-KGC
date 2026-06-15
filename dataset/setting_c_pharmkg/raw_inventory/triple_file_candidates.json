@@ -1,0 +1,398 @@
+[
+  {
+    "path": "data/raw/pharmkg/PharmKG-8k/test.tsv",
+    "relative_path": "PharmKG-8k/test.tsv",
+    "file_name": "test.tsv",
+    "size_mb": 0.9816,
+    "is_possible_triple_file": true,
+    "num_rows": 50036,
+    "num_columns_sample": 3,
+    "relation_col_index_assumed": 1,
+    "head_col_index_assumed": 0,
+    "tail_col_index_assumed": 2,
+    "relation_counts_top30": [
+      {
+        "relation": "GG",
+        "count": 8327
+      },
+      {
+        "relation": "ML",
+        "count": 4524
+      },
+      {
+        "relation": "Rg",
+        "count": 4344
+      },
+      {
+        "relation": "T",
+        "count": 4177
+      },
+      {
+        "relation": "E",
+        "count": 4008
+      },
+      {
+        "relation": "Ra",
+        "count": 3832
+      },
+      {
+        "relation": "P",
+        "count": 3564
+      },
+      {
+        "relation": "Q",
+        "count": 3294
+      },
+      {
+        "relation": "CC",
+        "count": 3206
+      },
+      {
+        "relation": "B",
+        "count": 1866
+      },
+      {
+        "relation": "I",
+        "count": 1826
+      },
+      {
+        "relation": "U",
+        "count": 1632
+      },
+      {
+        "relation": "Sa",
+        "count": 1421
+      },
+      {
+        "relation": "Te",
+        "count": 674
+      },
+      {
+        "relation": "Iw",
+        "count": 630
+      },
+      {
+        "relation": "Pr",
+        "count": 606
+      },
+      {
+        "relation": "N",
+        "count": 396
+      },
+      {
+        "relation": "X",
+        "count": 365
+      },
+      {
+        "relation": "J",
+        "count": 334
+      },
+      {
+        "relation": "K",
+        "count": 269
+      },
+      {
+        "relation": "D",
+        "count": 256
+      },
+      {
+        "relation": "C",
+        "count": 196
+      },
+      {
+        "relation": "O",
+        "count": 90
+      },
+      {
+        "relation": "An",
+        "count": 60
+      },
+      {
+        "relation": "Z",
+        "count": 52
+      },
+      {
+        "relation": "Mp",
+        "count": 42
+      },
+      {
+        "relation": "A",
+        "count": 42
+      },
+      {
+        "relation": "As",
+        "count": 3
+      }
+    ],
+    "num_unique_heads": 5836,
+    "num_unique_tails": 6169,
+    "num_unique_entities_head_tail": 6724,
+    "num_unique_relations": 28,
+    "relation_keyword_hits": [],
+    "error": null
+  },
+  {
+    "path": "data/raw/pharmkg/PharmKG-8k/train.tsv",
+    "relative_path": "PharmKG-8k/train.tsv",
+    "file_name": "train.tsv",
+    "size_mb": 7.8772,
+    "is_possible_triple_file": true,
+    "num_rows": 400788,
+    "num_columns_sample": 3,
+    "relation_col_index_assumed": 1,
+    "head_col_index_assumed": 0,
+    "tail_col_index_assumed": 2,
+    "relation_counts_top30": [
+      {
+        "relation": "GG",
+        "count": 66774
+      },
+      {
+        "relation": "ML",
+        "count": 36454
+      },
+      {
+        "relation": "Rg",
+        "count": 35103
+      },
+      {
+        "relation": "T",
+        "count": 33411
+      },
+      {
+        "relation": "E",
+        "count": 31741
+      },
+      {
+        "relation": "Ra",
+        "count": 30540
+      },
+      {
+        "relation": "P",
+        "count": 28718
+      },
+      {
+        "relation": "Q",
+        "count": 26070
+      },
+      {
+        "relation": "CC",
+        "count": 25658
+      },
+      {
+        "relation": "B",
+        "count": 15259
+      },
+      {
+        "relation": "I",
+        "count": 14436
+      },
+      {
+        "relation": "U",
+        "count": 12969
+      },
+      {
+        "relation": "Sa",
+        "count": 11420
+      },
+      {
+        "relation": "Te",
+        "count": 5133
+      },
+      {
+        "relation": "Pr",
+        "count": 5084
+      },
+      {
+        "relation": "Iw",
+        "count": 4956
+      },
+      {
+        "relation": "N",
+        "count": 3281
+      },
+      {
+        "relation": "X",
+        "count": 2830
+      },
+      {
+        "relation": "J",
+        "count": 2680
+      },
+      {
+        "relation": "K",
+        "count": 2157
+      },
+      {
+        "relation": "D",
+        "count": 1989
+      },
+      {
+        "relation": "C",
+        "count": 1791
+      },
+      {
+        "relation": "O",
+        "count": 688
+      },
+      {
+        "relation": "An",
+        "count": 547
+      },
+      {
+        "relation": "Z",
+        "count": 384
+      },
+      {
+        "relation": "Mp",
+        "count": 362
+      },
+      {
+        "relation": "A",
+        "count": 323
+      },
+      {
+        "relation": "As",
+        "count": 30
+      }
+    ],
+    "num_unique_heads": 6932,
+    "num_unique_tails": 6773,
+    "num_unique_entities_head_tail": 7247,
+    "num_unique_relations": 28,
+    "relation_keyword_hits": [],
+    "error": null
+  },
+  {
+    "path": "data/raw/pharmkg/PharmKG-8k/valid.tsv",
+    "relative_path": "PharmKG-8k/valid.tsv",
+    "file_name": "valid.tsv",
+    "size_mb": 0.9735,
+    "is_possible_triple_file": true,
+    "num_rows": 49536,
+    "num_columns_sample": 3,
+    "relation_col_index_assumed": 1,
+    "head_col_index_assumed": 0,
+    "tail_col_index_assumed": 2,
+    "relation_counts_top30": [
+      {
+        "relation": "GG",
+        "count": 8301
+      },
+      {
+        "relation": "ML",
+        "count": 4424
+      },
+      {
+        "relation": "Rg",
+        "count": 4410
+      },
+      {
+        "relation": "T",
+        "count": 4082
+      },
+      {
+        "relation": "E",
+        "count": 3994
+      },
+      {
+        "relation": "Ra",
+        "count": 3717
+      },
+      {
+        "relation": "P",
+        "count": 3596
+      },
+      {
+        "relation": "Q",
+        "count": 3225
+      },
+      {
+        "relation": "CC",
+        "count": 3168
+      },
+      {
+        "relation": "B",
+        "count": 1859
+      },
+      {
+        "relation": "I",
+        "count": 1778
+      },
+      {
+        "relation": "U",
+        "count": 1542
+      },
+      {
+        "relation": "Sa",
+        "count": 1422
+      },
+      {
+        "relation": "Pr",
+        "count": 655
+      },
+      {
+        "relation": "Te",
+        "count": 617
+      },
+      {
+        "relation": "Iw",
+        "count": 567
+      },
+      {
+        "relation": "N",
+        "count": 412
+      },
+      {
+        "relation": "X",
+        "count": 363
+      },
+      {
+        "relation": "J",
+        "count": 354
+      },
+      {
+        "relation": "K",
+        "count": 274
+      },
+      {
+        "relation": "D",
+        "count": 256
+      },
+      {
+        "relation": "C",
+        "count": 245
+      },
+      {
+        "relation": "O",
+        "count": 76
+      },
+      {
+        "relation": "An",
+        "count": 69
+      },
+      {
+        "relation": "Z",
+        "count": 46
+      },
+      {
+        "relation": "Mp",
+        "count": 43
+      },
+      {
+        "relation": "A",
+        "count": 38
+      },
+      {
+        "relation": "As",
+        "count": 3
+      }
+    ],
+    "num_unique_heads": 5832,
+    "num_unique_tails": 6122,
+    "num_unique_entities_head_tail": 6689,
+    "num_unique_relations": 28,
+    "relation_keyword_hits": [],
+    "error": null
+  }
+]

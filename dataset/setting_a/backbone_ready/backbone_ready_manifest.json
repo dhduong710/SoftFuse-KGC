@@ -1,0 +1,45 @@
+{
+  "graph_path_used": "dataset/setting_a/graph/train_enriched_deg1000_final.tsv",
+  "graph_size": 100,
+  "bkg": true,
+  "train_count": 8388,
+  "valid_count": 500,
+  "test_count": 500,
+  "train_summary": {
+    "num_samples": 8388,
+    "missing_key_count": 0,
+    "empty_subgraph_count": 0,
+    "bad_subgraph_type_count": 0,
+    "gold_in_candidate_count": 8388,
+    "candidate_len_min": 20,
+    "candidate_len_max": 20
+  },
+  "valid_summary": {
+    "num_samples": 500,
+    "missing_key_count": 0,
+    "empty_subgraph_count": 0,
+    "bad_subgraph_type_count": 0,
+    "gold_in_candidate_count": 500,
+    "candidate_len_min": 20,
+    "candidate_len_max": 20
+  },
+  "test_summary": {
+    "num_samples": 500,
+    "missing_key_count": 0,
+    "empty_subgraph_count": 0,
+    "bad_subgraph_type_count": 0,
+    "gold_in_candidate_count": 500,
+    "candidate_len_min": 20,
+    "candidate_len_max": 20
+  },
+  "valid_exact_leak_count": 0,
+  "test_exact_leak_count": 0,
+  "output_train": "dataset/setting_a/backbone_ready/train.json",
+  "output_valid": "dataset/setting_a/backbone_ready/valid.json",
+  "output_test": "dataset/setting_a/backbone_ready/test.json",
+  "entity2id": "dataset/setting_a/backbone_ready/entity2id.pkl",
+  "id2entity": "dataset/setting_a/backbone_ready/id2entity.pkl",
+  "relation2id": "dataset/setting_a/backbone_ready/relation2id.pkl",
+  "id2relation": "dataset/setting_a/backbone_ready/id2relation.pkl",
+  "note": "Week-5 full Setting-A backbone-ready package generated from full mock-ranked JSON + prompt_subgraph.py"
+}

@@ -1,0 +1,266 @@
+{
+  "config": {
+    "model_name": "transe",
+    "task": "(?, DRUGBANK::treats, disease)",
+    "candidate_universe": "Compound",
+    "top_k": 20,
+    "gold_injection": false,
+    "epochs": 30,
+    "dim": 128,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "seed": 2027
+  },
+  "train_summary": {
+    "model_name": "transe",
+    "epochs": 30,
+    "dim": 128,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "runtime_sec": 15.515,
+    "train_log": [
+      {
+        "epoch": 1,
+        "loss": 0.7777936821398528
+      },
+      {
+        "epoch": 2,
+        "loss": 0.4420500540215036
+      },
+      {
+        "epoch": 3,
+        "loss": 0.26470736122649646
+      },
+      {
+        "epoch": 4,
+        "loss": 0.18318968266248703
+      },
+      {
+        "epoch": 5,
+        "loss": 0.14400946024967276
+      },
+      {
+        "epoch": 6,
+        "loss": 0.12188754149753114
+      },
+      {
+        "epoch": 7,
+        "loss": 0.11073253287569336
+      },
+      {
+        "epoch": 8,
+        "loss": 0.1005292508913123
+      },
+      {
+        "epoch": 9,
+        "loss": 0.09217665069129156
+      },
+      {
+        "epoch": 10,
+        "loss": 0.08721966717554175
+      },
+      {
+        "epoch": 11,
+        "loss": 0.0823183176310166
+      },
+      {
+        "epoch": 12,
+        "loss": 0.07797987856294798
+      },
+      {
+        "epoch": 13,
+        "loss": 0.07271512079498042
+      },
+      {
+        "epoch": 14,
+        "loss": 0.07097578340250513
+      },
+      {
+        "epoch": 15,
+        "loss": 0.06640921646486157
+      },
+      {
+        "epoch": 16,
+        "loss": 0.06449472831319207
+      },
+      {
+        "epoch": 17,
+        "loss": 0.06019586543350116
+      },
+      {
+        "epoch": 18,
+        "loss": 0.056931948613213455
+      },
+      {
+        "epoch": 19,
+        "loss": 0.05537548936579539
+      },
+      {
+        "epoch": 20,
+        "loss": 0.05150046256249365
+      },
+      {
+        "epoch": 21,
+        "loss": 0.04987611994147301
+      },
+      {
+        "epoch": 22,
+        "loss": 0.04727179451805094
+      },
+      {
+        "epoch": 23,
+        "loss": 0.04652058098303235
+      },
+      {
+        "epoch": 24,
+        "loss": 0.043959940581218056
+      },
+      {
+        "epoch": 25,
+        "loss": 0.04390020636112794
+      },
+      {
+        "epoch": 26,
+        "loss": 0.04203910008072853
+      },
+      {
+        "epoch": 27,
+        "loss": 0.04044254407610582
+      },
+      {
+        "epoch": 28,
+        "loss": 0.039547315353284714
+      },
+      {
+        "epoch": 29,
+        "loss": 0.037566680582645146
+      },
+      {
+        "epoch": 30,
+        "loss": 0.036661313279815345
+      }
+    ]
+  },
+  "valid_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.296,
+    "mrr_at20": 0.061735954482394106,
+    "hits1_at20": 0.012,
+    "hits3_at20": 0.064,
+    "hits10_at20": 0.19,
+    "hits20_at20": 0.296,
+    "avg_gold_rank_absent_as_21": 17.288,
+    "gold_rank_21_count": 352,
+    "unique_top1_count": 112,
+    "top1_dominance": 0.166,
+    "top1_most_common": [
+      {
+        "entity": "Compound::DB01234",
+        "count": 83
+      },
+      {
+        "entity": "Compound::DB01380",
+        "count": 75
+      },
+      {
+        "entity": "Compound::DB00860",
+        "count": 61
+      },
+      {
+        "entity": "Compound::DB00959",
+        "count": 22
+      },
+      {
+        "entity": "Compound::DB00297",
+        "count": 10
+      },
+      {
+        "entity": "Compound::DB00424",
+        "count": 8
+      },
+      {
+        "entity": "Compound::DB00531",
+        "count": 8
+      },
+      {
+        "entity": "Compound::DB00741",
+        "count": 7
+      },
+      {
+        "entity": "Compound::DB00542",
+        "count": 7
+      },
+      {
+        "entity": "Compound::DB01284",
+        "count": 6
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "transe",
+    "split": "valid"
+  },
+  "test_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.27,
+    "mrr_at20": 0.05482980229265059,
+    "hits1_at20": 0.02,
+    "hits3_at20": 0.04,
+    "hits10_at20": 0.16,
+    "hits20_at20": 0.27,
+    "avg_gold_rank_absent_as_21": 17.936,
+    "gold_rank_21_count": 365,
+    "unique_top1_count": 119,
+    "top1_dominance": 0.154,
+    "top1_most_common": [
+      {
+        "entity": "Compound::DB01234",
+        "count": 77
+      },
+      {
+        "entity": "Compound::DB01380",
+        "count": 73
+      },
+      {
+        "entity": "Compound::DB00860",
+        "count": 65
+      },
+      {
+        "entity": "Compound::DB00959",
+        "count": 18
+      },
+      {
+        "entity": "Compound::DB00542",
+        "count": 11
+      },
+      {
+        "entity": "Compound::DB00531",
+        "count": 10
+      },
+      {
+        "entity": "Compound::DB00635",
+        "count": 9
+      },
+      {
+        "entity": "Compound::DB00303",
+        "count": 9
+      },
+      {
+        "entity": "Compound::DB00759",
+        "count": 8
+      },
+      {
+        "entity": "Compound::DB00424",
+        "count": 7
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "transe",
+    "split": "test"
+  }
+}

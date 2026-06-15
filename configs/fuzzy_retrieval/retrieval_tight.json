@@ -1,0 +1,18 @@
+{
+  "variant_name": "soft_support_fuzzy_retrieval_tight",
+  "retain_ratio": 0.55,
+  "min_keep": 18,
+  "top_band_weight": 1.0,
+  "mid_band_weight": 0.6,
+  "tail_band_weight": 0.25,
+  "touch_candidate": 0.35,
+  "touch_query": 0.05,
+  "direct_shortcut": -0.8,
+  "contra": -0.1,
+  "density": 0.05,
+  "stage_a_policy": "coverage_pass_best_triple_per_candidate",
+  "notes": [
+    "Tighter-budget fuzzy retrieval variant.",
+    "Purpose: test whether smaller evidence budget yields cleaner subgraph without major proxy collapse."
+  ]
+}

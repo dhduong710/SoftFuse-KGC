@@ -1,0 +1,28 @@
+{
+  "created_at": "2026-05-11T16:40:18.381790+00:00",
+  "setting": "setting_e_drkg",
+  "dataset": "DRKG",
+  "target_relation": "DRUGBANK::treats::Compound:Disease",
+  "target_relation_normalized": "drugbank_treats",
+  "task_form": "(?, DRUGBANK::treats, disease)",
+  "prediction_type": "predicted_head",
+  "train_size": 3968,
+  "valid_size": 500,
+  "test_size": 500,
+  "split_info": {
+    "requested_valid_size": 500,
+    "requested_test_size": 500,
+    "actual_train_size": 3968,
+    "actual_valid_size": 500,
+    "actual_test_size": 500,
+    "attempt_used": 0,
+    "coverage_policy": "valid/test compounds and diseases remain in train target relation"
+  },
+  "candidate_universe": "train_target_relation_compound_heads",
+  "candidate_universe_size": 1542,
+  "query_universe": "target_relation_diseases",
+  "query_universe_size": 1182,
+  "top_k": 20,
+  "gold_injection": false,
+  "absent_gold_rank_sentinel": 21
+}

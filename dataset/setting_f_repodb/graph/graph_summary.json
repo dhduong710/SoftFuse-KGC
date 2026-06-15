@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-05-12T01:33:47.019348+00:00",
+  "setting": "setting_f_repodb",
+  "dataset": "repoDB",
+  "target_relation": "repoDB::approved_indication::Compound:Disease",
+  "failed_diagnostic_relation": "repoDB::failed_or_suspended::Compound:Disease",
+  "train_enriched_path": "dataset/setting_f_repodb/graph/train_enriched.tsv",
+  "train_enriched_ids_path": "dataset/setting_f_repodb/graph/train_enriched_ids.tsv",
+  "train_enriched_num_edges": 90804,
+  "num_entities": 8818,
+  "num_relations": 63,
+  "graph_num_rels_for_future_training": 63,
+  "target_relation_id": 61,
+  "failed_relation_id": 62,
+  "kept_by_family": {
+    "target_approved": 5677,
+    "failed_diagnostic": 3222,
+    "compound_gene": 39017,
+    "gene_gene": 42888
+  },
+  "num_candidate_compounds": 1519,
+  "num_query_diseases": 1229,
+  "graph_build_stats": {
+    "drkg_graph_found": true,
+    "num_kept_edges": 90804,
+    "kept_by_family": {
+      "target_approved": 5677,
+      "failed_diagnostic": 3222,
+      "compound_gene": 39017,
+      "gene_gene": 42888
+    },
+    "num_entities": 8818,
+    "num_relations": 63,
+    "num_train_compounds": 1519,
+    "num_all_task_compounds": 1571,
+    "num_all_task_diseases": 2051,
+    "num_touched_genes": 5196,
+    "caps": {
+      "max_failed_per_disease": 80,
+      "max_failed_per_compound": 80,
+      "max_compound_gene_per_compound": 80,
+      "max_gene_gene_per_gene": 40,
+      "max_gene_gene_total": 150000
+    }
+  },
+  "entity_id_range": [
+    0,
+    8817
+  ],
+  "relation_id_range": [
+    0,
+    62
+  ],
+  "disease_mapping_policy": "repoDB local UMLS disease nodes",
+  "drug_evidence_policy": "reuse DRKG compound-gene and gene-gene evidence for mapped Compound::DBxxxxx nodes"
+}

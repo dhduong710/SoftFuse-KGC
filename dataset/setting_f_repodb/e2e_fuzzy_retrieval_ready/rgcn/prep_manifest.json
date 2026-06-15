@@ -1,0 +1,259 @@
+{
+  "created_at": "2026-05-12T02:21:21.924467+00:00",
+  "decision": "DAY7_REPODB_FUZZY_RETRIEVAL_READY",
+  "setting": "setting_f_repodb",
+  "dataset": "repoDB",
+  "source": "rgcn_raw_display_control",
+  "variant_name": "fuzzy_retrieval_main_repodb_rgcn",
+  "params": {
+    "variant_name": "fuzzy_retrieval_main_repodb_rgcn",
+    "retain_ratio": 0.55,
+    "min_keep": 45,
+    "max_keep": 60,
+    "band_top": 1.0,
+    "band_mid": 0.6,
+    "band_tail": 0.25,
+    "touch_candidate": 0.35,
+    "touch_query": 0.1,
+    "top_candidate_bonus": 0.05,
+    "family_target_approved": 0.1,
+    "family_failed_diagnostic": 0.02,
+    "family_compound_gene": 0.35,
+    "family_gene_gene": 0.25,
+    "family_compound_disease_other": 0.05,
+    "family_other": 0.05,
+    "direct_shortcut_penalty": 0.4,
+    "failed_diagnostic_penalty": 0.15,
+    "density_weight": 0.05,
+    "family_min_compound_gene": 8,
+    "family_min_gene_gene": 6,
+    "family_min_target": 1,
+    "family_min_failed": 0
+  },
+  "input_dir": "dataset/setting_f_repodb/e2e_soft_support_ready/rgcn_raw_display_control",
+  "output_dir": "dataset/setting_f_repodb/e2e_fuzzy_retrieval_ready/rgcn",
+  "raw_metrics": {
+    "train": {
+      "num_rows": 5677,
+      "gold_present_at20": 1.0,
+      "mrr_at20": 0.08386148760158738,
+      "hits1_at20": 0.015148846221595914,
+      "hits3_at20": 0.0424519992954025,
+      "hits10_at20": 0.11995772415007927,
+      "hits20_at20": 1.0,
+      "rank21_count": 0,
+      "avg_rank_absent_as_21": 17.86788796899771,
+      "unique_top1_count": 1,
+      "top1_dominance": 1.0,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB02703",
+          "count": 5677
+        }
+      ],
+      "avg_subgraph_size": 100.0,
+      "min_subgraph_size": 100,
+      "max_subgraph_size": 100
+    },
+    "valid": {
+      "num_rows": 500,
+      "gold_present_at20": 0.236,
+      "mrr_at20": 0.05702382453288026,
+      "hits1_at20": 0.026,
+      "hits3_at20": 0.048,
+      "hits10_at20": 0.144,
+      "hits20_at20": 0.236,
+      "rank21_count": 382,
+      "avg_rank_absent_as_21": 18.184,
+      "unique_top1_count": 2,
+      "top1_dominance": 0.528,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB02703",
+          "count": 264
+        },
+        {
+          "entity": "Compound::DB01234",
+          "count": 236
+        }
+      ],
+      "avg_subgraph_size": 100.0,
+      "min_subgraph_size": 100,
+      "max_subgraph_size": 100
+    },
+    "test": {
+      "num_rows": 500,
+      "gold_present_at20": 0.214,
+      "mrr_at20": 0.04813962250339959,
+      "hits1_at20": 0.018,
+      "hits3_at20": 0.04,
+      "hits10_at20": 0.128,
+      "hits20_at20": 0.214,
+      "rank21_count": 393,
+      "avg_rank_absent_as_21": 18.378,
+      "unique_top1_count": 2,
+      "top1_dominance": 0.512,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB02703",
+          "count": 256
+        },
+        {
+          "entity": "Compound::DB01234",
+          "count": 244
+        }
+      ],
+      "avg_subgraph_size": 100.0,
+      "min_subgraph_size": 100,
+      "max_subgraph_size": 100
+    }
+  },
+  "fuzzy_metrics": {
+    "train": {
+      "num_rows": 5677,
+      "gold_present_at20": 1.0,
+      "mrr_at20": 0.08386148760158738,
+      "hits1_at20": 0.015148846221595914,
+      "hits3_at20": 0.0424519992954025,
+      "hits10_at20": 0.11995772415007927,
+      "hits20_at20": 1.0,
+      "rank21_count": 0,
+      "avg_rank_absent_as_21": 17.86788796899771,
+      "unique_top1_count": 1,
+      "top1_dominance": 1.0,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB02703",
+          "count": 5677
+        }
+      ],
+      "avg_subgraph_size": 55.0,
+      "min_subgraph_size": 55,
+      "max_subgraph_size": 55
+    },
+    "valid": {
+      "num_rows": 500,
+      "gold_present_at20": 0.236,
+      "mrr_at20": 0.05702382453288026,
+      "hits1_at20": 0.026,
+      "hits3_at20": 0.048,
+      "hits10_at20": 0.144,
+      "hits20_at20": 0.236,
+      "rank21_count": 382,
+      "avg_rank_absent_as_21": 18.184,
+      "unique_top1_count": 2,
+      "top1_dominance": 0.528,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB02703",
+          "count": 264
+        },
+        {
+          "entity": "Compound::DB01234",
+          "count": 236
+        }
+      ],
+      "avg_subgraph_size": 55.0,
+      "min_subgraph_size": 55,
+      "max_subgraph_size": 55
+    },
+    "test": {
+      "num_rows": 500,
+      "gold_present_at20": 0.214,
+      "mrr_at20": 0.04813962250339959,
+      "hits1_at20": 0.018,
+      "hits3_at20": 0.04,
+      "hits10_at20": 0.128,
+      "hits20_at20": 0.214,
+      "rank21_count": 393,
+      "avg_rank_absent_as_21": 18.378,
+      "unique_top1_count": 2,
+      "top1_dominance": 0.512,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB02703",
+          "count": 256
+        },
+        {
+          "entity": "Compound::DB01234",
+          "count": 244
+        }
+      ],
+      "avg_subgraph_size": 55.0,
+      "min_subgraph_size": 55,
+      "max_subgraph_size": 55
+    }
+  },
+  "metrics_preserved": {
+    "train": true,
+    "valid": true,
+    "test": true
+  },
+  "audit": {
+    "train": {
+      "split": "train",
+      "num_rows": 5677,
+      "bad_candidate_len": 0,
+      "bad_query_placeholder": 0,
+      "bad_entity_placeholder": 0,
+      "bad_subgraph": 0,
+      "bad_display_rank_entities": 0,
+      "valid_test_exact_leak_count": 0,
+      "avg_source_subgraph_size": 100.0,
+      "avg_selected_subgraph_size": 55.0,
+      "min_selected_subgraph_size": 55,
+      "max_selected_subgraph_size": 55,
+      "avg_candidate_coverage_preserved_rate": 1.0,
+      "avg_direct_edges_source": 3.05636779989431,
+      "avg_direct_edges_selected": 2.540250132112031,
+      "avg_failed_edges_source": 0.017791086841641712,
+      "avg_failed_edges_selected": 0.014796547472256474,
+      "schema_pass": true
+    },
+    "valid": {
+      "split": "valid",
+      "num_rows": 500,
+      "bad_candidate_len": 0,
+      "bad_query_placeholder": 0,
+      "bad_entity_placeholder": 0,
+      "bad_subgraph": 0,
+      "bad_display_rank_entities": 0,
+      "valid_test_exact_leak_count": 0,
+      "avg_source_subgraph_size": 100.0,
+      "avg_selected_subgraph_size": 55.0,
+      "min_selected_subgraph_size": 55,
+      "max_selected_subgraph_size": 55,
+      "avg_candidate_coverage_preserved_rate": 1.0,
+      "avg_direct_edges_source": 2.46,
+      "avg_direct_edges_selected": 1.942,
+      "avg_failed_edges_source": 0.026,
+      "avg_failed_edges_selected": 0.024,
+      "schema_pass": true
+    },
+    "test": {
+      "split": "test",
+      "num_rows": 500,
+      "bad_candidate_len": 0,
+      "bad_query_placeholder": 0,
+      "bad_entity_placeholder": 0,
+      "bad_subgraph": 0,
+      "bad_display_rank_entities": 0,
+      "valid_test_exact_leak_count": 0,
+      "avg_source_subgraph_size": 100.0,
+      "avg_selected_subgraph_size": 55.0,
+      "min_selected_subgraph_size": 55,
+      "max_selected_subgraph_size": 55,
+      "avg_candidate_coverage_preserved_rate": 1.0,
+      "avg_direct_edges_source": 2.736,
+      "avg_direct_edges_selected": 2.174,
+      "avg_failed_edges_source": 0.012,
+      "avg_failed_edges_selected": 0.012,
+      "schema_pass": true
+    }
+  },
+  "notes": [
+    "Fuzzy retrieval preserves raw R-GCN candidate order.",
+    "Day 6 soft support was diagnostic and not used as the main repoDB row.",
+    "Display/canonical fields are preserved for E2E evaluation."
+  ]
+}

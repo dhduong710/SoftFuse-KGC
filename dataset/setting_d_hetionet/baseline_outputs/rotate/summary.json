@@ -1,0 +1,226 @@
+{
+  "config": {
+    "model_name": "rotate",
+    "task": "(?, CtD, disease)",
+    "candidate_universe": "Compound",
+    "top_k": 20,
+    "gold_injection": false,
+    "epochs": 20,
+    "dim": 128,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "seed": 2026
+  },
+  "train_summary": {
+    "model_name": "rotate",
+    "epochs": 20,
+    "dim": 128,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "runtime_sec": 150.527,
+    "train_log": [
+      {
+        "epoch": 1,
+        "loss": 0.27102518975734713
+      },
+      {
+        "epoch": 2,
+        "loss": 0.15067140290682965
+      },
+      {
+        "epoch": 3,
+        "loss": 0.11135029776529833
+      },
+      {
+        "epoch": 4,
+        "loss": 0.0966521384905685
+      },
+      {
+        "epoch": 5,
+        "loss": 0.08937056044285947
+      },
+      {
+        "epoch": 6,
+        "loss": 0.08534286328337409
+      },
+      {
+        "epoch": 7,
+        "loss": 0.08322100358930501
+      },
+      {
+        "epoch": 8,
+        "loss": 0.08121379827911203
+      },
+      {
+        "epoch": 9,
+        "loss": 0.07907755245539275
+      },
+      {
+        "epoch": 10,
+        "loss": 0.07853032271970402
+      },
+      {
+        "epoch": 11,
+        "loss": 0.0764318559589711
+      },
+      {
+        "epoch": 12,
+        "loss": 0.07606191594492305
+      },
+      {
+        "epoch": 13,
+        "loss": 0.07511725168336522
+      },
+      {
+        "epoch": 14,
+        "loss": 0.07496207182380286
+      },
+      {
+        "epoch": 15,
+        "loss": 0.07408259558406743
+      },
+      {
+        "epoch": 16,
+        "loss": 0.07376280311833729
+      },
+      {
+        "epoch": 17,
+        "loss": 0.07353184213692492
+      },
+      {
+        "epoch": 18,
+        "loss": 0.07308710686185144
+      },
+      {
+        "epoch": 19,
+        "loss": 0.07232201982628216
+      },
+      {
+        "epoch": 20,
+        "loss": 0.0715264403955503
+      }
+    ]
+  },
+  "valid_metrics": {
+    "num_rows": 100,
+    "gold_present_at20": 0.19,
+    "mrr_at20": 0.04019827394827395,
+    "hits1_at20": 0.02,
+    "hits3_at20": 0.02,
+    "hits10_at20": 0.12,
+    "hits20_at20": 0.19,
+    "avg_gold_rank_absent_as_21": 18.64,
+    "gold_rank_21_count": 81,
+    "unique_top1_count": 27,
+    "top1_dominance": 0.17,
+    "top1_most_common": [
+      {
+        "entity": "Vinorelbine",
+        "count": 17
+      },
+      {
+        "entity": "Prednisone",
+        "count": 12
+      },
+      {
+        "entity": "Simvastatin",
+        "count": 8
+      },
+      {
+        "entity": "Methylprednisolone",
+        "count": 8
+      },
+      {
+        "entity": "Estriol",
+        "count": 6
+      },
+      {
+        "entity": "Guanethidine",
+        "count": 5
+      },
+      {
+        "entity": "Prednisolone",
+        "count": 5
+      },
+      {
+        "entity": "Melphalan",
+        "count": 4
+      },
+      {
+        "entity": "Loratadine",
+        "count": 4
+      },
+      {
+        "entity": "Doxorubicin",
+        "count": 4
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "rotate",
+    "split": "valid"
+  },
+  "test_metrics": {
+    "num_rows": 100,
+    "gold_present_at20": 0.2,
+    "mrr_at20": 0.042597494610652514,
+    "hits1_at20": 0.01,
+    "hits3_at20": 0.04,
+    "hits10_at20": 0.12,
+    "hits20_at20": 0.2,
+    "avg_gold_rank_absent_as_21": 18.62,
+    "gold_rank_21_count": 80,
+    "unique_top1_count": 29,
+    "top1_dominance": 0.17,
+    "top1_most_common": [
+      {
+        "entity": "Vinorelbine",
+        "count": 17
+      },
+      {
+        "entity": "Prednisone",
+        "count": 12
+      },
+      {
+        "entity": "Triamcinolone",
+        "count": 7
+      },
+      {
+        "entity": "Melphalan",
+        "count": 6
+      },
+      {
+        "entity": "Methylprednisolone",
+        "count": 6
+      },
+      {
+        "entity": "Simvastatin",
+        "count": 5
+      },
+      {
+        "entity": "Capecitabine",
+        "count": 5
+      },
+      {
+        "entity": "Methoxsalen",
+        "count": 5
+      },
+      {
+        "entity": "Degarelix",
+        "count": 4
+      },
+      {
+        "entity": "Methotrexate",
+        "count": 3
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "rotate",
+    "split": "test"
+  }
+}

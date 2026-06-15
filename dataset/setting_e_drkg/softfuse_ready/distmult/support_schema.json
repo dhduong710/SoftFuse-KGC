@@ -1,0 +1,24 @@
+{
+  "setting": "setting_e_drkg",
+  "target_relation": "DRUGBANK::treats::Compound:Disease",
+  "source_model": "distmult",
+  "positive_evidence_families": [
+    "target_treats",
+    "aux_compound_disease",
+    "compound_gene",
+    "disease_gene",
+    "gene_gene_bridge"
+  ],
+  "shortcut_relations": [
+    "DRUGBANK::treats::Compound:Disease",
+    "GNBR::T::Compound:Disease",
+    "GNBR::Sa::Compound:Disease",
+    "GNBR::Pa::Compound:Disease",
+    "GNBR::C::Compound:Disease",
+    "GNBR::J::Compound:Disease",
+    "GNBR::Pr::Compound:Disease",
+    "GNBR::Mp::Compound:Disease"
+  ],
+  "contradiction_relations": [],
+  "note": "DRKG Day5 SoftFuse-ready package. DistMult is the main source; R-GCN is diagnostic."
+}

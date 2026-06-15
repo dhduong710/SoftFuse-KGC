@@ -1,0 +1,43 @@
+{
+  "dataset": "PharmKG-8k",
+  "setting": "setting_c_pharmkg",
+  "target_relation": "T",
+  "target_relation_id": 23,
+  "target_relation_normalized": "therapeutic_association_proxy",
+  "support_relations": [
+    "A",
+    "An",
+    "As",
+    "B",
+    "C",
+    "CC",
+    "D",
+    "E",
+    "GG",
+    "I",
+    "Iw",
+    "J",
+    "K",
+    "ML",
+    "Mp",
+    "N",
+    "O",
+    "P",
+    "Pr",
+    "Q",
+    "Ra",
+    "Rg",
+    "Sa",
+    "Te",
+    "U",
+    "X",
+    "Z"
+  ],
+  "excluded_relations": [],
+  "retrieval_policy": {
+    "stage_1": "shortest_paths_between_candidate_and_query_on_train_enriched_graph",
+    "stage_2": "incident_edge_fill_around_query_and_candidates",
+    "graph_size": 100,
+    "leak_guard": "train_enriched.tsv only; selected valid/test target T triples are absent by Day 4 leak check"
+  }
+}

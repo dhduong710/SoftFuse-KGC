@@ -1,0 +1,226 @@
+{
+  "config": {
+    "model_name": "transe",
+    "task": "(?, CtD, disease)",
+    "candidate_universe": "Compound",
+    "top_k": 20,
+    "gold_injection": false,
+    "epochs": 20,
+    "dim": 128,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "seed": 2026
+  },
+  "train_summary": {
+    "model_name": "transe",
+    "epochs": 20,
+    "dim": 128,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "runtime_sec": 222.194,
+    "train_log": [
+      {
+        "epoch": 1,
+        "loss": 0.18415240347385406
+      },
+      {
+        "epoch": 2,
+        "loss": 0.1009611170942133
+      },
+      {
+        "epoch": 3,
+        "loss": 0.09447744439948688
+      },
+      {
+        "epoch": 4,
+        "loss": 0.09131382535804401
+      },
+      {
+        "epoch": 5,
+        "loss": 0.08881595355543223
+      },
+      {
+        "epoch": 6,
+        "loss": 0.08557261937043883
+      },
+      {
+        "epoch": 7,
+        "loss": 0.08370100754228506
+      },
+      {
+        "epoch": 8,
+        "loss": 0.08158492967486382
+      },
+      {
+        "epoch": 9,
+        "loss": 0.08003591057929126
+      },
+      {
+        "epoch": 10,
+        "loss": 0.07807587656107816
+      },
+      {
+        "epoch": 11,
+        "loss": 0.07721535657617179
+      },
+      {
+        "epoch": 12,
+        "loss": 0.07561971861530434
+      },
+      {
+        "epoch": 13,
+        "loss": 0.07474661438979886
+      },
+      {
+        "epoch": 14,
+        "loss": 0.07315037221393803
+      },
+      {
+        "epoch": 15,
+        "loss": 0.07251393037086183
+      },
+      {
+        "epoch": 16,
+        "loss": 0.07166825641962615
+      },
+      {
+        "epoch": 17,
+        "loss": 0.07060941259969364
+      },
+      {
+        "epoch": 18,
+        "loss": 0.07052167815240946
+      },
+      {
+        "epoch": 19,
+        "loss": 0.06938020296394826
+      },
+      {
+        "epoch": 20,
+        "loss": 0.06928110999817198
+      }
+    ]
+  },
+  "valid_metrics": {
+    "num_rows": 100,
+    "gold_present_at20": 0.37,
+    "mrr_at20": 0.07497086247086247,
+    "hits1_at20": 0.03,
+    "hits3_at20": 0.04,
+    "hits10_at20": 0.23,
+    "hits20_at20": 0.37,
+    "avg_gold_rank_absent_as_21": 16.53,
+    "gold_rank_21_count": 63,
+    "unique_top1_count": 16,
+    "top1_dominance": 0.22,
+    "top1_most_common": [
+      {
+        "entity": "Prednisolone",
+        "count": 22
+      },
+      {
+        "entity": "Etoposide",
+        "count": 17
+      },
+      {
+        "entity": "Doxorubicin",
+        "count": 11
+      },
+      {
+        "entity": "Dexamethasone",
+        "count": 10
+      },
+      {
+        "entity": "Teniposide",
+        "count": 6
+      },
+      {
+        "entity": "Nadolol",
+        "count": 5
+      },
+      {
+        "entity": "Eribulin",
+        "count": 5
+      },
+      {
+        "entity": "Hydrocortisone",
+        "count": 4
+      },
+      {
+        "entity": "Gemcitabine",
+        "count": 4
+      },
+      {
+        "entity": "Azathioprine",
+        "count": 4
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "transe",
+    "split": "valid"
+  },
+  "test_metrics": {
+    "num_rows": 100,
+    "gold_present_at20": 0.27,
+    "mrr_at20": 0.04555616034292505,
+    "hits1_at20": 0.01,
+    "hits3_at20": 0.04,
+    "hits10_at20": 0.15,
+    "hits20_at20": 0.27,
+    "avg_gold_rank_absent_as_21": 18.02,
+    "gold_rank_21_count": 73,
+    "unique_top1_count": 13,
+    "top1_dominance": 0.29,
+    "top1_most_common": [
+      {
+        "entity": "Prednisolone",
+        "count": 29
+      },
+      {
+        "entity": "Etoposide",
+        "count": 13
+      },
+      {
+        "entity": "Doxorubicin",
+        "count": 10
+      },
+      {
+        "entity": "Eribulin",
+        "count": 9
+      },
+      {
+        "entity": "Dexamethasone",
+        "count": 9
+      },
+      {
+        "entity": "Teniposide",
+        "count": 8
+      },
+      {
+        "entity": "Hydrocortisone",
+        "count": 8
+      },
+      {
+        "entity": "Chlorambucil",
+        "count": 6
+      },
+      {
+        "entity": "Phenytoin",
+        "count": 2
+      },
+      {
+        "entity": "Ergocalciferol",
+        "count": 2
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "transe",
+    "split": "test"
+  }
+}

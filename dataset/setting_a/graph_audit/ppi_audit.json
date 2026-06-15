@@ -1,0 +1,58 @@
+{
+  "max_gene_degree": 500,
+  "target_count": 5882,
+  "associated_with_count": 46581,
+  "ppi_audit": {
+    "filtered_ppi_directed_unique": 104328,
+    "filtered_ppi_self_loops": 0,
+    "filtered_ppi_unordered_unique": 52164,
+    "filtered_ppi_unordered_pairs_with_reverse": 52164
+  },
+  "variants": [
+    {
+      "name": "A_directed_ppi",
+      "train_indication": 8388,
+      "target": 5882,
+      "associated_with": 46581,
+      "ppi": 104328,
+      "total": 165179,
+      "entities": 10328,
+      "relations": [
+        "associated_with",
+        "indication",
+        "ppi",
+        "target"
+      ]
+    },
+    {
+      "name": "B_collapsed_unordered_ppi",
+      "train_indication": 8388,
+      "target": 5882,
+      "associated_with": 46581,
+      "ppi": 52164,
+      "total": 113015,
+      "entities": 10328,
+      "relations": [
+        "associated_with",
+        "indication",
+        "ppi",
+        "target"
+      ]
+    },
+    {
+      "name": "C_mutual_collapsed_ppi",
+      "train_indication": 8388,
+      "target": 5882,
+      "associated_with": 46581,
+      "ppi": 52164,
+      "total": 113015,
+      "entities": 10328,
+      "relations": [
+        "associated_with",
+        "indication",
+        "ppi",
+        "target"
+      ]
+    }
+  ]
+}

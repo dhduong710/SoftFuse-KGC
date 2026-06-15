@@ -1,0 +1,100 @@
+Goserelin	CtD	breast cancer
+Cyclosporine	CtD	rheumatoid arthritis
+Pravastatin	CtD	atherosclerosis
+Valsartan	CtD	coronary artery disease
+Ramipril	CtD	coronary artery disease
+Ramipril	CtD	type 2 diabetes mellitus
+Betaxolol	CtD	glaucoma
+Carmustine	CtD	hematologic cancer
+Topiramate	CtD	epilepsy syndrome
+Bleomycin	CtD	germ cell cancer
+Valproic Acid	CtD	epilepsy syndrome
+Sorafenib	CtD	kidney cancer
+Sorafenib	CtD	liver cancer
+Gemcitabine	CtD	lung cancer
+Betamethasone	CtD	systemic lupus erythematosus
+Teniposide	CtD	lymphatic system cancer
+Epirubicin	CtD	prostate cancer
+Epirubicin	CtD	thyroid cancer
+Epirubicin	CtD	liver cancer
+Epirubicin	CtD	uterine cancer
+Raloxifene	CtD	osteoporosis
+Cisplatin	CtD	peripheral nervous system neoplasm
+Cisplatin	CtD	testicular cancer
+Vincristine	CtD	lymphatic system cancer
+Vincristine	CtD	peripheral nervous system neoplasm
+Vincristine	CtD	muscle cancer
+Fluorouracil	CtD	breast cancer
+Fluorouracil	CtD	pancreatic cancer
+Fluorouracil	CtD	colon cancer
+Methotrexate	CtD	colon cancer
+Methotrexate	CtD	multiple sclerosis
+Methotrexate	CtD	hematologic cancer
+Methotrexate	CtD	testicular cancer
+Methotrexate	CtD	muscle cancer
+Methotrexate	CtD	esophageal cancer
+Methotrexate	CtD	ankylosing spondylitis
+Methotrexate	CtD	psoriasis
+Methotrexate	CtD	systemic lupus erythematosus
+Vinblastine	CtD	kidney cancer
+Vinblastine	CtD	germ cell cancer
+Vinblastine	CtD	testicular cancer
+Triamcinolone	CtD	hematologic cancer
+Triamcinolone	CtD	psoriatic arthritis
+Niacin	CtD	coronary artery disease
+Prednisone	CtD	rheumatoid arthritis
+Prednisone	CtD	ulcerative colitis
+Prednisone	CtD	Crohn's disease [Disease::DOID:8778]
+Prednisone	CtD	psoriasis
+Tamoxifen	CtD	breast cancer
+Losartan	CtD	coronary artery disease
+Lamivudine	CtD	acquired immunodeficiency syndrome
+Hydrocortisone	CtD	rheumatoid arthritis
+Mometasone	CtD	atopic dermatitis
+Etoposide	CtD	prostate cancer
+Etoposide	CtD	testicular cancer
+Etoposide	CtD	uterine cancer
+Estradiol [Compound::DB00783]	CtD	prostate cancer
+Sulfasalazine	CtD	rheumatoid arthritis
+Dacarbazine	CtD	sarcoma
+Prednisolone	CtD	chronic obstructive pulmonary disease
+Prednisolone	CtD	allergic rhinitis
+Carboplatin	CtD	urinary bladder cancer
+Carboplatin	CtD	breast cancer
+Carboplatin	CtD	esophageal cancer
+Methylprednisolone	CtD	asthma
+Methylprednisolone	CtD	atopic dermatitis
+Methylprednisolone	CtD	systemic lupus erythematosus
+Dactinomycin	CtD	melanoma
+Ezetimibe	CtD	atherosclerosis
+Formoterol	CtD	asthma
+Doxorubicin	CtD	peripheral nervous system neoplasm
+Doxorubicin	CtD	bone cancer
+Doxorubicin	CtD	ovarian cancer
+Doxorubicin	CtD	uterine cancer
+Hydroxyurea	CtD	head and neck cancer
+Hydroxyurea	CtD	brain cancer
+Mycophenolic acid	CtD	psoriasis
+Irbesartan	CtD	type 2 diabetes mellitus
+Mercaptopurine	CtD	hematologic cancer
+Melphalan	CtD	hematologic cancer
+Fluocinonide	CtD	psoriasis
+Fludarabine	CtD	lymphatic system cancer
+Diphenhydramine	CtD	allergic rhinitis
+Orlistat	CtD	obesity
+Leflunomide	CtD	rheumatoid arthritis
+Captopril	CtD	coronary artery disease
+Captopril	CtD	systemic scleroderma
+Mitoxantrone	CtD	breast cancer
+Mitoxantrone	CtD	multiple sclerosis
+Lomustine	CtD	hematologic cancer
+Paclitaxel	CtD	breast cancer
+Paclitaxel	CtD	kidney cancer
+Dexamethasone	CtD	psoriasis
+Docetaxel	CtD	prostate cancer
+Docetaxel	CtD	lung cancer
+Docetaxel	CtD	melanoma
+Docetaxel	CtD	ovarian cancer
+Arformoterol	CtD	chronic obstructive pulmonary disease
+Thiotepa	CtD	sarcoma
+Thiotepa	CtD	hematologic cancer

@@ -1,0 +1,48 @@
+{
+  "source": {
+    "raw_train": "dataset/setting_a/backbone_ranker/train_top20_raw.json",
+    "raw_valid": "dataset/setting_a/backbone_candidates/valid_top20_raw.json",
+    "raw_test": "dataset/setting_a/backbone_candidates/test_top20_raw.json",
+    "old_train_evidence": "dataset/setting_a/12_backbone_ready_ranker_v2/train.json",
+    "old_valid_evidence": "dataset/setting_a/12_backbone_ready_ranker_v2/valid.json",
+    "old_test_evidence": "dataset/setting_a/12_backbone_ready_ranker_v2/test.json"
+  },
+  "rebuild_notes": [
+    "train_aligned_evidence.json is already included in this directory and is the train-side aligned evidence artifact used by this snapshot.",
+    "The historical raw_train path is optional for the current soft-support scripts. If a downstream experiment requires train_top20_raw.json, run: python3 scripts/backbone/export_primekg_train_candidates.py",
+    "The old_*_evidence paths document provenance from the original research run and are not required by scripts/soft_support."
+  ],
+  "alignment_key": "(query_entity, gold_entity/output)",
+  "train_summary": {
+    "num_raw_rows": 8388,
+    "num_rebuilt_rows": 8388,
+    "same_query_rate_zip": 1.0,
+    "same_gold_rate_zip": 1.0,
+    "same_candidate_list_rate_zip": 1.0,
+    "exact_leak_count": 8388
+  },
+  "valid_summary": {
+    "num_raw_rows": 500,
+    "num_rebuilt_rows": 500,
+    "same_query_rate_zip": 1.0,
+    "same_gold_rate_zip": 1.0,
+    "same_candidate_list_rate_zip": 1.0,
+    "exact_leak_count": 0
+  },
+  "test_summary": {
+    "num_raw_rows": 500,
+    "num_rebuilt_rows": 500,
+    "same_query_rate_zip": 1.0,
+    "same_gold_rate_zip": 1.0,
+    "same_candidate_list_rate_zip": 1.0,
+    "exact_leak_count": 0
+  },
+  "missing": {
+    "train_missing_count": 0,
+    "valid_missing_count": 0,
+    "test_missing_count": 0,
+    "valid_missing_samples": [],
+    "test_missing_samples": []
+  },
+  "important_note": "Prompts were regenerated from raw candidate lists; subgraphs were copied from matched evidence rows keyed by (query_entity, gold_entity)."
+}

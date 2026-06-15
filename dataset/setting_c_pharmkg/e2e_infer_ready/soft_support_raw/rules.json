@@ -1,0 +1,5 @@
+{
+  "23": [],
+  "T": [],
+  "note": "No explicit PharmKG relation-label map was available. Day 6 uses shortest-path and incident-edge fallback retrieval rather than hand-claiming semantic rules."
+}

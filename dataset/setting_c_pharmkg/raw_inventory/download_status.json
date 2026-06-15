@@ -1,0 +1,74 @@
+{
+  "created_at": "2026-04-29 19:12:46",
+  "skip_download": false,
+  "force_download": false,
+  "download_zenodo": false,
+  "pharmkg8k": {
+    "train.tsv": {
+      "url": "https://raw.githubusercontent.com/biomed-AI/PharmKG/master/data/PharmKG-8k/train.tsv",
+      "path": "data/raw/pharmkg/PharmKG-8k/train.tsv",
+      "exists_before": false,
+      "downloaded": true,
+      "ok": true,
+      "error": null,
+      "size_bytes": 8259869
+    },
+    "valid.tsv": {
+      "url": "https://raw.githubusercontent.com/biomed-AI/PharmKG/master/data/PharmKG-8k/valid.tsv",
+      "path": "data/raw/pharmkg/PharmKG-8k/valid.tsv",
+      "exists_before": false,
+      "downloaded": true,
+      "ok": true,
+      "error": null,
+      "size_bytes": 1020787
+    },
+    "test.tsv": {
+      "url": "https://raw.githubusercontent.com/biomed-AI/PharmKG/master/data/PharmKG-8k/test.tsv",
+      "path": "data/raw/pharmkg/PharmKG-8k/test.tsv",
+      "exists_before": false,
+      "downloaded": true,
+      "ok": true,
+      "error": null,
+      "size_bytes": 1029308
+    },
+    "entity2vec.txt": {
+      "url": "https://raw.githubusercontent.com/biomed-AI/PharmKG/master/data/PharmKG-8k/entity2vec.txt",
+      "path": "data/raw/pharmkg/PharmKG-8k/entity2vec.txt",
+      "exists_before": false,
+      "downloaded": true,
+      "ok": true,
+      "error": null,
+      "size_bytes": 7644641
+    },
+    "relation2vec.txt": {
+      "url": "https://raw.githubusercontent.com/biomed-AI/PharmKG/master/data/PharmKG-8k/relation2vec.txt",
+      "path": "data/raw/pharmkg/PharmKG-8k/relation2vec.txt",
+      "exists_before": false,
+      "downloaded": true,
+      "ok": true,
+      "error": null,
+      "size_bytes": 20366
+    }
+  },
+  "readmes": {
+    "MindRank-Biotech_README.md": {
+      "url": "https://raw.githubusercontent.com/MindRank-Biotech/PharmKG/master/README.md",
+      "path": "data/raw/pharmkg/MindRank-Biotech_README.md",
+      "exists_before": false,
+      "downloaded": true,
+      "ok": true,
+      "error": null,
+      "size_bytes": 4696
+    },
+    "biomed_AI_README.md": {
+      "url": "https://raw.githubusercontent.com/biomed-AI/PharmKG/master/README.md",
+      "path": "data/raw/pharmkg/biomed_AI_README.md",
+      "exists_before": false,
+      "downloaded": true,
+      "ok": true,
+      "error": null,
+      "size_bytes": 4448
+    }
+  },
+  "zenodo": null
+}

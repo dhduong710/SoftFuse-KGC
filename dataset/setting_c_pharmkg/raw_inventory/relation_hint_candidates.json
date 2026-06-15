@@ -1,0 +1,119 @@
+{
+  "num_relations_seen_in_top_counts": 28,
+  "relation_counts_merged_top50": [
+    {
+      "relation": "GG",
+      "count": 83402
+    },
+    {
+      "relation": "ML",
+      "count": 45402
+    },
+    {
+      "relation": "Rg",
+      "count": 43857
+    },
+    {
+      "relation": "T",
+      "count": 41670
+    },
+    {
+      "relation": "E",
+      "count": 39743
+    },
+    {
+      "relation": "Ra",
+      "count": 38089
+    },
+    {
+      "relation": "P",
+      "count": 35878
+    },
+    {
+      "relation": "Q",
+      "count": 32589
+    },
+    {
+      "relation": "CC",
+      "count": 32032
+    },
+    {
+      "relation": "B",
+      "count": 18984
+    },
+    {
+      "relation": "I",
+      "count": 18040
+    },
+    {
+      "relation": "U",
+      "count": 16143
+    },
+    {
+      "relation": "Sa",
+      "count": 14263
+    },
+    {
+      "relation": "Te",
+      "count": 6424
+    },
+    {
+      "relation": "Pr",
+      "count": 6345
+    },
+    {
+      "relation": "Iw",
+      "count": 6153
+    },
+    {
+      "relation": "N",
+      "count": 4089
+    },
+    {
+      "relation": "X",
+      "count": 3558
+    },
+    {
+      "relation": "J",
+      "count": 3368
+    },
+    {
+      "relation": "K",
+      "count": 2700
+    },
+    {
+      "relation": "D",
+      "count": 2501
+    },
+    {
+      "relation": "C",
+      "count": 2232
+    },
+    {
+      "relation": "O",
+      "count": 854
+    },
+    {
+      "relation": "An",
+      "count": 676
+    },
+    {
+      "relation": "Z",
+      "count": 482
+    },
+    {
+      "relation": "Mp",
+      "count": 447
+    },
+    {
+      "relation": "A",
+      "count": 403
+    },
+    {
+      "relation": "As",
+      "count": 36
+    }
+  ],
+  "therapeutic_keyword_relation_hints": [],
+  "warning": "These are only Day 2 hints. Final target/support/excluded relation selection must be done on Day 3 after schema inspection."
+}

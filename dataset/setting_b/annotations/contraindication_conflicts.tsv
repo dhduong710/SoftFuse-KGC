@@ -1,0 +1,88 @@
+drug	disease	relation	source_scope	pair_key	conflict_flag
+Lorazepam	anxiety disorder	contraindication	overlap_with_setting_a	Lorazepam||anxiety disorder	1
+Alprazolam	anxiety disorder	contraindication	overlap_with_setting_a	Alprazolam||anxiety disorder	1
+Clonazepam	anxiety disorder	contraindication	overlap_with_setting_a	Clonazepam||anxiety disorder	1
+Pregabalin	anxiety disorder	contraindication	overlap_with_setting_a	Pregabalin||anxiety disorder	1
+Fluoxetine	bipolar disorder	contraindication	overlap_with_setting_a	Fluoxetine||bipolar disorder	1
+Olanzapine	bipolar disorder	contraindication	overlap_with_setting_a	Olanzapine||bipolar disorder	1
+Medroxyprogesterone acetate	osteoporosis	contraindication	overlap_with_setting_a	Medroxyprogesterone acetate||osteoporosis	1
+Medroxyprogesterone acetate	postmenopausal osteoporosis	contraindication	overlap_with_setting_a	Medroxyprogesterone acetate||postmenopausal osteoporosis	1
+Progesterone	osteoporosis	contraindication	overlap_with_setting_a	Progesterone||osteoporosis	1
+Progesterone	postmenopausal osteoporosis	contraindication	overlap_with_setting_a	Progesterone||postmenopausal osteoporosis	1
+Estradiol	osteoporosis	contraindication	overlap_with_setting_a	Estradiol||osteoporosis	1
+Estradiol	postmenopausal osteoporosis	contraindication	overlap_with_setting_a	Estradiol||postmenopausal osteoporosis	1
+Phylloquinone	hypercalcemia disease	contraindication	overlap_with_setting_a	Phylloquinone||hypercalcemia disease	1
+Phylloquinone	nephrocalcinosis	contraindication	overlap_with_setting_a	Phylloquinone||nephrocalcinosis	1
+Phylloquinone	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Phylloquinone||phosphorus metabolism disease	1
+Calcium lactate	hypercalcemia disease	contraindication	overlap_with_setting_a	Calcium lactate||hypercalcemia disease	1
+Calcium lactate	nephrocalcinosis	contraindication	overlap_with_setting_a	Calcium lactate||nephrocalcinosis	1
+Calcium lactate	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Calcium lactate||phosphorus metabolism disease	1
+Cholecalciferol	hypercalcemia disease	contraindication	overlap_with_setting_a	Cholecalciferol||hypercalcemia disease	1
+Cholecalciferol	nephrocalcinosis	contraindication	overlap_with_setting_a	Cholecalciferol||nephrocalcinosis	1
+Cholecalciferol	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Cholecalciferol||phosphorus metabolism disease	1
+Dihydrotachysterol	hypercalcemia disease	contraindication	overlap_with_setting_a	Dihydrotachysterol||hypercalcemia disease	1
+Dihydrotachysterol	nephrocalcinosis	contraindication	overlap_with_setting_a	Dihydrotachysterol||nephrocalcinosis	1
+Dihydrotachysterol	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Dihydrotachysterol||phosphorus metabolism disease	1
+Calcium acetate	hypercalcemia disease	contraindication	overlap_with_setting_a	Calcium acetate||hypercalcemia disease	1
+Calcium acetate	nephrocalcinosis	contraindication	overlap_with_setting_a	Calcium acetate||nephrocalcinosis	1
+Calcium acetate	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Calcium acetate||phosphorus metabolism disease	1
+Ergocalciferol	hypercalcemia disease	contraindication	overlap_with_setting_a	Ergocalciferol||hypercalcemia disease	1
+Ergocalciferol	nephrocalcinosis	contraindication	overlap_with_setting_a	Ergocalciferol||nephrocalcinosis	1
+Ergocalciferol	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Ergocalciferol||phosphorus metabolism disease	1
+Magnesium citrate	hypercalcemia disease	contraindication	overlap_with_setting_a	Magnesium citrate||hypercalcemia disease	1
+Magnesium citrate	nephrocalcinosis	contraindication	overlap_with_setting_a	Magnesium citrate||nephrocalcinosis	1
+Magnesium citrate	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Magnesium citrate||phosphorus metabolism disease	1
+Calcitriol	hypercalcemia disease	contraindication	overlap_with_setting_a	Calcitriol||hypercalcemia disease	1
+Calcitriol	nephrocalcinosis	contraindication	overlap_with_setting_a	Calcitriol||nephrocalcinosis	1
+Calcitriol	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Calcitriol||phosphorus metabolism disease	1
+Calcium gluconate	hypercalcemia disease	contraindication	overlap_with_setting_a	Calcium gluconate||hypercalcemia disease	1
+Calcium gluconate	nephrocalcinosis	contraindication	overlap_with_setting_a	Calcium gluconate||nephrocalcinosis	1
+Calcium gluconate	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Calcium gluconate||phosphorus metabolism disease	1
+Calcium glucoheptonate	hypercalcemia disease	contraindication	overlap_with_setting_a	Calcium glucoheptonate||hypercalcemia disease	1
+Calcium glucoheptonate	nephrocalcinosis	contraindication	overlap_with_setting_a	Calcium glucoheptonate||nephrocalcinosis	1
+Calcium glucoheptonate	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Calcium glucoheptonate||phosphorus metabolism disease	1
+Calcium glycerophosphate	hypercalcemia disease	contraindication	overlap_with_setting_a	Calcium glycerophosphate||hypercalcemia disease	1
+Calcium glycerophosphate	nephrocalcinosis	contraindication	overlap_with_setting_a	Calcium glycerophosphate||nephrocalcinosis	1
+Calcium glycerophosphate	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Calcium glycerophosphate||phosphorus metabolism disease	1
+Calcifediol	hypercalcemia disease	contraindication	overlap_with_setting_a	Calcifediol||hypercalcemia disease	1
+Calcifediol	nephrocalcinosis	contraindication	overlap_with_setting_a	Calcifediol||nephrocalcinosis	1
+Calcifediol	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Calcifediol||phosphorus metabolism disease	1
+Magnesium oxide	hypercalcemia disease	contraindication	overlap_with_setting_a	Magnesium oxide||hypercalcemia disease	1
+Magnesium oxide	nephrocalcinosis	contraindication	overlap_with_setting_a	Magnesium oxide||nephrocalcinosis	1
+Magnesium oxide	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Magnesium oxide||phosphorus metabolism disease	1
+Calcium chloride	hypercalcemia disease	contraindication	overlap_with_setting_a	Calcium chloride||hypercalcemia disease	1
+Calcium chloride	nephrocalcinosis	contraindication	overlap_with_setting_a	Calcium chloride||nephrocalcinosis	1
+Calcium chloride	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Calcium chloride||phosphorus metabolism disease	1
+Methadyl acetate	substance abuse/dependence	contraindication	overlap_with_setting_a	Methadyl acetate||substance abuse/dependence	1
+Edetic acid	hypercalcemia disease	contraindication	overlap_with_setting_a	Edetic acid||hypercalcemia disease	1
+Edetic acid	nephrocalcinosis	contraindication	overlap_with_setting_a	Edetic acid||nephrocalcinosis	1
+Edetic acid	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Edetic acid||phosphorus metabolism disease	1
+Ibandronate	hypercalcemia disease	contraindication	overlap_with_setting_a	Ibandronate||hypercalcemia disease	1
+Ibandronate	nephrocalcinosis	contraindication	overlap_with_setting_a	Ibandronate||nephrocalcinosis	1
+Ibandronate	phosphorus metabolism disease	contraindication	overlap_with_setting_a	Ibandronate||phosphorus metabolism disease	1
+Allantoin	seborrheic dermatitis	contraindication	overlap_with_setting_a	Allantoin||seborrheic dermatitis	1
+Clobetasol propionate	seborrheic dermatitis	contraindication	overlap_with_setting_a	Clobetasol propionate||seborrheic dermatitis	1
+Hydrocortisone	dermatitis	contraindication	overlap_with_setting_a	Hydrocortisone||dermatitis	1
+Cortisone acetate	dermatitis	contraindication	overlap_with_setting_a	Cortisone acetate||dermatitis	1
+Allantoin	dermatitis	contraindication	overlap_with_setting_a	Allantoin||dermatitis	1
+Racementhol	dermatitis	contraindication	overlap_with_setting_a	Racementhol||dermatitis	1
+Phenol	dermatitis	contraindication	overlap_with_setting_a	Phenol||dermatitis	1
+Resorcinol	dermatitis	contraindication	overlap_with_setting_a	Resorcinol||dermatitis	1
+Naloxone	substance abuse/dependence	contraindication	overlap_with_setting_a	Naloxone||substance abuse/dependence	1
+Naltrexone	substance abuse/dependence	contraindication	overlap_with_setting_a	Naltrexone||substance abuse/dependence	1
+Racementhol	seborrheic keratosis	contraindication	overlap_with_setting_a	Racementhol||seborrheic keratosis	1
+Verapamil	ventricular tachycardia	contraindication	overlap_with_setting_a	Verapamil||ventricular tachycardia	1
+Diltiazem	ventricular tachycardia	contraindication	overlap_with_setting_a	Diltiazem||ventricular tachycardia	1
+Buprenorphine	substance abuse/dependence	contraindication	overlap_with_setting_a	Buprenorphine||substance abuse/dependence	1
+Bupropion	anxiety disorder	contraindication	overlap_with_setting_a	Bupropion||anxiety disorder	1
+Diphenoxylate	diarrheal disease	contraindication	overlap_with_setting_a	Diphenoxylate||diarrheal disease	1
+Loperamide	dysentery	contraindication	overlap_with_setting_a	Loperamide||dysentery	1
+Loperamide	diarrheal disease	contraindication	overlap_with_setting_a	Loperamide||diarrheal disease	1
+Fluocinolone acetonide	atopic eczema	contraindication	overlap_with_setting_a	Fluocinolone acetonide||atopic eczema	1
+Chlorothiazide	congestive heart failure	contraindication	overlap_with_setting_a	Chlorothiazide||congestive heart failure	1
+Hydrochlorothiazide	congestive heart failure	contraindication	overlap_with_setting_a	Hydrochlorothiazide||congestive heart failure	1
+Nicardipine	hypertension	contraindication	overlap_with_setting_a	Nicardipine||hypertension	1
+Betamethasone	psoriasis	contraindication	overlap_with_setting_a	Betamethasone||psoriasis	1
+Betamethasone	parapsoriasis	contraindication	overlap_with_setting_a	Betamethasone||parapsoriasis	1
+Desmopressin	von Willebrand disease	contraindication	overlap_with_setting_a	Desmopressin||von Willebrand disease	1
+Nitisinone	tyrosinemia	contraindication	overlap_with_setting_a	Nitisinone||tyrosinemia	1

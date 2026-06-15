@@ -1,0 +1,54 @@
+{
+  "week": 23,
+  "day": 2,
+  "dataset": "PharmKG-8k",
+  "setting": "setting_c_pharmkg",
+  "target_relation": "T",
+  "target_relation_normalized": "therapeutic_association_proxy",
+  "valid": {
+    "split": "valid",
+    "num_rows": 500,
+    "num_candidate_rows": 10000,
+    "avg_evidence_edge_touch_count": 1.268,
+    "avg_query_edge_touch_count": 86.64,
+    "avg_candidate_edge_touch_count": 1.268,
+    "candidate_with_evidence_rate": 1.0,
+    "candidate_with_shortest_path_rate": 1.0,
+    "candidate_with_direct_T_rate": 0.4094,
+    "avg_support_relation_diversity": 1.0387,
+    "num_gold_candidate_rows": 35,
+    "gold_with_evidence_rate": 1.0,
+    "gold_with_shortest_path_rate": 1.0,
+    "gold_with_direct_T_rate": 0.0,
+    "row_summary_counts": {
+      "rows_with_any_hard_keep": 500,
+      "rows_with_gold_present_raw": 35,
+      "rows_where_gold_has_shortest_path": 35
+    }
+  },
+  "test": {
+    "split": "test",
+    "num_rows": 500,
+    "num_candidate_rows": 10000,
+    "avg_evidence_edge_touch_count": 1.3009,
+    "avg_query_edge_touch_count": 85.494,
+    "avg_candidate_edge_touch_count": 1.3009,
+    "candidate_with_evidence_rate": 1.0,
+    "candidate_with_shortest_path_rate": 1.0,
+    "candidate_with_direct_T_rate": 0.3897,
+    "avg_support_relation_diversity": 1.0404,
+    "num_gold_candidate_rows": 46,
+    "gold_with_evidence_rate": 1.0,
+    "gold_with_shortest_path_rate": 1.0,
+    "gold_with_direct_T_rate": 0.0,
+    "row_summary_counts": {
+      "rows_with_any_hard_keep": 500,
+      "rows_with_gold_present_raw": 46,
+      "rows_where_gold_has_shortest_path": 46
+    }
+  },
+  "notes": [
+    "contra_flag/conflict_flag are fixed to zero because PharmKG-8k relation labels are compact codes and no explicit contraindication relation is used.",
+    "hard_support_raw is a negative control, not an ontology filter."
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "config": {
+    "model_name": "complex",
+    "task": "(?, T, disease)",
+    "candidate_universe": "drug_only_from_train_T_heads",
+    "top_k": 20,
+    "gold_injection": false,
+    "epochs": 30,
+    "dim": 256,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "seed": 2025
+  },
+  "train_summary": {
+    "model_name": "complex",
+    "epochs": 30,
+    "dim": 256,
+    "batch_size": 4096,
+    "lr": 0.001,
+    "weight_decay": 1e-06,
+    "margin": 1.0,
+    "runtime_sec": 35.183,
+    "train_log": [
+      {
+        "epoch": 1,
+        "loss": 0.9993292181115402
+      },
+      {
+        "epoch": 2,
+        "loss": 0.7697781625546907
+      },
+      {
+        "epoch": 3,
+        "loss": 0.27018659930480154
+      },
+      {
+        "epoch": 4,
+        "loss": 0.18168830024568658
+      },
+      {
+        "epoch": 5,
+        "loss": 0.15010046284449727
+      },
+      {
+        "epoch": 6,
+        "loss": 0.12851214816695766
+      },
+      {
+        "epoch": 7,
+        "loss": 0.11311592302824322
+      },
+      {
+        "epoch": 8,
+        "loss": 0.10064833195585954
+      },
+      {
+        "epoch": 9,
+        "loss": 0.09113560522857465
+      },
+      {
+        "epoch": 10,
+        "loss": 0.08331516455662878
+      },
+      {
+        "epoch": 11,
+        "loss": 0.07675438923271079
+      },
+      {
+        "epoch": 12,
+        "loss": 0.07230938437737916
+      },
+      {
+        "epoch": 13,
+        "loss": 0.06791008973592207
+      },
+      {
+        "epoch": 14,
+        "loss": 0.06506588917813803
+      },
+      {
+        "epoch": 15,
+        "loss": 0.06049765948402254
+      },
+      {
+        "epoch": 16,
+        "loss": 0.05746639841481259
+      },
+      {
+        "epoch": 17,
+        "loss": 0.055103734645404315
+      },
+      {
+        "epoch": 18,
+        "loss": 0.05247774222179463
+      },
+      {
+        "epoch": 19,
+        "loss": 0.0515705916834505
+      },
+      {
+        "epoch": 20,
+        "loss": 0.04927718933475645
+      },
+      {
+        "epoch": 21,
+        "loss": 0.0480680334724878
+      },
+      {
+        "epoch": 22,
+        "loss": 0.04656176641583443
+      },
+      {
+        "epoch": 23,
+        "loss": 0.04492170508754881
+      },
+      {
+        "epoch": 24,
+        "loss": 0.043659170285651555
+      },
+      {
+        "epoch": 25,
+        "loss": 0.04264081892998595
+      },
+      {
+        "epoch": 26,
+        "loss": 0.04219583543507676
+      },
+      {
+        "epoch": 27,
+        "loss": 0.04077494775778369
+      },
+      {
+        "epoch": 28,
+        "loss": 0.039482401017295686
+      },
+      {
+        "epoch": 29,
+        "loss": 0.03890423564926574
+      },
+      {
+        "epoch": 30,
+        "loss": 0.03850920935602565
+      }
+    ]
+  },
+  "valid_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.05,
+    "mrr_at20": 0.005814072649057168,
+    "hits1_at20": 0.0,
+    "hits3_at20": 0.004,
+    "hits10_at20": 0.018,
+    "hits20_at20": 0.05,
+    "avg_gold_rank_absent_as_21": 20.556,
+    "gold_rank_21_count": 475,
+    "unique_top1_count": 166,
+    "top1_dominance": 0.034,
+    "top1_most_common": [
+      {
+        "entity": "vitamin e",
+        "count": 17
+      },
+      {
+        "entity": "aripiprazole",
+        "count": 15
+      },
+      {
+        "entity": "nandrolone decanoate",
+        "count": 13
+      },
+      {
+        "entity": "cyclizine",
+        "count": 13
+      },
+      {
+        "entity": "cyclophosphamide",
+        "count": 12
+      },
+      {
+        "entity": "testosterone",
+        "count": 10
+      },
+      {
+        "entity": "tamoxifen",
+        "count": 10
+      },
+      {
+        "entity": "dexamethasone",
+        "count": 9
+      },
+      {
+        "entity": "propofol",
+        "count": 8
+      },
+      {
+        "entity": "methotrexate",
+        "count": 7
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "complex",
+    "split": "valid"
+  },
+  "test_metrics": {
+    "num_rows": 500,
+    "gold_present_at20": 0.066,
+    "mrr_at20": 0.00906561926205889,
+    "hits1_at20": 0.0,
+    "hits3_at20": 0.008,
+    "hits10_at20": 0.036,
+    "hits20_at20": 0.066,
+    "avg_gold_rank_absent_as_21": 20.32,
+    "gold_rank_21_count": 467,
+    "unique_top1_count": 154,
+    "top1_dominance": 0.032,
+    "top1_most_common": [
+      {
+        "entity": "cyclophosphamide",
+        "count": 16
+      },
+      {
+        "entity": "aripiprazole",
+        "count": 13
+      },
+      {
+        "entity": "vitamin e",
+        "count": 13
+      },
+      {
+        "entity": "testosterone",
+        "count": 11
+      },
+      {
+        "entity": "tamoxifen",
+        "count": 11
+      },
+      {
+        "entity": "olanzapine",
+        "count": 11
+      },
+      {
+        "entity": "doxorubicin",
+        "count": 9
+      },
+      {
+        "entity": "eperisone",
+        "count": 9
+      },
+      {
+        "entity": "dexamethasone",
+        "count": 9
+      },
+      {
+        "entity": "cyclizine",
+        "count": 9
+      }
+    ],
+    "rr_policy": "RR = 1/rank if gold present in top20 else 0",
+    "absent_rank_sentinel": 21,
+    "model_name": "complex",
+    "split": "test"
+  }
+}

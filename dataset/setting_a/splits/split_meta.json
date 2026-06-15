@@ -1,0 +1,38 @@
+{
+  "source_file": "dataset/setting_a/raw_triples/primekg_indication_only.tsv",
+  "total_triples_before_dedup": 9388,
+  "total_triples_after_dedup": 9388,
+  "split_sizes": {
+    "train": 8388,
+    "valid": 500,
+    "test": 500
+  },
+  "coverage_rule": "All drugs and diseases in valid/test must already appear in train.",
+  "seed": 2025,
+  "base_seed": 2025,
+  "max_attempts": 200,
+  "train_stats": {
+    "num_triples": 8388,
+    "num_unique_drugs": 1801,
+    "num_unique_diseases": 1363,
+    "relations": [
+      "indication"
+    ]
+  },
+  "valid_stats": {
+    "num_triples": 500,
+    "num_unique_drugs": 346,
+    "num_unique_diseases": 316,
+    "relations": [
+      "indication"
+    ]
+  },
+  "test_stats": {
+    "num_triples": 500,
+    "num_unique_drugs": 318,
+    "num_unique_diseases": 319,
+    "relations": [
+      "indication"
+    ]
+  }
+}

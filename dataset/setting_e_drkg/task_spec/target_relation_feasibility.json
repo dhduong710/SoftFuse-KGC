@@ -1,0 +1,252 @@
+{
+  "created_at": "2026-05-11T16:34:41.029441+00:00",
+  "target_relation": "DRUGBANK::treats::Compound:Disease",
+  "num_rows_seen": 4968,
+  "num_unique_edges": 4968,
+  "num_duplicates_removed": 0,
+  "bad_direction_count": 0,
+  "num_unique_compounds": 1542,
+  "num_unique_diseases": 1182,
+  "compound_degree_min": 1,
+  "compound_degree_max": 71,
+  "disease_degree_min": 1,
+  "disease_degree_max": 63,
+  "compound_degree_hist_head": {
+    "1": 753,
+    "2": 260,
+    "3": 164,
+    "4": 94,
+    "5": 61,
+    "6": 48,
+    "7": 36,
+    "8": 29,
+    "9": 16,
+    "10": 15,
+    "11": 10,
+    "12": 9,
+    "13": 3,
+    "14": 7,
+    "15": 3,
+    "16": 5,
+    "17": 4,
+    "18": 4,
+    "20": 3,
+    "21": 1,
+    "22": 1,
+    "23": 1,
+    "25": 1,
+    "26": 1,
+    "28": 1,
+    "30": 1,
+    "34": 1,
+    "38": 1,
+    "39": 1,
+    "47": 1,
+    "51": 1,
+    "53": 1,
+    "60": 1,
+    "66": 1,
+    "71": 3
+  },
+  "disease_degree_hist_head": {
+    "1": 450,
+    "2": 200,
+    "3": 111,
+    "4": 91,
+    "5": 67,
+    "6": 48,
+    "7": 35,
+    "8": 34,
+    "9": 28,
+    "10": 18,
+    "11": 13,
+    "12": 9,
+    "13": 10,
+    "14": 10,
+    "15": 6,
+    "16": 10,
+    "17": 4,
+    "18": 7,
+    "19": 3,
+    "20": 1,
+    "21": 3,
+    "23": 2,
+    "24": 3,
+    "25": 1,
+    "26": 4,
+    "27": 2,
+    "28": 1,
+    "29": 2,
+    "30": 3,
+    "33": 1,
+    "36": 1,
+    "42": 1,
+    "45": 1,
+    "48": 1,
+    "63": 1
+  },
+  "num_singleton_compounds": 753,
+  "num_singleton_diseases": 450,
+  "sample_edges": [
+    {
+      "head": "Compound::DB00003",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D003550",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00004",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:C063419",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00005",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D013167",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00005",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D006086",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00005",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D017497",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00005",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D001171",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00005",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D011565",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00005",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D015535",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00005",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D017511",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00005",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D001172",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00005",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D013262",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00006",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D054058",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00006",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D013927",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00007",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D001943",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00007",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D011629",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00007",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D004715",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00007",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D007246",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00007",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D010146",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00007",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D010262",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    },
+    {
+      "head": "Compound::DB00007",
+      "relation": "DRUGBANK::treats::Compound:Disease",
+      "tail": "Disease::MESH:D007889",
+      "head_type": "Compound",
+      "tail_type": "Disease"
+    }
+  ],
+  "recommended_split": {
+    "recommended_valid_size": 500,
+    "recommended_test_size": 500,
+    "recommended_train_size": 3968,
+    "attempts": [
+      {
+        "requested_valid_size": 500,
+        "requested_test_size": 500,
+        "requested_holdout": 1000,
+        "feasible": true,
+        "attempt_used": 0,
+        "actual_holdout_possible": 1000,
+        "projected_train_size": 3968,
+        "projected_valid_size": 500,
+        "projected_test_size": 500,
+        "coverage_policy": "valid/test compounds and diseases remain in train target relation"
+      }
+    ],
+    "decision": "SPLIT_SIZE_FEASIBLE"
+  }
+}

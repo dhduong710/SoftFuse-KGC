@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-05-12T01:21:27.347936+00:00",
+  "setting": "setting_f_repodb",
+  "dataset": "repoDB",
+  "status": "FROZEN_DAY2",
+  "task_name": "repodb_approved_indication_head_prediction",
+  "task_form": "(?, repoDB_approved_indication, disease)",
+  "prediction_type": "predicted_head",
+  "target_relation": "repoDB::approved_indication::Compound:Disease",
+  "target_relation_normalized": "repodb_approved_indication",
+  "failed_diagnostic_relation": "repoDB::failed_or_suspended::Compound:Disease",
+  "target_relation_direction": "Compound->Disease",
+  "query_entity_type": "Disease",
+  "query_entity_namespace": "UMLS CUI",
+  "missing_entity_type": "Compound",
+  "compound_namespace": "DrugBank ID",
+  "entity_format": {
+    "compound": "Compound::DBxxxxx",
+    "disease": "Disease::UMLS:Cxxxxxxx"
+  },
+  "candidate_universe_policy": "train_approved_relation_compound_heads",
+  "top_k": 20,
+  "gold_injection": false,
+  "absent_gold_rank_sentinel": 21,
+  "claim_scope": "Clinical drug-repositioning external validation using approved repoDB pairs; not a claim of prospective clinical validation.",
+  "recommended_wording": "repoDB approved drug-indication prediction / clinical drug-repositioning external validation",
+  "target_edges_path": "dataset/setting_f_repodb/task_spec/target_edges_unique.tsv",
+  "failed_diagnostic_edges_path": "dataset/setting_f_repodb/task_spec/failed_diagnostic_edges_unique.tsv"
+}

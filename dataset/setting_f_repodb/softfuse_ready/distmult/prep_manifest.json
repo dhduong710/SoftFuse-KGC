@@ -1,0 +1,205 @@
+{
+  "created_at": "2026-05-12T01:48:35.928353+00:00",
+  "decision": "DAY5_REPODB_SOFTFUSE_READY",
+  "setting": "setting_f_repodb",
+  "dataset": "repoDB",
+  "source_model": "distmult",
+  "task": "(?, repoDB_approved_indication, disease)",
+  "prediction_type": "predicted_head",
+  "target_relation": "repoDB::approved_indication::Compound:Disease",
+  "target_relation_id": 61,
+  "failed_relation": "repoDB::failed_or_suspended::Compound:Disease",
+  "failed_relation_id": 62,
+  "target_relation_normalized": "repodb_approved_indication",
+  "candidate_universe": "train_approved_relation_compound_heads",
+  "top_k": 20,
+  "valid_test_gold_injection": false,
+  "train_ensure_gold": true,
+  "graph_size": 100,
+  "graph_num_rels": 63,
+  "embedding_source_path": "dataset/setting_f_repodb/baseline_outputs/rgcn/entity_embeddings_rgcn.pt",
+  "ready_embedding_path": "entity_embeddings_rgcn.pt",
+  "candidate_metrics": {
+    "train": {
+      "num_rows": 5677,
+      "gold_present_at20": 1.0,
+      "mrr_at20": 0.07460051511434637,
+      "hits1_at20": 0.007222124361458517,
+      "hits3_at20": 0.03153073806587987,
+      "hits10_at20": 0.09459221419763959,
+      "hits20_at20": 1.0,
+      "rank21_count": 0,
+      "avg_rank_absent_as_21": 18.184076096529857,
+      "unique_top1_count": 1,
+      "top1_dominance": 1.0,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB00415",
+          "count": 5677
+        }
+      ],
+      "avg_subgraph_size": null
+    },
+    "valid": {
+      "num_rows": 500,
+      "gold_present_at20": 0.51,
+      "mrr_at20": 0.1012765240435519,
+      "hits1_at20": 0.016,
+      "hits3_at20": 0.094,
+      "hits10_at20": 0.362,
+      "hits20_at20": 0.51,
+      "rank21_count": 245,
+      "avg_rank_absent_as_21": 14.512,
+      "unique_top1_count": 142,
+      "top1_dominance": 0.134,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB00415",
+          "count": 67
+        },
+        {
+          "entity": "Compound::DB00860",
+          "count": 67
+        },
+        {
+          "entity": "Compound::DB02703",
+          "count": 27
+        },
+        {
+          "entity": "Compound::DB01165",
+          "count": 24
+        },
+        {
+          "entity": "Compound::DB01620",
+          "count": 20
+        },
+        {
+          "entity": "Compound::DB00620",
+          "count": 12
+        },
+        {
+          "entity": "Compound::DB00681",
+          "count": 12
+        },
+        {
+          "entity": "Compound::DB00936",
+          "count": 11
+        },
+        {
+          "entity": "Compound::DB01059",
+          "count": 10
+        },
+        {
+          "entity": "Compound::DB01017",
+          "count": 10
+        }
+      ],
+      "avg_subgraph_size": null
+    },
+    "test": {
+      "num_rows": 500,
+      "gold_present_at20": 0.482,
+      "mrr_at20": 0.10413942877727705,
+      "hits1_at20": 0.026,
+      "hits3_at20": 0.094,
+      "hits10_at20": 0.32,
+      "hits20_at20": 0.482,
+      "rank21_count": 259,
+      "avg_rank_absent_as_21": 14.934,
+      "unique_top1_count": 134,
+      "top1_dominance": 0.146,
+      "top1_most_common": [
+        {
+          "entity": "Compound::DB00415",
+          "count": 73
+        },
+        {
+          "entity": "Compound::DB00860",
+          "count": 71
+        },
+        {
+          "entity": "Compound::DB02703",
+          "count": 31
+        },
+        {
+          "entity": "Compound::DB01165",
+          "count": 20
+        },
+        {
+          "entity": "Compound::DB00427",
+          "count": 17
+        },
+        {
+          "entity": "Compound::DB01017",
+          "count": 16
+        },
+        {
+          "entity": "Compound::DB01620",
+          "count": 15
+        },
+        {
+          "entity": "Compound::DB00936",
+          "count": 13
+        },
+        {
+          "entity": "Compound::DB01059",
+          "count": 9
+        },
+        {
+          "entity": "Compound::DB00620",
+          "count": 9
+        }
+      ],
+      "avg_subgraph_size": null
+    }
+  },
+  "ready_audit": {
+    "train": {
+      "split": "train",
+      "num_rows": 5677,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_subgraph_size": 100.0,
+      "min_subgraph_size": 100,
+      "max_subgraph_size": 100,
+      "rank21_count": 0,
+      "train_gold_forced_count": 4642,
+      "valid_test_exact_leak_count": 0,
+      "schema_pass": true
+    },
+    "valid": {
+      "split": "valid",
+      "num_rows": 500,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_subgraph_size": 99.962,
+      "min_subgraph_size": 82,
+      "max_subgraph_size": 100,
+      "rank21_count": 245,
+      "train_gold_forced_count": 0,
+      "valid_test_exact_leak_count": 0,
+      "schema_pass": true
+    },
+    "test": {
+      "split": "test",
+      "num_rows": 500,
+      "bad_candidate_len": 0,
+      "bad_prompt_placeholders": 0,
+      "bad_subgraph": 0,
+      "avg_subgraph_size": 99.978,
+      "min_subgraph_size": 89,
+      "max_subgraph_size": 100,
+      "rank21_count": 259,
+      "train_gold_forced_count": 0,
+      "valid_test_exact_leak_count": 0,
+      "schema_pass": true
+    }
+  },
+  "notes": [
+    "Valid/test rows preserve reviewer-safe no-gold-injection protocol.",
+    "Train candidate gold forcing is training-only compatibility.",
+    "Prompts use readable drug/disease display names while rank_entities_id keeps canonical entity IDs."
+  ]
+}

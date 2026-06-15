@@ -1,0 +1,48 @@
+{
+  "decision": "PHARMKG_E2E_READY_PACKAGE_BUILT",
+  "row_name": "backbone_raw",
+  "output_dir": "dataset/setting_c_pharmkg/e2e_infer_ready/backbone_raw",
+  "source_ready_package": "dataset/setting_c_pharmkg/softfuse_ready",
+  "embedding_path": "dataset/setting_c_pharmkg/e2e_infer_ready/entity_embeddings_rgcn.pt",
+  "graph_num_rels": 28,
+  "target_relation": "T",
+  "target_relation_id": 23,
+  "target_relation_normalized": "therapeutic_association_proxy",
+  "splits": {
+    "train": {
+      "num_rows": 28960,
+      "note": "Copied from softfuse_ready/train.json for supervised E2E training compatibility."
+    },
+    "valid": {
+      "num_rows": 500,
+      "avg_subgraph_size": 100,
+      "min_subgraph_size": 100,
+      "max_subgraph_size": 100,
+      "gold_present_rate": 0.07,
+      "rank21_count": 465,
+      "max_relation_id_seen": 27,
+      "max_entity_id_seen": 7244,
+      "errors": [],
+      "num_errors": 0
+    },
+    "test": {
+      "num_rows": 500,
+      "avg_subgraph_size": 100,
+      "min_subgraph_size": 100,
+      "max_subgraph_size": 100,
+      "gold_present_rate": 0.092,
+      "rank21_count": 454,
+      "max_relation_id_seen": 27,
+      "max_entity_id_seen": 7244,
+      "errors": [],
+      "num_errors": 0
+    }
+  },
+  "important_notes": [
+    "Use --graph_num_rels 28 in main.py and infer.py.",
+    "Use reviewer-safe metric: RR=1/rank if rank<=20 else 0.",
+    "Do not call PharmKG relation T clinical indication; use therapeutic_association_proxy.",
+    "backbone_raw and soft_support_raw keep original 100-edge subgraphs.",
+    "fuzzy_retrieval_main uses selected_subgraph from 11_fuzzy_retrieval."
+  ]
+}

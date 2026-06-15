@@ -1,0 +1,9 @@
+{
+  "heldout_valid_size": 100,
+  "heldout_test_size": 100,
+  "heldout_total": 200,
+  "heldout_target_edges_removed": 200,
+  "exact_leak_count": 0,
+  "exact_leak_pass": true,
+  "note": "Leak check means valid/test CtD target triples are absent from train_enriched.tsv."
+}

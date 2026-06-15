@@ -1,0 +1,22 @@
+{
+  "source_dir": "dataset/setting_a/backbone_ranker",
+  "target_dir": "dataset/setting_a/backbone_candidates",
+  "train_candidate_note": "This lightweight repo snapshot keeps reviewer-safe valid/test raw candidates here. If train_top20_raw.json is needed for a legacy training script, run: python3 scripts/backbone/export_primekg_train_candidates.py",
+  "copied_files": [
+    "valid_top20_raw.json",
+    "test_top20_raw.json"
+  ],
+  "valid_summary": {
+    "num_queries": 500,
+    "recall_at_20_raw": 0.202,
+    "unique_top1_count_raw": 3,
+    "top1_dominance_ratio_raw": 0.66
+  },
+  "test_summary": {
+    "num_queries": 500,
+    "recall_at_20_raw": 0.24,
+    "unique_top1_count_raw": 3,
+    "top1_dominance_ratio_raw": 0.65
+  },
+  "important_note": "This is the raw no-injection candidate source used by the PrimeKG pipeline."
+}

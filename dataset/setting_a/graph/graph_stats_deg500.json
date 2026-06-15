@@ -1,0 +1,25 @@
+{
+  "source_train_split": "dataset/setting_a/splits/train.tsv",
+  "source_raw_kg": "dataset/raw/primekg/kg.csv",
+  "max_gene_degree": 500,
+  "num_train_indication_triples": 8388,
+  "num_target_triples": 5882,
+  "num_associated_with_triples": 46581,
+  "num_ppi_triples": 52164,
+  "num_support_triples_only": 104627,
+  "num_total_enriched_triples": 113015,
+  "num_relation_types": 4,
+  "relation_types": [
+    "associated_with",
+    "indication",
+    "ppi",
+    "target"
+  ],
+  "num_entities": 10328,
+  "num_drugs": 1801,
+  "num_diseases": 1363,
+  "num_gene_protein": 7164,
+  "num_candidate_genes_before_hub_cap": 7337,
+  "num_genes_removed_by_hub_cap": 173,
+  "num_genes_after_hub_cap": 7164
+}

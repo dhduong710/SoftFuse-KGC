@@ -1,0 +1,22 @@
+{
+  "indication": [
+    "Drug",
+    "Disease"
+  ],
+  "contraindication": [
+    "Drug",
+    "Disease"
+  ],
+  "target": [
+    "Drug",
+    "Protein_or_Gene"
+  ],
+  "associated_with": [
+    "Protein_or_Gene",
+    "Disease"
+  ],
+  "ppi": [
+    "Protein_or_Gene",
+    "Protein_or_Gene"
+  ]
+}

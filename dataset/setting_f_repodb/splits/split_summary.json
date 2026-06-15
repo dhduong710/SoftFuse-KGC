@@ -1,0 +1,28 @@
+{
+  "created_at": "2026-05-12T01:33:47.019323+00:00",
+  "setting": "setting_f_repodb",
+  "dataset": "repoDB",
+  "target_relation": "repoDB::approved_indication::Compound:Disease",
+  "target_relation_normalized": "repodb_approved_indication",
+  "task_form": "(?, repoDB_approved_indication, disease)",
+  "prediction_type": "predicted_head",
+  "train_size": 5677,
+  "valid_size": 500,
+  "test_size": 500,
+  "split_info": {
+    "requested_valid_size": 500,
+    "requested_test_size": 500,
+    "actual_train_size": 5677,
+    "actual_valid_size": 500,
+    "actual_test_size": 500,
+    "attempt_used": 0,
+    "coverage_policy": "valid/test drugs and diseases remain in train approved target relation"
+  },
+  "candidate_universe": "train_approved_relation_compound_heads",
+  "candidate_universe_size": 1519,
+  "query_universe": "approved_relation_umls_diseases",
+  "query_universe_size": 1229,
+  "top_k": 20,
+  "gold_injection": false,
+  "absent_gold_rank_sentinel": 21
+}

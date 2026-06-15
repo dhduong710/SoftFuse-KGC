@@ -1,0 +1,167 @@
+{
+  "created_at": "2026-05-11T16:34:41.029436+00:00",
+  "setting": "setting_e_drkg",
+  "dataset": "DRKG",
+  "target_relation": "DRUGBANK::treats::Compound:Disease",
+  "reviewer_safe_policy": {
+    "top_k": 20,
+    "gold_injection": false,
+    "absent_gold_rank_sentinel": 21,
+    "rr_definition": "RR = 1/rank if rank <= 20 else 0"
+  },
+  "split_policy": {
+    "coverage_safe": true,
+    "valid_test_gold_compounds_in_train_candidate_universe": true,
+    "valid_test_query_diseases_seen_in_train_target": true,
+    "recommended_split": {
+      "recommended_valid_size": 500,
+      "recommended_test_size": 500,
+      "recommended_train_size": 3968,
+      "attempts": [
+        {
+          "requested_valid_size": 500,
+          "requested_test_size": 500,
+          "requested_holdout": 1000,
+          "feasible": true,
+          "attempt_used": 0,
+          "actual_holdout_possible": 1000,
+          "projected_train_size": 3968,
+          "projected_valid_size": 500,
+          "projected_test_size": 500,
+          "coverage_policy": "valid/test compounds and diseases remain in train target relation"
+        }
+      ],
+      "decision": "SPLIT_SIZE_FEASIBLE"
+    }
+  },
+  "graph_construction_policy": {
+    "do_not_use_full_graph_blindly": true,
+    "reason": "DRKG has 5.87M triples; full graph is too large/noisy for fast baseline and subgraph retrieval.",
+    "target_relation_handling": "Include only train target DRUGBANK::treats edges; remove valid/test target edges.",
+    "candidate_universe": "Compounds from train target heads.",
+    "initial_train_graph_relation_families": [
+      "target train DRUGBANK::treats edges",
+      "Compound-Gene relations",
+      "Disease-Gene relations",
+      "Gene-Gene relations",
+      "selected auxiliary Compound-Disease evidence relations with shortcut penalties"
+    ],
+    "degree_cap_policy_day3": {
+      "cap_high_degree_genes": true,
+      "max_edges_target_for_graph": "Prefer <= 1.5M edges for initial DRKG Setting E graph.",
+      "keep_all_target_train_edges": true,
+      "keep_all_candidate_query_target_nodes": true,
+      "apply_relation_and_node_degree_filtering": true
+    },
+    "leakage_policy": "Exact valid/test target triples must be removed from train graph and subgraphs."
+  },
+  "auxiliary_compound_disease_relations": [
+    {
+      "relation": "GNBR::T::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 54020,
+      "num_unique_compounds": 6628,
+      "num_unique_diseases": 3300,
+      "source_hint": "GNBR",
+      "role": "direct_cd_auxiliary",
+      "caution": [
+        "very_large_relation_use_degree_cap_or_penalty"
+      ]
+    },
+    {
+      "relation": "GNBR::Sa::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 16923,
+      "num_unique_compounds": 3833,
+      "num_unique_diseases": 1666,
+      "source_hint": "GNBR",
+      "role": "direct_cd_auxiliary",
+      "caution": []
+    },
+    {
+      "relation": "GNBR::Pa::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 2619,
+      "num_unique_compounds": 1498,
+      "num_unique_diseases": 513,
+      "source_hint": "GNBR",
+      "role": "direct_cd_auxiliary",
+      "caution": []
+    },
+    {
+      "relation": "GNBR::C::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 1739,
+      "num_unique_compounds": 1225,
+      "num_unique_diseases": 213,
+      "source_hint": "GNBR",
+      "role": "direct_cd_auxiliary",
+      "caution": []
+    },
+    {
+      "relation": "GNBR::J::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 1020,
+      "num_unique_compounds": 388,
+      "num_unique_diseases": 642,
+      "source_hint": "GNBR",
+      "role": "direct_cd_auxiliary",
+      "caution": []
+    },
+    {
+      "relation": "GNBR::Pr::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 966,
+      "num_unique_compounds": 760,
+      "num_unique_diseases": 274,
+      "source_hint": "GNBR",
+      "role": "direct_cd_auxiliary",
+      "caution": []
+    },
+    {
+      "relation": "Hetionet::CtD::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 755,
+      "num_unique_compounds": 387,
+      "num_unique_diseases": 77,
+      "source_hint": "Hetionet",
+      "role": "direct_cd_auxiliary",
+      "caution": [
+        "overlaps_with_hetionet_source"
+      ]
+    },
+    {
+      "relation": "GNBR::Mp::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 495,
+      "num_unique_compounds": 425,
+      "num_unique_diseases": 154,
+      "source_hint": "GNBR",
+      "role": "direct_cd_auxiliary",
+      "caution": []
+    },
+    {
+      "relation": "Hetionet::CpD::Compound:Disease",
+      "direction": "Compound->Disease",
+      "count": 390,
+      "num_unique_compounds": 221,
+      "num_unique_diseases": 50,
+      "source_hint": "Hetionet",
+      "role": "direct_cd_auxiliary",
+      "caution": [
+        "overlaps_with_hetionet_source"
+      ]
+    }
+  ],
+  "baseline_policy": {
+    "run_all_structure_baselines_if_compute_allows": [
+      "TransE",
+      "DistMult",
+      "ComplEx",
+      "RotatE",
+      "R-GCN",
+      "HRGAT"
+    ],
+    "source_selection_rule": "Prefer a graph-compatible source such as R-GCN if it has non-trivial Gold@20; otherwise use best-valid non-degenerate structure model as a diagnostic source."
+  }
+}
