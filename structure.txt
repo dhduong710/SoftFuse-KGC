@@ -1,1187 +1,1344 @@
-.
-├── .gitignore
-├── LICENSE
-├── README.md
-├── arguments.py
-├── configs
-│   ├── backbone
-│   │   └── rgcn_ranker_primekg.yaml
-│   ├── fuzzy_retrieval
-│   │   ├── retrieval_directplus.json
-│   │   └── retrieval_tight.json
-│   └── soft_support
-│       ├── soft_support_b025.json
-│       ├── soft_support_b050.json
-│       └── soft_support_bcap.json
-├── data
-│   ├── __init__.py
-│   ├── collate.py
-│   ├── dataset.py
-│   └── raw
-│       └── pharmkg
-│           ├── MindRank-Biotech_README.md
-│           ├── PharmKG-8k
-│           │   ├── entity2vec.txt
-│           │   ├── relation2vec.txt
-│           │   ├── test.tsv
-│           │   ├── train.tsv
-│           │   └── valid.tsv
-│           └── biomed_AI_README.md
-├── dataset
-│   ├── setting_a
-│   │   ├── aligned_evidence
-│   │   │   ├── README.md
-│   │   │   ├── alignment_manifest.json
-│   │   │   ├── test_aligned_evidence.json
-│   │   │   ├── train_aligned_evidence.json
-│   │   │   └── valid_aligned_evidence.json
-│   │   ├── backbone_candidates
-│   │   │   ├── README.md
-│   │   │   ├── raw_source_manifest.json
-│   │   │   ├── test_top20_raw.json
-│   │   │   └── valid_top20_raw.json
-│   │   ├── backbone_ready
-│   │   │   ├── backbone_ready_manifest.json
-│   │   │   ├── entity2id.pkl
-│   │   │   ├── entity_embeddings_rgcn.pt
-│   │   │   ├── id2entity.pkl
-│   │   │   ├── id2relation.pkl
-│   │   │   ├── relation2id.pkl
-│   │   │   ├── test.json
-│   │   │   ├── train.json
-│   │   │   └── valid.json
-│   │   ├── drkgc_json
-│   │   │   ├── entity2id.json
-│   │   │   ├── entity2id.pkl
-│   │   │   ├── id2entity.json
-│   │   │   ├── id2entity.pkl
-│   │   │   ├── id2relation.json
-│   │   │   ├── id2relation.pkl
-│   │   │   ├── relation2id.json
-│   │   │   ├── relation2id.pkl
-│   │   │   ├── test_mock_ranked.json
-│   │   │   ├── test_skeleton.json
-│   │   │   ├── train_mock_ranked.json
-│   │   │   ├── train_skeleton.json
-│   │   │   ├── valid_mock_ranked.json
-│   │   │   └── valid_skeleton.json
-│   │   ├── e2e_infer_ready
-│   │   │   ├── README.md
-│   │   │   ├── backbone_raw
-│   │   │   │   ├── prep_manifest.json
-│   │   │   │   ├── test.json
-│   │   │   │   ├── train.json
-│   │   │   │   └── valid.json
-│   │   │   ├── retrieval_main
-│   │   │   │   ├── prep_manifest.json
-│   │   │   │   ├── test.json
-│   │   │   │   ├── train.json
-│   │   │   │   └── valid.json
-│   │   │   └── soft_support_raw
-│   │   │       ├── prep_manifest.json
-│   │   │       ├── test.json
-│   │   │       ├── train.json
-│   │   │       └── valid.json
-│   │   ├── fuzzy_retrieval
-│   │   │   ├── README.md
-│   │   │   ├── path_score_manifest.json
-│   │   │   ├── retrieval_main_manifest.json
-│   │   │   ├── test_fuzzy_retrieval_main.json
-│   │   │   ├── test_path_features.json
-│   │   │   ├── valid_fuzzy_retrieval_main.json
-│   │   │   ├── valid_fuzzy_retrieval_v1.json
-│   │   │   ├── valid_path_features.json
-│   │   │   ├── valid_soft_support_fuzzy_retrieval_directplus.json
-│   │   │   └── valid_soft_support_fuzzy_retrieval_tight.json
-│   │   ├── graph
-│   │   │   ├── graph_stats.json
-│   │   │   ├── graph_stats_deg1000.json
-│   │   │   ├── graph_stats_deg1000_final.json
-│   │   │   ├── graph_stats_deg500.json
-│   │   │   ├── hub_filtered_genes.txt
-│   │   │   ├── train_enriched.tsv
-│   │   │   └── train_enriched_deg1000_final.tsv
-│   │   ├── graph_audit
-│   │   │   └── ppi_audit.json
-│   │   ├── noise_robustness
-│   │   │   ├── N0_no_noise
-│   │   │   │   ├── manifest.json
-│   │   │   │   ├── test.json
-│   │   │   │   ├── train.json
-│   │   │   │   └── valid.json
-│   │   │   ├── N1_support_score_noise_seed1
-│   │   │   │   ├── manifest.json
-│   │   │   │   ├── test.json
-│   │   │   │   ├── train.json
-│   │   │   │   └── valid.json
-│   │   │   ├── N2_support_score_noise_seed2
-│   │   │   │   ├── manifest.json
-│   │   │   │   ├── test.json
-│   │   │   │   ├── train.json
-│   │   │   │   └── valid.json
-│   │   │   ├── N3_support_score_noise_seed3
-│   │   │   │   ├── manifest.json
-│   │   │   │   ├── test.json
-│   │   │   │   ├── train.json
-│   │   │   │   └── valid.json
-│   │   │   ├── N4_subgraph_edge_dropout_5_seed1
-│   │   │   │   ├── manifest.json
-│   │   │   │   ├── test.json
-│   │   │   │   └── valid.json
-│   │   │   ├── N5_subgraph_edge_dropout_5_seed2
-│   │   │   │   ├── manifest.json
-│   │   │   │   ├── test.json
-│   │   │   │   └── valid.json
-│   │   │   ├── N6_subgraph_edge_dropout_5_seed3
-│   │   │   │   ├── manifest.json
-│   │   │   │   ├── test.json
-│   │   │   │   └── valid.json
-│   │   │   └── README.md
-│   │   ├── ontology_control
-│   │   │   ├── ontology_filter_report_test.json
-│   │   │   ├── ontology_filter_report_test.md
-│   │   │   ├── ontology_filter_report_valid.json
-│   │   │   ├── ontology_filter_report_valid.md
-│   │   │   ├── prep_meta.json
-│   │   │   ├── schema_validity_test.json
-│   │   │   ├── schema_validity_test.md
-│   │   │   ├── schema_validity_valid.json
-│   │   │   ├── schema_validity_valid.md
-│   │   │   ├── test_top20_ontology_raw.json
-│   │   │   ├── test_top20_type_filtered_raw.json
-│   │   │   ├── type_filter_report_test.json
-│   │   │   ├── type_filter_report_test.md
-│   │   │   ├── type_filter_report_valid.json
-│   │   │   ├── type_filter_report_valid.md
-│   │   │   ├── valid_top20_ontology_raw.json
-│   │   │   └── valid_top20_type_filtered_raw.json
-│   │   ├── raw_triples
-│   │   │   └── primekg_indication_only.tsv
-│   │   ├── rule_sensitivity
-│   │   │   ├── README.md
-│   │   │   ├── main_rules
-│   │   │   │   ├── manifest.json
-│   │   │   │   ├── test.json
-│   │   │   │   ├── train.json
-│   │   │   │   └── valid.json
-│   │   │   ├── no_rules
-│   │   │   │   ├── manifest.json
-│   │   │   │   ├── test.json
-│   │   │   │   ├── train.json
-│   │   │   │   └── valid.json
-│   │   │   └── random_rules
-│   │   │       ├── manifest.json
-│   │   │       ├── test.json
-│   │   │       ├── train.json
-│   │   │       └── valid.json
-│   │   ├── soft_support_ranked_candidates
-│   │   │   ├── README.md
-│   │   │   ├── support_main_manifest.json
-│   │   │   ├── test_top20_soft_support_main.json
-│   │   │   ├── valid_top20_soft_support_b025.json
-│   │   │   ├── valid_top20_soft_support_b050.json
-│   │   │   ├── valid_top20_soft_support_bcap.json
-│   │   │   └── valid_top20_soft_support_main.json
-│   │   ├── splits
-│   │   │   ├── split_meta.json
-│   │   │   ├── test.tsv
-│   │   │   ├── train.tsv
-│   │   │   └── valid.tsv
-│   │   ├── support_features
-│   │   │   ├── support_feature_manifest.json
-│   │   │   ├── valid_support_features.json
-│   │   │   └── valid_support_probe.json
-│   │   └── template_sensitivity
-│   │       ├── README.md
-│   │       ├── T0_canonical
-│   │       │   ├── manifest.json
-│   │       │   ├── test.json
-│   │       │   ├── train.json
-│   │       │   └── valid.json
-│   │       ├── T1_treatment
-│   │       │   ├── manifest.json
-│   │       │   ├── test.json
-│   │       │   ├── train.json
-│   │       │   └── valid.json
-│   │       ├── T2_medication
-│   │       │   ├── manifest.json
-│   │       │   ├── test.json
-│   │       │   ├── train.json
-│   │       │   └── valid.json
-│   │       └── T3_association_neutral
-│   │           ├── manifest.json
-│   │           ├── test.json
-│   │           ├── train.json
-│   │           └── valid.json
-│   ├── setting_b
-│   │   ├── annotations
-│   │   │   ├── contraindication_conflicts.tsv
-│   │   │   ├── contraindication_pairs.tsv
-│   │   │   ├── path_templates.yaml
-│   │   │   ├── schema_rules.json
-│   │   │   ├── schema_violations.tsv
-│   │   │   ├── type_map.tsv
-│   │   │   └── type_map_overrides.tsv
-│   │   ├── contra_checked
-│   │   │   ├── contra_lookup_by_disease.json
-│   │   │   ├── contra_lookup_by_drug.json
-│   │   │   ├── test_b_annotations_contra_checked.json
-│   │   │   └── valid_b_annotations_contra_checked.json
-│   │   ├── eval_test
-│   │   │   ├── README.md
-│   │   │   ├── test_backbone_raw_eval.json
-│   │   │   ├── test_ontology_raw_eval.json
-│   │   │   ├── test_retrieval_main_eval.json
-│   │   │   └── test_soft_support_raw_eval.json
-│   │   └── eval_valid
-│   │       ├── README.md
-│   │       ├── valid_backbone_raw_eval.json
-│   │       ├── valid_ontology_raw_eval.json
-│   │       ├── valid_retrieval_main_eval.json
-│   │       └── valid_soft_support_raw_eval.json
-│   ├── setting_c_pharmkg
-│   │   ├── backbone_raw_source
-│   │   │   ├── source_selection.json
-│   │   │   ├── test_top20_raw.json
-│   │   │   ├── train_top20_supervised.json
-│   │   │   └── valid_top20_raw.json
-│   │   ├── baseline_outputs
-│   │   │   ├── complex
-│   │   │   │   ├── config.json
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   └── valid_top20.json
-│   │   │   ├── distmult
-│   │   │   │   ├── config.json
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   └── valid_top20.json
-│   │   │   ├── hrgat
-│   │   │   │   ├── config.json
-│   │   │   │   ├── model_state.pt
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   ├── train_log.json
-│   │   │   │   └── valid_top20.json
-│   │   │   ├── rgcn
-│   │   │   │   ├── config.json
-│   │   │   │   ├── model_state.pt
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   ├── train_log.json
-│   │   │   │   └── valid_top20.json
-│   │   │   ├── rotate
-│   │   │   │   ├── config.json
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   └── valid_top20.json
-│   │   │   └── transe
-│   │   │       ├── config.json
-│   │   │       ├── summary.json
-│   │   │       ├── test_top20.json
-│   │   │       └── valid_top20.json
-│   │   ├── e2e_infer_ready
-│   │   │   ├── README.md
-│   │   │   ├── backbone_raw
-│   │   │   │   ├── entity2id.json
-│   │   │   │   ├── entity2id.pkl
-│   │   │   │   ├── id2entity.json
-│   │   │   │   ├── id2entity.pkl
-│   │   │   │   ├── id2relation.json
-│   │   │   │   ├── id2relation.pkl
-│   │   │   │   ├── prep_manifest.json
-│   │   │   │   ├── prompt_lexicon.json
-│   │   │   │   ├── relation2id.json
-│   │   │   │   ├── relation2id.pkl
-│   │   │   │   ├── rules.json
-│   │   │   │   ├── support_schema.json
-│   │   │   │   ├── test.json
-│   │   │   │   └── valid.json
-│   │   │   ├── day1_prepare_manifest.json
-│   │   │   ├── day1_prepare_report.md
-│   │   │   ├── entity_embeddings_rgcn.pt
-│   │   │   ├── fuzzy_retrieval_main
-│   │   │   │   ├── entity2id.json
-│   │   │   │   ├── entity2id.pkl
-│   │   │   │   ├── id2entity.json
-│   │   │   │   ├── id2entity.pkl
-│   │   │   │   ├── id2relation.json
-│   │   │   │   ├── id2relation.pkl
-│   │   │   │   ├── prep_manifest.json
-│   │   │   │   ├── prompt_lexicon.json
-│   │   │   │   ├── relation2id.json
-│   │   │   │   ├── relation2id.pkl
-│   │   │   │   ├── rules.json
-│   │   │   │   ├── support_schema.json
-│   │   │   │   ├── test.json
-│   │   │   │   └── valid.json
-│   │   │   └── soft_support_raw
-│   │   │       ├── entity2id.json
-│   │   │       ├── entity2id.pkl
-│   │   │       ├── id2entity.json
-│   │   │       ├── id2entity.pkl
-│   │   │       ├── id2relation.json
-│   │   │       ├── id2relation.pkl
-│   │   │       ├── prep_manifest.json
-│   │   │       ├── prompt_lexicon.json
-│   │   │       ├── relation2id.json
-│   │   │       ├── relation2id.pkl
-│   │   │       ├── rules.json
-│   │   │       ├── support_schema.json
-│   │   │       ├── test.json
-│   │   │       └── valid.json
-│   │   ├── eval_rows
-│   │   │   ├── test_backbone_raw.json
-│   │   │   ├── test_fuzzy_retrieval_main.json
-│   │   │   ├── test_hard_support_raw.json
-│   │   │   ├── test_soft_support_raw.json
-│   │   │   ├── valid_backbone_raw.json
-│   │   │   ├── valid_fuzzy_retrieval_main.json
-│   │   │   ├── valid_hard_support_raw.json
-│   │   │   └── valid_soft_support_raw.json
-│   │   ├── fuzzy_retrieval
-│   │   │   ├── retrieval_config.json
-│   │   │   ├── retrieval_summary.json
-│   │   │   ├── test_fuzzy_retrieval_main.json
-│   │   │   ├── test_path_features.json
-│   │   │   ├── valid_fuzzy_retrieval_main.json
-│   │   │   └── valid_path_features.json
-│   │   ├── graph
-│   │   │   ├── entity2id.json
-│   │   │   ├── id2entity.json
-│   │   │   ├── id2relation.json
-│   │   │   ├── relation2id.json
-│   │   │   ├── train_enriched.tsv
-│   │   │   ├── train_enriched_relation_counts.json
-│   │   │   └── type_map.json
-│   │   ├── hard_support_raw
-│   │   │   ├── hard_support_audit.json
-│   │   │   ├── test_top20_hard_support_raw.json
-│   │   │   └── valid_top20_hard_support_raw.json
-│   │   ├── raw_inventory
-│   │   │   ├── download_plan.json
-│   │   │   ├── download_status.json
-│   │   │   ├── file_manifest.json
-│   │   │   ├── relation_hint_candidates.json
-│   │   │   └── triple_file_candidates.json
-│   │   ├── soft_support
-│   │   │   ├── soft_support_config.json
-│   │   │   ├── soft_support_debug_summary.json
-│   │   │   ├── test_top20_soft_support_main.json
-│   │   │   └── valid_top20_soft_support_main.json
-│   │   ├── softfuse_ready
-│   │   │   ├── README.md
-│   │   │   ├── entity2id.json
-│   │   │   ├── entity2id.pkl
-│   │   │   ├── id2entity.json
-│   │   │   ├── id2entity.pkl
-│   │   │   ├── id2relation.json
-│   │   │   ├── id2relation.pkl
-│   │   │   ├── prep_manifest.json
-│   │   │   ├── prompt_lexicon.json
-│   │   │   ├── relation2id.json
-│   │   │   ├── relation2id.pkl
-│   │   │   ├── rules.json
-│   │   │   ├── support_schema.json
-│   │   │   ├── test.json
-│   │   │   ├── train_compressed.zip
-│   │   │   └── valid.json
-│   │   ├── splits
-│   │   │   ├── candidate_universe.json
-│   │   │   ├── query_universe.json
-│   │   │   ├── test.json
-│   │   │   ├── test_target.tsv
-│   │   │   ├── train.json
-│   │   │   ├── train_target.tsv
-│   │   │   ├── valid.json
-│   │   │   └── valid_target.tsv
-│   │   ├── support_features
-│   │   │   ├── support_feature_summary.json
-│   │   │   ├── test_support_features.json
-│   │   │   └── valid_support_features.json
-│   │   ├── task_spec
-│   │   │   ├── entity_type_summary.json
-│   │   │   ├── relation_role_analysis.json
-│   │   │   ├── target_relation_rows_summary.json
-│   │   │   ├── task_spec.json
-│   │   │   └── type_map_preliminary.json
-│   │   └── transfer_eval_ready
-│   │       ├── backbone_raw_test.json
-│   │       └── backbone_raw_valid.json
-│   ├── setting_d_hetionet
-│   │   ├── backbone_raw_source
-│   │   │   ├── source_manifest.json
-│   │   │   ├── test_top20_raw.json
-│   │   │   ├── train_top20_raw.json
-│   │   │   └── valid_top20_raw.json
-│   │   ├── baseline_outputs
-│   │   │   ├── complex
-│   │   │   │   ├── config.json
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   └── valid_top20.json
-│   │   │   ├── distmult
-│   │   │   │   ├── config.json
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   └── valid_top20.json
-│   │   │   ├── hrgat
-│   │   │   │   ├── config_v2.json
-│   │   │   │   ├── entity_embeddings_hrgat.pt
-│   │   │   │   ├── model_state.pt
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   ├── train_log_v2.json
-│   │   │   │   └── valid_top20.json
-│   │   │   ├── rgcn
-│   │   │   │   ├── config.json
-│   │   │   │   ├── config_v2.json
-│   │   │   │   ├── entity_embeddings_rgcn.pt
-│   │   │   │   ├── model_state.pt
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   ├── train_log.json
-│   │   │   │   ├── train_log_v2.json
-│   │   │   │   └── valid_top20.json
-│   │   │   ├── rotate
-│   │   │   │   ├── config.json
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   └── valid_top20.json
-│   │   │   └── transe
-│   │   │       ├── config.json
-│   │   │       ├── summary.json
-│   │   │       ├── test_top20.json
-│   │   │       └── valid_top20.json
-│   │   ├── e2e_fuzzy_retrieval_ready
-│   │   │   ├── README.md
-│   │   │   ├── entity2id.json
-│   │   │   ├── entity2id.pkl
-│   │   │   ├── entity_embeddings_rgcn.pt
-│   │   │   ├── graph_summary.json
-│   │   │   ├── id2entity.json
-│   │   │   ├── id2entity.pkl
-│   │   │   ├── id2relation.json
-│   │   │   ├── id2relation.pkl
-│   │   │   ├── leak_check.json
-│   │   │   ├── prep_manifest.json
-│   │   │   ├── prompt_lexicon.json
-│   │   │   ├── relation2id.json
-│   │   │   ├── relation2id.pkl
-│   │   │   ├── rules.json
-│   │   │   ├── support_schema.json
-│   │   │   ├── test.json
-│   │   │   ├── train.json
-│   │   │   ├── type_map.json
-│   │   │   └── valid.json
-│   │   ├── e2e_soft_support_ready
-│   │   │   ├── README.md
-│   │   │   ├── entity2id.json
-│   │   │   ├── entity2id.pkl
-│   │   │   ├── entity_embeddings_rgcn.pt
-│   │   │   ├── graph_summary.json
-│   │   │   ├── id2entity.json
-│   │   │   ├── id2entity.pkl
-│   │   │   ├── id2relation.json
-│   │   │   ├── id2relation.pkl
-│   │   │   ├── leak_check.json
-│   │   │   ├── prep_manifest.json
-│   │   │   ├── prompt_lexicon.json
-│   │   │   ├── relation2id.json
-│   │   │   ├── relation2id.pkl
-│   │   │   ├── rules.json
-│   │   │   ├── support_schema.json
-│   │   │   ├── test.json
-│   │   │   ├── train.json
-│   │   │   ├── type_map.json
-│   │   │   └── valid.json
-│   │   ├── fuzzy_retrieval
-│   │   │   ├── fuzzy_retrieval_manifest.json
-│   │   │   ├── test_fuzzy_retrieval_main.json
-│   │   │   ├── train_fuzzy_retrieval_main.json
-│   │   │   └── valid_fuzzy_retrieval_main.json
-│   │   ├── graph
-│   │   │   ├── entity2id.json
-│   │   │   ├── entity2id.pkl
-│   │   │   ├── graph_summary.json
-│   │   │   ├── id2entity.json
-│   │   │   ├── id2entity.pkl
-│   │   │   ├── id2relation.json
-│   │   │   ├── id2relation.pkl
-│   │   │   ├── leak_check.json
-│   │   │   ├── node_metadata.json
-│   │   │   ├── relation2id.json
-│   │   │   ├── relation2id.pkl
-│   │   │   ├── train_enriched.tsv
-│   │   │   ├── train_enriched_ids.tsv
-│   │   │   └── type_map.json
-│   │   ├── raw_inventory
-│   │   │   ├── extracted
-│   │   │   │   ├── .extract_done
-│   │   │   │   └── dhimmel-hetionet-4933ca1
-│   │   │   │       ├── .gitignore
-│   │   │   │       ├── README.md
-│   │   │   │       ├── describe
-│   │   │   │       │   ├── degree
-│   │   │   │       │   │   ├── degrees.pdf
-│   │   │   │       │   │   └── degrees.xlsx
-│   │   │   │       │   ├── edges
-│   │   │   │       │   │   ├── metaedge-styles.tsv
-│   │   │   │       │   │   └── metaedges.tsv
-│   │   │   │       │   └── nodes
-│   │   │   │       │       └── metanodes.tsv
-│   │   │   │       ├── hetnet
-│   │   │   │       │   ├── json
-│   │   │   │       │   │   ├── README.md
-│   │   │   │       │   │   ├── hetionet-v1.0-metagraph.json
-│   │   │   │       │   │   └── hetionet-v1.0.json.bz2
-│   │   │   │       │   ├── neo4j
-│   │   │   │       │   │   ├── README.md
-│   │   │   │       │   │   ├── docker
-│   │   │   │       │   │   │   ├── .dockerignore
-│   │   │   │       │   │   │   ├── Dockerfile
-│   │   │   │       │   │   │   ├── README.md
-│   │   │   │       │   │   │   ├── files
-│   │   │   │       │   │   │   │   ├── neo4j-guide-extension-3.0.1.jar
-│   │   │   │       │   │   │   │   ├── neo4j.conf
-│   │   │   │       │   │   │   │   └── piwik.html
-│   │   │   │       │   │   │   ├── guides
-│   │   │   │       │   │   │   │   ├── convert.sh
-│   │   │   │       │   │   │   │   ├── graphstyle.grass
-│   │   │   │       │   │   │   │   ├── hetionet.adoc
-│   │   │   │       │   │   │   │   └── hetionet.html
-│   │   │   │       │   │   │   ├── host
-│   │   │   │       │   │   │   │   ├── README.md
-│   │   │   │       │   │   │   │   ├── run-docker.sh
-│   │   │   │       │   │   │   │   ├── ssl
-│   │   │   │       │   │   │   │   │   ├── install.sh
-│   │   │   │       │   │   │   │   │   └── renew.sh
-│   │   │   │       │   │   │   │   ├── stop-docker.sh
-│   │   │   │       │   │   │   │   └── update-docker.sh
-│   │   │   │       │   │   │   └── scripts
-│   │   │   │       │   │   │       ├── get_data.sh
-│   │   │   │       │   │   │       └── get_data_run_neo4j.sh
-│   │   │   │       │   │   ├── labels.tsv
-│   │   │   │       │   │   └── types.tsv
-│   │   │   │       │   ├── permuted
-│   │   │   │       │   │   ├── json
-│   │   │   │       │   │   │   ├── hetionet-v1.0-perm-1.json.bz2
-│   │   │   │       │   │   │   ├── hetionet-v1.0-perm-2.json.bz2
-│   │   │   │       │   │   │   ├── hetionet-v1.0-perm-3.json.bz2
-│   │   │   │       │   │   │   ├── hetionet-v1.0-perm-4.json.bz2
-│   │   │   │       │   │   │   └── hetionet-v1.0-perm-5.json.bz2
-│   │   │   │       │   │   └── neo4j
-│   │   │   │       │   │       └── README.md
-│   │   │   │       │   └── tsv
-│   │   │   │       │       ├── README.md
-│   │   │   │       │       ├── hetionet-v1.0-edges.sif.gz
-│   │   │   │       │       └── hetionet-v1.0-nodes.tsv
-│   │   │   │       └── import.ipynb
-│   │   │   ├── hetionet_task_candidate_summary.json
-│   │   │   └── raw_inventory.json
-│   │   ├── soft_support
-│   │   │   ├── soft_support_manifest.json
-│   │   │   ├── test_top20_soft_support_main.json
-│   │   │   ├── train_top20_soft_support_main.json
-│   │   │   └── valid_top20_soft_support_main.json
-│   │   ├── softfuse_ready
-│   │   │   ├── README.md
-│   │   │   ├── entity2id.json
-│   │   │   ├── entity2id.pkl
-│   │   │   ├── entity_embeddings_rgcn.pt
-│   │   │   ├── graph_summary.json
-│   │   │   ├── id2entity.json
-│   │   │   ├── id2entity.pkl
-│   │   │   ├── id2relation.json
-│   │   │   ├── id2relation.pkl
-│   │   │   ├── leak_check.json
-│   │   │   ├── prep_manifest.json
-│   │   │   ├── prompt_lexicon.json
-│   │   │   ├── relation2id.json
-│   │   │   ├── relation2id.pkl
-│   │   │   ├── rules.json
-│   │   │   ├── support_schema.json
-│   │   │   ├── test.json
-│   │   │   ├── train.json
-│   │   │   ├── type_map.json
-│   │   │   └── valid.json
-│   │   ├── splits
-│   │   │   ├── candidate_universe_compound.json
-│   │   │   ├── query_universe_disease.json
-│   │   │   ├── split_summary.json
-│   │   │   ├── test.tsv
-│   │   │   ├── test_node_ids.tsv
-│   │   │   ├── test_target_rows.json
-│   │   │   ├── train.tsv
-│   │   │   ├── train_node_ids.tsv
-│   │   │   ├── train_target_rows.json
-│   │   │   ├── valid.tsv
-│   │   │   ├── valid_node_ids.tsv
-│   │   │   └── valid_target_rows.json
-│   │   ├── support_features
-│   │   │   ├── test_support_features.json
-│   │   │   ├── train_support_features.json
-│   │   │   └── valid_support_features.json
-│   │   └── task_spec
-│   │       └── task_spec_draft.json
-│   ├── setting_e_drkg
-│   │   ├── backbone_raw_source
-│   │   │   ├── distmult
-│   │   │   │   ├── source_manifest.json
-│   │   │   │   ├── test_top20_raw.json
-│   │   │   │   ├── train_top20_raw.json
-│   │   │   │   └── valid_top20_raw.json
-│   │   │   └── rgcn
-│   │   │       ├── source_manifest.json
-│   │   │       ├── test_top20_raw.json
-│   │   │       ├── train_top20_raw.json
-│   │   │       └── valid_top20_raw.json
-│   │   ├── baseline_outputs
-│   │   │   ├── complex
-│   │   │   │   ├── config.json
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   └── valid_top20.json
-│   │   │   ├── distmult
-│   │   │   │   ├── config.json
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   └── valid_top20.json
-│   │   │   ├── hrgat
-│   │   │   │   ├── config_v2.json
-│   │   │   │   ├── entity_embeddings_hrgat.pt
-│   │   │   │   ├── model_state.pt
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   ├── train_log_v2.json
-│   │   │   │   └── valid_top20.json
-│   │   │   ├── rgcn
-│   │   │   │   ├── config_v2.json
-│   │   │   │   ├── entity_embeddings_rgcn.pt
-│   │   │   │   ├── model_state.pt
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   ├── train_log_v2.json
-│   │   │   │   └── valid_top20.json
-│   │   │   ├── rotate
-│   │   │   │   ├── config.json
-│   │   │   │   ├── summary.json
-│   │   │   │   ├── test_top20.json
-│   │   │   │   └── valid_top20.json
-│   │   │   └── transe
-│   │   │       ├── config.json
-│   │   │       ├── summary.json
-│   │   │       ├── test_top20.json
-│   │   │       └── valid_top20.json
-│   │   ├── e2e_fuzzy_retrieval_ready
-│   │   │   ├── README.md
-│   │   │   └── rgcn
-│   │   │       ├── entity2id.json
-│   │   │       ├── entity2id.pkl
-│   │   │       ├── entity_embeddings_rgcn.pt
-│   │   │       ├── graph_summary.json
-│   │   │       ├── id2entity.json
-│   │   │       ├── id2entity.pkl
-│   │   │       ├── id2relation.json
-│   │   │       ├── id2relation.pkl
-│   │   │       ├── leak_check.json
-│   │   │       ├── prep_manifest.json
-│   │   │       ├── prompt_lexicon.json
-│   │   │       ├── relation2id.json
-│   │   │       ├── relation2id.pkl
-│   │   │       ├── rules.json
-│   │   │       ├── support_schema.json
-│   │   │       ├── test.json
-│   │   │       ├── type_map.json
-│   │   │       └── valid.json
-│   │   ├── e2e_soft_support_ready
-│   │   │   ├── README.md
-│   │   │   ├── distmult
-│   │   │   │   ├── entity2id.json
-│   │   │   │   ├── entity2id.pkl
-│   │   │   │   ├── entity_embeddings_rgcn.pt
-│   │   │   │   ├── graph_summary.json
-│   │   │   │   ├── id2entity.json
-│   │   │   │   ├── id2entity.pkl
-│   │   │   │   ├── id2relation.json
-│   │   │   │   ├── id2relation.pkl
-│   │   │   │   ├── leak_check.json
-│   │   │   │   ├── prep_manifest.json
-│   │   │   │   ├── prompt_lexicon.json
-│   │   │   │   ├── relation2id.json
-│   │   │   │   ├── relation2id.pkl
-│   │   │   │   ├── rules.json
-│   │   │   │   ├── support_schema.json
-│   │   │   │   ├── test.json
-│   │   │   │   ├── train.json
-│   │   │   │   ├── type_map.json
-│   │   │   │   └── valid.json
-│   │   │   ├── rgcn
-│   │   │   │   ├── entity2id.json
-│   │   │   │   ├── entity2id.pkl
-│   │   │   │   ├── entity_embeddings_rgcn.pt
-│   │   │   │   ├── graph_summary.json
-│   │   │   │   ├── id2entity.json
-│   │   │   │   ├── id2entity.pkl
-│   │   │   │   ├── id2relation.json
-│   │   │   │   ├── id2relation.pkl
-│   │   │   │   ├── leak_check.json
-│   │   │   │   ├── prep_manifest.json
-│   │   │   │   ├── prompt_lexicon.json
-│   │   │   │   ├── relation2id.json
-│   │   │   │   ├── relation2id.pkl
-│   │   │   │   ├── rules.json
-│   │   │   │   ├── support_schema.json
-│   │   │   │   ├── test.json
-│   │   │   │   ├── train.json
-│   │   │   │   ├── type_map.json
-│   │   │   │   └── valid.json
-│   │   │   └── rgcn_sweep_selected
-│   │   │       ├── entity2id.json
-│   │   │       ├── entity2id.pkl
-│   │   │       ├── entity_embeddings_rgcn.pt
-│   │   │       ├── graph_summary.json
-│   │   │       ├── id2entity.json
-│   │   │       ├── id2entity.pkl
-│   │   │       ├── id2relation.json
-│   │   │       ├── id2relation.pkl
-│   │   │       ├── leak_check.json
-│   │   │       ├── prep_manifest.json
-│   │   │       ├── prompt_lexicon.json
-│   │   │       ├── relation2id.json
-│   │   │       ├── relation2id.pkl
-│   │   │       ├── rules.json
-│   │   │       ├── support_schema.json
-│   │   │       ├── test.json
-│   │   │       ├── train.json
-│   │   │       ├── type_map.json
-│   │   │       └── valid.json
-│   │   ├── graph
-│   │   │   ├── entity2id.json
-│   │   │   ├── entity2id.pkl
-│   │   │   ├── graph_summary.json
-│   │   │   ├── id2entity.json
-│   │   │   ├── id2entity.pkl
-│   │   │   ├── id2relation.json
-│   │   │   ├── id2relation.pkl
-│   │   │   ├── leak_check.json
-│   │   │   ├── relation2id.json
-│   │   │   ├── relation2id.pkl
-│   │   │   ├── train_enriched.tsv
-│   │   │   ├── train_enriched_ids.tsv
-│   │   │   └── type_map.json
-│   │   ├── raw_inventory
-│   │   │   ├── compound_disease_relation_candidates.json
-│   │   │   ├── entity_pair_counts.json
-│   │   │   ├── entity_type_counts.json
-│   │   │   ├── extracted
-│   │   │   │   ├── ._embed
-│   │   │   │   ├── .extract_done
-│   │   │   │   └── embed
-│   │   │   │       └── Readme.md
-│   │   │   ├── raw_file_manifest.json
-│   │   │   ├── raw_inventory.json
-│   │   │   └── relation_counts.json
-│   │   ├── soft_support
-│   │   │   ├── distmult
-│   │   │   │   ├── soft_support_manifest.json
-│   │   │   │   ├── test_top20_soft_support_main.json
-│   │   │   │   ├── train_top20_soft_support_main.json
-│   │   │   │   └── valid_top20_soft_support_main.json
-│   │   │   ├── rgcn
-│   │   │   │   ├── soft_support_manifest.json
-│   │   │   │   ├── test_top20_soft_support_main.json
-│   │   │   │   ├── train_top20_soft_support_main.json
-│   │   │   │   └── valid_top20_soft_support_main.json
-│   │   │   └── rgcn_sweep_selected
-│   │   │       ├── test_top20_soft_support_main.json
-│   │   │       ├── train_top20_soft_support_main.json
-│   │   │       └── valid_top20_soft_support_main.json
-│   │   ├── softfuse_ready
-│   │   │   ├── README.md
-│   │   │   ├── distmult
-│   │   │   │   ├── entity2id.json
-│   │   │   │   ├── entity2id.pkl
-│   │   │   │   ├── entity_embeddings_rgcn.pt
-│   │   │   │   ├── graph_summary.json
-│   │   │   │   ├── id2entity.json
-│   │   │   │   ├── id2entity.pkl
-│   │   │   │   ├── id2relation.json
-│   │   │   │   ├── id2relation.pkl
-│   │   │   │   ├── leak_check.json
-│   │   │   │   ├── prep_manifest.json
-│   │   │   │   ├── prompt_lexicon.json
-│   │   │   │   ├── relation2id.json
-│   │   │   │   ├── relation2id.pkl
-│   │   │   │   ├── rules.json
-│   │   │   │   ├── support_schema.json
-│   │   │   │   ├── test.json
-│   │   │   │   ├── train.json
-│   │   │   │   ├── type_map.json
-│   │   │   │   └── valid.json
-│   │   │   └── rgcn
-│   │   │       ├── entity2id.json
-│   │   │       ├── entity2id.pkl
-│   │   │       ├── entity_embeddings_rgcn.pt
-│   │   │       ├── graph_summary.json
-│   │   │       ├── id2entity.json
-│   │   │       ├── id2entity.pkl
-│   │   │       ├── id2relation.json
-│   │   │       ├── id2relation.pkl
-│   │   │       ├── leak_check.json
-│   │   │       ├── prep_manifest.json
-│   │   │       ├── prompt_lexicon.json
-│   │   │       ├── relation2id.json
-│   │   │       ├── relation2id.pkl
-│   │   │       ├── rules.json
-│   │   │       ├── support_schema.json
-│   │   │       ├── test.json
-│   │   │       ├── train.json
-│   │   │       ├── type_map.json
-│   │   │       └── valid.json
-│   │   ├── splits
-│   │   │   ├── candidate_universe_compound.json
-│   │   │   ├── query_universe_disease.json
-│   │   │   ├── split_summary.json
-│   │   │   ├── test.tsv
-│   │   │   ├── test_target_rows.json
-│   │   │   ├── train.tsv
-│   │   │   ├── train_target_rows.json
-│   │   │   ├── valid.tsv
-│   │   │   └── valid_target_rows.json
-│   │   ├── support_features
-│   │   │   ├── distmult
-│   │   │   │   ├── test_support_features.json
-│   │   │   │   ├── train_support_features.json
-│   │   │   │   └── valid_support_features.json
-│   │   │   └── rgcn
-│   │   │       ├── test_support_features.json
-│   │   │       ├── train_support_features.json
-│   │   │       └── valid_support_features.json
-│   │   └── task_spec
-│   │       ├── schema_manifest.json
-│   │       ├── target_edges_unique.tsv
-│   │       ├── target_relation_feasibility.json
-│   │       ├── target_relation_samples.json
-│   │       ├── task_schema_candidates_day1.json
-│   │       └── task_spec.json
-│   └── setting_f_repodb
-│       ├── backbone_raw_source
-│       │   ├── distmult
-│       │   │   ├── source_manifest.json
-│       │   │   ├── test_top20_raw.json
-│       │   │   ├── train_top20_raw.json
-│       │   │   └── valid_top20_raw.json
-│       │   └── rgcn
-│       │       ├── source_manifest.json
-│       │       ├── test_top20_raw.json
-│       │       ├── train_top20_raw.json
-│       │       └── valid_top20_raw.json
-│       ├── baseline_outputs
-│       │   ├── complex
-│       │   │   ├── config.json
-│       │   │   ├── summary.json
-│       │   │   ├── test_top20.json
-│       │   │   └── valid_top20.json
-│       │   ├── distmult
-│       │   │   ├── config.json
-│       │   │   ├── summary.json
-│       │   │   ├── test_top20.json
-│       │   │   └── valid_top20.json
-│       │   ├── hrgat
-│       │   │   ├── config_v2.json
-│       │   │   ├── entity_embeddings_hrgat.pt
-│       │   │   ├── model_state.pt
-│       │   │   ├── summary.json
-│       │   │   ├── test_top20.json
-│       │   │   ├── train_log_v2.json
-│       │   │   └── valid_top20.json
-│       │   ├── rgcn
-│       │   │   ├── config_v2.json
-│       │   │   ├── entity_embeddings_rgcn.pt
-│       │   │   ├── model_state.pt
-│       │   │   ├── summary.json
-│       │   │   ├── test_top20.json
-│       │   │   ├── train_log_v2.json
-│       │   │   └── valid_top20.json
-│       │   ├── rotate
-│       │   │   ├── config.json
-│       │   │   ├── summary.json
-│       │   │   ├── test_top20.json
-│       │   │   └── valid_top20.json
-│       │   └── transe
-│       │       ├── config.json
-│       │       ├── summary.json
-│       │       ├── test_top20.json
-│       │       └── valid_top20.json
-│       ├── e2e_fuzzy_retrieval_ready
-│       │   ├── README.md
-│       │   └── rgcn
-│       │       ├── entity2id.json
-│       │       ├── entity2id.pkl
-│       │       ├── entity_embeddings_rgcn.pt
-│       │       ├── graph_summary.json
-│       │       ├── id2entity.json
-│       │       ├── id2entity.pkl
-│       │       ├── id2relation.json
-│       │       ├── id2relation.pkl
-│       │       ├── leak_check.json
-│       │       ├── prep_manifest.json
-│       │       ├── prompt_lexicon.json
-│       │       ├── relation2id.json
-│       │       ├── relation2id.pkl
-│       │       ├── rules.json
-│       │       ├── support_schema.json
-│       │       ├── test.json
-│       │       ├── type_map.json
-│       │       └── valid.json
-│       ├── e2e_soft_support_ready
-│       │   ├── README.md
-│       │   ├── rgcn_raw_display_control
-│       │   │   ├── entity2id.pkl
-│       │   │   ├── entity_embeddings_rgcn.pt
-│       │   │   ├── id2entity.pkl
-│       │   │   ├── id2relation.pkl
-│       │   │   └── relation2id.pkl
-│       │   └── rgcn_sweep_selected
-│       │       ├── entity2id.pkl
-│       │       ├── entity_embeddings_rgcn.pt
-│       │       ├── id2entity.pkl
-│       │       ├── id2relation.pkl
-│       │       └── relation2id.pkl
-│       ├── graph
-│       │   ├── entity2id.json
-│       │   ├── entity2id.pkl
-│       │   ├── graph_summary.json
-│       │   ├── id2entity.json
-│       │   ├── id2entity.pkl
-│       │   ├── id2relation.json
-│       │   ├── id2relation.pkl
-│       │   ├── leak_check.json
-│       │   ├── relation2id.json
-│       │   ├── relation2id.pkl
-│       │   ├── train_enriched.tsv
-│       │   ├── train_enriched_ids.tsv
-│       │   └── type_map.json
-│       ├── raw_inventory
-│       │   ├── best_table_probe.json
-│       │   ├── downloads
-│       │   │   └── shiny.RData
-│       │   ├── exported_tables
-│       │   │   └── pyreadr_drug.fr.tsv
-│       │   ├── raw_file_manifest.json
-│       │   ├── raw_inventory_summary.json
-│       │   ├── repodb_best_table_raw.tsv
-│       │   └── table_inventory.json
-│       ├── soft_support
-│       │   └── rgcn_sweep_selected
-│       │       ├── test_top20_soft_support_main.json
-│       │       └── valid_top20_soft_support_main.json
-│       ├── softfuse_ready
-│       │   ├── README.md
-│       │   ├── distmult
-│       │   │   ├── entity2id.json
-│       │   │   ├── entity2id.pkl
-│       │   │   ├── entity_embeddings_rgcn.pt
-│       │   │   ├── graph_summary.json
-│       │   │   ├── id2entity.json
-│       │   │   ├── id2entity.pkl
-│       │   │   ├── id2relation.json
-│       │   │   ├── id2relation.pkl
-│       │   │   ├── leak_check.json
-│       │   │   ├── prep_manifest.json
-│       │   │   ├── prompt_lexicon.json
-│       │   │   ├── relation2id.json
-│       │   │   ├── relation2id.pkl
-│       │   │   ├── rules.json
-│       │   │   ├── support_schema.json
-│       │   │   ├── test.json
-│       │   │   ├── train.json
-│       │   │   ├── type_map.json
-│       │   │   └── valid.json
-│       │   └── rgcn
-│       │       ├── entity2id.json
-│       │       ├── entity2id.pkl
-│       │       ├── entity_embeddings_rgcn.pt
-│       │       ├── graph_summary.json
-│       │       ├── id2entity.json
-│       │       ├── id2entity.pkl
-│       │       ├── id2relation.json
-│       │       ├── id2relation.pkl
-│       │       ├── leak_check.json
-│       │       ├── prep_manifest.json
-│       │       ├── prompt_lexicon.json
-│       │       ├── relation2id.json
-│       │       ├── relation2id.pkl
-│       │       ├── rules.json
-│       │       ├── support_schema.json
-│       │       ├── test.json
-│       │       ├── train.json
-│       │       ├── type_map.json
-│       │       └── valid.json
-│       ├── splits
-│       │   ├── candidate_universe_compound.json
-│       │   ├── query_universe_disease.json
-│       │   ├── split_summary.json
-│       │   ├── test.tsv
-│       │   ├── test_target_rows.json
-│       │   ├── train.tsv
-│       │   ├── train_target_rows.json
-│       │   ├── valid.tsv
-│       │   └── valid_target_rows.json
-│       ├── support_features
-│       │   └── rgcn
-│       │       ├── test_support_features.json
-│       │       └── valid_support_features.json
-│       └── task_spec
-│           ├── approved_pairs_unique.json
-│           ├── approved_pairs_unique.tsv
-│           ├── conflict_pairs.json
-│           ├── conflict_pairs.tsv
-│           ├── failed_diagnostic_edges_unique.tsv
-│           ├── failed_pairs_unique.json
-│           ├── failed_pairs_unique.tsv
-│           ├── mapping_probe_drkg.json
-│           ├── normalization_summary.json
-│           ├── normalized_repodb_rows.json
-│           ├── normalized_repodb_rows.tsv
-│           ├── schema_manifest.json
-│           ├── target_edges_unique.tsv
-│           ├── target_relation_feasibility.json
-│           └── task_spec.json
-├── infer.py
-├── main.py
-├── model
-│   ├── __init__.py
-│   ├── drkgc.py
-│   └── gnn.py
-├── prompt_subgraph.py
-├── scripts
-│   ├── backbone
-│   │   └── export_primekg_train_candidates.py
-│   ├── baselines
-│   │   ├── build_baseline_comparison.py
-│   │   ├── recompute_reviewer_safe_metrics.py
-│   │   └── rerun_structure_baselines.py
-│   ├── drkg
-│   │   ├── build_fuzzy_retrieval.py
-│   │   ├── build_soft_support.py
-│   │   ├── build_softfuse_ready.py
-│   │   ├── build_splits_and_graph.py
-│   │   ├── e2e
-│   │   │   ├── collect_metrics.py
-│   │   │   └── run_rgcn_rows.sh
-│   │   ├── inventory_raw.py
-│   │   ├── rerun_gnn_baselines.py
-│   │   ├── rerun_kge_baselines.py
-│   │   ├── select_backbone_source.py
-│   │   ├── select_task_schema.py
-│   │   └── sweep_soft_support.py
-│   ├── e2e
-│   │   ├── build_e2e_table.py
-│   │   ├── build_infer_ready.py
-│   │   ├── collect_backbone_soft_e2e.py
-│   │   ├── collect_primekg_model_compare_metrics.py
-│   │   ├── collect_retrieval_e2e.py
-│   │   ├── collect_selected_decode_metrics.py
-│   │   ├── collect_valid_decoding_sweep.py
-│   │   ├── make_decoding_sweep_configs.py
-│   │   ├── run_backbone_soft_e2e.sh
-│   │   ├── run_model_compare_train_infer_all.sh
-│   │   ├── run_retrieval_e2e.sh
-│   │   ├── run_selected_decode_test.sh
-│   │   └── run_valid_decoding_sweep.sh
-│   ├── eval_constraint_metrics.py
-│   ├── eval_safety_metrics.py
-│   ├── evaluation
-│   │   ├── build_test_eval_ready.py
-│   │   ├── build_test_main_table.py
-│   │   ├── build_valid_eval_ready.py
-│   │   ├── build_valid_main_table.py
-│   │   └── collect_test_cases.py
-│   ├── fuzzy_retrieval
-│   │   ├── build_fuzzy_retrieval_test.py
-│   │   ├── build_fuzzy_retrieval_v1.py
-│   │   ├── build_fuzzy_retrieval_variants.py
-│   │   ├── build_path_features.py
-│   │   ├── collect_fuzzy_retrieval_v1_cases.py
-│   │   ├── collect_fuzzy_retrieval_variant_cases.py
-│   │   ├── compare_fuzzy_retrieval_v1.py
-│   │   ├── compare_fuzzy_retrieval_variants.py
-│   │   └── select_fuzzy_retrieval_main.py
-│   ├── hetionet
-│   │   ├── build_fuzzy_retrieval.py
-│   │   ├── build_soft_support.py
-│   │   ├── build_softfuse_ready.py
-│   │   ├── build_splits_and_graph.py
-│   │   ├── e2e
-│   │   │   ├── collect_metrics.py
-│   │   │   └── run_all_rows.sh
-│   │   ├── inventory_raw.py
-│   │   ├── rerun_gnn_baselines.py
-│   │   ├── rerun_kge_baselines.py
-│   │   └── select_backbone_source.py
-│   ├── pharmkg
-│   │   ├── build_eval_tables.py
-│   │   ├── build_fuzzy_retrieval_transfer.py
-│   │   ├── build_soft_support_transfer.py
-│   │   ├── build_softfuse_ready_package.py
-│   │   ├── build_splits_and_graph.py
-│   │   ├── build_support_features.py
-│   │   ├── build_transfer_eval_backbone.py
-│   │   ├── e2e
-│   │   │   ├── collect_model_compare_metrics.py
-│   │   │   ├── collect_selected_model_compare.py
-│   │   │   ├── collect_valid_decoding_sweep.py
-│   │   │   ├── make_decoding_sweep_configs.py
-│   │   │   ├── patch_graph_num_rels.py
-│   │   │   ├── patch_infer_mistral_meta.py
-│   │   │   ├── prepare_e2e_ready.py
-│   │   │   ├── rerun_infer_one_model.sh
-│   │   │   ├── reviewer_safe_e2e_metrics.py
-│   │   │   ├── run_one_model.sh
-│   │   │   ├── run_selected_model_compare_all.sh
-│   │   │   ├── run_train_infer.sh
-│   │   │   └── run_valid_decoding_sweep.sh
-│   │   ├── inventory_raw.py
-│   │   ├── rerun_gnn_baselines.py
-│   │   ├── rerun_kge_baselines.py
-│   │   └── select_task_schema.py
-│   ├── repodb
-│   │   ├── build_fuzzy_retrieval.py
-│   │   ├── build_raw_display_control.py
-│   │   ├── build_soft_support.py
-│   │   ├── build_softfuse_ready.py
-│   │   ├── build_splits_and_graph.py
-│   │   ├── e2e
-│   │   │   ├── collect_metrics.py
-│   │   │   └── run_all_rows.sh
-│   │   ├── inventory_raw.py
-│   │   ├── rerun_gnn_baselines.py
-│   │   ├── rerun_kge_baselines.py
-│   │   ├── select_backbone_source.py
-│   │   └── select_task_schema.py
-│   ├── sensitivity
-│   │   ├── build_noise_variants.py
-│   │   ├── build_rule_variants.py
-│   │   ├── build_sensitivity_manifest.py
-│   │   ├── build_template_variants.py
-│   │   ├── collect_noise_robustness.py
-│   │   ├── collect_rule_test_e2e.py
-│   │   ├── collect_rule_valid.py
-│   │   ├── collect_template_e2e.py
-│   │   ├── run_rule_e2e.sh
-│   │   └── run_template_e2e.sh
-│   └── soft_support
-│       ├── audit_support_features.py
-│       ├── build_soft_support_test.py
-│       ├── build_soft_support_variants.py
-│       ├── build_support_features.py
-│       ├── collect_soft_support_variant_cases.py
-│       ├── collect_support_cases.py
-│       ├── compare_soft_support_variants.py
-│       ├── probe_support_scoring.py
-│       └── select_soft_support_main.py
-└── structure.txt
-
-191 directories, 995 files
+|   .gitignore
+|   arguments.py
+|   infer.py
+|   LICENSE
+|   main.py
+|   prompt_subgraph.py
+|   README.md
+|   structure.txt
+|   
++---configs
+|   +---backbone
+|   |       rgcn_ranker_primekg.yaml
+|   |       
+|   +---fuzzy_retrieval
+|   |       retrieval_directplus.json
+|   |       retrieval_tight.json
+|   |       
+|   \---soft_support
+|           soft_support_b025.json
+|           soft_support_b050.json
+|           soft_support_bcap.json
+|           
++---data
+|   |   collate.py
+|   |   dataset.py
+|   |   __init__.py
+|   |   
+|   \---raw
+|       \---pharmkg
+|           |   biomed_AI_README.md
+|           |   MindRank-Biotech_README.md
+|           |   
+|           \---PharmKG-8k
+|                   entity2vec.txt
+|                   relation2vec.txt
+|                   test.tsv
+|                   train.tsv
+|                   valid.tsv
+|                   
++---dataset
+|   +---setting_a
+|   |   +---aligned_evidence
+|   |   |       alignment_manifest.json
+|   |   |       README.md
+|   |   |       test_aligned_evidence.json
+|   |   |       train_aligned_evidence.json
+|   |   |       valid_aligned_evidence.json
+|   |   |       
+|   |   +---backbone_candidates
+|   |   |       raw_source_manifest.json
+|   |   |       README.md
+|   |   |       test_top20_raw.json
+|   |   |       valid_top20_raw.json
+|   |   |       
+|   |   +---backbone_ready
+|   |   |       backbone_ready_manifest.json
+|   |   |       entity2id.pkl
+|   |   |       entity_embeddings_rgcn.pt
+|   |   |       id2entity.pkl
+|   |   |       id2relation.pkl
+|   |   |       relation2id.pkl
+|   |   |       test.json
+|   |   |       train.json
+|   |   |       valid.json
+|   |   |       
+|   |   +---drkgc_json
+|   |   |       entity2id.json
+|   |   |       entity2id.pkl
+|   |   |       id2entity.json
+|   |   |       id2entity.pkl
+|   |   |       id2relation.json
+|   |   |       id2relation.pkl
+|   |   |       relation2id.json
+|   |   |       relation2id.pkl
+|   |   |       test_mock_ranked.json
+|   |   |       test_skeleton.json
+|   |   |       train_mock_ranked.json
+|   |   |       train_skeleton.json
+|   |   |       valid_mock_ranked.json
+|   |   |       valid_skeleton.json
+|   |   |       
+|   |   +---e2e_infer_ready
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   +---backbone_raw
+|   |   |   |       prep_manifest.json
+|   |   |   |       test.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   +---retrieval_main
+|   |   |   |       prep_manifest.json
+|   |   |   |       test.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   \---soft_support_raw
+|   |   |           prep_manifest.json
+|   |   |           test.json
+|   |   |           valid.json
+|   |   |           
+|   |   +---fuzzy_retrieval
+|   |   |       path_score_manifest.json
+|   |   |       README.md
+|   |   |       retrieval_main_manifest.json
+|   |   |       test_fuzzy_retrieval_main.json
+|   |   |       test_path_features.json
+|   |   |       valid_fuzzy_retrieval_main.json
+|   |   |       valid_fuzzy_retrieval_v1.json
+|   |   |       valid_path_features.json
+|   |   |       valid_soft_support_fuzzy_retrieval_directplus.json
+|   |   |       valid_soft_support_fuzzy_retrieval_tight.json
+|   |   |       
+|   |   +---graph
+|   |   |       graph_stats.json
+|   |   |       graph_stats_deg1000.json
+|   |   |       graph_stats_deg1000_final.json
+|   |   |       graph_stats_deg500.json
+|   |   |       hub_filtered_genes.txt
+|   |   |       train_enriched.tsv
+|   |   |       train_enriched_deg1000_final.tsv
+|   |   |       
+|   |   +---graph_audit
+|   |   |       ppi_audit.json
+|   |   |       
+|   |   +---noise_robustness
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   +---N0_no_noise
+|   |   |   |       manifest.json
+|   |   |   |       test.json
+|   |   |   |       train.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   +---N1_support_score_noise_seed1
+|   |   |   |       manifest.json
+|   |   |   |       test.json
+|   |   |   |       train.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   +---N2_support_score_noise_seed2
+|   |   |   |       manifest.json
+|   |   |   |       test.json
+|   |   |   |       train.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   +---N3_support_score_noise_seed3
+|   |   |   |       manifest.json
+|   |   |   |       test.json
+|   |   |   |       train.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   +---N4_subgraph_edge_dropout_5_seed1
+|   |   |   |       manifest.json
+|   |   |   |       test.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   +---N5_subgraph_edge_dropout_5_seed2
+|   |   |   |       manifest.json
+|   |   |   |       test.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   \---N6_subgraph_edge_dropout_5_seed3
+|   |   |           manifest.json
+|   |   |           test.json
+|   |   |           valid.json
+|   |   |           
+|   |   +---ontology_control
+|   |   |       ontology_filter_report_test.json
+|   |   |       ontology_filter_report_test.md
+|   |   |       ontology_filter_report_valid.json
+|   |   |       ontology_filter_report_valid.md
+|   |   |       prep_meta.json
+|   |   |       schema_validity_test.json
+|   |   |       schema_validity_test.md
+|   |   |       schema_validity_valid.json
+|   |   |       schema_validity_valid.md
+|   |   |       test_top20_ontology_raw.json
+|   |   |       test_top20_type_filtered_raw.json
+|   |   |       type_filter_report_test.json
+|   |   |       type_filter_report_test.md
+|   |   |       type_filter_report_valid.json
+|   |   |       type_filter_report_valid.md
+|   |   |       valid_top20_ontology_raw.json
+|   |   |       valid_top20_type_filtered_raw.json
+|   |   |       
+|   |   +---raw_triples
+|   |   |       primekg_indication_only.tsv
+|   |   |       
+|   |   +---rule_sensitivity
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   +---main_rules
+|   |   |   |       manifest.json
+|   |   |   |       test.json
+|   |   |   |       train.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   +---no_rules
+|   |   |   |       manifest.json
+|   |   |   |       test.json
+|   |   |   |       train.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   \---random_rules
+|   |   |           manifest.json
+|   |   |           test.json
+|   |   |           train.json
+|   |   |           valid.json
+|   |   |           
+|   |   +---soft_support_ranked_candidates
+|   |   |       README.md
+|   |   |       support_main_manifest.json
+|   |   |       test_top20_soft_support_main.json
+|   |   |       valid_top20_soft_support_b025.json
+|   |   |       valid_top20_soft_support_b050.json
+|   |   |       valid_top20_soft_support_bcap.json
+|   |   |       valid_top20_soft_support_main.json
+|   |   |       
+|   |   +---splits
+|   |   |       split_meta.json
+|   |   |       test.tsv
+|   |   |       train.tsv
+|   |   |       valid.tsv
+|   |   |       
+|   |   +---support_features
+|   |   |       support_feature_manifest.json
+|   |   |       valid_support_features.json
+|   |   |       valid_support_probe.json
+|   |   |       
+|   |   \---template_sensitivity
+|   |       |   README.md
+|   |       |   
+|   |       +---T0_canonical
+|   |       |       manifest.json
+|   |       |       test.json
+|   |       |       train.json
+|   |       |       valid.json
+|   |       |       
+|   |       +---T1_treatment
+|   |       |       manifest.json
+|   |       |       test.json
+|   |       |       train.json
+|   |       |       valid.json
+|   |       |       
+|   |       +---T2_medication
+|   |       |       manifest.json
+|   |       |       test.json
+|   |       |       train.json
+|   |       |       valid.json
+|   |       |       
+|   |       \---T3_association_neutral
+|   |               manifest.json
+|   |               test.json
+|   |               train.json
+|   |               valid.json
+|   |               
+|   +---setting_b
+|   |   +---annotations
+|   |   |       contraindication_conflicts.tsv
+|   |   |       contraindication_pairs.tsv
+|   |   |       path_templates.yaml
+|   |   |       schema_rules.json
+|   |   |       schema_violations.tsv
+|   |   |       type_map.tsv
+|   |   |       type_map_overrides.tsv
+|   |   |       
+|   |   +---contra_checked
+|   |   |       contra_lookup_by_disease.json
+|   |   |       contra_lookup_by_drug.json
+|   |   |       test_b_annotations_contra_checked.json
+|   |   |       valid_b_annotations_contra_checked.json
+|   |   |       
+|   |   +---eval_test
+|   |   |       README.md
+|   |   |       test_backbone_raw_eval.json
+|   |   |       test_ontology_raw_eval.json
+|   |   |       test_retrieval_main_eval.json
+|   |   |       test_soft_support_raw_eval.json
+|   |   |       
+|   |   \---eval_valid
+|   |           README.md
+|   |           valid_backbone_raw_eval.json
+|   |           valid_ontology_raw_eval.json
+|   |           valid_retrieval_main_eval.json
+|   |           valid_soft_support_raw_eval.json
+|   |           
+|   +---setting_c_pharmkg
+|   |   +---backbone_raw_source
+|   |   |       source_selection.json
+|   |   |       test_top20_raw.json
+|   |   |       train_top20_supervised.json
+|   |   |       valid_top20_raw.json
+|   |   |       
+|   |   +---baseline_outputs
+|   |   |   +---complex
+|   |   |   |       config.json
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   +---distmult
+|   |   |   |       config.json
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   +---hrgat
+|   |   |   |       config.json
+|   |   |   |       model_state.pt
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       train_log.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   +---rgcn
+|   |   |   |       config.json
+|   |   |   |       model_state.pt
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       train_log.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   +---rotate
+|   |   |   |       config.json
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   \---transe
+|   |   |           config.json
+|   |   |           summary.json
+|   |   |           test_top20.json
+|   |   |           valid_top20.json
+|   |   |           
+|   |   +---e2e_infer_ready
+|   |   |   |   entity_embeddings_rgcn.pt
+|   |   |   |   prepare_manifest.json
+|   |   |   |   prepare_report.md
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   +---backbone_raw
+|   |   |   |       entity2id.json
+|   |   |   |       entity2id.pkl
+|   |   |   |       id2entity.json
+|   |   |   |       id2entity.pkl
+|   |   |   |       id2relation.json
+|   |   |   |       id2relation.pkl
+|   |   |   |       prep_manifest.json
+|   |   |   |       prompt_lexicon.json
+|   |   |   |       relation2id.json
+|   |   |   |       relation2id.pkl
+|   |   |   |       rules.json
+|   |   |   |       support_schema.json
+|   |   |   |       test.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   +---fuzzy_retrieval_main
+|   |   |   |       entity2id.json
+|   |   |   |       entity2id.pkl
+|   |   |   |       id2entity.json
+|   |   |   |       id2entity.pkl
+|   |   |   |       id2relation.json
+|   |   |   |       id2relation.pkl
+|   |   |   |       prep_manifest.json
+|   |   |   |       prompt_lexicon.json
+|   |   |   |       relation2id.json
+|   |   |   |       relation2id.pkl
+|   |   |   |       rules.json
+|   |   |   |       support_schema.json
+|   |   |   |       test.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   \---soft_support_raw
+|   |   |           entity2id.json
+|   |   |           entity2id.pkl
+|   |   |           id2entity.json
+|   |   |           id2entity.pkl
+|   |   |           id2relation.json
+|   |   |           id2relation.pkl
+|   |   |           prep_manifest.json
+|   |   |           prompt_lexicon.json
+|   |   |           relation2id.json
+|   |   |           relation2id.pkl
+|   |   |           rules.json
+|   |   |           support_schema.json
+|   |   |           test.json
+|   |   |           valid.json
+|   |   |           
+|   |   +---eval_rows
+|   |   |       test_backbone_raw.json
+|   |   |       test_fuzzy_retrieval_main.json
+|   |   |       test_hard_support_raw.json
+|   |   |       test_soft_support_raw.json
+|   |   |       valid_backbone_raw.json
+|   |   |       valid_fuzzy_retrieval_main.json
+|   |   |       valid_hard_support_raw.json
+|   |   |       valid_soft_support_raw.json
+|   |   |       
+|   |   +---fuzzy_retrieval
+|   |   |       retrieval_config.json
+|   |   |       retrieval_summary.json
+|   |   |       test_fuzzy_retrieval_main.json
+|   |   |       test_path_features.json
+|   |   |       valid_fuzzy_retrieval_main.json
+|   |   |       valid_path_features.json
+|   |   |       
+|   |   +---graph
+|   |   |       entity2id.json
+|   |   |       id2entity.json
+|   |   |       id2relation.json
+|   |   |       relation2id.json
+|   |   |       train_enriched.tsv
+|   |   |       train_enriched_relation_counts.json
+|   |   |       type_map.json
+|   |   |       
+|   |   +---hard_support_raw
+|   |   |       hard_support_audit.json
+|   |   |       test_top20_hard_support_raw.json
+|   |   |       valid_top20_hard_support_raw.json
+|   |   |       
+|   |   +---raw_inventory
+|   |   |       download_plan.json
+|   |   |       download_status.json
+|   |   |       file_manifest.json
+|   |   |       relation_hint_candidates.json
+|   |   |       triple_file_candidates.json
+|   |   |       
+|   |   +---softfuse_ready
+|   |   |       entity2id.json
+|   |   |       entity2id.pkl
+|   |   |       id2entity.json
+|   |   |       id2entity.pkl
+|   |   |       id2relation.json
+|   |   |       id2relation.pkl
+|   |   |       prep_manifest.json
+|   |   |       prompt_lexicon.json
+|   |   |       README.md
+|   |   |       relation2id.json
+|   |   |       relation2id.pkl
+|   |   |       rules.json
+|   |   |       support_schema.json
+|   |   |       test.json
+|   |   |       train_compressed.zip
+|   |   |       valid.json
+|   |   |       
+|   |   +---soft_support
+|   |   |       soft_support_config.json
+|   |   |       soft_support_debug_summary.json
+|   |   |       test_top20_soft_support_main.json
+|   |   |       valid_top20_soft_support_main.json
+|   |   |       
+|   |   +---splits
+|   |   |       candidate_universe.json
+|   |   |       query_universe.json
+|   |   |       test.json
+|   |   |       test_target.tsv
+|   |   |       train.json
+|   |   |       train_target.tsv
+|   |   |       valid.json
+|   |   |       valid_target.tsv
+|   |   |       
+|   |   +---support_features
+|   |   |       support_feature_summary.json
+|   |   |       test_support_features.json
+|   |   |       valid_support_features.json
+|   |   |       
+|   |   +---task_spec
+|   |   |       entity_type_summary.json
+|   |   |       relation_role_analysis.json
+|   |   |       target_relation_rows_summary.json
+|   |   |       task_spec.json
+|   |   |       type_map_preliminary.json
+|   |   |       
+|   |   \---transfer_eval_ready
+|   |           backbone_raw_test.json
+|   |           backbone_raw_valid.json
+|   |           
+|   +---setting_d_hetionet
+|   |   +---backbone_raw_source
+|   |   |       source_manifest.json
+|   |   |       test_top20_raw.json
+|   |   |       train_top20_raw.json
+|   |   |       valid_top20_raw.json
+|   |   |       
+|   |   +---baseline_outputs
+|   |   |   +---complex
+|   |   |   |       config.json
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   +---distmult
+|   |   |   |       config.json
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   +---hrgat
+|   |   |   |       config_v2.json
+|   |   |   |       entity_embeddings_hrgat.pt
+|   |   |   |       model_state.pt
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       train_log_v2.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   +---rgcn
+|   |   |   |       config.json
+|   |   |   |       config_v2.json
+|   |   |   |       entity_embeddings_rgcn.pt
+|   |   |   |       model_state.pt
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       train_log.json
+|   |   |   |       train_log_v2.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   +---rotate
+|   |   |   |       config.json
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   \---transe
+|   |   |           config.json
+|   |   |           summary.json
+|   |   |           test_top20.json
+|   |   |           valid_top20.json
+|   |   |           
+|   |   +---e2e_fuzzy_retrieval_ready
+|   |   |       entity2id.json
+|   |   |       entity2id.pkl
+|   |   |       entity_embeddings_rgcn.pt
+|   |   |       graph_summary.json
+|   |   |       id2entity.json
+|   |   |       id2entity.pkl
+|   |   |       id2relation.json
+|   |   |       id2relation.pkl
+|   |   |       leak_check.json
+|   |   |       prep_manifest.json
+|   |   |       prompt_lexicon.json
+|   |   |       README.md
+|   |   |       relation2id.json
+|   |   |       relation2id.pkl
+|   |   |       rules.json
+|   |   |       support_schema.json
+|   |   |       test.json
+|   |   |       type_map.json
+|   |   |       valid.json
+|   |   |       
+|   |   +---e2e_soft_support_ready
+|   |   |       entity2id.json
+|   |   |       entity2id.pkl
+|   |   |       entity_embeddings_rgcn.pt
+|   |   |       graph_summary.json
+|   |   |       id2entity.json
+|   |   |       id2entity.pkl
+|   |   |       id2relation.json
+|   |   |       id2relation.pkl
+|   |   |       leak_check.json
+|   |   |       prep_manifest.json
+|   |   |       prompt_lexicon.json
+|   |   |       README.md
+|   |   |       relation2id.json
+|   |   |       relation2id.pkl
+|   |   |       rules.json
+|   |   |       support_schema.json
+|   |   |       test.json
+|   |   |       type_map.json
+|   |   |       valid.json
+|   |   |       
+|   |   +---fuzzy_retrieval
+|   |   |       fuzzy_retrieval_manifest.json
+|   |   |       test_fuzzy_retrieval_main.json
+|   |   |       train_fuzzy_retrieval_main.json
+|   |   |       valid_fuzzy_retrieval_main.json
+|   |   |       
+|   |   +---graph
+|   |   |       entity2id.json
+|   |   |       entity2id.pkl
+|   |   |       graph_summary.json
+|   |   |       id2entity.json
+|   |   |       id2entity.pkl
+|   |   |       id2relation.json
+|   |   |       id2relation.pkl
+|   |   |       leak_check.json
+|   |   |       node_metadata.json
+|   |   |       relation2id.json
+|   |   |       relation2id.pkl
+|   |   |       train_enriched.tsv
+|   |   |       train_enriched_ids.tsv
+|   |   |       type_map.json
+|   |   |       
+|   |   +---raw_inventory
+|   |   |   |   hetionet_task_candidate_summary.json
+|   |   |   |   raw_inventory.json
+|   |   |   |   
+|   |   |   \---extracted
+|   |   |       |   .extract_done
+|   |   |       |   
+|   |   |       \---dhimmel-hetionet-4933ca1
+|   |   |           |   .gitignore
+|   |   |           |   import.ipynb
+|   |   |           |   README.md
+|   |   |           |   
+|   |   |           +---describe
+|   |   |           |   +---degree
+|   |   |           |   |       degrees.pdf
+|   |   |           |   |       degrees.xlsx
+|   |   |           |   |       
+|   |   |           |   +---edges
+|   |   |           |   |       metaedge-styles.tsv
+|   |   |           |   |       metaedges.tsv
+|   |   |           |   |       
+|   |   |           |   \---nodes
+|   |   |           |           metanodes.tsv
+|   |   |           |           
+|   |   |           \---hetnet
+|   |   |               +---json
+|   |   |               |       hetionet-v1.0-metagraph.json
+|   |   |               |       hetionet-v1.0.json.bz2
+|   |   |               |       README.md
+|   |   |               |       
+|   |   |               +---neo4j
+|   |   |               |   |   labels.tsv
+|   |   |               |   |   README.md
+|   |   |               |   |   types.tsv
+|   |   |               |   |   
+|   |   |               |   \---docker
+|   |   |               |       |   .dockerignore
+|   |   |               |       |   Dockerfile
+|   |   |               |       |   README.md
+|   |   |               |       |   
+|   |   |               |       +---files
+|   |   |               |       |       neo4j-guide-extension-3.0.1.jar
+|   |   |               |       |       neo4j.conf
+|   |   |               |       |       piwik.html
+|   |   |               |       |       
+|   |   |               |       +---guides
+|   |   |               |       |       convert.sh
+|   |   |               |       |       graphstyle.grass
+|   |   |               |       |       hetionet.adoc
+|   |   |               |       |       hetionet.html
+|   |   |               |       |       
+|   |   |               |       +---host
+|   |   |               |       |   |   README.md
+|   |   |               |       |   |   run-docker.sh
+|   |   |               |       |   |   stop-docker.sh
+|   |   |               |       |   |   update-docker.sh
+|   |   |               |       |   |   
+|   |   |               |       |   \---ssl
+|   |   |               |       |           install.sh
+|   |   |               |       |           renew.sh
+|   |   |               |       |           
+|   |   |               |       \---scripts
+|   |   |               |               get_data.sh
+|   |   |               |               get_data_run_neo4j.sh
+|   |   |               |               
+|   |   |               +---permuted
+|   |   |               |   +---json
+|   |   |               |   |       hetionet-v1.0-perm-1.json.bz2
+|   |   |               |   |       hetionet-v1.0-perm-2.json.bz2
+|   |   |               |   |       hetionet-v1.0-perm-3.json.bz2
+|   |   |               |   |       hetionet-v1.0-perm-4.json.bz2
+|   |   |               |   |       hetionet-v1.0-perm-5.json.bz2
+|   |   |               |   |       
+|   |   |               |   \---neo4j
+|   |   |               |           README.md
+|   |   |               |           
+|   |   |               \---tsv
+|   |   |                       hetionet-v1.0-edges.sif.gz
+|   |   |                       hetionet-v1.0-nodes.tsv
+|   |   |                       README.md
+|   |   |                       
+|   |   +---softfuse_ready
+|   |   |       entity2id.json
+|   |   |       entity2id.pkl
+|   |   |       entity_embeddings_rgcn.pt
+|   |   |       graph_summary.json
+|   |   |       id2entity.json
+|   |   |       id2entity.pkl
+|   |   |       id2relation.json
+|   |   |       id2relation.pkl
+|   |   |       leak_check.json
+|   |   |       prep_manifest.json
+|   |   |       prompt_lexicon.json
+|   |   |       README.md
+|   |   |       relation2id.json
+|   |   |       relation2id.pkl
+|   |   |       rules.json
+|   |   |       support_schema.json
+|   |   |       test.json
+|   |   |       train.json
+|   |   |       type_map.json
+|   |   |       valid.json
+|   |   |       
+|   |   +---soft_support
+|   |   |       soft_support_manifest.json
+|   |   |       test_top20_soft_support_main.json
+|   |   |       train_top20_soft_support_main.json
+|   |   |       valid_top20_soft_support_main.json
+|   |   |       
+|   |   +---splits
+|   |   |       candidate_universe_compound.json
+|   |   |       query_universe_disease.json
+|   |   |       split_summary.json
+|   |   |       test.tsv
+|   |   |       test_node_ids.tsv
+|   |   |       test_target_rows.json
+|   |   |       train.tsv
+|   |   |       train_node_ids.tsv
+|   |   |       train_target_rows.json
+|   |   |       valid.tsv
+|   |   |       valid_node_ids.tsv
+|   |   |       valid_target_rows.json
+|   |   |       
+|   |   +---support_features
+|   |   |       test_support_features.json
+|   |   |       train_support_features.json
+|   |   |       valid_support_features.json
+|   |   |       
+|   |   \---task_spec
+|   |           task_spec_draft.json
+|   |           
+|   +---setting_e_drkg
+|   |   +---backbone_raw_source
+|   |   |   +---distmult
+|   |   |   |       source_manifest.json
+|   |   |   |       test_top20_raw.json
+|   |   |   |       train_top20_raw.json
+|   |   |   |       valid_top20_raw.json
+|   |   |   |       
+|   |   |   \---rgcn
+|   |   |           source_manifest.json
+|   |   |           test_top20_raw.json
+|   |   |           train_top20_raw.json
+|   |   |           valid_top20_raw.json
+|   |   |           
+|   |   +---baseline_outputs
+|   |   |   +---complex
+|   |   |   |       config.json
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   +---distmult
+|   |   |   |       config.json
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   +---hrgat
+|   |   |   |       config_v2.json
+|   |   |   |       entity_embeddings_hrgat.pt
+|   |   |   |       model_state.pt
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       train_log_v2.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   +---rgcn
+|   |   |   |       config_v2.json
+|   |   |   |       entity_embeddings_rgcn.pt
+|   |   |   |       model_state.pt
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       train_log_v2.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   +---rotate
+|   |   |   |       config.json
+|   |   |   |       summary.json
+|   |   |   |       test_top20.json
+|   |   |   |       valid_top20.json
+|   |   |   |       
+|   |   |   \---transe
+|   |   |           config.json
+|   |   |           summary.json
+|   |   |           test_top20.json
+|   |   |           valid_top20.json
+|   |   |           
+|   |   +---e2e_fuzzy_retrieval_ready
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   \---rgcn
+|   |   |           entity2id.json
+|   |   |           entity2id.pkl
+|   |   |           entity_embeddings_rgcn.pt
+|   |   |           graph_summary.json
+|   |   |           id2entity.json
+|   |   |           id2entity.pkl
+|   |   |           id2relation.json
+|   |   |           id2relation.pkl
+|   |   |           leak_check.json
+|   |   |           prep_manifest.json
+|   |   |           prompt_lexicon.json
+|   |   |           relation2id.json
+|   |   |           relation2id.pkl
+|   |   |           rules.json
+|   |   |           support_schema.json
+|   |   |           test.json
+|   |   |           type_map.json
+|   |   |           valid.json
+|   |   |           
+|   |   +---e2e_soft_support_ready
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   +---distmult
+|   |   |   |       entity2id.json
+|   |   |   |       entity2id.pkl
+|   |   |   |       entity_embeddings_rgcn.pt
+|   |   |   |       graph_summary.json
+|   |   |   |       id2entity.json
+|   |   |   |       id2entity.pkl
+|   |   |   |       id2relation.json
+|   |   |   |       id2relation.pkl
+|   |   |   |       leak_check.json
+|   |   |   |       prep_manifest.json
+|   |   |   |       prompt_lexicon.json
+|   |   |   |       relation2id.json
+|   |   |   |       relation2id.pkl
+|   |   |   |       rules.json
+|   |   |   |       support_schema.json
+|   |   |   |       test.json
+|   |   |   |       type_map.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   +---rgcn
+|   |   |   |       entity2id.json
+|   |   |   |       entity2id.pkl
+|   |   |   |       entity_embeddings_rgcn.pt
+|   |   |   |       graph_summary.json
+|   |   |   |       id2entity.json
+|   |   |   |       id2entity.pkl
+|   |   |   |       id2relation.json
+|   |   |   |       id2relation.pkl
+|   |   |   |       leak_check.json
+|   |   |   |       prep_manifest.json
+|   |   |   |       prompt_lexicon.json
+|   |   |   |       relation2id.json
+|   |   |   |       relation2id.pkl
+|   |   |   |       rules.json
+|   |   |   |       support_schema.json
+|   |   |   |       test.json
+|   |   |   |       type_map.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   \---rgcn_sweep_selected
+|   |   |           entity2id.json
+|   |   |           entity2id.pkl
+|   |   |           entity_embeddings_rgcn.pt
+|   |   |           graph_summary.json
+|   |   |           id2entity.json
+|   |   |           id2entity.pkl
+|   |   |           id2relation.json
+|   |   |           id2relation.pkl
+|   |   |           leak_check.json
+|   |   |           prep_manifest.json
+|   |   |           prompt_lexicon.json
+|   |   |           relation2id.json
+|   |   |           relation2id.pkl
+|   |   |           rules.json
+|   |   |           support_schema.json
+|   |   |           test.json
+|   |   |           type_map.json
+|   |   |           valid.json
+|   |   |           
+|   |   +---graph
+|   |   |       entity2id.json
+|   |   |       entity2id.pkl
+|   |   |       graph_summary.json
+|   |   |       id2entity.json
+|   |   |       id2entity.pkl
+|   |   |       id2relation.json
+|   |   |       id2relation.pkl
+|   |   |       leak_check.json
+|   |   |       relation2id.json
+|   |   |       relation2id.pkl
+|   |   |       train_enriched.tsv
+|   |   |       train_enriched_ids.tsv
+|   |   |       type_map.json
+|   |   |       
+|   |   +---raw_inventory
+|   |   |   |   compound_disease_relation_candidates.json
+|   |   |   |   entity_pair_counts.json
+|   |   |   |   entity_type_counts.json
+|   |   |   |   raw_file_manifest.json
+|   |   |   |   raw_inventory.json
+|   |   |   |   relation_counts.json
+|   |   |   |   
+|   |   |   \---extracted
+|   |   |       |   .extract_done
+|   |   |       |   ._embed
+|   |   |       |   
+|   |   |       \---embed
+|   |   |               Readme.md
+|   |   |               
+|   |   +---softfuse_ready
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   +---distmult
+|   |   |   |       entity2id.json
+|   |   |   |       entity2id.pkl
+|   |   |   |       entity_embeddings_rgcn.pt
+|   |   |   |       graph_summary.json
+|   |   |   |       id2entity.json
+|   |   |   |       id2entity.pkl
+|   |   |   |       id2relation.json
+|   |   |   |       id2relation.pkl
+|   |   |   |       leak_check.json
+|   |   |   |       prep_manifest.json
+|   |   |   |       prompt_lexicon.json
+|   |   |   |       relation2id.json
+|   |   |   |       relation2id.pkl
+|   |   |   |       rules.json
+|   |   |   |       support_schema.json
+|   |   |   |       test.json
+|   |   |   |       train.json
+|   |   |   |       type_map.json
+|   |   |   |       valid.json
+|   |   |   |       
+|   |   |   \---rgcn
+|   |   |           entity2id.json
+|   |   |           entity2id.pkl
+|   |   |           entity_embeddings_rgcn.pt
+|   |   |           graph_summary.json
+|   |   |           id2entity.json
+|   |   |           id2entity.pkl
+|   |   |           id2relation.json
+|   |   |           id2relation.pkl
+|   |   |           leak_check.json
+|   |   |           prep_manifest.json
+|   |   |           prompt_lexicon.json
+|   |   |           relation2id.json
+|   |   |           relation2id.pkl
+|   |   |           rules.json
+|   |   |           support_schema.json
+|   |   |           test.json
+|   |   |           train.json
+|   |   |           type_map.json
+|   |   |           valid.json
+|   |   |           
+|   |   +---soft_support
+|   |   |   +---distmult
+|   |   |   |       soft_support_manifest.json
+|   |   |   |       test_top20_soft_support_main.json
+|   |   |   |       train_top20_soft_support_main.json
+|   |   |   |       valid_top20_soft_support_main.json
+|   |   |   |       
+|   |   |   +---rgcn
+|   |   |   |       soft_support_manifest.json
+|   |   |   |       test_top20_soft_support_main.json
+|   |   |   |       train_top20_soft_support_main.json
+|   |   |   |       valid_top20_soft_support_main.json
+|   |   |   |       
+|   |   |   \---rgcn_sweep_selected
+|   |   |           test_top20_soft_support_main.json
+|   |   |           train_top20_soft_support_main.json
+|   |   |           valid_top20_soft_support_main.json
+|   |   |           
+|   |   +---splits
+|   |   |       candidate_universe_compound.json
+|   |   |       query_universe_disease.json
+|   |   |       split_summary.json
+|   |   |       test.tsv
+|   |   |       test_target_rows.json
+|   |   |       train.tsv
+|   |   |       train_target_rows.json
+|   |   |       valid.tsv
+|   |   |       valid_target_rows.json
+|   |   |       
+|   |   +---support_features
+|   |   |   +---distmult
+|   |   |   |       test_support_features.json
+|   |   |   |       train_support_features.json
+|   |   |   |       valid_support_features.json
+|   |   |   |       
+|   |   |   \---rgcn
+|   |   |           test_support_features.json
+|   |   |           train_support_features.json
+|   |   |           valid_support_features.json
+|   |   |           
+|   |   \---task_spec
+|   |           schema_manifest.json
+|   |           target_edges_unique.tsv
+|   |           target_relation_feasibility.json
+|   |           target_relation_samples.json
+|   |           task_schema_candidates.json
+|   |           task_spec.json
+|   |           
+|   \---setting_f_repodb
+|       +---backbone_raw_source
+|       |   +---distmult
+|       |   |       source_manifest.json
+|       |   |       test_top20_raw.json
+|       |   |       train_top20_raw.json
+|       |   |       valid_top20_raw.json
+|       |   |       
+|       |   \---rgcn
+|       |           source_manifest.json
+|       |           test_top20_raw.json
+|       |           train_top20_raw.json
+|       |           valid_top20_raw.json
+|       |           
+|       +---baseline_outputs
+|       |   +---complex
+|       |   |       config.json
+|       |   |       summary.json
+|       |   |       test_top20.json
+|       |   |       valid_top20.json
+|       |   |       
+|       |   +---distmult
+|       |   |       config.json
+|       |   |       summary.json
+|       |   |       test_top20.json
+|       |   |       valid_top20.json
+|       |   |       
+|       |   +---hrgat
+|       |   |       config_v2.json
+|       |   |       entity_embeddings_hrgat.pt
+|       |   |       model_state.pt
+|       |   |       summary.json
+|       |   |       test_top20.json
+|       |   |       train_log_v2.json
+|       |   |       valid_top20.json
+|       |   |       
+|       |   +---rgcn
+|       |   |       config_v2.json
+|       |   |       entity_embeddings_rgcn.pt
+|       |   |       model_state.pt
+|       |   |       summary.json
+|       |   |       test_top20.json
+|       |   |       train_log_v2.json
+|       |   |       valid_top20.json
+|       |   |       
+|       |   +---rotate
+|       |   |       config.json
+|       |   |       summary.json
+|       |   |       test_top20.json
+|       |   |       valid_top20.json
+|       |   |       
+|       |   \---transe
+|       |           config.json
+|       |           summary.json
+|       |           test_top20.json
+|       |           valid_top20.json
+|       |           
+|       +---e2e_fuzzy_retrieval_ready
+|       |   |   README.md
+|       |   |   
+|       |   \---rgcn
+|       |           entity2id.json
+|       |           entity2id.pkl
+|       |           entity_embeddings_rgcn.pt
+|       |           graph_summary.json
+|       |           id2entity.json
+|       |           id2entity.pkl
+|       |           id2relation.json
+|       |           id2relation.pkl
+|       |           leak_check.json
+|       |           prep_manifest.json
+|       |           prompt_lexicon.json
+|       |           relation2id.json
+|       |           relation2id.pkl
+|       |           rules.json
+|       |           support_schema.json
+|       |           test.json
+|       |           type_map.json
+|       |           valid.json
+|       |           
+|       +---e2e_soft_support_ready
+|       |   |   README.md
+|       |   |   
+|       |   +---rgcn_raw_display_control
+|       |   |       entity2id.pkl
+|       |   |       entity_embeddings_rgcn.pt
+|       |   |       id2entity.pkl
+|       |   |       id2relation.pkl
+|       |   |       relation2id.pkl
+|       |   |       
+|       |   \---rgcn_sweep_selected
+|       |           entity2id.pkl
+|       |           entity_embeddings_rgcn.pt
+|       |           id2entity.pkl
+|       |           id2relation.pkl
+|       |           relation2id.pkl
+|       |           
+|       +---graph
+|       |       entity2id.json
+|       |       entity2id.pkl
+|       |       graph_summary.json
+|       |       id2entity.json
+|       |       id2entity.pkl
+|       |       id2relation.json
+|       |       id2relation.pkl
+|       |       leak_check.json
+|       |       relation2id.json
+|       |       relation2id.pkl
+|       |       train_enriched.tsv
+|       |       train_enriched_ids.tsv
+|       |       type_map.json
+|       |       
+|       +---raw_inventory
+|       |   |   best_table_probe.json
+|       |   |   raw_file_manifest.json
+|       |   |   raw_inventory_summary.json
+|       |   |   repodb_best_table_raw.tsv
+|       |   |   table_inventory.json
+|       |   |   
+|       |   +---downloads
+|       |   |       shiny.RData
+|       |   |       
+|       |   \---exported_tables
+|       |           pyreadr_drug.fr.tsv
+|       |           
+|       +---softfuse_ready
+|       |   |   README.md
+|       |   |   
+|       |   +---distmult
+|       |   |       entity2id.json
+|       |   |       entity2id.pkl
+|       |   |       entity_embeddings_rgcn.pt
+|       |   |       graph_summary.json
+|       |   |       id2entity.json
+|       |   |       id2entity.pkl
+|       |   |       id2relation.json
+|       |   |       id2relation.pkl
+|       |   |       leak_check.json
+|       |   |       prep_manifest.json
+|       |   |       prompt_lexicon.json
+|       |   |       relation2id.json
+|       |   |       relation2id.pkl
+|       |   |       rules.json
+|       |   |       support_schema.json
+|       |   |       test.json
+|       |   |       train.json
+|       |   |       type_map.json
+|       |   |       valid.json
+|       |   |       
+|       |   \---rgcn
+|       |           entity2id.json
+|       |           entity2id.pkl
+|       |           entity_embeddings_rgcn.pt
+|       |           graph_summary.json
+|       |           id2entity.json
+|       |           id2entity.pkl
+|       |           id2relation.json
+|       |           id2relation.pkl
+|       |           leak_check.json
+|       |           prep_manifest.json
+|       |           prompt_lexicon.json
+|       |           relation2id.json
+|       |           relation2id.pkl
+|       |           rules.json
+|       |           support_schema.json
+|       |           test.json
+|       |           train.json
+|       |           type_map.json
+|       |           valid.json
+|       |           
+|       +---soft_support
+|       |   \---rgcn_sweep_selected
+|       |           test_top20_soft_support_main.json
+|       |           valid_top20_soft_support_main.json
+|       |           
+|       +---splits
+|       |       candidate_universe_compound.json
+|       |       query_universe_disease.json
+|       |       split_summary.json
+|       |       test.tsv
+|       |       test_target_rows.json
+|       |       train.tsv
+|       |       train_target_rows.json
+|       |       valid.tsv
+|       |       valid_target_rows.json
+|       |       
+|       +---support_features
+|       |   \---rgcn
+|       |           test_support_features.json
+|       |           valid_support_features.json
+|       |           
+|       \---task_spec
+|               approved_pairs_unique.json
+|               approved_pairs_unique.tsv
+|               conflict_pairs.json
+|               conflict_pairs.tsv
+|               failed_diagnostic_edges_unique.tsv
+|               failed_pairs_unique.json
+|               failed_pairs_unique.tsv
+|               mapping_probe_drkg.json
+|               normalization_summary.json
+|               normalized_repodb_rows.json
+|               normalized_repodb_rows.tsv
+|               schema_manifest.json
+|               target_edges_unique.tsv
+|               target_relation_feasibility.json
+|               task_spec.json
+|               
++---model
+|       drkgc.py
+|       gnn.py
+|       __init__.py
+|       
+\---scripts
+    |   eval_constraint_metrics.py
+    |   eval_safety_metrics.py
+    |   
+    +---backbone
+    |       export_primekg_train_candidates.py
+    |       
+    +---baselines
+    |       build_baseline_comparison.py
+    |       recompute_metrics.py
+    |       rerun_structure_baselines.py
+    |       
+    +---drkg
+    |   |   build_fuzzy_retrieval.py
+    |   |   build_softfuse_ready.py
+    |   |   build_soft_support.py
+    |   |   build_splits_and_graph.py
+    |   |   inventory_raw.py
+    |   |   rerun_gnn_baselines.py
+    |   |   rerun_kge_baselines.py
+    |   |   select_backbone_source.py
+    |   |   select_task_schema.py
+    |   |   sweep_soft_support.py
+    |   |   
+    |   \---e2e
+    |           collect_metrics.py
+    |           run_rgcn_rows.sh
+    |           
+    +---e2e
+    |       build_e2e_table.py
+    |       build_infer_ready.py
+    |       collect_backbone_soft_e2e.py
+    |       collect_primekg_model_compare_metrics.py
+    |       collect_retrieval_e2e.py
+    |       collect_selected_decode_metrics.py
+    |       collect_valid_decoding_sweep.py
+    |       make_decoding_sweep_configs.py
+    |       run_backbone_soft_e2e.sh
+    |       run_model_compare_train_infer_all.sh
+    |       run_retrieval_e2e.sh
+    |       run_selected_decode_test.sh
+    |       run_valid_decoding_sweep.sh
+    |       
+    +---evaluation
+    |       build_test_eval_ready.py
+    |       build_test_main_table.py
+    |       build_valid_eval_ready.py
+    |       build_valid_main_table.py
+    |       collect_test_cases.py
+    |       
+    +---fuzzy_retrieval
+    |       build_fuzzy_retrieval_test.py
+    |       build_fuzzy_retrieval_v1.py
+    |       build_fuzzy_retrieval_variants.py
+    |       build_path_features.py
+    |       collect_fuzzy_retrieval_v1_cases.py
+    |       collect_fuzzy_retrieval_variant_cases.py
+    |       compare_fuzzy_retrieval_v1.py
+    |       compare_fuzzy_retrieval_variants.py
+    |       select_fuzzy_retrieval_main.py
+    |       
+    +---hetionet
+    |   |   build_fuzzy_retrieval.py
+    |   |   build_softfuse_ready.py
+    |   |   build_soft_support.py
+    |   |   build_splits_and_graph.py
+    |   |   inventory_raw.py
+    |   |   rerun_gnn_baselines.py
+    |   |   rerun_kge_baselines.py
+    |   |   select_backbone_source.py
+    |   |   
+    |   \---e2e
+    |           collect_metrics.py
+    |           run_all_rows.sh
+    |           
+    +---pharmkg
+    |   |   build_eval_tables.py
+    |   |   build_fuzzy_retrieval_transfer.py
+    |   |   build_softfuse_ready_package.py
+    |   |   build_soft_support_transfer.py
+    |   |   build_splits_and_graph.py
+    |   |   build_support_features.py
+    |   |   build_transfer_eval_backbone.py
+    |   |   inventory_raw.py
+    |   |   rerun_gnn_baselines.py
+    |   |   rerun_kge_baselines.py
+    |   |   select_task_schema.py
+    |   |   
+    |   \---e2e
+    |           collect_model_compare_metrics.py
+    |           collect_selected_model_compare.py
+    |           collect_valid_decoding_sweep.py
+    |           e2e_metrics.py
+    |           make_decoding_sweep_configs.py
+    |           patch_graph_num_rels.py
+    |           patch_infer_mistral_meta.py
+    |           prepare_e2e_ready.py
+    |           rerun_infer_one_model.sh
+    |           run_one_model.sh
+    |           run_selected_model_compare_all.sh
+    |           run_train_infer.sh
+    |           run_valid_decoding_sweep.sh
+    |           
+    +---repodb
+    |   |   build_fuzzy_retrieval.py
+    |   |   build_raw_display_control.py
+    |   |   build_softfuse_ready.py
+    |   |   build_soft_support.py
+    |   |   build_splits_and_graph.py
+    |   |   inventory_raw.py
+    |   |   rerun_gnn_baselines.py
+    |   |   rerun_kge_baselines.py
+    |   |   select_backbone_source.py
+    |   |   select_task_schema.py
+    |   |   
+    |   \---e2e
+    |           collect_metrics.py
+    |           run_all_rows.sh
+    |           
+    +---sensitivity
+    |       build_noise_variants.py
+    |       build_rule_variants.py
+    |       build_sensitivity_manifest.py
+    |       build_template_variants.py
+    |       collect_noise_robustness.py
+    |       collect_rule_test_e2e.py
+    |       collect_rule_valid.py
+    |       collect_template_e2e.py
+    |       run_rule_e2e.sh
+    |       run_template_e2e.sh
+    |       
+    \---soft_support
+            audit_support_features.py
+            build_soft_support_test.py
+            build_soft_support_variants.py
+            build_support_features.py
+            collect_soft_support_variant_cases.py
+            collect_support_cases.py
+            compare_soft_support_variants.py
+            probe_support_scoring.py
+            select_soft_support_main.py
+            
