@@ -19,7 +19,7 @@ run candidate-stage and E2E evaluation.
 
 ## Web Demo
 
-An interactive CPU-only demo is available on Hugging Face Spaces:
+An interactive demo is available on Hugging Face Spaces:
 
 https://inosuke710-softfuse-kgc-demo.hf.space/
 
