@@ -400,7 +400,4 @@ python scripts/repodb/e2e/collect_metrics.py
 | DRKG | https://dgl-data.s3-us-west-2.amazonaws.com/dataset/DRKG/drkg.tar.gz |
 | repoDB | https://github.com/adam-sam-brown/repoDB |
 
-## Citation
 
-If you use this repository, please cite the accompanying paper. A BibTeX entry
-will be added here once the archival metadata is available.
